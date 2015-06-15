@@ -1,0 +1,77 @@
+<!--
+last updated 2015-06-15 tong shu li
+-->
+
+Title: Finding diseases caused by drugs
+
+
+
+<h3>Overview</h3>
+<p>While most drugs are generally beneficial, some drugs unfortunately can cause side effects. When this happens, it is said that the drug causes, or <em>induces</em> the disease.</p>
+<p>In this task, you will be helping scientists find drug induced diseases from a piece of text.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>Read a section of text.<br>
+    A small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> have been highlighted in the text. All occurrences of the same drug or disease have been highlighted.</li>
+
+  <li>Read through the list of potential drug induced diseases and pick those which are supported by the text.</li>
+
+</ol>
+
+
+<h3>Examples</h3>
+
+<ol>
+  <li>
+    <ul>
+      <li>
+        "<span class="disease">Rombin cystitis</span> is a rare but potentially serious complication of high-dose <span class="chemical">wertaximab</span> therapy administered prior to taking an X-ray."
+      </li>
+      <li>
+        In the above sentence, the drug <span class="chemical">wertaximab</span> induces <span class="disease">Rombin cystitis</span> because Rombin cystitis is a "complication" of receiving the drug.
+      </li>
+
+    </ul>
+  </li>
+
+  <li>
+    <ul>
+      <li>
+        "Ten patients with <span class="disease">hyperstosis (HS)</span> treated with <span class="chemical">ramotrigine</span> experienced exacerbation or de novo appearance of <span class="disease">myotonic jerks</span>."
+      </li>
+      <li>
+        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only drug induced disease relationship is "<span class="chemical">ramotrigine</span> induces <span class="disease">myotonic jerks</span>".
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <ul>
+      <li>
+        "Each year, thousands of Americans over 50 develop <span class="disease">tension-associated spasmidosis (TAS)</span>. <span class="disease">TAS</span> is a rare uncontrolled contraction of the fingers that occurs in high-stress individuals. The exact cause is unknown. In the past five years, various drug candidates for <span class="disease">high blood pressure</span> (<span class="chemical">tetraforzine</span>, <span class="chemical">6-inositol</span>, and <span class="chemical">2,2-benzaime</span>) failed to meet FDA safety regulations due to a negative interaction with <span class="disease">TAS</span>."
+      </li>
+
+      <li>
+        There are 3 drug-induced disease relationships here:
+          <ol>
+            <li><span class="chemical">tetraforzine</span> incudes <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">6-inositol</span> induces <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">2,2-benzaime</span> induces <span class="disease">tension-associated spasmidosis</span></li>
+          </ol>
+      </li>
+    </ul>
+  </li>
+
+
+
+</ol>
+
+
+
+
+
+
+<h3>Thank you!</h3>
+Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email tongli@scripps.edu if you have any questions.

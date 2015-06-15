@@ -1,0 +1,39 @@
+<!--
+last updated 2015-06-12 tong shu li
+
+This job is created for BioCreative V task 3b.
+
+This experiment is to determine if the crowd can
+read an entire abstract and identify whether chemicals
+in the text are stated to cause diseases.
+
+-->
+
+<h3>Read this section of text:</h3>
+
+<div class="full_abstract">
+  <div class="form_title">
+    {{form_title}}
+  </div>
+
+  <div class="form_abstract">
+    {{form_abstract}}
+  </div>
+</div>
+
+
+{% assign choice_ids = poss_rel_ids | split: "|" %}
+{% assign poss_rels = possible_relationships | split: "|" %}
+
+<cml:checkboxes name="chemical_disease_relationships" validates="required"
+  label="Choose all of the statements supported by the text above:">
+
+  {% for i in (0..max_index) %}
+    <cml:checkbox value="{{choice_ids[i]}}" label="{{poss_rels[i]}}"/>
+  {% endfor %}
+
+    <cml:checkbox value="none_are_true"
+      label="None of the provided choices are correct."/>
+
+</cml:checkboxes>
+
