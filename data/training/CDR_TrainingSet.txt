@@ -579,12 +579,12 @@
 4071154	379	387	oliguria	Disease	D009846
 4071154	444	458	prostaglandins	Chemical	D011453
 4071154	657	676	acute renal failure	Disease	D058186
-4071154	CID	D007213	D005355
-4071154	CID	D007213	D001201
-4071154	CID	D007213	D011660
 4071154	CID	D007213	D006947
 4071154	CID	D007213	D009846
 4071154	CID	D007213	D058186
+4071154	CID	D007213	D005355
+4071154	CID	D007213	D001201
+4071154	CID	D007213	D011660
 
 6103707|t|Comparison of the subjective effects and plasma concentrations following oral and i.m. administration of flunitrazepam in volunteers.
 6103707|a|Flunitrazepam 0.5, 1.0 or 2.0 mg was given by the oral or i.m. routes to groups of volunteers and its effects compared. Plasma concentrations of the drug were estimated by gas-liquid chromatography, in a smaller number of the subjects. The most striking effect was sedation which increased with the dose, 2 mg producing deep sleep although the subjects could still be aroused. The effects of i.m. administration were apparent earlier and sometimes lasted longer than those following oral administration. Dizziness was less marked than sedation, but increased with the dose. There was pain on i.m. injection of flunitrazepam significantly more often than with isotonic saline. Plasma concentrations varied with dose and route and corresponded qualitatively with the subjective effects. The drug was still present in measurable quantities after 24 h even with the smallest dose.
@@ -1036,7 +1036,7 @@
 10193204	11	22	tetrandrine	Chemical	C009438
 10193204	27	40	fangchinoline	Chemical	C060802
 10193204	57	67	thrombosis	Disease	D013927
-10193204	86	106	platelet aggregation	Disease	C566800
+10193204	86	106	platelet aggregation	Disease	D001791
 10193204	108	119	Tetrandrine	Chemical	C009438
 10193204	121	124	TET	Chemical	C009438
 10193204	130	143	fangchinoline	Chemical	C060802
@@ -1047,14 +1047,14 @@
 10193204	323	333	thrombosis	Disease	D013927
 10193204	359	370	epinephrine	Chemical	D004837
 10193204	372	374	EP	Chemical	D004837
-10193204	389	409	platelet aggregation	Disease	C566800
+10193204	389	409	platelet aggregation	Disease	D001791
 10193204	414	431	blood coagulation	Disease	D001778
 10193204	503	506	TET	Chemical	C009438
 10193204	511	514	FAN	Chemical	C060802
 10193204	548	558	thrombosis	Disease	D013927
 10193204	595	615	acetylsalicylic acid	Chemical	D001241
 10193204	617	620	ASA	Chemical	D001241
-10193204	706	727	platelet aggregations	Disease	C566800
+10193204	706	727	platelet aggregations	Disease	D001791
 10193204	767	770	TET	Chemical	C009438
 10193204	775	778	FAN	Chemical	C060802
 10193204	841	844	TET	Chemical	C009438
@@ -1256,8 +1256,8 @@
 11706060	1507	1509	LA	Chemical	D019344
 11706060	1513	1517	AIDS	Disease	D000163
 11706060	CID	D019469	D009202
-11706060	CID	D015215	D009202
 11706060	CID	D019259	D009202
+11706060	CID	D015215	D009202
 
 11752354|t|Oral contraceptives and the risk of myocardial infarction.
 11752354|a|BACKGROUND: An association between the use of oral contraceptives and the risk of myocardial infarction has been found in some, but not all, studies. We investigated this association, according to the type of progestagen included in third-generation (i.e., desogestrel or gestodene) and second-generation (i.e., levonorgestrel) oral contraceptives, the dose of estrogen, and the presence or absence of prothrombotic mutations METHODS: In a nationwide, population-based, case-control study, we identified and enrolled 248 women 18 through 49 years of age who had had a first myocardial infarction between 1990 and 1995 and 925 control women who had not had a myocardial infarction and who were matched for age, calendar year of the index event, and area of residence. Subjects supplied information on oral-contraceptive use and major cardiovascular risk factors. An analysis for factor V Leiden and the G20210A mutation in the prothrombin gene was conducted in 217 patients and 763 controls RESULTS: The odds ratio for myocardial infarction among women who used any type of combined oral contraceptive, as compared with nonusers, was 2.0 (95 percent confidence interval, 1.5 to 2.8). The adjusted odds ratio was 2.5 (95 percent confidence interval, 1.5 to 4.1) among women who used second-generation oral contraceptives and 1.3 (95 percent confidence interval, 0.7 to 2.5) among those who used third-generation oral contraceptives. Among women who used oral contraceptives, the odds ratio was 2.1 (95 percent confidence interval, 1.5 to 3.0) for those without a prothrombotic mutation and 1.9 (95 percent confidence interval, 0.6 to 5.5) for those with a mutation CONCLUSIONS: The risk of myocardial infarction was increased among women who used second-generation oral contraceptives. The results with respect to the use of third-generation oral contraceptives were inconclusive but suggested that the risk was lower than the risk associated with second-generation oral contraceptives. The risk of myocardial infarction was similar among women who used oral contraceptives whether or not they had a prothrombotic mutation.
@@ -1809,22 +1809,17 @@
 19308880|t|Confusion, a rather serious adverse drug reaction with valproic acid: a review of the French Pharmacovigilance database.
 19308880|a|INTRODUCTION: Confusion is an adverse drug reaction frequently observed with valproic acid. Some case reports are published in the literature but no systematic study from a sample of patients has been published. We performed this study in order to describe the main characteristics of this adverse drug reaction. METHODS: Using the French Pharmacovigilance database, we selected the cases of confusion reported since 1985 with valproic acid. RESULTS: 272 cases of confusion were reported with valproic acid: 153 women and 119 men. Confusion mostly occurred during the two first weeks following valproic acid exposure (39.7%). It was "serious" for almost 2/3 of the patients (62.5%) and its outcome favourable in most of the cases (82%). The occurrence of this ADR was more frequent in patients aged between 61 and 80 years. CONCLUSION: This work shows that confusion with valproic acid is a serious, rather frequent but reversible adverse drug reaction. It occurs especially in older patients and during the first two weeks of treatment.
 19308880	0	9	Confusion	Disease	D003221
-19308880	28	49	adverse drug reaction	Disease	D064420
 19308880	55	68	valproic acid	Chemical	D014635
 19308880	135	144	Confusion	Disease	D003221
-19308880	151	172	adverse drug reaction	Disease	D064420
 19308880	198	211	valproic acid	Chemical	D014635
-19308880	411	432	adverse drug reaction	Disease	D064420
 19308880	513	522	confusion	Disease	D003221
 19308880	548	561	valproic acid	Chemical	D014635
 19308880	585	594	confusion	Disease	D003221
 19308880	614	627	valproic acid	Chemical	D014635
 19308880	652	661	Confusion	Disease	D003221
 19308880	715	728	valproic acid	Chemical	D014635
-19308880	881	884	ADR	Disease	D064420
 19308880	978	987	confusion	Disease	D003221
 19308880	993	1006	valproic acid	Chemical	D014635
-19308880	1052	1073	adverse drug reaction	Disease	D064420
 19308880	CID	D014635	D003221
 
 19631624|t|Learning and memory deficits in ecstasy users and their neural correlates during a face-learning task.
@@ -2278,7 +2273,6 @@
 3107448	340	349	glyburide	Chemical	D005905
 3107448	394	409	viral infection	Disease	D014777
 3107448	481	503	drug-induced hepatitis	Disease	D056486
-3107448	494	503	hepatitis	Disease	D056486
 3107448	552	561	glyburide	Chemical	D005905
 3107448	627	636	Glyburide	Chemical	D005905
 3107448	652	680	acute hepatitis-like illness	Disease	D056486
@@ -2349,7 +2343,6 @@
 3719553	21	35	5-fluorouracil	Chemical	D005472
 3719553	49	66	allergic reaction	Disease	D004342
 3719553	81	100	angioneurotic edema	Disease	D000799
-3719553	95	100	edema	Disease	D004487
 3719553	134	148	5-fluorouracil	Chemical	D005472
 3719553	186	214	carcinoma of the oral cavity	Disease	D009062
 3719553	216	225	cirrhosis	Disease	D005355
@@ -2597,12 +2590,10 @@
 7919560	63	73	ampicillin	Chemical	D000667
 7919560	106	125	erythema multiforme	Disease	D004892
 7919560	130	158	hypersensitivity myocarditis	Disease	D009205
-7919560	130	146	hypersensitivity	Disease	D004342
 7919560	169	179	ampicillin	Chemical	D000667
 7919560	230	240	ampicillin	Chemical	D000667
 7919560	245	255	gentamicin	Chemical	D005839
 7919560	277	287	septicemia	Disease	D018805
-7919560	324	332	erythema	Disease	D004890
 7919560	324	343	erythema multiforme	Disease	D004892
 7919560	348	372	congestive heart failure	Disease	D006333
 7919560	383	394	myocarditis	Disease	D009205
@@ -2610,12 +2601,10 @@
 7919560	525	535	ampicillin	Chemical	D000667
 7919560	573	583	infections	Disease	D007239
 7919560	592	611	erythema multiforme	Disease	D004892
-7919560	592	600	erythema	Disease	D004890
 7919560	616	627	myocarditis	Disease	D009205
 7919560	646	676	drug-induced allergic reaction	Disease	D004342
 7919560	714	724	ampicillin	Chemical	D000667
 7919560	778	788	ampicillin	Chemical	D000667
-7919560	803	819	Hypersensitivity	Disease	D004342
 7919560	803	831	Hypersensitivity myocarditis	Disease	D009205
 7919560	873	880	allergy	Disease	D004342
 7919560	884	895	penicillins	Chemical	D010406
@@ -2683,7 +2672,6 @@
 8638206	44	54	atracurium	Chemical	D001279
 8638206	222	231	paralysis	Disease	D010243
 8638206	330	348	vecuronium bromide	Chemical	D014673
-8638206	341	348	bromide	Chemical	D001965
 8638206	408	427	Atracurium besylate	Chemical	D001279
 8638206	444	464	benzylisoquinolinium	Chemical	-1
 8638206	574	583	paralysis	Disease	D010243
@@ -2852,7 +2840,6 @@
 9406968	103	110	lithium	Chemical	D008094
 9406968	119	137	diabetes insipidus	Disease	D003919
 9406968	161	181	arginine vasopressin	Chemical	D001127
-9406968	170	181	vasopressin	Chemical	D014667
 9406968	183	186	AVP	Chemical	D001127
 9406968	280	287	lithium	Chemical	D008094
 9406968	289	291	Li	Chemical	D008094
@@ -2983,7 +2970,7 @@
 10457883	217	235	respiratory arrest	Disease	D012131
 10457883	248	260	desaturation	Disease	D001049
 10457883	265	276	bradycardia	Disease	D001919
-10457883	353	375	neuromuscular blockade	Disease	D009468
+10457883	353	375	neuromuscular blockade	Disease	D020879
 10457883	CID	D001279	D012131
 10457883	CID	D001279	D001919
 10457883	CID	D001279	D001049
@@ -3145,7 +3132,6 @@
 11569530	157	176	Torsades de pointes	Disease	D016171
 11569530	178	181	TDP	Disease	D016171
 11569530	206	229	ventricular tachycardia	Disease	D017180
-11569530	218	229	tachycardia	Disease	D013610
 11569530	320	323	TDP	Disease	D016171
 11569530	407	418	terfenadine	Chemical	D016593
 11569530	423	433	terodiline	Chemical	C010637
@@ -3430,7 +3416,6 @@
 15036754	782	785	CPA	Chemical	C048599
 15036754	803	807	NMDA	Chemical	D016202
 15036754	828	847	dizocilpine maleate	Chemical	D016291
-15036754	935	943	atropine	Chemical	D001285
 15036754	935	951	atropine sulfate	Chemical	D001285
 15036754	1023	1026	DFP	Chemical	D007531
 15036754	1054	1070	atropine sulfate	Chemical	D001285
@@ -3744,7 +3729,6 @@
 17261653|t|Direct inhibition of cardiac hyperpolarization-activated cyclic nucleotide-gated pacemaker channels by clonidine.
 17261653|a|BACKGROUND: Inhibition of cardiac sympathetic tone represents an important strategy for treatment of cardiovascular disease, including arrhythmia, coronary heart disease, and chronic heart failure. Activation of presynaptic alpha2-adrenoceptors is the most widely accepted mechanism of action of the antisympathetic drug clonidine; however, other target proteins have been postulated to contribute to the in vivo actions of clonidine. METHODS AND RESULTS: To test whether clonidine elicits pharmacological effects independent of alpha2-adrenoceptors, we have generated mice with a targeted deletion of all 3 alpha2-adrenoceptor subtypes (alpha2ABC-/-). Alpha2ABC-/- mice were completely unresponsive to the analgesic and hypnotic effects of clonidine; however, clonidine significantly lowered heart rate in alpha2ABC-/- mice by up to 150 bpm. Clonidine-induced bradycardia in conscious alpha2ABC-/- mice was 32.3% (10 microg/kg) and 26.6% (100 microg/kg) of the effect in wild-type mice. A similar bradycardic effect of clonidine was observed in isolated spontaneously beating right atria from alpha2ABC-knockout and wild-type mice. Clonidine inhibited the native pacemaker current (I(f)) in isolated sinoatrial node pacemaker cells and the I(f)-generating hyperpolarization-activated cyclic nucleotide-gated (HCN) 2 and HCN4 channels in transfected HEK293 cells. As a consequence of blocking I(f), clonidine reduced the slope of the diastolic depolarization and the frequency of pacemaker potentials in sinoatrial node cells from wild-type and alpha2ABC-knockout mice. CONCLUSIONS: Direct inhibition of cardiac HCN pacemaker channels contributes to the bradycardic effects of clonidine gene-targeted mice in vivo, and thus, clonidine-like drugs represent novel structures for future HCN channel inhibitors.
 17261653	57	74	cyclic nucleotide	Chemical	D009712
-17261653	64	74	nucleotide	Chemical	D009711
 17261653	103	112	clonidine	Chemical	D003000
 17261653	215	237	cardiovascular disease	Disease	D002318
 17261653	249	259	arrhythmia	Disease	D001145
@@ -3760,7 +3744,6 @@
 17261653	1134	1143	clonidine	Chemical	D003000
 17261653	1247	1256	Clonidine	Chemical	D003000
 17261653	1399	1416	cyclic nucleotide	Chemical	D009712
-17261653	1406	1416	nucleotide	Chemical	D009711
 17261653	1513	1522	clonidine	Chemical	D003000
 17261653	1791	1800	clonidine	Chemical	D003000
 17261653	1839	1848	clonidine	Chemical	D003000
@@ -3803,7 +3786,6 @@
 17400887	1173	1184	terbutaline	Chemical	D013726
 17400887	1545	1569	behavioral abnormalities	Disease	D001523
 17400887	1601	1607	autism	Disease	D001321
-17400887	1712	1718	autism	Disease	D001321
 17400887	1712	1737	autism spectrum disorders	Disease	D002659
 17400887	CID	D013726	D001321
 
@@ -3902,14 +3884,14 @@
 18182964	1036	1045	clonidine	Chemical	D003000
 18182964	1050	1065	methylphenidate	Chemical	D008774
 18182964	1167	1176	clonidine	Chemical	D003000
-18182964	1272	1282	Drowsiness	Disease	D001523
+18182964	1272	1282	Drowsiness	Disease	D006970
 18182964	1297	1306	clonidine	Chemical	D003000
 18182964	1361	1370	Clonidine	Chemical	D003000
 18182964	1391	1406	methylphenidate	Chemical	D008774
 18182964	1453	1457	ADHD	Disease	D001289
 18182964	1482	1491	clonidine	Chemical	D003000
 18182964	1511	1522	bradycardia	Disease	D001919
-18182964	1580	1590	drowsiness	Disease	D001523
+18182964	1580	1590	drowsiness	Disease	D006970
 18182964	CID	D003000	D001919
 
 18217897|t|Thalidomide has limited single-agent activity in relapsed or refractory indolent non-Hodgkin lymphomas: a phase II trial of the Cancer and Leukemia Group B.
@@ -4415,7 +4397,6 @@
 3031535	175	203	delta 9-tetrahydrocannabinol	Chemical	D013759
 3031535	205	208	THC	Chemical	D013759
 3031535	243	260	6-hydroxydopamine	Chemical	D016627
-3031535	245	260	hydroxydopamine	Chemical	D006892
 3031535	262	268	6-OHDA	Chemical	D016627
 3031535	278	289	desipramine	Chemical	D003891
 3031535	294	300	6-OHDA	Chemical	D016627
@@ -4940,7 +4921,6 @@
 9284778	529	563	1-chloro-1,2,2,2-tetrafluoroethane	Chemical	C072959
 9284778	565	573	HCFC 124	Chemical	C072959
 9284778	685	723	1-bromo-1-chloro-2,2,2-trifluoroethane	Chemical	D006221
-9284778	693	723	1-chloro-2,2,2-trifluoroethane	Chemical	C016800
 9284778	725	734	halothane	Chemical	D006221
 9284778	753	768	trifluoroacetyl	Chemical	D014269
 9284778	825	839	hepatotoxicity	Disease	D056486
@@ -5628,9 +5608,7 @@
 15602202	50	62	azithromycin	Chemical	D017963
 15602202	111	123	azithromycin	Chemical	D017963
 15602202	139	161	interstitial nephritis	Disease	D009395
-15602202	152	161	nephritis	Disease	D009393
 15602202	366	388	interstitial nephritis	Disease	D009395
-15602202	379	388	nephritis	Disease	D009393
 15602202	458	470	renal injury	Disease	D007674
 15602202	CID	D017963	D009395
 
@@ -6023,7 +6001,6 @@
 18726058	1115	1125	papaverine	Chemical	D010208
 18726058	1267	1277	papaverine	Chemical	D010208
 18726058	1426	1452	sensorineural hearing loss	Disease	D006319
-18726058	1440	1452	hearing loss	Disease	D034381
 18726058	1505	1515	papaverine	Chemical	D010208
 18726058	1565	1575	papaverine	Chemical	D010208
 18726058	1597	1606	vasospasm	Disease	D020301
@@ -6330,7 +6307,6 @@
 18752389	305	314	ezetimibe	Chemical	C108606
 18752389	340	361	simvastatin-ezetimibe	Chemical	C492458
 18752389	418	443	fulminant hepatic failure	Disease	D017114
-18752389	428	443	hepatic failure	Disease	D017093
 18752389	511	522	simvastatin	Chemical	D019821
 18752389	536	569	simvastatin 10 mg-ezetimibe 40 mg	Chemical	C492458
 18752389	626	637	simvastatin	Chemical	D019821
@@ -6730,11 +6706,9 @@
 9660111	859	862	TRI	Chemical	D014299
 9660111	912	925	hyperactivity	Disease	D006948
 9660111	937	950	d-amphetamine	Chemical	D003913
-9660111	939	950	amphetamine	Chemical	D000661
 9660111	952	962	quinpirole	Chemical	D019257
 9660111	1005	1013	dopamine	Chemical	D004298
 9660111	1062	1075	d-amphetamine	Chemical	D003913
-9660111	1064	1075	amphetamine	Chemical	D000661
 9660111	1079	1090	apomorphine	Chemical	D001058
 9660111	1114	1117	TRI	Chemical	D014299
 9660111	1168	1181	phenylephrine	Chemical	D010656
@@ -6833,10 +6807,10 @@
 18821488	1610	1618	WR242511	Chemical	C068820
 18821488	1666	1675	poisoning	Disease	D011041
 18821488	1793	1801	toxicity	Disease	D064420
-18821488	CID	C068820	D009212
 18821488	CID	C068820	D007674
 18821488	CID	C068820	D056486
 18821488	CID	C068820	D006456
+18821488	CID	C068820	D009212
 
 8372922|t|Neuroplasticity of the adult primate auditory cortex following cochlear hearing loss.
 8372922|a|Tonotopic organization is an essential feature of the primary auditory area (A1) of primate cortex. In A1 of macaque monkeys, low frequencies are represented rostrolaterally and high frequencies are represented caudomedially. The purpose of this study was to determine if changes occur in this tonotopic organization following cochlear hearing loss. Under anesthesia, the superior temporal gyrus of adult macaque monkeys was exposed, and the tonotopic organization of A1 was mapped using conventional microelectrode recording techniques. Following recovery, the monkeys were selectively deafened for high frequencies using kanamycin and furosemide. The actual frequencies deafened were determined by the loss of tone-burst elicited auditory brainstem responses. Three months after deafening, A1 was remapped. Postmortem cytoarchitectural features identifying A1 were correlated with the electrophysiologic data. The results indicate that the deprived area of A1 undergoes extensive reorganization and becomes responsive to intact cochlear frequencies. The region of cortex that represents the low frequencies was not obviously affected by the cochlear hearing loss.
@@ -6888,7 +6862,6 @@
 12627929	84	95	thalidomide	Chemical	D013792
 12627929	145	160	prostate cancer	Disease	D011471
 12627929	208	230	venous thromboembolism	Disease	D054556
-12627929	215	230	thromboembolism	Disease	D013923
 12627929	232	235	VTE	Disease	D054556
 12627929	284	299	prostate cancer	Disease	D011471
 12627929	322	331	docetaxel	Chemical	C067311
@@ -7095,7 +7068,6 @@
 2578334	801	806	5-AzC	Chemical	D001374
 2578334	911	916	5-AzC	Chemical	D001374
 2578334	1028	1051	[3H]-5-azadeoxycytidine	Chemical	C014347
-2578334	1033	1051	5-azadeoxycytidine	Chemical	C014347
 2578334	1091	1098	1,2-DMH	Chemical	D019813
 2578334	1134	1142	cytosine	Chemical	D003596
 2578334	1226	1231	5-AzC	Chemical	D001374
@@ -8101,12 +8073,12 @@
 11263551	1027	1039	cyclosporine	Chemical	D016572
 11263551	1043	1053	tacrolimus	Chemical	D016559
 11263551	1270	1274	CIPS	Disease	-1
-11263551	CID	D016572	D010146
 11263551	CID	D016559	D010146
 11263551	CID	D016559	D004487
 11263551	CID	D016559	D001855
 11263551	CID	D016572	D001855
 11263551	CID	D016572	D004487
+11263551	CID	D016572 D010146
 
 10520387|t|The haemodynamic effects of propofol in combination with ephedrine in elderly patients (ASA groups 3 and 4).
 10520387|a|The marked vasodilator and negative inotropic effects of propofol are disadvantages in frail elderly patients. We investigated the safety and efficacy of adding different doses of ephedrine to propofol in order to obtund the hypotensive response. The haemodynamic effects of adding 15, 20 or 25 mg of ephedrine to 200 mg of propofol were compared to control in 40 ASA 3/4 patients over 60 years presenting for genito-urinary surgery. The addition of ephedrine to propofol appears to be an effective method of obtunding the hypotensive response to propofol at all doses used in this study. However, marked tachycardia associated with the use of ephedrine in combination with propofol occurred in the majority of patients, occasionally reaching high levels in individual patients. Due to the risk of this tachycardia inducing myocardial ischemia, we would not recommend the use in elderly patients of any of the ephedrine/propofol/mixtures studied.
@@ -8321,7 +8293,7 @@
 3970039	1190	1202	azathioprine	Chemical	D001379
 3970039	1207	1223	cyclophosphamide	Chemical	D003520
 3970039	1264	1271	cancers	Disease	D009369
-3970039	1329	1339	malignancy	Disease	D016609
+3970039	1329	1339	malignancy	Disease	D009369
 3970039	1343	1363	rheumatoid arthritis	Disease	D001172
 3970039	1484	1501	alkylating agents	Chemical	D000477
 3970039	1523	1543	rheumatoid arthritis	Disease	D001172
@@ -8550,7 +8522,6 @@
 1664218	663	681	squamous carcinoma	Disease	D002294
 1664218	688	702	adenocarcinoma	Disease	D000230
 1664218	729	756	bronchio-alveolar carcinoma	Disease	D002282
-1664218	738	756	alveolar carcinoma	Disease	D002282
 1664218	776	802	undifferentiated carcinoma	Disease	D002277
 1664218	808	819	Neutropenia	Disease	D009503
 1664218	878	888	infections	Disease	D007239
@@ -9305,7 +9276,6 @@
 10406016	143	155	brain damage	Disease	D001925
 10406016	166	181	ischemic stroke	Disease	D002544
 10406016	183	207	Intracerebral hemorrhage	Disease	D002543
-10406016	197	207	hemorrhage	Disease	D006470
 10406016	232	244	inflammation	Disease	D007249
 10406016	250	265	ischemic stroke	Disease	D002544
 10406016	305	313	fucoidan	Chemical	C007789
@@ -9332,10 +9302,8 @@
 3403780	0	11	Paracetamol	Chemical	D000082
 3403780	23	27	coma	Disease	D003128
 3403780	29	47	metabolic acidosis	Disease	D000138
-3403780	39	47	acidosis	Disease	D000138
 3403780	49	74	renal and hepatic failure	Disease	D058186|D017093	renal failure|hepatic failure
 3403780	86	104	metabolic acidosis	Disease	D000138
-3403780	96	104	acidosis	Disease	D000138
 3403780	106	145	acute renal failure and hepatic failure	Disease	D058186|D017114	acute renal failure|acute hepatic failure
 3403780	156	167	paracetamol	Chemical	D000082
 3403780	CID	D000082	D000138
@@ -9832,8 +9800,8 @@
 7199841	925	944	2-chloroprocaine-CE	Chemical	C004616
 7199841	956	972	subpial necrosis	Disease	D013118
 7199841	1074	1085	bupivacaine	Chemical	D002045
-7199841	CID	C004616	D013118
 7199841	CID	C004616	D010243
+7199841	CID	C004616	D013118
 
 6640832|t|Early adjuvant adriamycin in superficial bladder carcinoma.
 6640832|a|A multicenter study was performed in 110 patients with superficial transitional cell carcinoma of the bladder. Adriamycin (50 mg/50 ml) was administered intravesically within 24 h after transurethral resection of TA-T1 (O-A) bladder tumors. Instillation was repeated twice during the first week, then weekly during the first month and afterwards monthly for 1 year. The tolerance was evaluated in these 110 patients, and 29 patients presented with local side-effects. In 24 of these patients chemical cystitis was severe enough for them to drop out of the study. No systemic side-effects were observed. Recurrence was studied in 82 evaluable patients after 1 year of follow-up and in 72 patients followed for 2-3 years (mean 32 months). Of the 82 patients studied after 1 year, 23 had primary and 59 recurrent disease. Of the 82 evaluable patients, 50 did not show any recurrence after 1 year (61%), while 32 presented with one or more recurrences (39%). Of these recurrences, 27 were T1 tumors while five progressed to more highly invasive lesions. In patients that were free of recurrence during the first year, 80% remained tumor-free during the 2- to 3-year follow-up period. Of the patients developing one or more recurrences during the first year, only 50% presented with further recurrence once the instillations were stopped. The beneficial effect of Adriamycin appears obvious and might be related to the drug itself, the early and repeated instillations after TUR, or both.
@@ -9943,7 +9911,6 @@
 2071257	48	55	amnesia	Disease	D000647
 2071257	66	77	scopolamine	Chemical	D012601
 2071257	136	169	L-alpha-glycerylphosphorylcholine	Chemical	D005997
-2071257	144	169	glycerylphosphorylcholine	Chemical	D005997
 2071257	171	182	L-alpha-GFC	Chemical	D005997
 2071257	187	204	memory impairment	Disease	D008569
 2071257	216	227	scopolamine	Chemical	D012601
@@ -10155,19 +10122,24 @@
 
 19211690|t|Testosterone-dependent hypertension and upregulation of intrarenal angiotensinogen in Dahl salt-sensitive rats.
 19211690|a|Blood pressure (BP) is more salt sensitive in men than in premenopausal women. In Dahl salt-sensitive rats (DS), high-salt (HS) diet increases BP more in males than females. In contrast to the systemic renin-angiotensin system, which is suppressed in response to HS in male DS, intrarenal angiotensinogen expression is increased, and intrarenal levels of ANG II are not suppressed. In this study, the hypothesis was tested that there is a sexual dimorphism in HS-induced upregulation of intrarenal angiotensinogen mediated by testosterone that also causes increases in BP and renal injury. On a low-salt (LS) diet, male DS had higher levels of intrarenal angiotensinogen mRNA than females. HS diet for 4 wk increased renal cortical angiotensinogen mRNA and protein only in male DS, which was prevented by castration. Ovariectomy of female DS had no effect on intrarenal angiotensinogen expression on either diet. Radiotelemetric BP was similar between males and castrated rats on LS diet. HS diet for 4 wk caused a progressive increase in BP, protein and albumin excretion, and glomerular sclerosis in male DS rats, which were attenuated by castration. Testosterone replacement in castrated DS rats increased BP, renal injury, and upregulation of renal angiotensinogen associated with HS diet. Testosterone contributes to the development of hypertension and renal injury in male DS rats on HS diet possibly through upregulation of the intrarenal renin-angiotensin system.
-19211690	0	12	Testosterone	Chemical	D013739
-19211690	23	35	hypertension	Disease	D006973
-19211690	320	331	angiotensin	Chemical	D000809
-19211690	638	650	testosterone	Chemical	D013739
-19211690	688	700	renal injury	Disease	D007674
-19211690	1190	1210	glomerular sclerosis	Disease	D007674
-19211690	1265	1277	Testosterone	Chemical	D013739
-19211690	1325	1337	renal injury	Disease	D007674
-19211690	1406	1418	Testosterone	Chemical	D013739
-19211690	1453	1465	hypertension	Disease	D006973
-19211690	1470	1482	renal injury	Disease	D007674
-19211690	1564	1575	angiotensin	Chemical	D000809
-19211690	CID	D013739	D006973
+19211690	0	12	Testosterone	Chemical	D013739	
+19211690	23	35	hypertension	Disease	D006973	
+19211690	91	95	salt	Chemical	D017673	
+19211690	140	144	salt	Chemical	D017673	
+19211690	199	203	salt	Chemical	D017673	
+19211690	230	234	salt	Chemical	D017673	
+19211690	320	331	angiotensin	Chemical	D000809	
+19211690	638	650	testosterone	Chemical	D013739	
+19211690	688	700	renal injury	Disease	D007674	
+19211690	711	715	salt	Chemical	D017673	
+19211690	1190	1210	glomerular sclerosis	Disease	D007674	
+19211690	1265	1277	Testosterone	Chemical	D013739	
+19211690	1325	1337	renal injury	Disease	D007674	
+19211690	1406	1418	Testosterone	Chemical	D013739	
+19211690	1453	1465	hypertension	Disease	D006973	
+19211690	1470	1482	renal injury	Disease	D007674	
+19211690	1564	1575	angiotensin	Chemical	D000809	
+19211690	CID	D017673	D007674
 
 18703024|t|Prenatal protein deprivation alters dopamine-mediated behaviors and dopaminergic and glutamatergic receptor binding.
 18703024|a|Epidemiological evidence indicates that prenatal nutritional deprivation may increase the risk of schizophrenia. The goal of these studies was to use an animal model to examine the effects of prenatal protein deprivation on behaviors and receptor binding with relevance to schizophrenia. We report that prenatally protein deprived (PD) female rats showed an increased stereotypic response to apomorphine and an increased locomotor response to amphetamine in adulthood. These differences were not observed during puberty. No changes in haloperidol-induced catalepsy or MK-801-induced locomotion were seen following PD. In addition, PD female rats showed increased (3)H-MK-801 binding in the striatum and hippocampus, but not in the cortex. PD female rats also showed increased (3)H-haloperidol binding and decreased dopamine transporter binding in striatum. No statistically significant changes in behavior or receptor binding were found in PD males with the exception of increased (3)H-MK-801 binding in cortex. This animal model may be useful to explore the mechanisms by which prenatal nutritional deficiency enhances risk for schizophrenia in humans and may also have implications for developmental processes leading to differential sensitivity to drugs of abuse.
@@ -10245,8 +10217,7 @@
 17879945	577	594	cholesteryl ester	Chemical	D002788
 17879945	712	723	cholesterol	Chemical	D002784
 17879945	792	801	ritonavir	Chemical	D019438
-17879945	1026	1042	17beta-estradiol	Chemical	D004958
-17879945	1033	1042	estradiol	Chemical	D004958
+17879945	1026	1042	17beta-estradiol	Chemical	D004958	
 17879945	1044	1046	E2	Chemical	D004958
 17879945	1056	1068	progesterone	Chemical	D011374
 17879945	1087	1094	ethanol	Chemical	D000431
@@ -10440,7 +10411,6 @@
 11875660	239	250	exencephaly	Disease	D009436
 11875660	543	554	exencephaly	Disease	D009436
 11875660	566	579	5-azacytidine	Chemical	D001374
-11875660	568	579	azacytidine	Chemical	D001374
 11875660	751	762	exencephaly	Disease	D009436
 11875660	766	777	anencephaly	Disease	D000757
 11875660	807	819	exencephalic	Disease	D009436
@@ -10926,7 +10896,7 @@
 19300402	1475	1482	HOE 140	Chemical	C065679
 19300402	1486	1502	des-Arg10HOE 140	Chemical	C078665
 19300402	1506	1522	toxic neuropathy	Disease	D010523
-19300402	1654	1683	diabetic and toxic neuropathy	Disease	D003929|D010523	 diabetic neuropathy|toxic neuropathy
+19300402	1654	1683	diabetic and toxic neuropathy	Disease	D003929|D010523	diabetic neuropathy|toxic neuropathy
 19300402	1688	1702	streptozotocin	Chemical	D013311
 19300402	1711	1723	hyperalgesia	Disease	D006930
 19300402	1735	1737	NO	Chemical	D009569
@@ -11809,14 +11779,14 @@
 
 14698717|t|Acute psychosis due to treatment with phenytoin in a nonepileptic patient.
 14698717|a|The development of psychosis related to antiepileptic drug treatment is usually attributed to the interaction between the epileptic brain substratum and the antiepileptic drugs. The case of a nonepileptic patient who developed psychosis following phenytoin treatment for trigeminal neuralgia is described. This case suggests that the psychotic symptoms that occur following phenytoin treatment in some epileptic patients may be the direct result of medication, unrelated to seizures.
-14698717	0	15	Acute psychosis	Disease	D011618
+14698717	0	15	Acute psychosis	Disease	D011605
 14698717	38	47	phenytoin	Chemical	D010672
-14698717	94	103	psychosis	Disease	D011618
+14698717	94	103	psychosis	Disease	D011605
 14698717	197	206	epileptic	Disease	D004827
-14698717	302	311	psychosis	Disease	D011618
+14698717	302	311	psychosis	Disease	D011605
 14698717	322	331	phenytoin	Chemical	D010672
 14698717	346	366	trigeminal neuralgia	Disease	D014277
-14698717	409	427	psychotic symptoms	Disease	D011618
+14698717	409	427	psychotic symptoms	Disease	D011605
 14698717	449	458	phenytoin	Chemical	D010672
 14698717	477	486	epileptic	Disease	D004827
 14698717	549	557	seizures	Disease	D012640

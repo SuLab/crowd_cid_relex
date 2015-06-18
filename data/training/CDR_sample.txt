@@ -84,9 +84,9 @@
 2224762	CID	D004317	D000380
 2224762	CID	D004317	D052016
 2224762	CID	D004317	D000505
-2224762	CID	D004317	D009325
 2224762	CID	D004317	D013921
 2224762	CID	D004317	D000740
+2224762	CID	D004317	D009325
 
 2348231|t|Pentoxifylline (Trental) does not inhibit dipyridamole-induced coronary hyperemia: implications for dipyridamole-thallium-201 myocardial imaging.
 2348231|a|Dipyridamole-thallium-201 imaging is often performed in patients unable to exercise because of peripheral vascular disease. Many of these patients are taking pentoxifylline (Trental), a methylxanthine derivative which may improve intermittent claudication. Whether pentoxifylline inhibits dipyridamole-induced coronary hyperemia like other methylxanthines such as theophylline and should be stopped prior to dipyridamole-thallium-201 imaging is unknown. Therefore, we studied the hyperemic response to dipyridamole in seven open-chest anesthetized dogs after pretreatment with either pentoxifylline (0, 7.5, or 15 mg/kg i.v.) or theophylline (3 mg/kg i.v.). Baseline circumflex coronary blood flows did not differ significantly among treatment groups. Dipyridamole significantly increased coronary blood flow before and after 7.5 or 15 mm/kg i.v. pentoxifylline (p less than 0.002). Neither dose of pentoxifylline significantly decreased the dipyridamole-induced hyperemia, while peak coronary blood flow was significantly lower after theophylline (p less than 0.01). We conclude that pentoxyifylline does not inhibit dipyridamole-induced coronary hyperemia even at high doses.
@@ -142,7 +142,7 @@
 2385256	844	861	myasthenia gravis	Disease	D009157
 2385256	1024	1033	magnesium	Chemical	D008274
 2385256	1078	1116	disorder of neuromuscular transmission	Disease	D020511
-2385256	CID	D008278	D009157
+2385256	CID	D008274	D009157
 
 2887062|t|Immunohistochemical, electron microscopic and morphometric studies of estrogen-induced rat prolactinomas after bromocriptine treatment.
 2887062|a|To clarify the effects of bromocriptine on prolactinoma cells in vivo, immunohistochemical, ultrastructural and morphometrical analyses were applied to estrogen-induced rat prolactinoma cells 1 h and 6 h after injection of bromocriptine (3 mg/kg of body weight). One h after treatment, serum prolactin levels decreased markedly. Electron microscopy disclosed many secretory granules, slightly distorted rough endoplasmic reticulum, and partially dilated Golgi cisternae in the prolactinoma cells. Morphometric analysis revealed that the volume density of secretory granules increased, while the volume density of cytoplasmic microtubules decreased. These findings suggest that lowered serum prolactin levels in the early phase of bromocriptine treatment may result from an impaired secretion of prolactin due to decreasing numbers of cytoplasmic microtubules. At 6 h after injection, serum prolactin levels were still considerably lower than in controls. The prolactinoma cells at this time were well granulated, with vesiculated rough endoplasmic reticulum and markedly dilated Golgi cisternae. Electron microscopical immunohistochemistry revealed positive reaction products noted on the secretory granules, Golgi cisternae, and endoplasmic reticulum of the untreated rat prolactinoma cells. However, only secretory granules showed the positive reaction products for prolactin 6 h after bromocriptine treatment of the adenoma cells. An increase in the volume density of secretory granules and a decrease in the volume densities of rough endoplasmic reticulum and microtubules was determined by morphometric analysis, suggesting that bromocriptine inhibits protein synthesis as well as bringing about a disturbance of the prolactin secretion.
@@ -199,7 +199,6 @@
 3107448	340	349	glyburide	Chemical	D005905
 3107448	394	409	viral infection	Disease	D014777
 3107448	481	503	drug-induced hepatitis	Disease	D056486
-3107448	494	503	hepatitis	Disease	D056486
 3107448	552	561	glyburide	Chemical	D005905
 3107448	627	636	Glyburide	Chemical	D005905
 3107448	652	680	acute hepatitis-like illness	Disease	D056486
@@ -223,10 +222,8 @@
 3403780	0	11	Paracetamol	Chemical	D000082
 3403780	23	27	coma	Disease	D003128
 3403780	29	47	metabolic acidosis	Disease	D000138
-3403780	39	47	acidosis	Disease	D000138
 3403780	49	74	renal and hepatic failure	Disease	D058186|D017093	renal failure|hepatic failure
 3403780	86	104	metabolic acidosis	Disease	D000138
-3403780	96	104	acidosis	Disease	D000138
 3403780	106	145	acute renal failure and hepatic failure	Disease	D058186|D017114	acute renal failure|acute hepatic failure
 3403780	156	167	paracetamol	Chemical	D000082
 3403780	CID	D000082	D000138
@@ -486,11 +483,9 @@
 9660111	859	862	TRI	Chemical	D014299
 9660111	912	925	hyperactivity	Disease	D006948
 9660111	937	950	d-amphetamine	Chemical	D003913
-9660111	939	950	amphetamine	Chemical	D000661
 9660111	952	962	quinpirole	Chemical	D019257
 9660111	1005	1013	dopamine	Chemical	D004298
 9660111	1062	1075	d-amphetamine	Chemical	D003913
-9660111	1064	1075	amphetamine	Chemical	D000661
 9660111	1079	1090	apomorphine	Chemical	D001058
 9660111	1114	1117	TRI	Chemical	D014299
 9660111	1168	1181	phenylephrine	Chemical	D010656
@@ -585,7 +580,7 @@
 10457883	217	235	respiratory arrest	Disease	D012131
 10457883	248	260	desaturation	Disease	D001049
 10457883	265	276	bradycardia	Disease	D001919
-10457883	353	375	neuromuscular blockade	Disease	D009468
+10457883	353	375	neuromuscular blockade	Disease	D020879
 10457883	CID	D001279	D012131
 10457883	CID	D001279	D001919
 10457883	CID	D001279	D001049
@@ -648,7 +643,6 @@
 11147747	732	744	incontinence	Disease	D014549
 11147747	774	786	incontinence	Disease	D014549
 11147747	800	828	serotonergic antidepressants	Chemical	D018490
-11147747	CID	D000319	D014549
 11147747	CID	D016651	D014549
 11147747	CID	D020280	D014549
 11147747	CID	D018490	D014549
@@ -794,9 +788,7 @@
 15602202	50	62	azithromycin	Chemical	D017963
 15602202	111	123	azithromycin	Chemical	D017963
 15602202	139	161	interstitial nephritis	Disease	D009395
-15602202	152	161	nephritis	Disease	D009393
 15602202	366	388	interstitial nephritis	Disease	D009395
-15602202	379	388	nephritis	Disease	D009393
 15602202	458	470	renal injury	Disease	D007674
 15602202	CID	D017963	D009395
 
@@ -1182,14 +1174,14 @@
 19657887	1079	1099	arterial hypotension	Disease	D007022
 19657887	1268	1275	alcohol	Chemical	D000431
 19657887	1334	1340	Dormex	Chemical	D003484
+19657887	CID	D003484	D013610
+19657887	CID	D003484	D004417
+19657887	CID	D000431	D013610
+19657887	CID	D003484	D005483
 19657887	CID	D000431	D007022
 19657887	CID	D000431	D005483
 19657887	CID	D003484	D007022
 19657887	CID	D000431	D004417
-19657887	CID	D003484	D005483
-19657887	CID	D003484	D013610
-19657887	CID	D003484	D004417
-19657887	CID	D000431	D013610
 
 19803309|t|Anaesthetists' nightmare: masseter spasm after induction in an undiagnosed case of myotonia congenita.
 19803309|a|We report an undiagnosed case of myotonia congenita in a 24-year-old previously healthy primigravida, who developed life threatening masseter spasm following a standard dose of intravenous suxamethonium for induction of anaesthesia. Neither the patient nor the anaesthetist was aware of the diagnosis before this potentially lethal complication occurred.
