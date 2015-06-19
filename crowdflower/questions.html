@@ -1,11 +1,25 @@
 <!--
-last updated 2015-06-12 tong shu li
+last updated 2015-06-18 tong shu li
 
 This job is created for BioCreative V task 3b.
 
 This experiment is to determine if the crowd can
 read an entire abstract and identify whether chemicals
 in the text are stated to cause diseases.
+
+2015-06-18
+The Liquid dynamic choice generation was not working
+with the test question creator. Since CF is very slow
+with their support, I will be changing the way choices
+are displayed and handled behind the scenes so that I
+can actually gather some data.
+
+Instead of using Liquid, I will do everything by hand
+with stable identifiers so that I shouldn't have any
+problems with the test questions.
+
+There will always be 5 choices, but I will fill some
+in with blanks.
 
 -->
 
@@ -22,18 +36,27 @@ in the text are stated to cause diseases.
 </div>
 
 
-{% assign choice_ids = poss_rel_ids | split: "|" %}
-{% assign poss_rels = possible_relationships | split: "|" %}
-
 <cml:checkboxes name="chemical_disease_relationships" validates="required"
-  label="Choose all of the statements supported by the text above:">
+  label="Choose all of the statements &lt;em&gt;explicitly&lt;/em&gt; supported by the text above:">
 
-  {% for i in (0..max_index) %}
-    <cml:checkbox value="{{choice_ids[i]}}" label="{{poss_rels[i]}}"/>
-  {% endfor %}
+  <cml:checkbox value="choice_0"
+    label="{{choice_0_label}}"/>
 
-    <cml:checkbox value="none_are_true"
-      label="None of the provided choices are correct."/>
+  <cml:checkbox value="choice_1"
+    label="{{choice_1_label}}"/>
+
+  <cml:checkbox value="choice_2"
+    label="{{choice_2_label}}"/>
+
+  <cml:checkbox value="choice_3"
+    label="{{choice_3_label}}"/>
+
+  <cml:checkbox value="choice_4"
+    label="{{choice_4_label}}"/>
+
+  <cml:checkbox value="none_are_true"
+    label="None of the provided choices are correct."/>
 
 </cml:checkboxes>
 
+<cml:textarea name="comment_box" label="Comments? Suggestions? (optional)"/>

@@ -1,28 +1,29 @@
 <!--
-last updated 2015-06-15 tong shu li
+last updated 2015-06-18 tong shu li
 -->
 
-Title: Finding diseases caused by drugs
-
+Title: Finding drugs which contribute to disease
 
 
 <h3>Overview</h3>
-<p>While most drugs are generally beneficial, some drugs unfortunately can cause side effects. When this happens, it is said that the drug causes, or <em>induces</em> the disease.</p>
-<p>In this task, you will be helping scientists find drug induced diseases from a piece of text.</p>
+<p>While most drugs are beneficial, some drugs unfortunately can cause or contribute to unwanted side effects or diseases. This is obviously not desirable behaviour---scientists and doctors are greatly interested in whether a drug can cause side effects because this helps them decide how to treat patients.</p>
+
+<p>In this task, you will be helping scientists identify which drugs contribute to diseases in a piece of text.</p>
 
 
 <h3>The Task</h3>
 <ol>
-  <li>Read a section of text.<br>
-    A small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> have been highlighted in the text. All occurrences of the same drug or disease have been highlighted.</li>
-
-  <li>Read through the list of potential drug induced diseases and pick those which are supported by the text.</li>
-
+  <li>
+    Read a section of text.<br>
+    A computer has highlighted a small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> in the text. All occurrences of the same drug or disease have been highlighted.
+  </li>
+  <li>
+    Read through the given list of potential drug-disease interactions and select those which are <strong>explicitly</strong> supported by the text you just read. Do not select the choices which say "This choice intentionally left blank."
+  </li>
 </ol>
 
 
 <h3>Examples</h3>
-
 <ol>
   <li>
     <ul>
@@ -30,9 +31,8 @@ Title: Finding diseases caused by drugs
         "<span class="disease">Rombin cystitis</span> is a rare but potentially serious complication of high-dose <span class="chemical">wertaximab</span> therapy administered prior to taking an X-ray."
       </li>
       <li>
-        In the above sentence, the drug <span class="chemical">wertaximab</span> induces <span class="disease">Rombin cystitis</span> because Rombin cystitis is a "complication" of receiving the drug.
+        The only correct choice is: "<span class="chemical">wertaximab</span> contributes to or is a marker for <span class="disease">Rombin cystitis</span>."
       </li>
-
     </ul>
   </li>
 
@@ -42,7 +42,7 @@ Title: Finding diseases caused by drugs
         "Ten patients with <span class="disease">hyperstosis (HS)</span> treated with <span class="chemical">ramotrigine</span> experienced exacerbation or de novo appearance of <span class="disease">myotonic jerks</span>."
       </li>
       <li>
-        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only drug induced disease relationship is "<span class="chemical">ramotrigine</span> induces <span class="disease">myotonic jerks</span>".
+        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only correct answer is: "<span class="chemical">ramotrigine</span> contributes to or is a marker for <span class="disease">myotonic jerks</span>".
       </li>
     </ul>
   </li>
@@ -54,24 +54,41 @@ Title: Finding diseases caused by drugs
       </li>
 
       <li>
-        There are 3 drug-induced disease relationships here:
+        The only correct answers are:
           <ol>
-            <li><span class="chemical">tetraforzine</span> incudes <span class="disease">tension-associated spasmidosis</span></li>
-            <li><span class="chemical">6-inositol</span> induces <span class="disease">tension-associated spasmidosis</span></li>
-            <li><span class="chemical">2,2-benzaime</span> induces <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">tetraforzine</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">6-inositol</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">2,2-benzaime</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
           </ol>
       </li>
     </ul>
   </li>
 
-
-
+  <li>
+    <ul>
+      <li>
+        "Data from the recent clinical study indicate that the combination therapy of <span class="chemical">3-toribazine</span> and <span class="chemical">Quertimab</span> causes <span class="disease">nausea</span> and induces <span class="disease">muscle spasms</span> in 35% of patients."
+      </li>
+      <li>
+        There are only 4 correct answers:
+        <ol>
+          <li>
+            <span class="chemical">3-toribazine</span> contributes to or is a marker for <span class="disease">nausea</span>
+          </li>
+          <li>
+            <span class="chemical">3-toribazine</span> contributes to or is a marker for <span class="disease">muscle spasms</span>
+          </li>
+          <li>
+            <span class="chemical">Quertimab</span> contributes to or is a marker for <span class="disease">nausea</span>
+          </li>
+          <li>
+            <span class="chemical">Quertimab</span> contributes to or is a marker for <span class="disease">muscle spasms</span>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
 </ol>
 
-
-
-
-
-
 <h3>Thank you!</h3>
-Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email tongli@scripps.edu if you have any questions.
+Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <strong>tongli@scripps.edu</strong> if you have any questions.
