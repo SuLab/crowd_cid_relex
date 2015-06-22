@@ -1,88 +1,86 @@
 <!--
-last updated 2015-06-18 tong shu li
+last updated 2015-06-21 tong shu li
 -->
 
 Title: Finding drugs which contribute to disease
 
 
 <h3>Overview</h3>
-<p>While most drugs are beneficial, some drugs unfortunately can cause or contribute to unwanted side effects or diseases. This is obviously not desirable behaviour---scientists and doctors are greatly interested in whether a drug can cause side effects because this helps them decide how to treat patients.</p>
+<p>Scientists and doctors need to know whether a drug (such as Aspirin) can potentially cause any diseases before they can give the drug to patients.</p>
 
-<p>In this task, you will be helping scientists identify which drugs contribute to diseases in a piece of text.</p>
+<p>In this task, you will be helping scientists identify which drugs contribute to which diseases from a piece of text.</p>
+
 
 
 <h3>The Task</h3>
 <ol>
   <li>
-    Read a section of text.<br>
-    A computer has highlighted a small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> in the text. All occurrences of the same drug or disease have been highlighted.
+    A small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> have been highlighted in some text. All occurrences of the same <span class="chemical">drug</span> or <span class="disease">disease</span> have been highlighted.
   </li>
+
   <li>
-    Read through the given list of potential drug-disease interactions and select those which are <strong>explicitly</strong> supported by the text you just read. Do not select the choices which say "This choice intentionally left blank."
+    It is possible that the drugs contribute to the diseases, and some choices (at most 5) are given. If a drug by itself, or in combination with other drugs, can bring about the disease, then it is considered to "contribute to or play a role in" the disease. Some choices will be empty ("<strong>Do not</strong> choose this choice."), and should not be selected.
   </li>
+
+  <li>
+    Read through the provided text and determine <strong>all</strong> of the choices <em>explicitly</em> supported by the text. If none of the choices are explicitly stated by the text, then choose "None of the provided choices are correct." by itself.
+  </li>
+
 </ol>
 
 
 <h3>Examples</h3>
 <ol>
   <li>
+    "<span class="disease">Rombin cystitis</span> is a rare but potentially serious complication of high-dose <span class="chemical">wertaximab</span> therapy administered prior to taking an X-ray."
+
     <ul>
       <li>
-        "<span class="disease">Rombin cystitis</span> is a rare but potentially serious complication of high-dose <span class="chemical">wertaximab</span> therapy administered prior to taking an X-ray."
-      </li>
-      <li>
-        The only correct choice is: "<span class="chemical">wertaximab</span> contributes to or is a marker for <span class="disease">Rombin cystitis</span>."
+        The only correct choice is: "<span class="chemical">wertaximab</span> contributes to or plays a role in <span class="disease">Rombin cystitis</span>."
       </li>
     </ul>
   </li>
 
   <li>
+    "Ten patients with <span class="disease">hyperstosis (HS)</span> treated with <span class="chemical">ramotrigine</span> experienced exacerbation or de novo appearance of <span class="disease">myotonic jerks</span>."
     <ul>
       <li>
-        "Ten patients with <span class="disease">hyperstosis (HS)</span> treated with <span class="chemical">ramotrigine</span> experienced exacerbation or de novo appearance of <span class="disease">myotonic jerks</span>."
-      </li>
-      <li>
-        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only correct answer is: "<span class="chemical">ramotrigine</span> contributes to or is a marker for <span class="disease">myotonic jerks</span>".
+        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only correct answer is: "<span class="chemical">ramotrigine</span> contributes to or plays a role in <span class="disease">myotonic jerks</span>".
       </li>
     </ul>
   </li>
 
   <li>
+    "Each year, thousands of Americans over 50 develop <span class="disease">tension-associated spasmidosis (TAS)</span>. <span class="disease">TAS</span> is a rare uncontrolled contraction of the fingers that occurs in high-stress individuals. The exact cause is unknown. In the past five years, various drug candidates for <span class="disease">high blood pressure</span> (<span class="chemical">tetraforzine</span>, <span class="chemical">6-inositol</span>, and <span class="chemical">2,2-benzaime</span>) failed to meet FDA safety regulations due to a negative interaction with <span class="disease">TAS</span>."
     <ul>
-      <li>
-        "Each year, thousands of Americans over 50 develop <span class="disease">tension-associated spasmidosis (TAS)</span>. <span class="disease">TAS</span> is a rare uncontrolled contraction of the fingers that occurs in high-stress individuals. The exact cause is unknown. In the past five years, various drug candidates for <span class="disease">high blood pressure</span> (<span class="chemical">tetraforzine</span>, <span class="chemical">6-inositol</span>, and <span class="chemical">2,2-benzaime</span>) failed to meet FDA safety regulations due to a negative interaction with <span class="disease">TAS</span>."
-      </li>
-
       <li>
         The only correct answers are:
           <ol>
-            <li><span class="chemical">tetraforzine</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
-            <li><span class="chemical">6-inositol</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
-            <li><span class="chemical">2,2-benzaime</span> contributes to or is a marker for <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">tetraforzine</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">6-inositol</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">2,2-benzaime</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
           </ol>
       </li>
     </ul>
   </li>
 
   <li>
+    "Data from the recent clinical study indicate that the combination therapy of <span class="chemical">3-toribazine</span> and <span class="chemical">Quertimab</span> causes <span class="disease">nausea</span> and induces <span class="disease">muscle spasms</span> in 35% of patients."
     <ul>
-      <li>
-        "Data from the recent clinical study indicate that the combination therapy of <span class="chemical">3-toribazine</span> and <span class="chemical">Quertimab</span> causes <span class="disease">nausea</span> and induces <span class="disease">muscle spasms</span> in 35% of patients."
-      </li>
       <li>
         There are only 4 correct answers:
         <ol>
           <li>
-            <span class="chemical">3-toribazine</span> contributes to or is a marker for <span class="disease">nausea</span>
+            <span class="chemical">3-toribazine</span> contributes to or plays a role in <span class="disease">nausea</span>
           </li>
           <li>
-            <span class="chemical">3-toribazine</span> contributes to or is a marker for <span class="disease">muscle spasms</span>
+            <span class="chemical">3-toribazine</span> contributes to or plays a role in <span class="disease">muscle spasms</span>
           </li>
           <li>
-            <span class="chemical">Quertimab</span> contributes to or is a marker for <span class="disease">nausea</span>
+            <span class="chemical">Quertimab</span> contributes to or plays a role in <span class="disease">nausea</span>
           </li>
           <li>
-            <span class="chemical">Quertimab</span> contributes to or is a marker for <span class="disease">muscle spasms</span>
+            <span class="chemical">Quertimab</span> contributes to or plays a role in <span class="disease">muscle spasms</span>
           </li>
         </ol>
       </li>

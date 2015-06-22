@@ -1,5 +1,5 @@
 <!--
-last updated 2015-06-18 tong shu li
+last updated 2015-06-21 tong shu li
 
 This job is created for BioCreative V task 3b.
 
@@ -21,6 +21,12 @@ problems with the test questions.
 There will always be 5 choices, but I will fill some
 in with blanks.
 
+2015-06-21
+I finally found what I want for the test question elimination.
+I need to add the cml:gold field with the "exact" or
+"strict" attribute in order to get the responses to be
+what I want.
+
 -->
 
 <h3>Read this section of text:</h3>
@@ -37,7 +43,9 @@ in with blanks.
 
 
 <cml:checkboxes name="chemical_disease_relationships" validates="required"
-  label="Choose all of the statements &lt;em&gt;explicitly&lt;/em&gt; supported by the text above:">
+  label="Choose &lt;em&gt;all&lt;/em&gt; of the statements &lt;em&gt;explicitly&lt;/em&gt; supported by the text above:">
+
+  <cml:gold exact="true"/>
 
   <cml:checkbox value="choice_0"
     label="{{choice_0_label}}"/>
