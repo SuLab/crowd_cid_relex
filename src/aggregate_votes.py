@@ -2,6 +2,8 @@
 
 # this is the function for aggregating the votes for crowdflower
 # jobs 746297 and 746647
+import pandas as pd
+from collections import defaultdict
 
 def aggregate_votes(uniq_id, data_frame):
     """
