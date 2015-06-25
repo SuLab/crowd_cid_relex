@@ -19,6 +19,13 @@ AUC_value <- function(fname, score_col, class_col,
     scores <- df[ , score_col]
     class <- df[ , class_col]
 
+    # check to see that class is a binary classifier
+    # if there is only one value for the classifier (either 0 or 1),
+    # then the ROCR package will throw an error
+    # therefore we return either 0 or 1 depending on what the value is
+    if (length(unique(class)) == 1)
+        return (class[1])
+
     pred <- prediction(scores, class)
 
     # draws a ROC curve only if the curve_filename is specified
