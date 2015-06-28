@@ -1,11 +1,11 @@
-# last updated 2015-06-24 tong shu li
-
-# this is the function for aggregating the votes for crowdflower
-# jobs 746297 and 746647
+# last updated 2015-06-27 Tong Shu Li
+"""
+Aggregates votes for individual work units.
+"""
 import pandas as pd
 from collections import defaultdict
 
-def aggregate_votes(uniq_id, data_frame):
+def aggregate_votes(uniq_id, data_frame, penalize_unchosen = False)
     """
     Given a data frame representing all the unique votes
     for one work unit, aggregates the votes for each of the
@@ -13,7 +13,12 @@ def aggregate_votes(uniq_id, data_frame):
 
     Returns an unsorted data frame containing the relationships
     with normalized scores.
+
+    Two aggregation schemes can be used:
+      1. Choices which are unchosen get no change to their score.
+      2. Choices which are unchosen get the trust score subtracted.
     """
+
     rel_id = dict()
 
     # first map the ids: choice # -> id_pair
@@ -38,11 +43,11 @@ def aggregate_votes(uniq_id, data_frame):
 
     total_trust = sum(data_frame["_trust"])
 
-    # normalize choices and remove those below zero or empty
+    # normalize choices
     temp = defaultdict(list)
     for id_pair, score in scores.items():
         score /= total_trust
-        if score > 0 and id_pair != "empty":
+        if id_pair != "empty":
             temp["id_pair"].append(id_pair)
             temp["normalized_score"].append(score)
 
