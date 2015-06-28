@@ -29,9 +29,9 @@ def aggregate_votes(uniq_id, data_frame, penalize_unchosen = False):
             for i in range(5):
                 choice = "choice_{0}".format(i)
                 if choice in user_choices:
-                    score[choice] += row["_trust"]
+                    scores[choice] += row["_trust"]
                 else:
-                    score[choice] += (-1 if penalize_chosen else 0) * row["_trust"]
+                    scores[choice] += (-1 if penalize_unchosen else 0) * row["_trust"]
 
     rel_id = dict()
     # map the ids: choice # -> id_pair
