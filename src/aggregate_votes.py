@@ -5,7 +5,7 @@ Aggregates votes for individual work units.
 import pandas as pd
 from collections import defaultdict
 
-def aggregate_votes(uniq_id, data_frame, penalize_unchosen = False)
+def aggregate_votes(uniq_id, data_frame, penalize_unchosen = False):
     """
     Given a data frame representing all the unique votes
     for one work unit, aggregates the votes for each of the
