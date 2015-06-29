@@ -14,6 +14,10 @@ class Annotation:
     Annotations are position bound to their abstract.
     """
     def __init__(self, uid, stype, text, start, stop):
+        # for use with Dnorm and tmChem:
+        if ":" in uid:
+            uid = uid.split(':')[1] # get rid of "MESH:", "OMIM:"
+
         self.uid = uid
         self.stype = stype.lower()
         assert self.stype in ["chemical", "disease"]
@@ -21,6 +25,16 @@ class Annotation:
         self.start = int(start)
         self.stop = int(stop)
         assert self.start < self.stop
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            # check if positions are the same
+            return self.start == other.start and self.stop == other.stop
+
+        return False
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
 
     def output(self):
         print self.uid
