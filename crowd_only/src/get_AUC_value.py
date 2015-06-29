@@ -1,10 +1,11 @@
-# last updated 2015-06-25 tong shu li
+# last updated 2015-06-29 tong shu li
 """
 This is the Python wrapper for get_AUC_value.R
 The R function always returns the AUC value, and
 only draws the curve if the filename and title
 are specified.
 """
+import os
 import pandas as pd
 import rpy2.robjects as robjects
 import tempfile
@@ -31,8 +32,7 @@ def get_AUC_value(data_frame, score_col, class_col,
         data_frame.to_csv(fname, sep = "|", index = False)
 
         R = robjects.r
-        R.source("/home/toby/Research/Projects/biocreativeV/src/get_AUC_value.R")
-
+        R.source(os.path.realpath(__file__).replace(".py", ".R"))
         auc = R.AUC_value(fname, score_col, class_col, curve_fname, plot_title)
 
     return auc[0]
