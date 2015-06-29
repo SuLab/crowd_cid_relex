@@ -1,0 +1,15 @@
+.chemical {
+    color: #233b8b;
+    font-weight: bold;
+}
+
+.disease {
+    color: #909729;
+    font-weight: bold;
+}
+
+.form_title {
+    font-size: large;
+    font-style: italic;
+    padding-bottom: 5px;
+}

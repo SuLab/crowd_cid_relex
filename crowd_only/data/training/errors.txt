@@ -1,0 +1,6 @@
+2015-06-18 toby
+
+CDR training data txt
+
+pmid 11263551 line 8081
+there is a space between the last relationship instead of a tab

@@ -1,0 +1,92 @@
+<!--
+last updated 2015-06-27 tong shu li
+-->
+
+Title: Finding drugs which contribute to disease
+
+
+<h3>Overview</h3>
+<p>Scientists and doctors need to know whether a drug (such as Aspirin) can potentially cause any diseases before they can give the drug to patients.</p>
+
+<p>In this task, you will be helping scientists identify which drugs contribute to which diseases from a piece of text.</p>
+
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    A small number of <span class="chemical">drugs</span> and <span class="disease">diseases</span> have been highlighted in some text. All occurrences of the same <span class="chemical">drug</span> or <span class="disease">disease</span> have been highlighted. The names of the drugs and diseases have been replaced with identifiers like <span class="chemical">[chemical A]</span> and <span class="disease">[disease P]</span> to make reading easier.
+  </li>
+
+  <li>
+    It is possible that the drugs contribute to the diseases, and some choices (at most 5) are given. If a drug by itself, or in combination with other drugs, can bring about the disease, then it is considered to "contribute to or play a role in" the disease. Some choices will be empty ("<strong>Do not</strong> choose this choice."), and should not be selected.
+  </li>
+
+  <li>
+    Read through the provided text and determine <strong>all</strong> of the choices <em>explicitly</em> supported by the text. If none of the choices are explicitly stated by the text, then choose "None of the provided choices are correct." by itself.
+  </li>
+
+</ol>
+
+
+<h3>Examples</h3>
+<ol>
+  <li>
+    "<span class="disease">Rombin cystitis</span> is a rare but potentially serious complication of high-dose <span class="chemical">wertaximab</span> therapy administered prior to taking an X-ray."
+
+    <ul>
+      <li>
+        The only correct choice is: "<span class="chemical">wertaximab</span> contributes to or plays a role in <span class="disease">Rombin cystitis</span>."
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    "Ten patients with <span class="disease">hyperstosis (HS)</span> treated with <span class="chemical">ramotrigine</span> experienced exacerbation or de novo appearance of <span class="disease">myotonic jerks</span>."
+    <ul>
+      <li>
+        "De novo appearance" means "new appearance". Although there are two different diseases in the sentence above, the only correct answer is: "<span class="chemical">ramotrigine</span> contributes to or plays a role in <span class="disease">myotonic jerks</span>".
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    "Each year, thousands of Americans over 50 develop <span class="disease">tension-associated spasmidosis (TAS)</span>. <span class="disease">TAS</span> is a rare uncontrolled contraction of the fingers that occurs in high-stress individuals. The exact cause is unknown. In the past five years, various drug candidates for <span class="disease">high blood pressure</span> (<span class="chemical">tetraforzine</span>, <span class="chemical">6-inositol</span>, and <span class="chemical">2,2-benzaime</span>) failed to meet FDA safety regulations due to a negative interaction with <span class="disease">TAS</span>."
+    <ul>
+      <li>
+        The only correct answers are:
+          <ol>
+            <li><span class="chemical">tetraforzine</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">6-inositol</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
+            <li><span class="chemical">2,2-benzaime</span> contributes to or plays a role in <span class="disease">tension-associated spasmidosis</span></li>
+          </ol>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    "Data from the recent clinical study indicate that the combination therapy of <span class="chemical">3-toribazine</span> and <span class="chemical">Quertimab</span> causes <span class="disease">nausea</span> and induces <span class="disease">muscle spasms</span> in 35% of patients."
+    <ul>
+      <li>
+        There are only 4 correct answers:
+        <ol>
+          <li>
+            <span class="chemical">3-toribazine</span> contributes to or plays a role in <span class="disease">nausea</span>
+          </li>
+          <li>
+            <span class="chemical">3-toribazine</span> contributes to or plays a role in <span class="disease">muscle spasms</span>
+          </li>
+          <li>
+            <span class="chemical">Quertimab</span> contributes to or plays a role in <span class="disease">nausea</span>
+          </li>
+          <li>
+            <span class="chemical">Quertimab</span> contributes to or plays a role in <span class="disease">muscle spasms</span>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Thank you!</h3>
+Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <strong>tongli@scripps.edu</strong> if you have any questions.

@@ -1,0 +1,16 @@
+2015-06-24 toby
+
+errors I noticed while examining the results and improvements to make
+
+-------
+
+1. a better way of labelling the concept entities to make sure that they are seen as the same thing
+    example: PMID 18631865
+    rapamycin and sirolimus are both the same chemical, but have very different names. need to make it clear that they are the same things because showing rapamycin or sirolimus can have a big effect on what the crowd thinks
+
+    example: pmid 12198388
+    tremor and convulsions are the same identifier, but I only showed one of the two names
+
+
+2.
+
