@@ -1,35 +1,14 @@
 <!--
-last updated 2015-06-21 tong shu li
+last updated 2015-06-29 tong shu li
 
 This job is created for BioCreative V task 3b.
 
 This experiment is to determine if the crowd can
 read an entire abstract and identify whether chemicals
 in the text are stated to cause diseases.
-
-2015-06-18
-The Liquid dynamic choice generation was not working
-with the test question creator. Since CF is very slow
-with their support, I will be changing the way choices
-are displayed and handled behind the scenes so that I
-can actually gather some data.
-
-Instead of using Liquid, I will do everything by hand
-with stable identifiers so that I shouldn't have any
-problems with the test questions.
-
-There will always be 5 choices, but I will fill some
-in with blanks.
-
-2015-06-21
-I finally found what I want for the test question elimination.
-I need to add the cml:gold field with the "exact" or
-"strict" attribute in order to get the responses to be
-what I want.
-
 -->
 
-<h3>Read this section of text:</h3>
+<h3>Read this passage of text:</h3>
 
 <div class="full_abstract">
   <div class="form_title">
@@ -66,5 +45,15 @@ what I want.
     label="None of the provided choices are correct."/>
 
 </cml:checkboxes>
+
+<cml:radios name="reading_difficulty" validates="required"
+  label="The provided passage of text was:">
+
+  <cml:radio value="very_easy" label="Very easy to read."/>
+  <cml:radio value="easy" label="Easy to read."/>
+  <cml:radio value="intermediate" label="Intermediate in difficulty to read."/>
+  <cml:radio value="hard" label="Difficult to read."/>
+  <cml:radio value="very_hard" label="Very difficult to read."/>
+</cml:radios>
 
 <cml:textarea name="comment_box" label="Comments? Suggestions? (optional)"/>
