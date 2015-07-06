@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-07-02
+# Last updated: 2015-07-06
 """
 Revised data models for BioCreative V.
 """
@@ -72,9 +72,28 @@ class Relation:
     """
     def __init__(self, drug_id, disease_id):
         assert drug_id != "-1" and disease_id != "-1"
-        assert is_MeSH_id(drug_id) and is_MeSH_id(disease_id)
-        self.drug_id = drug_id
-        self.disease_id = disease_id
+
+        drug_id = drug_id.split('|')
+        disease_id = disease_id.split('|')
+
+        for uid in drug_id:
+            assert is_MeSH_id(uid)
+
+        for uid in disease_id:
+            assert is_MeSH_id(uid)
+
+        self.drug_id = set(drug_id)
+        self.disease_id = set(disease_id)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return (self.drug_id == other.drug_id and
+                len(self.disease_id & other.disease_id) > 0)
+
+        return False
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
 
 class Paper:
     """
@@ -89,7 +108,7 @@ class Paper:
         6. A set of unique chemical identifiers.
         7. A set of unique disease identifiers.
     """
-    def __init__(self, pmid, title, abstract, annotations, relations):
+    def __init__(self, pmid, title, abstract, annotations, relations = []):
         self.pmid = int(pmid)
         self.title = title
         self.abstract = abstract
@@ -98,6 +117,8 @@ class Paper:
 
         self.chemicals, self.diseases = self.get_unique_concepts(annotations)
         self.sentences = self.split_sentences(abstract)
+
+        assert self.correct_annotations()
 
     def get_unique_concepts(self, annotations):
         """
@@ -128,6 +149,23 @@ class Paper:
             res.append(Sentence(self.pmid, i, sentence, idx, idx + len(sentence), self.annotations))
 
         return res
+
+    def get_work_units(self):
+        """
+        Returns all possible unique drug-disease combinations
+        for this paper.
+        """
+        return [(drug_id, disease_id) for drug_id in self.chemicals for disease_id in self.diseases]
+
+    def correct_annotations(self):
+        """
+        Checks that the annotations match the text.
+        """
+        text = "{0} {1}".format(self.title, self.abstract)
+        for annotation in self.annotations:
+            assert text[annotation.start : annotation.stop] == annotation.text
+
+        return True
 
 def parse_input(loc, fname, is_gold = True):
     """
