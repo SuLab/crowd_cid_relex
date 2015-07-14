@@ -1,0 +1,20 @@
+Four valid files:
+
+chemicals_entities_tmChem.PubTator
+chemicals_entities_tmChem_sent_relative_offtets.txt
+diseases_entities_DNorm.PubTator
+diseases_entities_tmChem_sent_relative_offtets.txt
+
+---------------------------------------------------
+
+[chemicals_entities_tmChem.PubTator] file:
+The results of chemical mentions found by tmChem, in PubTator format.
+
+[chemicals_entities_tmChem_sent_relative_offtets.txt] file:
+The results of chemical mentions found by tmChem, with relative offsets at sentence-level (if a mention is sharing PMID and NUM_SENT with other, both are co-occurring in the same sentence). The format is a tabular txt file.
+
+[diseases_entities_DNorm.PubTator] file:
+The results of disease mentions found by DNorm (with BC5 model), in PubTator format.
+
+[diseases_entities_tmChem_sent_relative_offtets.txt] file:
+The results of disease mentions found by DNorm (with BC5 model), with relative offsets at sentence-level (if a mention is sharing the same PMID and NUM_SENT with other, both are co-occurring in the same sentence). The format is a tabular txt file.
