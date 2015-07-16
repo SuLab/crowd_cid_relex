@@ -95,6 +95,9 @@ class Relation:
     def __ne__(self, other):
         return not self.__eq__(other)
 
+    def output(self):
+        print "{0}->{1}".format(self.drug_id, self.disease_id)
+
 class Paper:
     """
     A single academic publication.
@@ -166,6 +169,18 @@ class Paper:
             assert text[annotation.start : annotation.stop] == annotation.text
 
         return True
+
+    def has_relation(self, poss_relation):
+        """
+        Checks if the provided possible Relationship object
+        matches any of the gold standard relationships for this
+        paper.
+        """
+        for gold_relation in self.relations:
+            if poss_relation == gold_relation:
+                return True
+
+        return False
 
 def parse_input(loc, fname, is_gold = True):
     """
