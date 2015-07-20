@@ -1,0 +1,100 @@
+<!--
+Tong Shu Li
+Created on 2015-07-16
+Last updated 2015-07-20
+
+This task is the abstract-level drug-induced disease
+relation extraction subtask for BioCreative V 3b.
+
+Instead of performing extraction on multiple pairs,
+we will reduce the task to a single pair. Any concept
+pairs in this task will not co-occur in any sentence.
+-->
+
+Title: Determine whether a chemical contributes to a disease
+
+<h3>Overview</h3>
+<p>Scientists and doctors need to know whether a chemical (such as Aspirin) can potentially cause any diseases before they can give it to people. In this task, you will determine whether a passage of text says a chemical contributes to a disease.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    One <span class="chemical">chemical</span> and one <span class="disease">disease</span> have been identified and highlighted in a passage of text. Sometimes a drug or disease may have multiple names (e.g., <span class="chemical">rapamycin</span> and <span class="chemical">sirolimus</span>). Assume that anything highlighted with the same colour is the same thing.
+  </li>
+
+  <li>
+    Read the text and determine whether the text says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the three possible choices:
+
+    <ul>
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span><br>
+        </div>
+
+        Select this choice when the text says that the chemical (by itself or with other chemicals) directly contributes to or causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> contributes to another disease, and that other disease causes <span class="disease">[disease]</span><br>
+        </div>
+
+        Select this choice when the chemical does not cause the disease directly, but rather the chemical causes another disease, and that other disease causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          The text does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.<br>
+        </div>
+
+        Select this choice when the text does not say that the chemical contributes to the disease.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    Rate how confident you are in your answer. Any choice is ok.
+  </li>
+</ol>
+
+<h3>Examples</h3>
+
+<ol>
+  <li>
+    <div class="example">
+      A cohort of 100 men was given <span class="chemical">tanamycin</span> and monitored for increases in heart rate. The dose of <span class="chemical">convamin</span> was 10 mg/kg. Four hours later, 15% of the men complained of <span class="disease">dizziness</span>.
+    </div>
+
+    Here the chemical has two names: <span class="chemical">tanamycin</span> and <span class="chemical">convamin</span>. They both mean the same thing. When there are multiple names, all the names will be given in the answer choice. The correct choice is:
+    <div class="ans_choice">
+      <span class="chemical">tanamycin/convamin</span> directly contributes to or causes <span class="disease">dizziness</span>
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
+    </div>
+
+    Artherosclerosis (plaque buildup in arteries) causes <span class="disease">heart attacks</span> by restricting blood flow. Since <span class="chemical">barbatimol</span> is inducing (causing) artherosclerosis, it is not directly contributing to <span class="disease">heart attacks</span>. Therefore the correct choice is:
+    <div class="ans_choice">
+      <span class="chemical">barbatimol</span> contributes to another disease, and that other disease causes <span class="disease">heart attacks</span>
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Heart disease is the leading cause of death in the USA. Together with <span class="disease">cancer</span>, these two diseases claim over a million American lives each year. Our clinical results indicate that <span class="chemical">Flibitor</span> can drastically lower the chances of developing heart disease in patients over 50.
+    </div>
+
+    Here <span class="disease">cancer</span> is mentioned as another leading cause of death. It has nothing to do with <span class="chemical">Flibitor</span> and therefore the correct choice is:
+    <div class="ans_choice">
+      The text does not say that <span class="chemical">Flibitor</span> contributes to or causes <span class="disease">cancer</span>
+    </div>
+  </li>
+</ol>
+
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <code>tongli@scripps.edu</code> if you have any questions or comments.</p>

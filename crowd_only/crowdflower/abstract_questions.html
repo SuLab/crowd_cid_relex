@@ -1,0 +1,47 @@
+<!--
+Tong Shu Li
+Created on 2015-07-16
+Last updated 2015-07-20
+
+Question form for the abstract-level chemical-induced
+disease relationship extraction task. All concept pairs
+do not co-occur in any sentences.
+-->
+
+<h3>Read this section of text:</h3>
+
+<div class="full_abstract">
+  <div class="form_title">
+    {{form_title}}
+  </div>
+
+  <div class="form_abstract">
+    {{form_abstract}}
+  </div>
+</div>
+
+
+<cml:radios name="verify_relationship" validates="required"
+  label="The text &lt;em&gt;explicitly&lt;/em&gt; says that:">
+
+  <cml:radio value="yes_direct"
+    label="{{drug_name}} directly contributes to or causes {{disease_name}}"/>
+
+  <cml:radio value="yes_indirect"
+    label="{{drug_name}} contributes to another disease, and that other disease causes {{disease_name}}"/>
+
+  <cml:radio value="no_relation"
+    label="The text does not say that {{drug_name}} contributes to or causes {{disease_name}}."/>
+
+</cml:radios>
+
+<cml:radios name="worker_confidence" validates="required"
+  label="How confident are you in your answer?">
+
+  <cml:radio value="very_confident" label="Very confident"/>
+  <cml:radio value="confident" label="Confident"/>
+  <cml:radio value="not_too_confident" label="Not too confident"/>
+  <cml:radio value="not_confident" label="Not confident at all"/>
+</cml:radios>
+
+<cml:textarea name="comment_box" label="Leave any comments below: (optional)"/>
