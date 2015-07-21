@@ -32,3 +32,19 @@ the same). The only difference is that we are paying double to see if the
 quality of the results changes or if the job completes faster.
 job 746647 completed at 5:50 pm on tuesday june 23 2015
 total cost: $96.00 USD
+
+job 748223 was launched at 5:09 pm on monday june 29 2015
+50 cents/page, 5 rows/page, 5 judgements/row
+level 1 contributor, 50 s min per page
+70% accuracy minimum
+11 test questions (same as jobs 746297 and 746647 (but obviously modified to make sense))
+responses have to exactly match the gold standard.
+job 748223 finished at 1:20 am on Tuesday June 30 2015
+total cost: $57.00 USD
+
+Job 754530 was launched at 5:00 pm on July 20, 2015.
+25 cents/page, 5 rows/page, 5 judgements/row
+level 2 contributor, 30 s min per page
+70% accuracy minimum
+14 test questions (hand curated, some do not exactly match the gold standard)
+
