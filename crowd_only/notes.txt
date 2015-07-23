@@ -47,4 +47,15 @@ Job 754530 was launched at 5:00 pm on July 20, 2015.
 level 2 contributor, 30 s min per page
 70% accuracy minimum
 14 test questions (hand curated, some do not exactly match the gold standard)
+job 754530 completed at 9:00 am on Tuesday July 21, 2015
+total cost: $43.20 USD before any bonuses
+job took longer than usual because ran out of funds halfway
+through and had to restart manually in the morning. The majority
+of work units were complete in 2 hours.
+
+Job 755704 was launched at 3:05 pm on Thursday, July 23, 2015
+15 cents/page, 5 rows/page, 5 judgements/row
+Level 2 contributor, 15 s minimum per page
+70% accuracy minimum
+23 test questions (all matched the gold standard)
 

@@ -1,0 +1,116 @@
+<!--
+Tong Shu Li
+First written 2015-07-06
+Last updated 2015-07-23
+
+This file contains the instructions for the easy,
+sentence-based chemical-disease relationship verification
+task for BioCreative V.
+
+All chemical-disease pairs co-occur in the same sentence.
+If one abstract contains multiple sentences where the pair
+co-occur, then all sentences are shown as individual tasks.
+-->
+
+Title: Determine whether a chemical contributes to a disease
+
+<h3>Overview</h3>
+<p>Scientists and doctors need to know whether a chemical (such as Aspirin) can potentially cause any diseases before they can give it to people. In this task, you will determine whether a sentence says a chemical contributes to a disease.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    One <span class="chemical">chemical</span> and one <span class="disease">disease</span> have been identified and highlighted in a sentence. Sometimes a drug or disease may have multiple names (e.g., <span class="chemical">rapamycin</span> and <span class="chemical">sirolimus</span>). Assume that anything highlighted with the same colour is the same thing. When there are multiple names, all the names will be given in the answer choice.
+  </li>
+
+  <li>
+    Read the sentence and determine whether it says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the three possible choices:
+
+    <ul>
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span><br>
+        </div>
+
+        Select this choice when the sentence says that the chemical (by itself or with other chemicals) directly contributes to or causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> contributes to another disease, and that other disease causes <span class="disease">[disease]</span><br>
+        </div>
+
+        Select this choice when the chemical does not cause the disease directly, but rather the chemical causes another disease, and that other disease causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          The sentence does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.<br>
+        </div>
+
+        Select this choice when the sentence does not say that the chemical contributes to the disease.
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    Rate how confident you are in your answer. Any choice is ok.
+  </li>
+</ol>
+
+<h3>Examples</h3>
+<ol>
+  <li>
+    <div class="example">
+      <span class="chemical">Feverolinus</span>, a chemotherapy drug derived from mushrooms and used for treating breast cancer, has multiple side effects, including diarrhea, constipation, and <span class="disease">hair loss</span>.
+    </div>
+
+    <span class="chemical">Feverolinus</span> is a chemotherapy drug that has multiple side effects, including <span class="disease">hair loss</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">Feverolinus</span> directly contributes to or causes <span class="disease">hair loss</span>
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Some of the patients, especially those over 50 years old, complained of experiencing <span class="disease">chest aches</span> and lower back pain two hours after taking adalamin and <span class="chemical">maximidin</span>.
+    </div>
+
+    Some of the patients developed <span class="disease">chest aches</span> after taking two drugs: adalamin and <span class="chemical">maximidin</span>. Since the sentence doesn't say that the <span class="disease">chest aches</span> arose due to the lower back pain, the correct answer is:
+
+    <div class="ans_choice">
+      <span class="chemical">maximidin</span> directly contributes to or causes <span class="disease">chest aches</span>
+    </div>
+
+    Remember that if a drug is working in combination with another drug, then you should choose that it is contributing to the disease!
+  </li>
+
+  <li>
+    <div class="example">
+      <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
+    </div>
+
+    Artherosclerosis (plaque buildup in arteries) causes <span class="disease">heart attacks</span> by restricting blood flow. Since <span class="chemical">barbatimol</span> is inducing (causing) artherosclerosis, it is not directly contributing to <span class="disease">heart attacks</span>, but is still playing some role. Therefore the correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">barbatimol</span> contributes to another disease, and that other disease causes <span class="disease">heart attacks</span>
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      The Food and Drug Administration has concluded its review of Pfizer's <span class="chemical">Lipitor</span> and deemed it safe and efficacious for lowering <span class="disease">high cholesterol</span>.
+    </div>
+    The sentence says that <span class="chemical">Lipitor</span> lowers <span class="disease">high cholesterol</span>, which means it is curing the disease. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">Lipitor</span> contributes to or causes <span class="disease">high cholesterol</span>
+    </div>
+  </li>
+</ol>
+
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <code>tongli@scripps.edu</code> if you have any questions or comments.</p>
