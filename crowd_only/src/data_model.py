@@ -83,8 +83,8 @@ class Relation:
         assert is_MeSH_id(drug_id), "Relation chemical has an improper id!"
 
         # disease ids can be complex ones joined together
-        # represent the disease ids as a frozenset
-        disease_id = frozenset(disease_id.split('|'))
+        # represent the disease ids as a set
+        disease_id = set(disease_id.split('|'))
 
         for uid in disease_id:
             assert is_MeSH_id(uid)
@@ -101,6 +101,17 @@ class Relation:
         This is because the gold relations only use
         a pair of single MeSH ids, despite the fact
         that the annotations use complexed MeSH ids.
+
+        WARNING:
+            Defining the equals function in this manner
+            breaks transitivity. That is, if we have
+            three objects A, B, and C, then if
+                A == B and B == C, then
+                A == C IS NOT TRUE!!
+
+            This is annoying, but the BioCreative data
+            is structured badly, so there's nothing
+            I can do...
         """
         if isinstance(other, self.__class__):
             return (self.drug_id == other.drug_id
@@ -110,13 +121,6 @@ class Relation:
 
     def __ne__(self, other):
         return not self.__eq__(other)
-
-    def __hash__(self):
-        """
-        Allows us to look use sets to check if a
-        relationship is true.
-        """
-        return hash((self.drug_id, self.disease_id))
 
     def __repr__(self):
         return "<{0}>: {1}->{2}".format(
@@ -144,7 +148,7 @@ class Paper:
         self.abstract = abstract
 
         self.annotations = sorted(annotations)
-        self.relations = set(relations) # may be empty if not parsing gold input
+        self.relations = relations # may be empty when not parsing gold
 
         self.chemicals, self.diseases = self.get_unique_concepts(annotations)
 
@@ -231,6 +235,15 @@ class Paper:
         Checks if the provided possible Relationship object
         matches any of the gold standard relationships for this
         paper.
+
+        Note:
+            It is not possible to use a set to do the checking
+            operation here, because it is not possible to make
+            the hashes of two objects the same when they are
+            defined by be equal by the overridden equals operator
+            for Relation objects.
+
+            This solution is slow, but at least it's correct.
         """
         return poss_relation in self.relations
 
