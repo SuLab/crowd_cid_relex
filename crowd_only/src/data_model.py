@@ -1,15 +1,18 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-07-06
+# Last updated: 2015-07-22
 """
-Revised data models for BioCreative V.
+Data models for BioCreative V.
+
+In order to make processing of the BioCreative
+gold standard easier, the parsing function loads
+the information as a set of custom objects, which
+makes concept highlighting, concept co-occurence
+determination, and relationship verification easy.
 """
 from collections import defaultdict
 
-import sys
-sys.path.append("/home/toby/Code/util/")
 from file_util import read_file
-
 from lingpipe.split_sentences import split_abstract
 
 def is_MeSH_id(uid):
@@ -18,14 +21,14 @@ def is_MeSH_id(uid):
 class Annotation:
     """
     A single mention of a concept in a piece of text.
-    Annotation positions are bound to the abstract.
+    Annotation positions are indexed to the abstract.
     """
     def __init__(self, uid, stype, text, start, stop):
         if ":" in uid:
             self.uid_type, self.uid = uid.split(':')
         else:
-            self.uid = uid
             self.uid_type = "unknown"
+            self.uid = uid
 
         self.stype = stype.lower()
         assert self.stype in ["chemical", "disease"]
@@ -33,17 +36,29 @@ class Annotation:
         self.text = text
         self.start = int(start)
         self.stop = int(stop)
-        assert self.start < self.stop
-        assert len(text) == self.stop - self.start
+        assert self.start < self.stop, "Annotation indicies reversed!"
+        assert len(text) == self.stop - self.start, "Annotation length mismatch!"
 
-    def output():
-        print "Id: {0}, {1}, {2}, {3}, {4}".format(self.uid, self.stype, self.text, self.start, self.stop)
+    def __repr__(self):
+        """
+        Allows for easy printing.
+        """
+        return "{0}: '{1}'({2}) {3}-{4}".format(self.__class__.__name__,
+            self.text, self.stype, self.start, self.stop)
+
+    def __cmp__(self, other):
+        """
+        When sorting Annotation objects, make sure they
+        are in ascending order of starting position.
+        """
+        if hasattr(other, "start"):
+            return self.start.__cmp__(other.start)
 
 class Sentence:
     """
     A single sentence from a paper.
     """
-    def __init__(self, pmid, idx, text, start, stop, paper_annotations):
+    def __init__(self, pmid, idx, text, start, stop, annotations):
         self.pmid = int(pmid)
         self.uid = "{0}_{1}".format(pmid, idx)
         self.text = text
@@ -52,19 +67,12 @@ class Sentence:
         assert self.start < self.stop
         assert len(text) == self.stop - self.start
 
-        self.annotations = self.find_annotations(paper_annotations)
+        self.annotations = annotations
 
-    def find_annotations(self, annotations):
-        """
-        Given a list of the paper's annotations, determines
-        which are within this sentence.
-        """
-        res = []
-        for annotation in annotations:
-            if annotation.start >= self.start and annotation.stop <= self.stop:
-                res.append(annotation)
-
-        return res
+    def __repr__(self):
+        return "<{0}>: PMID {1} '{2}'({3}-{4})\nAnnotations: {5}\n".format(
+            self.__class__.__name__, self.pmid, self.text,
+            self.start, self.stop, self.annotations)
 
 class Relation:
     """
@@ -72,31 +80,47 @@ class Relation:
     """
     def __init__(self, drug_id, disease_id):
         assert drug_id != "-1" and disease_id != "-1"
+        assert is_MeSH_id(drug_id), "Relation chemical has an improper id!"
 
-        drug_id = drug_id.split('|')
-        disease_id = disease_id.split('|')
-
-        for uid in drug_id:
-            assert is_MeSH_id(uid)
+        # disease ids can be complex ones joined together
+        # represent the disease ids as a frozenset
+        disease_id = frozenset(disease_id.split('|'))
 
         for uid in disease_id:
             assert is_MeSH_id(uid)
 
-        self.drug_id = set(drug_id)
-        self.disease_id = set(disease_id)
+        self.drug_id = drug_id
+        self.disease_id = disease_id
 
     def __eq__(self, other):
+        """
+        Equal if the drug ids match exactly and
+        at least one of the disease ids are shared
+        between the two relations.
+
+        This is because the gold relations only use
+        a pair of single MeSH ids, despite the fact
+        that the annotations use complexed MeSH ids.
+        """
         if isinstance(other, self.__class__):
-            return (self.drug_id == other.drug_id and
-                len(self.disease_id & other.disease_id) > 0)
+            return (self.drug_id == other.drug_id
+                and len(self.disease_id & other.disease_id) > 0)
 
         return False
 
     def __ne__(self, other):
         return not self.__eq__(other)
 
-    def output(self):
-        print "{0}->{1}".format(self.drug_id, self.disease_id)
+    def __hash__(self):
+        """
+        Allows us to look use sets to check if a
+        relationship is true.
+        """
+        return hash((self.drug_id, self.disease_id))
+
+    def __repr__(self):
+        return "<{0}>: {1}->{2}".format(
+            self.__class__.__name__, self.drug_id, self.disease_id)
 
 class Paper:
     """
@@ -104,9 +128,12 @@ class Paper:
     Contains:
         1. The title as a string.
         2. The abstract as a string.
-        3. A list of Sentences representing the text of
-            the body of the abstract.
-        4. A list of annotations.
+        3. A list of Sentences containing both the title
+            and body of the abstract. The first sentence
+            is the title.
+        4. A list of all chemical and disease annotations
+            in the title and abstract sorted in order of
+            starting index.
         5. (Optional) A list of gold standard relations.
         6. A set of unique chemical identifiers.
         7. A set of unique disease identifiers.
@@ -115,13 +142,15 @@ class Paper:
         self.pmid = int(pmid)
         self.title = title
         self.abstract = abstract
-        self.annotations = annotations
-        self.relations = relations
+
+        self.annotations = sorted(annotations)
+        self.relations = set(relations) # may be empty if not parsing gold input
 
         self.chemicals, self.diseases = self.get_unique_concepts(annotations)
-        self.sentences = self.split_sentences(abstract)
 
-        assert self.correct_annotations()
+        self.sentences = self.split_sentences()
+
+        assert self.has_correct_annotations()
 
     def get_unique_concepts(self, annotations):
         """
@@ -137,19 +166,45 @@ class Paper:
 
         return (res["chemical"], res["disease"])
 
-    def split_sentences(self, abstract):
+    def split_sentences(self):
         """
-        Splits the paper's abstract up into individual
-        sentences, and determines which annotations are
-        in each sentence.
+        Splits the abstract up into individual sentences,
+        and determines which concept annotations reside
+        within each sentence.
+
+        Time complexity:
+            O(N + M) where N is the number of sentences,
+            and M is the number of annotations.
         """
-        sentences = split_abstract(abstract)
+        all_sentences = [self.title] + split_abstract(self.abstract)
+
         full_text = "{0} {1}".format(self.title, self.abstract)
 
+        sent_idx = 0 # starting index of current sentence
+        annot_idx = 0 # index of annotation that is within current sentence
+
         res = []
-        for i, sentence in enumerate(sentences):
-            idx = full_text.index(sentence)
-            res.append(Sentence(self.pmid, i, sentence, idx, idx + len(sentence), self.annotations))
+        for i, sentence in enumerate(all_sentences):
+            # The sentence splitter isn't perfect. It recognizes "i.v." as a
+            # sentence. Since there can be multiple instances of "sentences"
+            # like "i.v." (e.g., PMID 10840460), we need to make sure that
+            # we are checking for the first instance starting at the current
+            # position (since find always finds the first instance otherwise).
+            assert full_text.find(sentence, sent_idx) == sent_idx, "pmid {0} '{1}'".format(
+                self.pmid, sentence)
+
+            sent_stop = sent_idx + len(sentence)
+
+            start_annot = annot_idx
+            M = len(self.annotations)
+            while annot_idx < M and self.annotations[annot_idx].stop <= sent_stop:
+                annot_idx += 1
+
+            # should be one past
+            res.append(Sentence(self.pmid, i, sentence,
+                sent_idx, sent_stop, self.annotations[start_annot : annot_idx]))
+
+            sent_idx += len(sentence) + 1 # all sentences separated by one space
 
         return res
 
@@ -160,9 +215,10 @@ class Paper:
         """
         return [(drug_id, disease_id) for drug_id in self.chemicals for disease_id in self.diseases]
 
-    def correct_annotations(self):
+    def has_correct_annotations(self):
         """
-        Checks that the annotations match the text.
+        Checks that the paper's annotations match the
+        stated positions in the text.
         """
         text = "{0} {1}".format(self.title, self.abstract)
         for annotation in self.annotations:
@@ -176,11 +232,7 @@ class Paper:
         matches any of the gold standard relationships for this
         paper.
         """
-        for gold_relation in self.relations:
-            if poss_relation == gold_relation:
-                return True
-
-        return False
+        return poss_relation in self.relations
 
 def parse_input(loc, fname, is_gold = True):
     """
