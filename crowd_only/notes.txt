@@ -58,4 +58,5 @@ Job 755704 was launched at 3:05 pm on Thursday, July 23, 2015
 Level 2 contributor, 15 s minimum per page
 70% accuracy minimum
 23 test questions (all matched the gold standard)
-
+Job 755704 was completed at 4:50 pm on Thursday, July 23, 2015
+Total cost before bonuses: $39.78
