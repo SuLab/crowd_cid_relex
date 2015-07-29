@@ -43,10 +43,7 @@ class Annotation:
         assert len(text) == self.stop - self.start, "Annotation length mismatch!"
 
     def __repr__(self):
-        """
-        Allows for easy printing.
-        """
-        return "{0}: '{1}'({2}) {3}-{4}".format(self.__class__.__name__,
+        return "<{0}>: '{1}'({2}) {3}-{4}".format(self.__class__.__name__,
             self.text, self.stype, self.start, self.stop)
 
     def __cmp__(self, other):
@@ -60,6 +57,13 @@ class Annotation:
 class Sentence:
     """
     A single sentence from a paper.
+
+    Sentence-bound relationships are generated
+    by this object.
+
+    The set of chemical-disease relations that need to
+    be made into a work unit is the non-CID relations
+    minus the CID relations true at the abstract level.
     """
     def __init__(self, pmid, idx, text, start, stop, annotations):
         self.pmid = int(pmid)
@@ -70,12 +74,59 @@ class Sentence:
         assert self.start < self.stop
         assert len(text) == self.stop - self.start
 
+        # a list of the concept annotations within this sentence
         self.annotations = annotations
 
+        # generate the list of CID and non-CID relations bound to this sentence
+        self.poss_relations = self.classify_relations()
+
     def __repr__(self):
-        return "<{0}>: PMID {1} '{2}'({3}-{4})\nAnnotations: {5}\n".format(
+        return "<{0}>: PMID: {1} '{2}'({3}-{4})\nAnnotations: {5}\n".format(
             self.__class__.__name__, self.pmid, self.text,
             self.start, self.stop, self.annotations)
+
+    def is_CID_relation(self, chemical, disease):
+        """
+        Given two Annotations within this sentence,
+        determine if the pair of annotations follows the
+        CID structure.
+        """
+        return ((chemical.stop < disease.start)
+            and (disease.start - chemical.stop <= 15)
+            and ("induce" in self.text[chemical.stop - self.start :
+                disease.start - self.start].lower())
+        )
+
+    def classify_relations(self):
+        """
+        This function generates all the unique chemical-disease
+        identifier pairs of annotations contained within this
+        sentence, and classifies them into two groups:
+            1. Those which follow a '[chemical]-induced [disease]' (CID)
+                structure.
+            2. Those which do not follow the CID structure.
+
+        The two sets of identifier pairs are mutually exclusive.
+        """
+        all_relations = defaultdict(set)
+        for annot_A in self.annotations:
+            if annot_A.stype == "chemical" and annot_A.uid != "-1":
+                for annot_B in self.annotations:
+                    if annot_B.stype == "disease" and annot_B.uid != "-1":
+                        rel_type = self.is_CID_relation(annot_A, annot_B)
+                        all_relations[rel_type].add((annot_A.uid, annot_B.uid))
+
+        """
+        In cases where we have a sentence with the following annotations:
+        D C D (where D = disease and C = chemical), we see that the first
+        instance of C and D is not in the CID format, and will get added
+        to the non-CID set. However, the second instance is in the CID
+        format, and gets added to the CID set. To make sure the two sets
+        are mutually exclusive, we need to subtract the CID set from the
+        larger non-CID set.
+        """
+        all_relations[False] -= all_relations[True]
+        return all_relations
 
 class Relation:
     """
@@ -133,31 +184,63 @@ class Paper:
     """
     A single academic publication.
     Contains:
-        1. The title as a string.
-        2. The abstract as a string.
-        3. A list of Sentences containing both the title
-            and body of the abstract. The first sentence
-            is the title.
+        1. The PubMed identifier.
+        2. The title as a string.
+        3. The abstract as a string.
         4. A list of all chemical and disease annotations
-            in the title and abstract sorted in order of
-            starting index.
-        5. (Optional) A list of gold standard relations.
+            in the title and abstract sorted in increasing
+            order of starting index.
+        5. A potentially empty list of gold standard CID
+            relations.
         6. A set of unique chemical identifiers.
         7. A set of unique disease identifiers.
+        8. A list of Sentences containing both the title
+            and body of the abstract. The first sentence
+            is the title. Each sentence contains the
+            annotations and relations constrained to that
+            particular sentence.
+        9. A set of all the potential chemical-disease
+            relations grouped into three mutually exclusive
+            categories:
+            - CID relations
+            - Non-CID sentence-bound relations
+            - Non-sentence bound relations
+            The sum of relations in all three groups should
+            equal the number of unique chemical IDs times
+            the number of unique disease IDs.
     """
-    def __init__(self, pmid, title, abstract, annotations, relations = []):
+    def __init__(self, pmid, title, abstract, annotations, gold_relations = []):
         self.pmid = int(pmid)
         self.title = title
         self.abstract = abstract
 
         self.annotations = sorted(annotations)
-        self.relations = relations # may be empty when not parsing gold
+        self.gold_relations = gold_relations # may be empty when not parsing gold
 
         self.chemicals, self.diseases = self.get_unique_concepts(annotations)
 
+        # split sentences and generate sentence-bound relations
         self.sentences = self.split_sentences()
 
         assert self.has_correct_annotations()
+
+        self.poss_relations = self.classify_relations()
+
+        assert len(self.poss_relations["CID"] & self.poss_relations["sentence_non_CID"]) == 0
+        assert len(self.poss_relations["CID"] & self.poss_relations["not_sentence_bound"]) == 0
+        assert len(self.poss_relations["sentence_non_CID"] & self.poss_relations["not_sentence_bound"]) == 0
+
+        assert ((len(self.chemicals) * len(self.diseases))
+            == len(self.poss_relations["CID"] | self.poss_relations["sentence_non_CID"] | self.poss_relations["not_sentence_bound"])
+        )
+
+    def __repr__(self):
+        return ("<{0}>: PMID {1}. {2} annotations, {3} gold relations\n"
+            "{4} unique chemical ids, {5} unique disease ids\n"
+            "{6} sentences".format(self.__class__.__name__,
+            self.pmid, len(self.annotations), len(self.gold_relations),
+            len(self.chemicals), len(self.diseases), len(self.sentences))
+        )
 
     def get_unique_concepts(self, annotations):
         """
@@ -172,6 +255,38 @@ class Paper:
                 res[annotation.stype].add(annotation.uid)
 
         return (res["chemical"], res["disease"])
+
+    def get_all_possible_relations(self):
+        """
+        Returns all possible unique drug-disease combinations
+        as a set for this paper.
+        """
+        return {(drug_id, disease_id) for drug_id in self.chemicals for disease_id in self.diseases}
+
+    def classify_relations(self):
+        """
+        Takes all the possible relations for this abstract and
+        splits them into three mutually exclusive groups:
+            1. CID relations, which are sentence bound
+            2. Non-CID, sentence-bound relations
+            3. Relations which are not sentence bound
+        """
+        all_rels = self.get_all_possible_relations()
+
+        cid_rels = set()
+        sentence_non_cid_rels = set()
+        for sentence in self.sentences:
+            cid_rels |= sentence.poss_relations[True]
+            sentence_non_cid_rels |= sentence.poss_relations[False]
+
+        sentence_non_cid_rels -= cid_rels
+
+        poss_relations = {
+            "CID": cid_rels,
+            "sentence_non_CID": sentence_non_cid_rels,
+            "not_sentence_bound": all_rels - cid_rels - sentence_non_cid_rels
+        }
+        return poss_relations
 
     def split_sentences(self):
         """
@@ -215,13 +330,6 @@ class Paper:
 
         return res
 
-    def get_work_units(self):
-        """
-        Returns all possible unique drug-disease combinations
-        for this paper.
-        """
-        return [(drug_id, disease_id) for drug_id in self.chemicals for disease_id in self.diseases]
-
     def has_correct_annotations(self):
         """
         Checks that the paper's annotations match the
@@ -233,7 +341,7 @@ class Paper:
 
         return True
 
-    def has_relation(self, poss_relation):
+    def has_relation(self, potential_relation):
         """
         Checks if the provided possible Relationship object
         matches any of the gold standard relationships for this
@@ -248,21 +356,29 @@ class Paper:
 
             This solution is slow, but at least it's correct.
         """
-        return poss_relation in self.relations
+        return potential_relation in self.gold_relations
 
-def parse_input(loc, fname, is_gold = True):
+def parse_input(loc, fname, is_gold = True, return_format = "list"):
     """
     Reads a given file and returns a list of Paper
     objects.
     """
-    papers = []
+    assert return_format in ["list", "dict"]
+    if return_format == "list":
+        papers = []
+    else:
+        papers = dict()
+
     counter = 0
     annotations = []
     relations = []
     for i, line in enumerate(read_file(fname, loc)):
         if len(line) == 0:
             # time to create the paper object
-            papers.append(Paper(pmid, title, abstract, annotations, relations))
+            if return_format == "list":
+                papers.append(Paper(pmid, title, abstract, annotations, relations))
+            else:
+                papers[pmid] = Paper(pmid, title, abstract, annotations, relations)
 
             counter = 0
             annotations = []
@@ -276,11 +392,11 @@ def parse_input(loc, fname, is_gold = True):
 
             if counter == 0:
                 assert vals[1] == "t", i+1
-                pmid = vals[0]
+                pmid = int(vals[0])
                 title = vals[2]
             elif counter == 1:
                 assert vals[1] == "a"
-                assert vals[0] == pmid
+                assert int(vals[0]) == pmid
                 abstract = vals[2]
             elif is_gold and len(vals) == 4:
                 assert vals[1] == "CID"
