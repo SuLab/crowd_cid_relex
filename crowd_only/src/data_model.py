@@ -1,14 +1,17 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-07-22
+# Last updated: 2015-07-29
 """
-Data models for BioCreative V.
+Data models for BioCreative V task 3.
 
-In order to make processing of the BioCreative
-gold standard easier, the parsing function loads
-the information as a set of custom objects, which
-makes concept highlighting, concept co-occurence
-determination, and relationship verification easy.
+In order to make processing the BioCreative
+data easier, these data models were created
+in order to simplify the tasks of:
+1. Parsing the gold standard
+2. Concept highlighting
+3. Concept co-occurrence detection
+4. Relationship verification
+5. Work unit generation
 """
 from collections import defaultdict
 
