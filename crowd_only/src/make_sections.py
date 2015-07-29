@@ -11,17 +11,22 @@ API to determine what the section names were,
 but now the section names have been cached instead.
 """
 from file_util import read_file
+from collections import defaultdict
 
 def create_sections(abstract):
-    # read the list of section names
     fname = "data/all_uniq_section_names.txt"
     all_section_names = [line for line in read_file(fname)]
 
-    positions = [len(abstract)]
+    earliest_idx = defaultdict(set)
     for heading in all_section_names:
-        idx = abstract.find("{0}:".format(heading))
-        if idx != -1:
-            positions.append(idx)
+        start = abstract.find("{0}:".format(heading))
+        if start != -1:
+            stop = start + len(heading)
+            earliest_idx[stop].add(start)
+
+    positions = [len(abstract)]
+    for end_pos, starts in earliest_idx.items():
+        positions.append(min(starts))
 
     if len(positions) == 1:
         return abstract
