@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-07-29
+# Last updated: 2015-07-30
 """
 Data models for BioCreative V task 3.
 
@@ -39,8 +39,8 @@ class Annotation:
         self.text = text
         self.start = int(start)
         self.stop = int(stop)
-        assert self.start < self.stop, "Annotation indicies reversed!"
-        assert len(text) == self.stop - self.start, "Annotation length mismatch!"
+        assert self.start < self.stop, "Annotation {0} indicies reversed!".format(self.uid)
+        assert len(text) == self.stop - self.start, "Annotation {0} length mismatch!".format(self.uid)
 
     def __repr__(self):
         return "<{0}>: '{1}'({2}) {3}-{4}".format(self.__class__.__name__,
@@ -71,8 +71,8 @@ class Sentence:
         self.text = text
         self.start = int(start)
         self.stop = int(stop)
-        assert self.start < self.stop
-        assert len(text) == self.stop - self.start
+        assert self.start < self.stop, "Sentence {0} indicies reversed!".format(self.uid)
+        assert len(text) == self.stop - self.start, "Sentence {0} length mismatch!".format(self.uid)
 
         # a list of the concept annotations within this sentence
         self.annotations = annotations
@@ -126,29 +126,40 @@ class Sentence:
         larger non-CID set.
         """
         all_relations[False] -= all_relations[True]
+        assert len(all_relations[False] & all_relations[True]) == 0
         return all_relations
 
 class Relation:
     """
     A single chemical-induced disease relationship.
+    Used to compare identifier pairs against the gold.
     """
-    def __init__(self, drug_id, disease_id):
-        assert drug_id != "-1" and disease_id != "-1"
-        assert is_MeSH_id(drug_id), "Relation chemical has an improper id!"
+    def __init__(self, pmid, chemical_id, disease_id):
+        self.pmid = int(pmid)
+        self.uid = "{0}:{1}-{2}".format(pmid, chemical_id, disease_id)
+
+        assert (chemical_id != "-1" and disease_id != "-1",
+            "Relation {0} has bad ids.".format(self.uid)
+        )
+        assert (is_MeSH_id(chemical_id),
+            "Relation {0} has bad chemical id.".format(self.uid)
+        )
 
         # disease ids can be complex ones joined together
         # represent the disease ids as a set
         disease_id = set(disease_id.split('|'))
 
         for uid in disease_id:
-            assert is_MeSH_id(uid)
+            assert (is_MeSH_id(uid),
+                "Relation {0} has bad disease id.".format(self.uid)
+            )
 
-        self.drug_id = drug_id
+        self.chemical_id = chemical_id
         self.disease_id = disease_id
 
     def __eq__(self, other):
         """
-        Equal if the drug ids match exactly and
+        Equal if the chemical ids match exactly and
         at least one of the disease ids are shared
         between the two relations.
 
@@ -162,13 +173,9 @@ class Relation:
             three objects A, B, and C, then if
                 A == B and B == C, then
                 A == C IS NOT TRUE!!
-
-            This is annoying, but the BioCreative data
-            is structured badly, so there's nothing
-            I can do...
         """
         if isinstance(other, self.__class__):
-            return (self.drug_id == other.drug_id
+            return (self.chemical_id == other.chemical_id
                 and len(self.disease_id & other.disease_id) > 0)
 
         return False
@@ -177,8 +184,8 @@ class Relation:
         return not self.__eq__(other)
 
     def __repr__(self):
-        return "<{0}>: {1}->{2}".format(
-            self.__class__.__name__, self.drug_id, self.disease_id)
+        return "<{0}>: {1}".format(
+            self.__class__.__name__, self.uid)
 
 class Paper:
     """
@@ -215,24 +222,15 @@ class Paper:
         self.abstract = abstract
 
         self.annotations = sorted(annotations)
+        assert self.has_correct_annotations()
+
         self.gold_relations = gold_relations # may be empty when not parsing gold
 
-        self.chemicals, self.diseases = self.get_unique_concepts(annotations)
+        self.chemicals, self.diseases = self.get_unique_concepts()
 
         # split sentences and generate sentence-bound relations
         self.sentences = self.split_sentences()
-
-        assert self.has_correct_annotations()
-
         self.poss_relations = self.classify_relations()
-
-        assert len(self.poss_relations["CID"] & self.poss_relations["sentence_non_CID"]) == 0
-        assert len(self.poss_relations["CID"] & self.poss_relations["not_sentence_bound"]) == 0
-        assert len(self.poss_relations["sentence_non_CID"] & self.poss_relations["not_sentence_bound"]) == 0
-
-        assert ((len(self.chemicals) * len(self.diseases))
-            == len(self.poss_relations["CID"] | self.poss_relations["sentence_non_CID"] | self.poss_relations["not_sentence_bound"])
-        )
 
     def __repr__(self):
         return ("<{0}>: PMID {1}. {2} annotations, {3} gold relations\n"
@@ -242,7 +240,20 @@ class Paper:
             len(self.chemicals), len(self.diseases), len(self.sentences))
         )
 
-    def get_unique_concepts(self, annotations):
+    def has_correct_annotations(self):
+        """
+        Checks that the paper's annotations match the
+        stated positions in the text.
+        """
+        text = "{0} {1}".format(self.title, self.abstract)
+        for annotation in self.annotations:
+            assert (text[annotation.start : annotation.stop] == annotation.text,
+                "Annotation {0} in PMID {1} does not match the text.".format(annotation, self.pmid)
+            )
+
+        return True
+
+    def get_unique_concepts(self):
         """
         Determines the unique identifiers of chemicals and diseases
         belonging to this paper.
@@ -250,7 +261,7 @@ class Paper:
         Ignores any annotations with an identifier of -1.
         """
         res = defaultdict(set)
-        for annotation in annotations:
+        for annotation in self.annotations:
             if annotation.uid != "-1":
                 res[annotation.stype].add(annotation.uid)
 
@@ -261,32 +272,7 @@ class Paper:
         Returns all possible unique drug-disease combinations
         as a set for this paper.
         """
-        return {(drug_id, disease_id) for drug_id in self.chemicals for disease_id in self.diseases}
-
-    def classify_relations(self):
-        """
-        Takes all the possible relations for this abstract and
-        splits them into three mutually exclusive groups:
-            1. CID relations, which are sentence bound
-            2. Non-CID, sentence-bound relations
-            3. Relations which are not sentence bound
-        """
-        all_rels = self.get_all_possible_relations()
-
-        cid_rels = set()
-        sentence_non_cid_rels = set()
-        for sentence in self.sentences:
-            cid_rels |= sentence.poss_relations[True]
-            sentence_non_cid_rels |= sentence.poss_relations[False]
-
-        sentence_non_cid_rels -= cid_rels
-
-        poss_relations = {
-            "CID": cid_rels,
-            "sentence_non_CID": sentence_non_cid_rels,
-            "not_sentence_bound": all_rels - cid_rels - sentence_non_cid_rels
-        }
-        return poss_relations
+        return {(chemical_id, disease_id) for chemical_id in self.chemicals for disease_id in self.diseases}
 
     def split_sentences(self):
         """
@@ -306,19 +292,20 @@ class Paper:
         annot_idx = 0 # index of annotation that is within current sentence
 
         res = []
+        M = len(self.annotations)
         for i, sentence in enumerate(all_sentences):
             # The sentence splitter isn't perfect. It recognizes "i.v." as a
             # sentence. Since there can be multiple instances of "sentences"
             # like "i.v." (e.g., PMID 10840460), we need to make sure that
             # we are checking for the first instance starting at the current
             # position (since find always finds the first instance otherwise).
-            assert full_text.find(sentence, sent_idx) == sent_idx, "pmid {0} '{1}'".format(
-                self.pmid, sentence)
+            assert full_text.find(sentence, sent_idx) == sent_idx,
+                "PMID {0} sentence '{1}' does not match text!".format(self.pmid, sentence)
+            )
 
             sent_stop = sent_idx + len(sentence)
 
             start_annot = annot_idx
-            M = len(self.annotations)
             while annot_idx < M and self.annotations[annot_idx].stop <= sent_stop:
                 annot_idx += 1
 
@@ -330,16 +317,40 @@ class Paper:
 
         return res
 
-    def has_correct_annotations(self):
+    def classify_relations(self):
         """
-        Checks that the paper's annotations match the
-        stated positions in the text.
+        Takes all the possible relations for this abstract and
+        splits them into three mutually exclusive groups:
+            1. CID relations, which are sentence bound
+            2. Non-CID, sentence-bound relations
+            3. Relations which are not sentence bound
         """
-        text = "{0} {1}".format(self.title, self.abstract)
-        for annotation in self.annotations:
-            assert text[annotation.start : annotation.stop] == annotation.text
+        all_rels = self.get_all_possible_relations()
 
-        return True
+        cid_rels = set()
+        sentence_non_cid_rels = set()
+        for sentence in self.sentences:
+            cid_rels |= sentence.poss_relations[True]
+            sentence_non_cid_rels |= sentence.poss_relations[False]
+
+        sentence_non_cid_rels -= cid_rels
+
+        not_sent_bound_rels = all_rels - cid_rels - sentence_non_cid_rels
+
+        assert cid_rels.isdisjoint(sentence_non_cid_rels)
+        assert cid_rels.isdisjoint(not_sent_bound_rels)
+        assert not_sent_bound_rels.isdisjoint(sentence_non_cid_rels)
+
+        assert (len(self.chemicals) * len(self.diseases)
+            == len(cid_rels | sentence_non_cid_rels | not_sent_bound_rels)
+        )
+
+        poss_relations = {
+            "CID": cid_rels,
+            "sentence_non_CID": sentence_non_cid_rels,
+            "not_sentence_bound": not_sent_bound_rels
+        }
+        return poss_relations
 
     def has_relation(self, potential_relation):
         """
