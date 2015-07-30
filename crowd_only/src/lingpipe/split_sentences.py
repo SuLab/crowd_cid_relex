@@ -1,6 +1,7 @@
 """
 Tong Shu Li
-2015-07-02
+First written 2015-07-02
+Last updated 2015-07-30
 
 Given a string representing an abstract,
 splits it into sentences using LingPipe.
@@ -8,8 +9,6 @@ splits it into sentences using LingPipe.
 import os
 import subprocess
 
-import sys
-sys.path.append("/home/toby/Code/util/")
 from file_util import read_file
 
 def split_abstract(abstract):
