@@ -15,7 +15,7 @@ in order to simplify the tasks of:
 """
 from collections import defaultdict
 
-from file_util import read_file
+from lingpipe.file_util import read_file
 from lingpipe.split_sentences import split_abstract
 
 def is_MeSH_id(uid):
@@ -126,7 +126,7 @@ class Sentence:
         larger non-CID set.
         """
         all_relations[False] -= all_relations[True]
-        assert len(all_relations[False] & all_relations[True]) == 0
+        assert all_relations[False].isdisjoint(all_relations[True])
         return all_relations
 
 class Relation:
@@ -138,21 +138,15 @@ class Relation:
         self.pmid = int(pmid)
         self.uid = "{0}:{1}-{2}".format(pmid, chemical_id, disease_id)
 
-        assert (chemical_id != "-1" and disease_id != "-1",
-            "Relation {0} has bad ids.".format(self.uid)
-        )
-        assert (is_MeSH_id(chemical_id),
-            "Relation {0} has bad chemical id.".format(self.uid)
-        )
+        assert chemical_id != "-1" and disease_id != "-1", "Relation {0} has bad ids.".format(self.uid)
+        assert is_MeSH_id(chemical_id), "Relation {0} has bad chemical id.".format(self.uid)
 
         # disease ids can be complex ones joined together
         # represent the disease ids as a set
         disease_id = set(disease_id.split('|'))
 
         for uid in disease_id:
-            assert (is_MeSH_id(uid),
-                "Relation {0} has bad disease id.".format(self.uid)
-            )
+            assert is_MeSH_id(uid), "Relation {0} has bad disease id.".format(self.uid)
 
         self.chemical_id = chemical_id
         self.disease_id = disease_id
@@ -247,9 +241,8 @@ class Paper:
         """
         text = "{0} {1}".format(self.title, self.abstract)
         for annotation in self.annotations:
-            assert (text[annotation.start : annotation.stop] == annotation.text,
-                "Annotation {0} in PMID {1} does not match the text.".format(annotation, self.pmid)
-            )
+            assert text[annotation.start : annotation.stop] == annotation.text, (
+                "Annotation {0} in PMID {1} does not match the text.".format(annotation, self.pmid))
 
         return True
 
@@ -299,9 +292,8 @@ class Paper:
             # like "i.v." (e.g., PMID 10840460), we need to make sure that
             # we are checking for the first instance starting at the current
             # position (since find always finds the first instance otherwise).
-            assert full_text.find(sentence, sent_idx) == sent_idx,
-                "PMID {0} sentence '{1}' does not match text!".format(self.pmid, sentence)
-            )
+            assert full_text.find(sentence, sent_idx) == sent_idx, (
+                "PMID {0} sentence '{1}' does not match text!".format(self.pmid, sentence))
 
             sent_stop = sent_idx + len(sentence)
 
@@ -342,8 +334,7 @@ class Paper:
         assert not_sent_bound_rels.isdisjoint(sentence_non_cid_rels)
 
         assert (len(self.chemicals) * len(self.diseases)
-            == len(cid_rels | sentence_non_cid_rels | not_sent_bound_rels)
-        )
+            == len(cid_rels | sentence_non_cid_rels | not_sent_bound_rels))
 
         poss_relations = {
             "CID": cid_rels,
@@ -411,7 +402,7 @@ def parse_input(loc, fname, is_gold = True, return_format = "list"):
                 abstract = vals[2]
             elif is_gold and len(vals) == 4:
                 assert vals[1] == "CID"
-                relations.append(Relation(vals[2], vals[3]))
+                relations.append(Relation(pmid, vals[2], vals[3]))
             else:
                 assert 6 <= len(vals) <= 7
                 annotations.append(Annotation(vals[5], vals[4], vals[3], vals[1], vals[2]))
