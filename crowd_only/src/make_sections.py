@@ -1,6 +1,6 @@
 # Tong Shu Li
 # Created on Wednesday 2015-07-22
-# Last updated 2015-07-22
+# Last updated 2015-07-30
 """
 This program takes the highlighted abstract and
 splits it into sections based on the headings
@@ -10,7 +10,7 @@ Previously this was done by querying the PubMed
 API to determine what the section names were,
 but now the section names have been cached instead.
 """
-from file_util import read_file
+from lingpipe.file_util import read_file
 from collections import defaultdict
 
 def create_sections(abstract):
