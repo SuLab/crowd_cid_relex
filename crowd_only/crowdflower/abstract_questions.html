@@ -1,11 +1,13 @@
 <!--
 Tong Shu Li
 Created on 2015-07-16
-Last updated 2015-07-20
+Last updated 2015-07-30
 
 Question form for the abstract-level chemical-induced
-disease relationship extraction task. All concept pairs
-do not co-occur in any sentences.
+disease relationship verification task.
+
+One chemical-disease pair per task. All chemical-disease
+identifier pairs do not co-occur within any sentences.
 -->
 
 <h3>Read this section of text:</h3>
@@ -22,26 +24,20 @@ do not co-occur in any sentences.
 
 
 <cml:radios name="verify_relationship" validates="required"
-  label="The text &lt;em&gt;explicitly&lt;/em&gt; says that:">
+  gold="true" label="The text &lt;em&gt;explicitly&lt;/em&gt; says that:">
 
   <cml:radio value="yes_direct"
-    label="{{drug_name}} directly contributes to or causes {{disease_name}}"/>
+    label="{{chemical_name}} directly contributes to or causes {{disease_name}}."/>
 
   <cml:radio value="yes_indirect"
-    label="{{drug_name}} contributes to another disease, and that other disease causes {{disease_name}}"/>
+    label="{{chemical_name}} contributes to another disease, and that other disease causes {{disease_name}}."/>
 
   <cml:radio value="no_relation"
-    label="The text does not say that {{drug_name}} contributes to or causes {{disease_name}}."/>
+    label="The text does not say that {{chemical_name}} contributes to or causes {{disease_name}}."/>
 
-</cml:radios>
+  <cml:radio value="ner_mistake"
+    label="In this context, {{chemical_name}} does not refer to a chemical and/or {{disease_name}} does not refer to a disease."/>
 
-<cml:radios name="worker_confidence" validates="required"
-  label="How confident are you in your answer?">
-
-  <cml:radio value="very_confident" label="Very confident"/>
-  <cml:radio value="confident" label="Confident"/>
-  <cml:radio value="not_too_confident" label="Not too confident"/>
-  <cml:radio value="not_confident" label="Not confident at all"/>
 </cml:radios>
 
 <cml:textarea name="comment_box" label="Leave any comments below: (optional)"/>
