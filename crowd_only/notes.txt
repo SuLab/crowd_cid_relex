@@ -60,3 +60,12 @@ Level 2 contributor, 15 s minimum per page
 23 test questions (all matched the gold standard)
 Job 755704 was completed at 4:50 pm on Thursday, July 23, 2015
 Total cost before bonuses: $39.78
+
+job 758438 was launched at 4:56 pm on Saturday, August 1, 2015
+24 cents/page, 6 rows/page, 5 judgements/row
+Level 2 contributor, 30 s minimum per page
+70% accuracy minimum
+52 test questions (10 from job 754530, 17 new test questions made
+by hand from job 758429's data, and 25 regular work units from
+job 754530)
+
