@@ -1,7 +1,7 @@
 <!--
 Tong Shu Li
 First written 2015-07-06
-Last updated 2015-07-31
+Last updated 2015-08-09
 
 This file contains the instructions for the easy,
 sentence-based chemical-disease relationship verification
@@ -54,10 +54,11 @@ Title: Determine whether a chemical contributes to a disease
 
       <li>
         <div class="ans_choice">
-          In this context, <span class="chemical">[chemical]</span> does not refer to a chemical and/or <span class="disease">[disease]</span> does not refer to a disease.
+          In this context, &quot;<span class="chemical">[chemical]</span>&quot; and/or &quot;<span class="disease">[disease]</span>&quot; represent or are part of other concepts which are not chemicals or diseases.
         </div>
 
-        Select this choice when the highlighted text does not represent a chemical or a disease.
+        Select this choice when there is an error with the text highlighting. If the highlighted text is part of another concept in context, then select this choice. For diseases, the highlighted text does not need to be the most specific (e.g., "cortical <span class="disease">hypoxia</span>" is not a highlighting error).
+
       </li>
     </ul>
   </li>
@@ -120,13 +121,12 @@ Title: Determine whether a chemical contributes to a disease
       During the infusion of aminophylline, the <span class="disease">ventricular fibrillation</span> threshold was reduced by 30 to 40% of the control when pH and partial pressures of oxygen (<span class="chemical">PO2</span>) and carbon dioxide (CO2) were kept within normal limits.
     </div>
 
-    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. The correct choice is:
+    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. "<span class="disease">ventricular fibrillation</span>" is properly highlighted. The correct choice is:
 
     <div class="ans_choice">
-      In this context, <span class="chemical">PO2</span> does not refer to a chemical and/or <span class="disease">ventricular fibrillation</span> does not refer to a disease.
+      In this context, &quot;<span class="chemical">PO2</span>&quot; and/or &quot;<span class="disease">ventricular fibrillation</span>&quot; represent or are part of other concepts which are not chemicals or diseases.
     </div>
   </li>
-
 </ol>
 
 

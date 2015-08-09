@@ -69,3 +69,17 @@ Level 2 contributor, 30 s minimum per page
 by hand from job 758429's data, and 25 regular work units from
 job 754530)
 job 758438 was completed at 9:40 pm on Saturday 2015-08-01 (pacific daylight time)
+Total cost before bonuses: $333.31 USD
+
+job 761291 was launched at 2:54 pm on Sunday, August 9, 2015
+10 cents/page, 5 rows/page, 5 judgements/row
+level 2 contributor, 20 s minimum per page
+70% accuracy minimum
+54 test questions (all newly handmade from 500 abstracts of training data)
+maximum 150 judgements per contributor
+contributor answer distributions must match:
+0 to 50% ner_mistake
+0 to 30% yes_indirect
+5 to 95% no_relation
+0 to 70% yes_direct
+start monitoring at 20 rows
