@@ -43,8 +43,8 @@ class Annotation:
         assert len(text) == self.stop - self.start, "Annotation {0} length mismatch!".format(self.uid)
 
     def __repr__(self):
-        return "<{0}>: '{1}'({2}) {3}-{4}".format(self.__class__.__name__,
-            self.text, self.stype, self.start, self.stop)
+        return "<{0}>: '{1}'({2}:{3}) {4}-{5}".format(self.__class__.__name__,
+            self.text, self.stype, self.uid, self.start, self.stop)
 
     def __cmp__(self, other):
         """
