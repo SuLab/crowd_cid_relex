@@ -1949,7 +1949,7 @@
 20722491	615	627	capecitabine	Chemical	C110904
 20722491	663	675	Capecitabine	Chemical	C110904
 20722491	698	702	5-FU	Chemical	D005472
-20722491	913	998	colorectal, breast, pancreaticobiliary, gastric, renal cell and head and neck cancers	Disease	D015179|D001943|D010190|D013274|DD002292|D006258	colorectal cancers|breast cancers|pancreaticobiliary cancers|gastric cancers|renal cell cancers|head and neck cancers
+20722491	913	998	colorectal, breast, pancreaticobiliary, gastric, renal cell and head and neck cancers	Disease	D015179|D001943|D010190|D013274|D002292|D006258	colorectal cancers|breast cancers|pancreaticobiliary cancers|gastric cancers|renal cell cancers|head and neck cancers
 20722491	1044	1056	capecitabine	Chemical	C110904
 20722491	1061	1069	diarrhea	Disease	D003967
 20722491	1071	1077	nausea	Disease	D009325
@@ -2624,17 +2624,17 @@
 8092427	388	399	amoxicillin	Chemical	D000658
 8092427	401	403	AX	Chemical	D000658
 8092427	439	449	penicillin	Chemical	D010406
-8092427	494	525	benzylpenicilloyl-poly-L-lysine	Chemical	CHEBI:59297
-8092427	527	534	BPO-PLL	Chemical	CHEBI:59297
-8092427	537	555	benzylpenicilloate	Chemical	CHEBI:63418
+8092427	494	525	benzylpenicilloyl-poly-L-lysine	Chemical	-1
+8092427	527	534	BPO-PLL	Chemical	-1
+8092427	537	555	benzylpenicilloate	Chemical	-1
 8092427	557	573	benzylpenicillin	Chemical	D010400
 8092427	575	577	PG	Chemical	D010400
 8092427	580	590	ampicillin	Chemical	D000667
 8092427	592	595	AMP	Chemical	D000667
 8092427	602	604	AX	Chemical	D000658
-8092427	615	622	BPO-PLL	Chemical	CHEBI:59297
+8092427	615	622	BPO-PLL	Chemical	-1
 8092427	627	629	AX	Chemical	D000658
-8092427	677	680	BPO	Chemical	CHEBI:53702
+8092427	677	680	BPO	Chemical	-1
 8092427	778	780	PG	Chemical	D010400
 8092427	799	801	AX	Chemical	D000658
 8092427	845	853	allergic	Disease	D004342
@@ -2645,14 +2645,14 @@
 8092427	966	977	Anaphylaxis	Disease	D000707
 8092427	1035	1044	urticaria	Disease	D014581
 8092427	1052	1062	angioedema	Disease	D000799
-8092427	1108	1111	BPO	Chemical	CHEBI:53702
+8092427	1108	1111	BPO	Chemical	-1
 8092427	1150	1153	MDM	Disease	D007645
 8092427	1177	1179	PG	Chemical	D010400
 8092427	1197	1199	AX	Chemical	D000658
 8092427	1258	1260	AX	Chemical	D000658
-8092427	1289	1292	BPO	Chemical	CHEBI:53702
+8092427	1289	1292	BPO	Chemical	-1
 8092427	1349	1351	AX	Chemical	D000658
-8092427	1369	1372	BPO	Chemical	CHEBI:53702
+8092427	1369	1372	BPO	Chemical	-1
 8092427	1395	1397	AX	Chemical	D000658
 8092427	1474	1491	allergic reaction	Disease	D004342
 8092427	1495	1497	AX	Chemical	D000658
@@ -3223,7 +3223,6 @@
 12198388	506	513	alcohol	Chemical	D000431
 12198388	571	578	ethanol	Chemical	D000431
 12198388	660	667	alcohol	Chemical	D000431
-12198388	668	670	na	Chemical	D012964
 12198388	686	693	Seizure	Disease	D012640
 12198388	758	766	nicotine	Chemical	D009538
 12198388	768	777	carbachol	Chemical	D002217
@@ -8341,7 +8340,6 @@
 424937	CID	D008750	D007565
 424937	CID	D008750	D056486
 424937	CID	D008750	D000855
-424937	CID	D008750	D056486
 
 8643971|t|A phase I/II study of paclitaxel plus cisplatin as first-line therapy for head and neck cancers: preliminary results.
 8643971|a|Improved outcomes among patients with head and neck carcinomas require investigations of new drugs for induction therapy. Preliminary results of an Eastern Cooperative Oncology Group study of single-agent paclitaxel (Taxol; Bristol-Myers Squibb Company, Princeton, NJ) reported a 37% response rate in patients with head and neck cancer, and the paclitaxel/cisplatin combination has been used successfully and has significantly improved median response duration in ovarian cancer patients. We initiated a phase I/II trial to determine the response and toxicity of escalating paclitaxel doses combined with fixed-dose cisplatin with granulocyte colony-stimulating factor support in patients with untreated locally advanced inoperable head and neck carcinoma. To date, 23 men with a median age of 50 years and good performance status have entered the trial. Primary tumor sites were oropharynx, 10 patients; hypopharynx, four; larynx, two; oral cavity, three; unknown primary, two; and nasal cavity and parotid gland, one each. Of 20 patients evaluable for toxicity, four had stage III and 16 had stage IV disease. Treatment, given every 21 days for a maximum of three cycles, consisted of paclitaxel by 3-hour infusion followed the next day by a fixed dose of cisplatin (75 mg/m2). The dose levels incorporate escalating paclitaxel doses, and intrapatient escalations within a given dose level are permitted if toxicity permits. At the time of this writing, dose level 4 (260, 270, and 280 mg/m2) is being evaluated; three patients from this level are evaluable. With paclitaxel doses of 200 mg/m2 and higher, granulocyte colony-stimulating factor 5 micrograms/kg/d is given (days 4 through 12). Of 18 patients evaluable for response, seven (39%) achieved a complete response and six (33%) achieved a partial response. Three patients had no change and disease progressed in two. The overall response rate is 72%. Eleven responding patients had subsequent surgery/radiotherapy or radical radiotherapy. Two pathologic complete responses were observed in patients who had achieved clinical complete responses. Alopecia, paresthesias, and arthralgias/myalgias have occurred frequently, but with one exception (a grade 3 myalgia) they have been grade 1 or 2. No dose-limiting hematologic toxicity has been seen. Paclitaxel/cisplatin is an effective first-line regimen for locoregionally advanced head and neck cancer and continued study is warranted. Results thus far suggest no dose-response effect for paclitaxel doses above 200 mg/m2.

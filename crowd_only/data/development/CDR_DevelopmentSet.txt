@@ -2300,7 +2300,6 @@
 3670965	1267	1278	salicylates	Chemical	D012459
 3670965	1282	1289	aspirin	Chemical	D001241
 3670965	CID	D001241	D012202
-3670965	CID	D000082	D008107
 
 3300918|t|St. Anthony's fire, then and now: a case report and historical review.
 3300918|a|A rare case of morbid vasospasm, together with striking angiographic findings, is described secondary to the ingestion of methysergide by a 48-year-old woman. A brief review of the literature on similar cases is presented. A discussion of the history of ergot includes its original discovery, the epidemics of gangrene that it has caused through the ages and its past and present role in the management of migraine headache. Despite the advent of calcium channel blockers and beta-adrenergic antagonists, ergot preparations continue to play a major role in migraine therapy, so that the danger of St. Anthony's fire persists.
@@ -8347,7 +8346,6 @@
 2528969	CID	D015215	D009325
 2528969	CID	D015215	D005221
 2528969	CID	D015215	D006261
-2528969	CID	D015215	D006402
 
 384871|t|Bilateral optic neuropathy due to combined ethambutol and isoniazid treatment.
 384871|a|The case of a 40-year-old patient who underwent an unsuccessful cadaver kidney transplantation and was treated with ethambutol and isoniazid is reported. A bilateral retrobulbar neuropathy with an unusual central bitemporal hemianopic scotoma was found. Ethambutol was stopped and only small improvement of the visual acuity followed. Isoniazid was discontinued later, followed by a dramatic improvement in the visual acuity. The hazards of optic nerve toxicity due to ethambutol are known. We emphasize the potential danger in the use of ethambutol and isoniazid.
@@ -9833,7 +9831,7 @@
 2598570	769	775	asthma	Disease	D001249
 2598570	986	993	alcohol	Chemical	D000431
 2598570	1143	1152	ibuprofen	Chemical	D007052
-2598570	1167	1180	renal disease	Disease	D052177
+2598570	1167	1180	renal disease	Disease	D007674
 2598570	1195	1208	kidney stones	Disease	D007669
 2598570	1223	1227	gout	Disease	D006073
 2598570	1543	1552	uric acid	Chemical	D014527
@@ -11395,7 +11393,7 @@
 2343592	114	140	cerebral vascular accident	Disease	D020521
 2343592	142	145	CVA	Disease	D020521
 2343592	150	161	head trauma	Disease	D006259
-2343592	181	194	renal disease	Disease	D052177
+2343592	181	194	renal disease	Disease	D007674
 2343592	205	213	seizures	Disease	D012640
 2343592	247	266	imipenem/cilastatin	Chemical	C044650
 2343592	306	314	seizures	Disease	D012640
@@ -12101,5 +12099,5 @@
 803783	806	814	oxytocin	Chemical	D010121
 803783	915	923	oxytocin	Chemical	D010121
 803783	1017	1025	oxytocin	Chemical	D010121
-803783	CID	D012965	D014869
+803783	CID	D010121	D014869
 
