@@ -1,7 +1,7 @@
 <!--
 Tong Shu Li
 First written 2015-07-06
-Last updated 2015-08-12
+Last updated 2015-08-13
 
 This file contains the instructions for the easy,
 sentence-based chemical-disease relationship verification
@@ -41,7 +41,7 @@ Title: Determine whether a sentence says a chemical contributes to a disease
           <span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>.
         </div>
 
-        Select this choice when the highlighted chemical causes another disease, and the other disease causes the highlighted disease. Choose this when the sentence uses a format like: <span class="chemical">[chemical]</span>-induced [other disease] caused <span class="disease">[disease]</span>.
+        Select this choice only when the sentence has a format like: "<span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>".
       </li>
 
       <li>
@@ -88,7 +88,7 @@ Title: Determine whether a sentence says a chemical contributes to a disease
       <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
     </div>
 
-    The sentence says that <span class="disease">heart attacks</span> were caused by artherosclerosis (plaque buildup in arteries). Since this sentence follows the <span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span> structure, the correct choice is:
+    The sentence says that <span class="disease">heart attacks</span> were caused by artherosclerosis (plaque buildup in arteries). Since this sentence follows the "<span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>" structure, the correct choice is:
 
     <div class="ans_choice">
       <span class="chemical">barbatimol</span>-induced [other disease] causes <span class="disease">heart attacks</span>.
