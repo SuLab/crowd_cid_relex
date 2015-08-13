@@ -1,7 +1,7 @@
 <!--
 Tong Shu Li
 First written 2015-07-06
-Last updated 2015-08-09
+Last updated 2015-08-12
 
 This file contains the instructions for the easy,
 sentence-based chemical-disease relationship verification
@@ -9,13 +9,13 @@ task for BioCreative V.
 
 All chemical-disease pairs co-occur in the same sentence.
 If one abstract contains multiple sentences where the pair
-co-occur, then all sentences are shown as individual tasks.
+co-occur, then each sentence is shown as a separate task.
 -->
 
-Title: Determine whether a chemical contributes to a disease
+Title: Determine whether a sentence says a chemical contributes to a disease
 
 <h3>Overview</h3>
-<p>Doctors need to know whether a chemical (such as Aspirin) can potentially cause any diseases before they can give it to people. In this task, you will determine whether a sentence says a chemical contributes to a disease.</p>
+<p>Doctors need to know whether a chemical (such as Aspirin) causes any side effects before they can give it to people. In this task, you will determine whether a sentence says a chemical contributes to or causes a disease.</p>
 
 
 <h3>The Task</h3>
@@ -25,23 +25,23 @@ Title: Determine whether a chemical contributes to a disease
   </li>
 
   <li>
-    Read the sentence and determine whether it says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the four possible choices:
+    Read the sentence and determine whether it says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the three possible choices:
 
     <ul>
       <li>
         <div class="ans_choice">
-          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span>.<br>
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span>.
         </div>
 
-        Select this choice when the sentence says that the chemical (by itself or with other chemicals) directly contributes to or causes the highlighted disease.
+        Select this choice when the sentence says that the chemical (by itself or together with other chemicals) directly contributes to or causes the highlighted disease.
       </li>
 
       <li>
         <div class="ans_choice">
-          <span class="chemical">[chemical]</span> contributes to another disease, and that other disease causes <span class="disease">[disease]</span>.<br>
+          <span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>.
         </div>
 
-        Select this choice when the chemical does not cause the disease directly, but rather the chemical causes another disease, and that other disease causes the highlighted disease.
+        Select this choice when the highlighted chemical causes another disease, and the other disease causes the highlighted disease. Choose this when the sentence uses a format like: <span class="chemical">[chemical]</span>-induced [other disease] caused <span class="disease">[disease]</span>.
       </li>
 
       <li>
@@ -52,14 +52,6 @@ Title: Determine whether a chemical contributes to a disease
         Select this choice when the sentence does not say that the chemical contributes to the disease.
       </li>
 
-      <li>
-        <div class="ans_choice">
-          In this context, &quot;<span class="chemical">[chemical]</span>&quot; and/or &quot;<span class="disease">[disease]</span>&quot; represent or are part of other concepts which are not chemicals or diseases.
-        </div>
-
-        Select this choice when there is an error with the text highlighting. If the highlighted text is part of another concept in context, then select this choice. For diseases, the highlighted text does not need to be the most specific (e.g., "cortical <span class="disease">hypoxia</span>" is not a highlighting error).
-
-      </li>
     </ul>
   </li>
 </ol>
@@ -81,16 +73,14 @@ Title: Determine whether a chemical contributes to a disease
 
   <li>
     <div class="example">
-      Some of the patients, especially those over 50 years old, complained of experiencing <span class="disease">chest aches</span> and lower back pain two hours after taking adalamin and <span class="chemical">maximidin</span>.
+      Recent studies found that adalamin and <span class="chemical">maximidin</span>, only when taken together, cause <span class="disease">chest aches</span>, but do not cause <span class="disease">chest aches</span> when taken separately.
     </div>
 
-    Some of the patients developed <span class="disease">chest aches</span> after taking two drugs: adalamin and <span class="chemical">maximidin</span>. Since the sentence doesn't say that the <span class="disease">chest aches</span> arose due to the lower back pain, the correct choice is:
+    When a chemical only causes the disease when taken in combination with other chemicals, the correct choice is still that the chemical causes the disease. Here <span class="chemical">maximidin</span> is working together with adalamin to cause <span class="disease">chest aches</span>. The correct choice is:
 
     <div class="ans_choice">
       <span class="chemical">maximidin</span> directly contributes to or causes <span class="disease">chest aches</span>.
     </div>
-
-    Remember that if a chemical is working in combination with another chemical, then you should choose that it is contributing to the disease!
   </li>
 
   <li>
@@ -98,10 +88,10 @@ Title: Determine whether a chemical contributes to a disease
       <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
     </div>
 
-    Artherosclerosis (plaque buildup in arteries) causes <span class="disease">heart attacks</span> by restricting blood flow. Since <span class="chemical">barbatimol</span> is inducing (causing) artherosclerosis, it is not directly contributing to <span class="disease">heart attacks</span>, but is still playing some role. Therefore the correct choice is:
+    The sentence says that <span class="disease">heart attacks</span> were caused by artherosclerosis (plaque buildup in arteries). Since this sentence follows the <span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span> structure, the correct choice is:
 
     <div class="ans_choice">
-      <span class="chemical">barbatimol</span> contributes to another disease, and that other disease causes <span class="disease">heart attacks</span>.
+      <span class="chemical">barbatimol</span>-induced [other disease] causes <span class="disease">heart attacks</span>.
     </div>
   </li>
 
@@ -121,10 +111,10 @@ Title: Determine whether a chemical contributes to a disease
       During the infusion of aminophylline, the <span class="disease">ventricular fibrillation</span> threshold was reduced by 30 to 40% of the control when pH and partial pressures of oxygen (<span class="chemical">PO2</span>) and carbon dioxide (CO2) were kept within normal limits.
     </div>
 
-    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. "<span class="disease">ventricular fibrillation</span>" is properly highlighted. The correct choice is:
+    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. The correct choice is:
 
     <div class="ans_choice">
-      In this context, &quot;<span class="chemical">PO2</span>&quot; and/or &quot;<span class="disease">ventricular fibrillation</span>&quot; represent or are part of other concepts which are not chemicals or diseases.
+      The sentence does not say that <span class="chemical">PO2</span> contributes to or causes <span class="disease">ventricular fibrillation</span>.
     </div>
   </li>
 </ol>
