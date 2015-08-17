@@ -248,8 +248,8 @@ class Relation:
                 A == C IS NOT TRUE!!
         """
         if isinstance(other, self.__class__):
-            return not(self.chemical_id.isdisjoint(other.chemical_id)
-                or self.disease_id.isdisjoint(other.disease_id))
+            return (len(self.chemical_id & other.chemical_id) > 0
+                and len(self.disease_id & other.disease_id) > 0)
 
         return False
 
