@@ -210,19 +210,25 @@ class Relation:
     When outputting for the gold, relations should only use one MESH id
     for both chemical and disease, instead of multiple as for the
     annotations.
+
+    All single ontology ids in the frozenset should be MeSH.
     """
     def __init__(self, pmid, chemical_id, disease_id):
         self.pmid = int(pmid)
 
-        self.uid = "PMID {0}:{1}-{2}".format(pmid, chemical_id, disease_id)
-
         chem_ids = map(lambda v: Ontology_ID(v), chemical_id.split("|"))
         dise_ids = map(lambda v: Ontology_ID(v), disease_id.split("|"))
 
+        chem_ids = filter(lambda v: v.uid_type == "MESH", chem_ids)
+        dise_ids = filter(lambda v: v.uid_type == "MESH", dise_ids)
+
+        chem_uids = map(lambda v: v.uid, chem_ids)
+        dise_uids = map(lambda v: v.uid, dise_ids)
+
+        self.uid = "PMID {0}:{1}-{2}".format(pmid, "|".join(chem_uids), "|".join(dise_uids))
+
         self.chemical_id = frozenset(chem_ids)
         self.disease_id = frozenset(dise_ids)
-
-        assert self.is_mesh()
 
     def __eq__(self, other):
         """
@@ -253,19 +259,6 @@ class Relation:
     def __repr__(self):
         return "<{0}>: {1}".format(
             self.__class__.__name__, self.uid)
-
-    def is_mesh(self):
-        """
-        Checks that the relation is between MeSH ids.
-        """
-        def has_mesh_id(id_set):
-            for identifier in id_set:
-                if identifier.uid_type == "MESH":
-                    return True
-
-            return False
-
-        return has_mesh_id(self.chemical_id) and has_mesh_id(self.disease_id)
 
 class Paper:
     """
