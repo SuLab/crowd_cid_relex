@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-07-30
+# Last updated: 2015-08-17
 """
 Data models for BioCreative V task 3.
 
@@ -21,17 +21,61 @@ from lingpipe.split_sentences import split_abstract
 def is_MeSH_id(uid):
     return len(uid) == 7 and uid[0] in ["C", "D"]
 
+class Ontology_ID:
+    """
+    A single identifier from an existing ontology.
+    """
+    def __init__(self, text):
+        """
+        Given the raw text representation, splits and
+        formats accordingly.
+        """
+        if ":" in text:
+            vals = text.split(':')
+            assert len(vals) == 2, "ID {0} is misformatted!".format(text)
+            self.uid_type = vals[0]
+            self.uid = vals[1]
+
+            if self.uid_type == "MESH":
+                assert is_MeSH_id(self.uid), "MeSH ID mismatch for {0}".format(text)
+        else:
+            self.uid = text
+            if is_MeSH_id(self.uid):
+                self.uid_type = "MESH"
+            else:
+                self.uid_type = "unknown"
+
+    def __repr__(self):
+        return "<{0}>: {1}:{2}".format(self.__class__.__name__,
+            self.uid_type, self.uid)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.uid_type == other.uid_type and self.uid == other.uid
+
+        return False
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
+    def __hash__(self):
+        return hash("{0}:{1}".format(self.uid_type, self.uid))
+
 class Annotation:
     """
     A single mention of a concept in a piece of text.
     Annotation positions are indexed to the abstract.
     """
     def __init__(self, uid, stype, text, start, stop):
-        if ":" in uid:
-            self.uid_type, self.uid = uid.split(':')
-        else:
-            self.uid_type = "unknown"
-            self.uid = uid
+        uids = map(lambda v: Ontology_ID(v), uid.split("|"))
+
+        self.uid = frozenset(uids)
+        self.is_mesh = self.is_all_mesh()
+
+        # check that if multiple ids, then is mesh for all of them
+        if len(uids) > 1:
+            for identifier in uids:
+                assert identifier.uid_type == "MESH", "{0} {1} {2} {3}".format(uid, stype, text, start)
 
         self.stype = stype.lower()
         assert self.stype in ["chemical", "disease"]
@@ -53,6 +97,18 @@ class Annotation:
         """
         if hasattr(other, "start"):
             return self.start.__cmp__(other.start)
+
+    def is_all_mesh(self):
+        """
+        Checks if the identifiers used for this annotation are all MeSH.
+        Only annotations which use MeSH terms should be checked for
+        CID relations.
+        """
+        for identifier in self.uid:
+            if identifier.uid_type != "MESH":
+                return False
+
+        return True
 
 class Sentence:
     """
@@ -107,12 +163,19 @@ class Sentence:
             2. Those which do not follow the CID structure.
 
         The two sets of identifier pairs are mutually exclusive.
+
+        Only MeSH identifiers will be generated for CID relation
+        verification, since the gold standard will never use any
+        other ontology identifier. This has been confirmed with
+        Zhiyong. Therefore "-1" identifiers can be skipped, as can
+        CHEBI and other ontology identifier types.
         """
         all_relations = defaultdict(set)
         for annot_A in self.annotations:
-            if annot_A.stype == "chemical" and annot_A.uid != "-1":
+            if annot_A.stype == "chemical" and annot_A.is_mesh:
                 for annot_B in self.annotations:
-                    if annot_B.stype == "disease" and annot_B.uid != "-1":
+                    if annot_B.stype == "disease" and annot_B.is_mesh:
+                        # relations between pairs of frozensets
                         rel_type = self.is_CID_relation(annot_A, annot_B)
                         all_relations[rel_type].add((annot_A.uid, annot_B.uid))
 
@@ -133,29 +196,39 @@ class Relation:
     """
     A single chemical-induced disease relationship.
     Used to compare identifier pairs against the gold.
+
+    Relation objects should be created from strings with the following
+    format:
+
+    D123456 or MESH:D123456 or MESH:D123456|MESH:D123456
+
+    Relation identifiers are represented as frozensets of
+    Ontology_ID objects. Two relations are considered equal
+    if the chemical and disease identifier set intersection
+    is at least one.
+
+    When outputting for the gold, relations should only use one MESH id
+    for both chemical and disease, instead of multiple as for the
+    annotations.
     """
     def __init__(self, pmid, chemical_id, disease_id):
         self.pmid = int(pmid)
-        self.uid = "{0}:{1}-{2}".format(pmid, chemical_id, disease_id)
 
-        assert chemical_id != "-1" and disease_id != "-1", "Relation {0} has bad ids.".format(self.uid)
-        assert is_MeSH_id(chemical_id), "Relation {0} has bad chemical id.".format(self.uid)
+        self.uid = "PMID {0}:{1}-{2}".format(pmid, chemical_id, disease_id)
 
-        # disease ids can be complex ones joined together
-        # represent the disease ids as a set
-        disease_id = set(disease_id.split('|'))
+        chem_ids = map(lambda v: Ontology_ID(v), chemical_id.split("|"))
+        dise_ids = map(lambda v: Ontology_ID(v), disease_id.split("|"))
 
-        for uid in disease_id:
-            assert is_MeSH_id(uid), "Relation {0} has bad disease id.".format(self.uid)
+        self.chemical_id = frozenset(chem_ids)
+        self.disease_id = frozenset(dise_ids)
 
-        self.chemical_id = chemical_id
-        self.disease_id = disease_id
+        assert self.is_mesh()
 
     def __eq__(self, other):
         """
-        Equal if the chemical ids match exactly and
-        at least one of the disease ids are shared
-        between the two relations.
+        Equal if the intersection of both the chemical
+        and disease identifier frozensets is at least
+        one element large.
 
         This is because the gold relations only use
         a pair of single MeSH ids, despite the fact
@@ -169,8 +242,8 @@ class Relation:
                 A == C IS NOT TRUE!!
         """
         if isinstance(other, self.__class__):
-            return (self.chemical_id == other.chemical_id
-                and len(self.disease_id & other.disease_id) > 0)
+            return not(self.chemical_id.isdisjoint(other.chemical_id)
+                or self.disease_id.isdisjoint(other.disease_id))
 
         return False
 
@@ -180,6 +253,18 @@ class Relation:
     def __repr__(self):
         return "<{0}>: {1}".format(
             self.__class__.__name__, self.uid)
+
+    def is_mesh(self):
+        """
+        Checks that the relation is between MeSH ids.
+        """
+        for identifier in self.chemical_id:
+            assert identifier.uid_type == "MESH", "Relation {0} has non-MeSH chemical id".format(self.uid)
+
+        for identifier in self.disease_id:
+            assert identifier.uid_type == "MESH", "Relation {0} has non-MeSH disease id".format(self.uid)
+
+        return True
 
 class Paper:
     """
@@ -251,11 +336,11 @@ class Paper:
         Determines the unique identifiers of chemicals and diseases
         belonging to this paper.
 
-        Ignores any annotations with an identifier of -1.
+        Ignores any annotations which are not MeSH identified.
         """
         res = defaultdict(set)
         for annotation in self.annotations:
-            if annotation.uid != "-1":
+            if annotation.is_mesh:
                 res[annotation.stype].add(annotation.uid)
 
         return (res["chemical"], res["disease"])
@@ -404,7 +489,12 @@ def parse_input(loc, fname, is_gold = True, return_format = "list"):
                 assert vals[1] == "CID"
                 relations.append(Relation(pmid, vals[2], vals[3]))
             else:
-                assert 6 <= len(vals) <= 7
+                assert 5 <= len(vals) <= 7, "Error on line {0}".format(i)
+
+                if len(vals) == 5: # output of tmChem, should be "-1" identifier, but is blank
+                    vals.append("-1")
+
+                assert 6 <= len(vals) <= 7, "Error on line {0}".format(i)
                 annotations.append(Annotation(vals[5], vals[4], vals[3], vals[1], vals[2]))
 
             counter += 1
