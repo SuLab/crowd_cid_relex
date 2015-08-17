@@ -70,12 +70,7 @@ class Annotation:
         uids = map(lambda v: Ontology_ID(v), uid.split("|"))
 
         self.uid = frozenset(uids)
-        self.is_mesh = self.is_all_mesh()
-
-        # check that if multiple ids, then is mesh for all of them
-        if len(uids) > 1:
-            for identifier in uids:
-                assert identifier.uid_type == "MESH", "{0} {1} {2} {3}".format(uid, stype, text, start)
+        self.has_mesh = self.has_mesh_id()
 
         self.stype = stype.lower()
         assert self.stype in ["chemical", "disease"]
@@ -98,17 +93,22 @@ class Annotation:
         if hasattr(other, "start"):
             return self.start.__cmp__(other.start)
 
-    def is_all_mesh(self):
+    def has_mesh_id(self):
         """
-        Checks if the identifiers used for this annotation are all MeSH.
-        Only annotations which use MeSH terms should be checked for
-        CID relations.
+        Checks if any of the identifiers used for this annotation are
+        MeSH. Only identifiers which have at least one MeSH component
+        are included in the gold relations.
+
+        E.g., PMID 8638876 (development)
+            The annotation id is "D002544|-1", and two of the gold
+            relations have "D002544" as the disease. No other annotation
+            contains D002544.
         """
         for identifier in self.uid:
-            if identifier.uid_type != "MESH":
-                return False
+            if identifier.uid_type == "MESH":
+                return True
 
-        return True
+        return False
 
 class Sentence:
     """
@@ -172,9 +172,9 @@ class Sentence:
         """
         all_relations = defaultdict(set)
         for annot_A in self.annotations:
-            if annot_A.stype == "chemical" and annot_A.is_mesh:
+            if annot_A.stype == "chemical" and annot_A.has_mesh:
                 for annot_B in self.annotations:
-                    if annot_B.stype == "disease" and annot_B.is_mesh:
+                    if annot_B.stype == "disease" and annot_B.has_mesh:
                         # relations between pairs of frozensets
                         rel_type = self.is_CID_relation(annot_A, annot_B)
                         all_relations[rel_type].add((annot_A.uid, annot_B.uid))
@@ -258,13 +258,14 @@ class Relation:
         """
         Checks that the relation is between MeSH ids.
         """
-        for identifier in self.chemical_id:
-            assert identifier.uid_type == "MESH", "Relation {0} has non-MeSH chemical id".format(self.uid)
+        def has_mesh_id(id_set):
+            for identifier in id_set:
+                if identifier.uid_type == "MESH":
+                    return True
 
-        for identifier in self.disease_id:
-            assert identifier.uid_type == "MESH", "Relation {0} has non-MeSH disease id".format(self.uid)
+            return False
 
-        return True
+        return has_mesh_id(self.chemical_id) and has_mesh_id(self.disease_id)
 
 class Paper:
     """
@@ -340,7 +341,7 @@ class Paper:
         """
         res = defaultdict(set)
         for annotation in self.annotations:
-            if annotation.is_mesh:
+            if annotation.has_mesh:
                 res[annotation.stype].add(annotation.uid)
 
         return (res["chemical"], res["disease"])
