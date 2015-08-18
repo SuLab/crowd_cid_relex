@@ -14,6 +14,7 @@ in order to simplify the tasks of:
 5. Work unit generation
 """
 from collections import defaultdict
+from itertools import islice
 
 from lingpipe.file_util import read_file
 from lingpipe.split_sentences import split_abstract
@@ -44,6 +45,12 @@ class Ontology_ID:
                 self.uid_type = "MESH"
             else:
                 self.uid_type = "unknown"
+
+    def flat_repr(self):
+        """
+        A flat string representation of this ontology ID.
+        """
+        return "{0}:{1}".format(self.uid_type, self.uid)
 
     def __repr__(self):
         return "<{0}>: {1}:{2}".format(self.__class__.__name__,
@@ -80,6 +87,12 @@ class Annotation:
         self.stop = int(stop)
         assert self.start < self.stop, "Annotation {0} indicies reversed!".format(self.uid)
         assert len(text) == self.stop - self.start, "Annotation {0} length mismatch!".format(self.uid)
+
+    def flat_repr(self):
+        """
+        A flat representation for printing.
+        """
+        return "|".join(map(lambda v: v.flat_repr(), self.uid))
 
     def __repr__(self):
         return "<{0}>: '{1}'({2}:{3}) {4}-{5}".format(self.__class__.__name__,
@@ -288,6 +301,7 @@ class Paper:
             The sum of relations in all three groups should
             equal the number of unique chemical IDs times
             the number of unique disease IDs.
+        10. A function for resolving acronyms.
     """
     def __init__(self, pmid, title, abstract, annotations, gold_relations = []):
         self.pmid = int(pmid)
@@ -296,6 +310,7 @@ class Paper:
 
         self.annotations = sorted(annotations)
         assert self.has_correct_annotations()
+        self.resolve_acronyms()
 
         self.gold_relations = gold_relations # may be empty when not parsing gold
 
@@ -324,6 +339,36 @@ class Paper:
                 "Annotation {0} in PMID {1} does not match the text.".format(annotation, self.pmid))
 
         return True
+
+    def resolve_acronyms(self):
+        """
+        This function tries to resolve acronyms.
+        """
+        used = [False] * len(self.annotations)
+        full_text = "{0} {1}".format(self.title, self.abstract)
+
+        # if an abbreviation is included in parentheses, then it should
+        # follow the definition annotation immediately
+        for i, definition in enumerate(self.annotations[ : -1]):
+            if not used[i] and definition.has_mesh:
+                acronym = self.annotations[i + 1]
+
+                if (acronym.stype == definition.stype
+                    and acronym.start == definition.stop + 2
+                    and full_text[acronym.start - 1] == "("
+                    and full_text[acronym.stop] == ")"):
+
+                    # found an acronym definition
+
+                    used[i] = True
+                    for j, annot in enumerate(islice(self.annotations, i + 1, None)):
+                        if (annot.stype == definition.stype
+                            and not used[i + 1 + j]
+                            and not annot.has_mesh
+                            and annot.text == acronym.text):
+
+                            self.annotations[i + 1 + j].uid = definition.uid
+                            used[i + 1 + j] = True
 
     def get_unique_concepts(self):
         """
