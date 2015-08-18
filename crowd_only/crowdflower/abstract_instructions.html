@@ -1,7 +1,7 @@
 <!--
 Tong Shu Li
 Created on 2015-07-16
-Last updated 2015-07-31
+Last updated 2015-08-18
 
 This task is the abstract-level chemical-induced disease
 relation extraction subtask for BioCreative V 3b.
@@ -24,7 +24,7 @@ Title: Determine whether a chemical contributes to a disease
   </li>
 
   <li>
-    Read the text and determine whether the text says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the four possible choices:
+    Read the text and determine whether the text says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the two possible choices:
 
     <ul>
       <li>
@@ -37,26 +37,10 @@ Title: Determine whether a chemical contributes to a disease
 
       <li>
         <div class="ans_choice">
-          <span class="chemical">[chemical]</span> contributes to another disease, and that other disease causes <span class="disease">[disease]</span>.
-        </div>
-
-        Select this choice when the chemical does not cause the disease directly, but rather the chemical causes another disease, and that other disease causes the highlighted disease.
-      </li>
-
-      <li>
-        <div class="ans_choice">
           The text does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.
         </div>
 
         Select this choice when the text does not say that the chemical contributes to the disease.
-      </li>
-
-      <li>
-        <div class="ans_choice">
-          In this context, <span class="chemical">[chemical]</span> does not refer to a chemical and/or <span class="disease">[disease]</span> does not refer to a disease.
-        </div>
-
-        Select this choice when the highlighted text does not represent a chemical or disease.
       </li>
     </ul>
   </li>
@@ -67,6 +51,30 @@ Title: Determine whether a chemical contributes to a disease
 <ol>
   <li>
     <div class="example">
+      <span class="chemical">Feverolinus</span>, a chemotherapy drug derived from mushrooms and used for treating breast cancer, has multiple side effects, including diarrhea, constipation, and <span class="disease">hair loss</span>.
+    </div>
+
+    <span class="chemical">Feverolinus</span> is a chemotherapy drug that has multiple side effects, including <span class="disease">hair loss</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">Feverolinus</span> directly contributes to or causes <span class="disease">hair loss</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Some of the patients, especially those over 50 years old, complained of experiencing <span class="disease">chest aches</span> and lower back pain two hours after taking adalamin and <span class="chemical">maximidin</span>.
+    </div>
+
+    <span class="chemical">Maximidin</span> is working together with the chemical adalamin to cause <span class="disease">chest aches</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">maximidin</span> directly contributes to or causes <span class="disease">chest aches</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
       A cohort of 100 men was given <span class="chemical">tanamycin</span> and monitored for increases in heart rate. The dose of <span class="chemical">convamin</span> was 10 mg/kg. Four hours later, 15% of the men complained of <span class="disease">dizziness</span>.
     </div>
 
@@ -74,18 +82,6 @@ Title: Determine whether a chemical contributes to a disease
 
     <div class="ans_choice">
       <span class="chemical">tanamycin/convamin</span> directly contributes to or causes <span class="disease">dizziness</span>.
-    </div>
-  </li>
-
-  <li>
-    <div class="example">
-      <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
-    </div>
-
-    Artherosclerosis (plaque buildup in arteries) causes <span class="disease">heart attacks</span> by restricting blood flow. Since <span class="chemical">barbatimol</span> is inducing (causing) artherosclerosis, it is not directly contributing to <span class="disease">heart attacks</span>. Therefore the correct choice is:
-
-    <div class="ans_choice">
-      <span class="chemical">barbatimol</span> contributes to another disease, and that other disease causes <span class="disease">heart attacks</span>.
     </div>
   </li>
 
@@ -103,16 +99,38 @@ Title: Determine whether a chemical contributes to a disease
 
   <li>
     <div class="example">
+      The Food and Drug Administration has concluded its review of Pfizer's <span class="chemical">Lipitor</span> and deemed it safe and efficacious for lowering <span class="disease">high cholesterol</span>.
+    </div>
+    The sentence says that <span class="chemical">Lipitor</span> lowers <span class="disease">high cholesterol</span>, which means it is curing the disease. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">Lipitor</span> contributes to or causes <span class="disease">high cholesterol</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      To evaluate the efficacy and safety of <span class="chemical">levofloxacin</span> (500 mg orally once daily for 10 to 14 days) in treating adult outpatients with acute bacterial <span class="disease">sinusitis</span>.
+    </div>
+
+    <span class="chemical">Levofloxacin</span> is being evaluated as a treatment for <span class="disease">sinusitis</span>. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">levofloxacin</span> contributes to or causes <span class="disease">sinusitis</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
       During the infusion of aminophylline, the <span class="disease">ventricular fibrillation</span> threshold was reduced by 30 to 40% of the control when pH and partial pressures of oxygen (<span class="chemical">PO2</span>) and carbon dioxide (CO2) were kept within normal limits.
     </div>
 
     In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. The correct choice is:
 
     <div class="ans_choice">
-      In this context, <span class="chemical">PO2</span> does not refer to a chemical and/or <span class="disease">ventricular fibrillation</span> does not refer to a disease.
+      The text does not say that <span class="chemical">PO2</span> contributes to or causes <span class="disease">ventricular fibrillation</span>.
     </div>
   </li>
-
 </ol>
 
 
