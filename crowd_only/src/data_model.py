@@ -94,6 +94,18 @@ class Annotation:
         """
         return "|".join(map(lambda v: v.flat_repr(), self.uid))
 
+    def update_uid(self, new_uid):
+        """
+        This function updates the unique identifier for this
+        annotation to something else.
+
+        :param new_uid is a frozenset of Ontology_ID objects
+        representing the new unique identifier
+        """
+        assert isinstance(new_uid, frozenset), "New UID {0} is not a frozenset!".format(new_uid)
+        self.uid = new_uid
+        self.has_mesh = self.has_mesh_id()
+
     def __repr__(self):
         return "<{0}>: '{1}'({2}:{3}) {4}-{5}".format(self.__class__.__name__,
             self.text, self.stype, self.uid, self.start, self.stop)
@@ -367,7 +379,7 @@ class Paper:
                             and not annot.has_mesh
                             and annot.text == acronym.text):
 
-                            self.annotations[i + 1 + j].uid = definition.uid
+                            self.annotations[i + 1 + j].update_uid(definition.uid)
                             used[i + 1 + j] = True
 
     def get_unique_concepts(self):
