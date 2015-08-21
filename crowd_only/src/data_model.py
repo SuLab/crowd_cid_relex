@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-08-20
+# Last updated: 2015-08-21
 """Data models for BioCreative V task 3.
 
 These data models were created to simplify the tasks of:
@@ -193,7 +193,7 @@ class Relation:
         chem_ids = [v.flat_repr for v in chem_ids if v.uid_type == "MESH"]
         dise_ids = [v.flat_repr for v in dise_ids if v.uid_type == "MESH"]
 
-        self.uid = "PMID {0}: {1}-{2}".format(pmid, "|".join(chem_uids), "|".join(dise_uids))
+        self.uid = "PMID {0}: {1}-{2}".format(pmid, "|".join(chem_ids), "|".join(dise_ids))
 
         self.chemical_id = frozenset(chem_ids)
         self.disease_id = frozenset(dise_ids)
@@ -249,14 +249,17 @@ class Paper:
             unique chemical IDs times the number of unique disease IDs.
         10. A function for resolving acronyms.
     """
-    def __init__(self, pmid, title, abstract, annotations, gold_relations = []):
+    def __init__(self, pmid, title, abstract, annotations,
+        gold_relations = [], fix_acronyms = False):
+
         self.pmid = int(pmid)
         self.title = title
         self.abstract = abstract
 
         self.annotations = sorted(annotations)
         assert self.has_correct_annotations()
-        self.resolve_acronyms()
+        if fix_acronyms:
+            self.resolve_acronyms()
 
         self.gold_relations = gold_relations # may be empty when not parsing gold
 
@@ -420,7 +423,8 @@ class Paper:
         """
         return potential_relation in self.gold_relations
 
-def parse_input(loc, fname, is_gold = True, return_format = "list"):
+def parse_input(loc, fname, is_gold = True, return_format = "list",
+    fix_acronyms = True):
     """Parse a PubTator formatted file and return a set of Paper objects."""
     assert return_format in ["list", "dict"]
 
@@ -431,7 +435,12 @@ def parse_input(loc, fname, is_gold = True, return_format = "list"):
     for i, line in enumerate(read_file(fname, loc)):
         if len(line) == 0:
             # time to create the paper object
-            papers.append(Paper(pmid, title, abstract, annotations, relations))
+            if is_gold:
+                papers.append(Paper(pmid, title, abstract, annotations,
+                    relations, fix_acronyms = False))
+            else:
+                papers.append(Paper(pmid, title, abstract, annotations,
+                    [], fix_acronyms = fix_acronyms))
 
             counter = 0
             annotations = []
