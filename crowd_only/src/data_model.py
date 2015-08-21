@@ -1,41 +1,30 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-08-17
-"""
-Data models for BioCreative V task 3.
+# Last updated: 2015-08-20
+"""Data models for BioCreative V task 3.
 
-In order to make processing the BioCreative
-data easier, these data models were created
-in order to simplify the tasks of:
+These data models were created to simplify the tasks of:
 1. Parsing the gold standard
-2. Concept highlighting
-3. Concept co-occurrence detection
-4. Relationship verification
-5. Work unit generation
+2. Concept co-occurrence detection
+3. Relationship verification
+4. Work unit generation
 """
 from collections import defaultdict
 from itertools import islice
 
-from lingpipe.file_util import read_file
-from lingpipe.split_sentences import split_abstract
+from .lingpipe.file_util import read_file
+from .lingpipe.split_sentences import split_abstract
 
 def is_MeSH_id(uid):
     return len(uid) == 7 and uid[0] in ["C", "D"]
 
 class Ontology_ID:
-    """
-    A single identifier from an existing ontology.
-    """
+    """A single identifier from an existing biomedical ontology."""
     def __init__(self, text):
-        """
-        Given the raw text representation, splits and
-        formats accordingly.
-        """
+        """Create an Ontology_ID from a string representation."""
         if ":" in text:
-            vals = text.split(':')
-            assert len(vals) == 2, "ID {0} is misformatted!".format(text)
-            self.uid_type = vals[0]
-            self.uid = vals[1]
+            assert text.count(":") == 1, "ID {0} is misformatted!".format(text)
+            self.uid_type, self.uid = text.split(":")
 
             if self.uid_type == "MESH":
                 assert is_MeSH_id(self.uid), "MeSH ID mismatch for {0}".format(text)
@@ -46,15 +35,10 @@ class Ontology_ID:
             else:
                 self.uid_type = "unknown"
 
-    def flat_repr(self):
-        """
-        A flat string representation of this ontology ID.
-        """
-        return "{0}:{1}".format(self.uid_type, self.uid)
+        self.flat_repr = "{0}:{1}".format(self.uid_type, self.uid)
 
     def __repr__(self):
-        return "<{0}>: {1}:{2}".format(self.__class__.__name__,
-            self.uid_type, self.uid)
+        return "<{0}>: {1}".format(self.__class__.__name__, self.flat_repr)
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
@@ -66,19 +50,11 @@ class Ontology_ID:
         return not self.__eq__(other)
 
     def __hash__(self):
-        return hash("{0}:{1}".format(self.uid_type, self.uid))
+        return hash(self.flat_repr)
 
 class Annotation:
-    """
-    A single mention of a concept in a piece of text.
-    Annotation positions are indexed to the abstract.
-    """
+    """A single mention of a concept in a piece of text."""
     def __init__(self, uid, stype, text, start, stop):
-        uids = map(lambda v: Ontology_ID(v), uid.split("|"))
-
-        self.uid = frozenset(uids)
-        self.has_mesh = self.has_mesh_id()
-
         self.stype = stype.lower()
         assert self.stype in ["chemical", "disease"]
 
@@ -88,46 +64,37 @@ class Annotation:
         assert self.start < self.stop, "Annotation {0} indicies reversed!".format(self.uid)
         assert len(text) == self.stop - self.start, "Annotation {0} length mismatch!".format(self.uid)
 
-    def flat_repr(self):
-        """
-        A flat representation for printing.
-        """
-        return "|".join(map(lambda v: v.flat_repr(), self.uid))
+        uids = [Ontology_ID(v) for v in uid.split("|")]
+        self.update_uid(frozenset(uids))
 
     def update_uid(self, new_uid):
-        """
-        This function updates the unique identifier for this
-        annotation to something else.
-
-        :param new_uid is a frozenset of Ontology_ID objects
-        representing the new unique identifier
-        """
+        """Update the set of Ontology IDs for this annotation."""
         assert isinstance(new_uid, frozenset), "New UID {0} is not a frozenset!".format(new_uid)
         self.uid = new_uid
         self.has_mesh = self.has_mesh_id()
+        self.flat_repr = "|".join([v.flat_repr for v in self.uid])
 
     def __repr__(self):
         return "<{0}>: '{1}'({2}:{3}) {4}-{5}".format(self.__class__.__name__,
             self.text, self.stype, self.uid, self.start, self.stop)
 
-    def __cmp__(self, other):
-        """
-        When sorting Annotation objects, make sure they
-        are in ascending order of starting position.
-        """
-        if hasattr(other, "start"):
-            return self.start.__cmp__(other.start)
+    def __lt__(self, other):
+        """Sort annotations by starting position."""
+        if isinstance(other, self.__class__):
+            return self.start < other.start
+
+        raise Exception("Cannot compare {0} with {1}".format(self.__class__,
+            other.__class__))
 
     def has_mesh_id(self):
-        """
-        Checks if any of the identifiers used for this annotation are
-        MeSH. Only identifiers which have at least one MeSH component
-        are included in the gold relations.
+        """Check if any of the Ontology_IDs are MeSH IDs.
 
-        E.g., PMID 8638876 (development)
-            The annotation id is "D002544|-1", and two of the gold
-            relations have "D002544" as the disease. No other annotation
-            contains D002544.
+        The gold standard only contains relations between MeSH identified
+        concepts.
+
+        E.g., PMID 8638876 (development set)
+            The annotation used for a relation is "D002544|-1". No other
+            annotations contain D002544 as an identifier.
         """
         for identifier in self.uid:
             if identifier.uid_type == "MESH":
@@ -136,21 +103,19 @@ class Annotation:
         return False
 
 class Sentence:
-    """
-    A single sentence from a paper.
+    """A single sentence.
 
-    Sentence-bound relationships are generated
-    by this object.
+    All unique chemical-disease relationships between annotations contained by
+    this sentence are classified into CID and non-CID relations.
 
-    The set of chemical-disease relations that need to
-    be made into a work unit is the non-CID relations
-    minus the CID relations true at the abstract level.
+    This sentence's non-CID relations minus the CID relations true at the
+    abstract level need to be verified in a sentence-level task.
     """
     def __init__(self, pmid, idx, text, start, stop, annotations):
         self.pmid = int(pmid)
         self.uid = "{0}_{1}".format(pmid, idx)
         self.text = text
-        self.start = int(start)
+        self.start = int(start) # position of sentence in the abstract
         self.stop = int(stop)
         assert self.start < self.stop, "Sentence {0} indicies reversed!".format(self.uid)
         assert len(text) == self.stop - self.start, "Sentence {0} length mismatch!".format(self.uid)
@@ -167,10 +132,8 @@ class Sentence:
             self.start, self.stop, self.annotations)
 
     def is_CID_relation(self, chemical, disease):
-        """
-        Given two Annotations within this sentence,
-        determine if the pair of annotations follows the
-        CID structure.
+        """Determine if a chemical annotation and a disease annotation follow
+        the CID structure.
         """
         return ((chemical.stop < disease.start)
             and (disease.start - chemical.stop <= 15)
@@ -179,21 +142,13 @@ class Sentence:
         )
 
     def classify_relations(self):
-        """
-        This function generates all the unique chemical-disease
-        identifier pairs of annotations contained within this
-        sentence, and classifies them into two groups:
-            1. Those which follow a '[chemical]-induced [disease]' (CID)
-                structure.
-            2. Those which do not follow the CID structure.
+        """Classify all unique chemical-disease identifier pairs in this
+        sentence as CID or non-CID relations.
 
-        The two sets of identifier pairs are mutually exclusive.
-
-        Only MeSH identifiers will be generated for CID relation
-        verification, since the gold standard will never use any
-        other ontology identifier. This has been confirmed with
-        Zhiyong. Therefore "-1" identifiers can be skipped, as can
-        CHEBI and other ontology identifier types.
+        The CID and non-CID relation identifier pairs are mutually exclusive.
+        Only MeSH identifiers will be generated, since the gold standard only
+        lists relations between MeSH concepts. Any non-MeSH concepts can be
+        skipped.
         """
         all_relations = defaultdict(set)
         for annot_A in self.annotations:
@@ -218,59 +173,44 @@ class Sentence:
         return all_relations
 
 class Relation:
-    """
-    A single chemical-induced disease relationship.
-    Used to compare identifier pairs against the gold.
+    """A single chemical-induced disease relationship.
 
-    Relation objects should be created from strings with the following
-    format:
+    Used to compare identifier pairs against the gold standard. Create relations
+    from strings with the following format:
 
     D123456 or MESH:D123456 or MESH:D123456|MESH:D123456
 
-    Relation identifiers are represented as frozensets of
-    Ontology_ID objects. Two relations are considered equal
-    if the chemical and disease identifier set intersection
-    is at least one.
-
-    When outputting for the gold, relations should only use one MESH id
-    for both chemical and disease, instead of multiple as for the
-    annotations.
-
-    All single ontology ids in the frozenset should be MeSH.
+    Concepts linked by a relation are represented as frozensets of Ontology_ID
+    objects. Two relations are considered equal if both the chemical and disease
+    identifier sets share at least one Ontology_ID in common.
     """
     def __init__(self, pmid, chemical_id, disease_id):
         self.pmid = int(pmid)
 
-        chem_ids = map(lambda v: Ontology_ID(v), chemical_id.split("|"))
-        dise_ids = map(lambda v: Ontology_ID(v), disease_id.split("|"))
+        chem_ids = [Ontology_ID(v) for v in chemical_id.split("|")]
+        dise_ids = [Ontology_ID(v) for v in disease_id.split("|")]
 
-        chem_ids = filter(lambda v: v.uid_type == "MESH", chem_ids)
-        dise_ids = filter(lambda v: v.uid_type == "MESH", dise_ids)
+        chem_ids = [v.flat_repr for v in chem_ids if v.uid_type == "MESH"]
+        dise_ids = [v.flat_repr for v in dise_ids if v.uid_type == "MESH"]
 
-        chem_uids = map(lambda v: v.uid, chem_ids)
-        dise_uids = map(lambda v: v.uid, dise_ids)
-
-        self.uid = "PMID {0}:{1}-{2}".format(pmid, "|".join(chem_uids), "|".join(dise_uids))
+        self.uid = "PMID {0}: {1}-{2}".format(pmid, "|".join(chem_uids), "|".join(dise_uids))
 
         self.chemical_id = frozenset(chem_ids)
         self.disease_id = frozenset(dise_ids)
 
     def __eq__(self, other):
-        """
-        Equal if the intersection of both the chemical
-        and disease identifier frozensets is at least
-        one element large.
+        """Two relations are considered equal if both the chemical and disease
+        identifier sets share at least one Ontology_ID in common.
 
-        This is because the gold relations only use
-        a pair of single MeSH ids, despite the fact
-        that the annotations use complexed MeSH ids.
+        This unintuitive definition is used because the gold standard relations
+        link two single MeSH identifiers together. However, each identifier may
+        only exist as one of many identifiers for a particular concept
+        annotation. Therefore it is impossible to determine the origin of a
+        relation's MeSH identifier.
 
-        WARNING:
-            Defining the equals function in this manner
-            breaks transitivity. That is, if we have
-            three objects A, B, and C, then if
-                A == B and B == C, then
-                A == C IS NOT TRUE!!
+        WARNING: This definition of equality breaks transitivity. If there are
+        three Relation objects A, B, and C, then if A == B and B == C, then
+        A == C is not necessarily true!
         """
         if isinstance(other, self.__class__):
             return (len(self.chemical_id & other.chemical_id) > 0
@@ -282,37 +222,31 @@ class Relation:
         return not self.__eq__(other)
 
     def __repr__(self):
-        return "<{0}>: {1}".format(
-            self.__class__.__name__, self.uid)
+        return "<{0}>: {1}".format(self.__class__.__name__, self.uid)
 
 class Paper:
-    """
-    A single academic publication.
+    """A single academic abstract.
+
     Contains:
-        1. The PubMed identifier.
+        1. The PubMed identifier as an integer.
         2. The title as a string.
         3. The abstract as a string.
-        4. A list of all chemical and disease annotations
-            in the title and abstract sorted in increasing
-            order of starting index.
-        5. A potentially empty list of gold standard CID
-            relations.
+        4. A list of all chemical and disease annotations in the title and
+            abstract sorted in increasing order of starting index.
+        5. A potentially empty list of gold standard CID relations.
         6. A set of unique chemical identifiers.
         7. A set of unique disease identifiers.
-        8. A list of Sentences containing both the title
-            and body of the abstract. The first sentence
-            is the title. Each sentence contains the
-            annotations and relations constrained to that
-            particular sentence.
-        9. A set of all the potential chemical-disease
-            relations grouped into three mutually exclusive
-            categories:
+        8. A list of Sentences containing both the title and body of the
+            abstract. The 0th sentence is the title. Each sentence contains the
+            annotations and relations constrained to that particular sentence.
+        9. A set of all the potential chemical-disease relations grouped into
+            three mutually exclusive categories:
             - CID relations
             - Non-CID sentence-bound relations
-            - Non-sentence bound relations
-            The sum of relations in all three groups should
-            equal the number of unique chemical IDs times
-            the number of unique disease IDs.
+            - Non-sentence bound relations (by definition not CID relations)
+
+            The sum of relations in all three groups should equal the number of
+            unique chemical IDs times the number of unique disease IDs.
         10. A function for resolving acronyms.
     """
     def __init__(self, pmid, title, abstract, annotations, gold_relations = []):
@@ -341,20 +275,26 @@ class Paper:
         )
 
     def has_correct_annotations(self):
+        """Check that the annotation indicies produce the correct text snippet.
         """
-        Checks that the paper's annotations match the
-        stated positions in the text.
-        """
-        text = "{0} {1}".format(self.title, self.abstract)
+        full_text = "{0} {1}".format(self.title, self.abstract)
         for annotation in self.annotations:
-            assert text[annotation.start : annotation.stop] == annotation.text, (
-                "Annotation {0} in PMID {1} does not match the text.".format(annotation, self.pmid))
+            fragment = full_text[annotation.start : annotation.stop]
+            assert fragment == annotation.text, ("PMID {0} {1} does not match"
+                "the text.".format(self.pmid, annotation))
 
         return True
 
     def resolve_acronyms(self):
-        """
-        This function tries to resolve acronyms.
+        """Identifies annotations likely to be acronyms for concepts stated
+        earlier in the text and assigns them the same identifier as the original
+        concept definition.
+
+        tmChem identifies many text spans as likely chemicals, but is sometimes
+        unable to assign a MeSH identifier to the annotation. These annotations
+        are often acronyms defined earlier in the text. Assigning the acronyms
+        the same MeSH identifier as the original definition improves tmChem
+        performance.
         """
         used = [False] * len(self.annotations)
         full_text = "{0} {1}".format(self.title, self.abstract)
@@ -383,11 +323,9 @@ class Paper:
                             used[i + 1 + j] = True
 
     def get_unique_concepts(self):
-        """
-        Determines the unique identifiers of chemicals and diseases
-        belonging to this paper.
+        """Determine the unique chemical and disease identifiers for this paper.
 
-        Ignores any annotations which are not MeSH identified.
+        Ignores any annotations which are not assigned MeSH identifiers.
         """
         res = defaultdict(set)
         for annotation in self.annotations:
@@ -397,21 +335,15 @@ class Paper:
         return (res["chemical"], res["disease"])
 
     def get_all_possible_relations(self):
-        """
-        Returns all possible unique drug-disease combinations
-        as a set for this paper.
-        """
+        """Return all possible unique chemical-disease identifier pairs."""
         return {(chemical_id, disease_id) for chemical_id in self.chemicals for disease_id in self.diseases}
 
     def split_sentences(self):
-        """
-        Splits the abstract up into individual sentences,
-        and determines which concept annotations reside
-        within each sentence.
+        """Split the abstract into individual sentences, and determine which
+        concept annotations reside within each sentence.
 
-        Time complexity:
-            O(N + M) where N is the number of sentences,
-            and M is the number of annotations.
+        Time complexity: O(N + M) where N is the number of sentences and M is
+        the number of annotations.
         """
         all_sentences = [self.title] + split_abstract(self.abstract)
 
@@ -429,7 +361,7 @@ class Paper:
             # we are checking for the first instance starting at the current
             # position (since find always finds the first instance otherwise).
             assert full_text.find(sentence, sent_idx) == sent_idx, (
-                "PMID {0} sentence '{1}' does not match text!".format(self.pmid, sentence))
+                "PMID {0} {1} text mismatch!".format(self.pmid, sentence))
 
             sent_stop = sent_idx + len(sentence)
 
@@ -446,12 +378,12 @@ class Paper:
         return res
 
     def classify_relations(self):
-        """
-        Takes all the possible relations for this abstract and
-        splits them into three mutually exclusive groups:
-            1. CID relations, which are sentence bound
-            2. Non-CID, sentence-bound relations
-            3. Relations which are not sentence bound
+        """Classify all unique chemical-disease identifier pairs in this
+        abstract into three groups:
+
+        1. CID relations, which are sentence bound
+        2. Non-CID, sentence-bound relations
+        3. Relations which are not sentence bound
         """
         all_rels = self.get_all_possible_relations()
 
@@ -480,43 +412,26 @@ class Paper:
         return poss_relations
 
     def has_relation(self, potential_relation):
-        """
-        Checks if the provided possible Relationship object
-        matches any of the gold standard relationships for this
-        paper.
+        """Check if the provided relation matches a gold standard relation.
 
-        Note:
-            It is not possible to use a set to do the checking
-            operation here, because it is not possible to make
-            the hashes of two objects the same when they are
-            defined by be equal by the overridden equals operator
-            for Relation objects.
-
-            This solution is slow, but at least it's correct.
+        It is not possible to use a set to check if the relation exists in the
+        gold standard because there is no way to make the hashes of two
+        Relation objects equal.
         """
         return potential_relation in self.gold_relations
 
 def parse_input(loc, fname, is_gold = True, return_format = "list"):
-    """
-    Reads a given file and returns a list of Paper
-    objects.
-    """
+    """Parse a PubTator formatted file and return a set of Paper objects."""
     assert return_format in ["list", "dict"]
-    if return_format == "list":
-        papers = []
-    else:
-        papers = dict()
 
+    papers = []
     counter = 0
     annotations = []
     relations = []
     for i, line in enumerate(read_file(fname, loc)):
         if len(line) == 0:
             # time to create the paper object
-            if return_format == "list":
-                papers.append(Paper(pmid, title, abstract, annotations, relations))
-            else:
-                papers[pmid] = Paper(pmid, title, abstract, annotations, relations)
+            papers.append(Paper(pmid, title, abstract, annotations, relations))
 
             counter = 0
             annotations = []
@@ -524,30 +439,32 @@ def parse_input(loc, fname, is_gold = True, return_format = "list"):
         else:
             if 0 <= counter <= 1:
                 vals = line.split('|')
-                assert len(vals) == 3, "Title or abstract on line {i} is messed up!".format(i + 1)
+                assert len(vals) == 3, "Bad format for line {0}".format(i+1)
             else:
                 vals = line.split('\t')
 
             if counter == 0:
-                assert vals[1] == "t", i+1
+                assert vals[1] == "t", "Bad format for line {0}".format(i+1)
                 pmid = int(vals[0])
                 title = vals[2]
             elif counter == 1:
-                assert vals[1] == "a"
+                assert vals[1] == "a", "Bad format for line {0}".format(i+1)
                 assert int(vals[0]) == pmid
                 abstract = vals[2]
             elif is_gold and len(vals) == 4:
-                assert vals[1] == "CID"
+                assert int(vals[0]) == pmid and vals[1] == "CID"
                 relations.append(Relation(pmid, vals[2], vals[3]))
             else:
-                assert 5 <= len(vals) <= 7, "Error on line {0}".format(i)
-
-                if len(vals) == 5: # output of tmChem, should be "-1" identifier, but is blank
+                # an annotation
+                if len(vals) == 5: # no identifier was assigned
                     vals.append("-1")
 
-                assert 6 <= len(vals) <= 7, "Error on line {0}".format(i)
+                assert 6 <= len(vals) <= 7, "Error on line {0}".format(i+1)
                 annotations.append(Annotation(vals[5], vals[4], vals[3], vals[1], vals[2]))
 
             counter += 1
+
+    if return_format == "dict":
+        return {paper.pmid : paper for paper in papers}
 
     return papers

@@ -10,7 +10,7 @@ Previously this was done by querying the PubMed
 API to determine what the section names were,
 but now the section names have been cached instead.
 """
-from lingpipe.file_util import read_file
+from .lingpipe.file_util import read_file
 from collections import defaultdict
 
 def create_sections(abstract):

@@ -1,7 +1,7 @@
 """
 Tong Shu Li
 First written 2015-07-02
-Last updated 2015-07-30
+Last updated 2015-08-20
 
 Given a string representing an abstract,
 splits it into sentences using LingPipe.
@@ -9,7 +9,7 @@ splits it into sentences using LingPipe.
 import os
 import subprocess
 
-from file_util import read_file
+from .file_util import read_file
 
 def split_abstract(abstract):
     """
@@ -36,9 +36,3 @@ def split_abstract(abstract):
     os.chdir(orig_dir)
 
     return sentences
-
-def main():
-    print split_abstract("This is a test. Roflcopter sentence 2!!!")
-
-if __name__ == "__main__":
-    main()
