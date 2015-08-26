@@ -83,3 +83,19 @@ contributor answer distributions must match:
 5 to 95% no_relation
 0 to 70% yes_direct
 start monitoring at 20 rows
+
+
+job 761368 was launched at 8:24 pm on 2015-08-09
+
+job 761593 launched at 11:36 am 2015-08-10
+
+job 764099 launched at 12:50 pm 2015-08-14
+
+job 767262 launched at 5:13 pm 2015-08-18 and completed at 10:50 pm on 2015-08-18
+job 767273 launched at 5:14 pm 2015-08-18 and completed at 12:25 am on 2015-08-19
+
+job 767273 was launched at and completed at 12:25 am
+
+jobs 771159 and 771158 were launched at 9:21 pm 2015-08-25
+job 771158 was completed at 12:05 am on 2015-08-26
+job 771159 was completed at 12:20 am on 2015-08-26
