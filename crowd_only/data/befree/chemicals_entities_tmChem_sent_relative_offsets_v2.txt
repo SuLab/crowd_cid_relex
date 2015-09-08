@@ -1,3 +1,4 @@
+pmid	num_sent	mention_start	mention_stop	mention_text	mention_type	mention_id	sentence_text
 18477409	1	21	67	omega-3 long-chain polyunsaturated fatty acids	Chemical	-1	While consumption of omega-3 long-chain polyunsaturated fatty acids (n-3 LCPUFA) has been recommended for those at risk of inflammatory disease such as rheumatoid arthritis, the mechanism of their anti-inflammatory effect remains to be clearly defined, particularly in relation to the dose and type of n-3 LCPUFA.
 18477409	6	31	41	fatty-acid	Chemical	CHEBI:35366	Erythrocytes were analyzed for fatty-acid content.
 18477409	9	160	181	eicosapentaenoic acid	Chemical	MESH:D015118	However, natural killer (NK) (CD3-CD16+CD56+) cell numbers were lower in n-3 supplemented subjects than in controls and were inversely related to the amount of eicosapentaenoic acid or docosahexaenoic acid in erythrocytes.
