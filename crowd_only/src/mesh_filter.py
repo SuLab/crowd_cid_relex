@@ -1,7 +1,7 @@
 """
 Tong Shu Li
 Created on: 2015-10-05
-Last updated: 2015-10-05
+Last updated: 2015-10-06
 
 Use the MeSH hierarchy to determine which concepts are more specific.
 """
@@ -14,8 +14,8 @@ from .data_model import Ontology_ID
 from .data_model import Simple_Rel
 
 def load_hierarchy():
-    parent = os.path.abspath("..")
-    data_dir = os.path.join(parent, "data/mesh_ontology")
+    cur = os.path.dirname(__file__)
+    data_dir = os.path.abspath(os.path.join(cur, "..", "data/mesh_ontology"))
 
     with open(os.path.join(data_dir, "mesh_names.pickle"), "rb") as fin:
         concept_name = pickle.load(fin)

@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-08-21
+# Last updated: 2015-10-05
 """Data models for BioCreative V task 3.
 
 These data models were created to simplify the tasks of:
@@ -18,51 +18,64 @@ from .lingpipe.split_sentences import split_abstract
 def is_MeSH_id(uid):
     return len(uid) == 7 and uid[0] in ["C", "D"]
 
-class Ontology_ID:
+#-------------------------------------------------------------------------------
+
+class Base:
+    def __init__(self, uid):
+        self.uid = uid
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return self.__dict__ == other.__dict__
+
+        return NotImplemented
+
+    def __ne__(self, other):
+        if isinstance(other, self.__class__):
+            return not self == other
+
+        return NotImplemented
+
+class Ontology_ID(Base):
     """A single identifier from an existing biomedical ontology."""
+
     def __init__(self, text):
         """Create an Ontology_ID from a string representation."""
-        if ":" in text:
-            assert text.count(":") == 1, "ID {0} is misformatted!".format(text)
-            self.uid_type, self.uid = text.split(":")
 
+        assert text.count(":") <= 1, "ID {0} is misformatted!".format(text)
+        if ":" in text:
+            self.uid_type, self.uid = text.split(":")
             if self.uid_type == "MESH":
                 assert is_MeSH_id(self.uid), "MeSH ID mismatch for {0}".format(text)
         else:
             self.uid = text
-            if is_MeSH_id(self.uid):
-                self.uid_type = "MESH"
-            else:
-                self.uid_type = "unknown"
+            self.uid_type = "MESH" if is_MeSH_id(self.uid) else "unknown"
 
         self.flat_repr = "{0}:{1}".format(self.uid_type, self.uid)
 
     def __repr__(self):
         return "<{0}>: {1}".format(self.__class__.__name__, self.flat_repr)
 
-    def __eq__(self, other):
-        if isinstance(other, self.__class__):
-            return self.uid_type == other.uid_type and self.uid == other.uid
-
-        return False
-
-    def __ne__(self, other):
-        return not self.__eq__(other)
-
     def __hash__(self):
         return hash(self.flat_repr)
 
-class Annotation:
-    """A single mention of a concept in a piece of text."""
-    def __init__(self, uid, stype, text, start, stop):
-        self.stype = stype.lower()
-        assert self.stype in ["chemical", "disease"]
-
+class Position(Base):
+    def __init__(self, text, start, stop):
         self.text = text
         self.start = int(start)
         self.stop = int(stop)
-        assert self.start < self.stop, "Annotation {0} indicies reversed!".format(self.uid)
-        assert len(text) == self.stop - self.start, "Annotation {0} length mismatch!".format(self.uid)
+
+        assert self.start < self.stop, "{0} indicies reversed!".format(self)
+        assert len(text) == self.stop - self.start, "{0} length mismatch!".format(self)
+
+class Annotation(Position):
+    """A single mention of a concept in a piece of text."""
+
+    def __init__(self, uid, stype, text, start, stop):
+        Position.__init__(self, text, start, stop)
+
+        self.stype = stype.lower()
+        assert self.stype in ["chemical", "disease"]
 
         uids = [Ontology_ID(v) for v in uid.split("|")]
         self.update_uid(frozenset(uids))
@@ -83,8 +96,7 @@ class Annotation:
         if isinstance(other, self.__class__):
             return self.start < other.start
 
-        raise Exception("Cannot compare {0} with {1}".format(self.__class__,
-            other.__class__))
+        return NotImplemented
 
     def has_mesh_id(self):
         """Check if any of the Ontology_IDs are MeSH IDs.
@@ -102,7 +114,10 @@ class Annotation:
 
         return False
 
-class Sentence:
+    def __hash__(self):
+        return hash((self.text, self.start, self.stop, self.stype, self.uid))
+
+class Sentence(Position):
     """A single sentence.
 
     All unique chemical-disease relationships between annotations contained by
@@ -114,11 +129,9 @@ class Sentence:
     def __init__(self, pmid, idx, text, start, stop, annotations):
         self.pmid = int(pmid)
         self.uid = "{0}_{1}".format(pmid, idx)
-        self.text = text
-        self.start = int(start) # position of sentence in the abstract
-        self.stop = int(stop)
-        assert self.start < self.stop, "Sentence {0} indicies reversed!".format(self.uid)
-        assert len(text) == self.stop - self.start, "Sentence {0} length mismatch!".format(self.uid)
+
+        # start = position of sentence in the abstract
+        Position.__init__(self, text, start, stop)
 
         # a list of the concept annotations within this sentence
         self.annotations = annotations
@@ -172,7 +185,29 @@ class Sentence:
         assert all_relations[False].isdisjoint(all_relations[True])
         return all_relations
 
-class Relation:
+class Simple_Rel:
+    """A single simple chemical-induced disease relationship.
+
+    Links exactly one chemical Ontology_ID with one disease Ontology_ID. Assumes
+    that the chemical and disease are MeSH only.
+    """
+    def __init__(self, pmid, chemical, disease):
+        self.pmid = int(pmid)
+
+        assert isinstance(chemical, Ontology_ID), "Not Ontology_ID"
+        assert isinstance(disease, Ontology_ID), "Not Ontology_ID"
+
+        assert chemical.uid_type == "MESH", "Not MeSH ID"
+        assert disease.uid_type == "MESH", "Not MeSH ID"
+
+        self.chemical = chemical
+        self.disease = disease
+
+    def __repr__(self):
+        return "<{0}>: #{1} {2}&{3}".format(self.__class__.__name__,
+            self.pmid, self.chemical.flat_repr, self.disease.flat_repr)
+
+class Relation(Base):
     """A single chemical-induced disease relationship.
 
     Used to compare identifier pairs against the gold standard. Create relations
@@ -216,10 +251,7 @@ class Relation:
             return (len(self.chemical_id & other.chemical_id) > 0
                 and len(self.disease_id & other.disease_id) > 0)
 
-        return False
-
-    def __ne__(self, other):
-        return not self.__eq__(other)
+        return NotImplemented
 
     def __repr__(self):
         return "<{0}>: {1}".format(self.__class__.__name__, self.uid)
