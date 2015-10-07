@@ -6,7 +6,6 @@ Last updated 2015-07-28
 This file contains the functions for determining the F-score,
 precision, and recall for a general dataframe.
 """
-from __future__ import division
 from collections import defaultdict
 import pandas as pd
 

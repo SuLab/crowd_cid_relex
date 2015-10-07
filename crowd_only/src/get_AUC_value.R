@@ -34,7 +34,9 @@ AUC_value <- function(fname, score_col, class_col,
         perf <- performance(pred, measure = "tpr", x.measure = "fpr")
         png(filename = curve_fname, height = 800, width = 800, bg = "white")
 
-        plot(perf, main = title, type = "o", col = rainbow(10))
+        plot(perf, main = title, type = "o", colorize = TRUE,
+            colorkey = TRUE, colorkey.relwidth = 0.5,
+            col = rainbow(10))
         abline(a = "0", b = "1", lty = 2)
         dev.off()
     }
