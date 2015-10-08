@@ -43,6 +43,7 @@ class Ontology_ID(Base):
         """Create an Ontology_ID from a string representation."""
 
         assert text.count(":") <= 1, "ID {0} is misformatted!".format(text)
+        assert "|" not in text, "Was given compound identifier!"
         if ":" in text:
             self.uid_type, self.uid = text.split(":")
             if self.uid_type == "MESH":
