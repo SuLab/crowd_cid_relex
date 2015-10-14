@@ -208,6 +208,7 @@ class Simple_Rel:
         return "<{0}>: #{1} {2}&{3}".format(self.__class__.__name__,
             self.pmid, self.chemical.flat_repr, self.disease.flat_repr)
 
+
 class Relation(Base):
     """A single chemical-induced disease relationship.
 
@@ -220,19 +221,27 @@ class Relation(Base):
     objects. Two relations are considered equal if both the chemical and disease
     identifier sets share at least one Ontology_ID in common.
     """
-    def __init__(self, pmid, chemical_id, disease_id):
+    def __init__(self, pmid, chemical_id, disease_id, flat = True):
         self.pmid = int(pmid)
 
-        chem_ids = [Ontology_ID(v) for v in chemical_id.split("|")]
-        dise_ids = [Ontology_ID(v) for v in disease_id.split("|")]
+        if isinstance(chemical_id, str) and isinstance(disease_id, str):
+            chem_ids = [Ontology_ID(v) for v in chemical_id.split("|")]
+            dise_ids = [Ontology_ID(v) for v in disease_id.split("|")]
 
-        chem_ids = [v.flat_repr for v in chem_ids if v.uid_type == "MESH"]
-        dise_ids = [v.flat_repr for v in dise_ids if v.uid_type == "MESH"]
+            if flat:
+                chem_ids = [v.flat_repr for v in chem_ids if v.uid_type == "MESH"]
+                dise_ids = [v.flat_repr for v in dise_ids if v.uid_type == "MESH"]
 
-        self.uid = "PMID {0}: {1}-{2}".format(pmid, "|".join(chem_ids), "|".join(dise_ids))
+                self.uid = "PMID {0}: {1}-{2}".format(pmid, "|".join(chem_ids), "|".join(dise_ids))
 
-        self.chemical_id = frozenset(chem_ids)
-        self.disease_id = frozenset(dise_ids)
+            self.chemical_id = frozenset(chem_ids)
+            self.disease_id = frozenset(dise_ids)
+        else:
+            assert isinstance(chemical_id, frozenset)
+            assert isinstance(disease_id, frozenset)
+
+            self.chemical_id = chemical_id
+            self.disease_id = disease_id
 
     def __eq__(self, other):
         """Two relations are considered equal if both the chemical and disease
@@ -255,7 +264,9 @@ class Relation(Base):
         return NotImplemented
 
     def __repr__(self):
-        return "<{0}>: {1}".format(self.__class__.__name__, self.uid)
+        return "<{0}>: {1}. {2}-{3}".format(self.__class__.__name__,
+            self.pmid, self.chemical_id, self.disease_id)
+
 
 class Paper:
     """A single academic abstract.
@@ -493,8 +504,8 @@ def parse_input(loc, fname, is_gold = True, return_format = "list",
                 assert vals[1] == "a", "Bad format for line {0}".format(i+1)
                 assert int(vals[0]) == pmid
                 abstract = vals[2]
-            elif is_gold and len(vals) == 4:
-                assert int(vals[0]) == pmid and vals[1] == "CID"
+            elif vals[1] == "CID":
+                assert int(vals[0]) == pmid
                 relations.append(Relation(pmid, vals[2], vals[3]))
             else:
                 # an annotation
