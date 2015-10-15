@@ -1,31 +1,19 @@
 """
 Tong Shu Li
 Created on: 2015-10-05
-Last updated: 2015-10-06
+Last updated: 2015-10-15
 
 Use the MeSH hierarchy to determine which concepts are more specific.
 """
 from collections import namedtuple
 from itertools import groupby
 import os
-import pickle
 
 from .data_model import Ontology_ID
 from .data_model import Simple_Rel
+from .parse_mesh import load_mesh
 
-def load_hierarchy():
-    cur = os.path.dirname(__file__)
-    data_dir = os.path.abspath(os.path.join(cur, "..", "data/mesh_ontology"))
-
-    with open(os.path.join(data_dir, "mesh_names.pickle"), "rb") as fin:
-        concept_name = pickle.load(fin)
-
-    with open(os.path.join(data_dir, "mesh_hierarchy.pickle"), "rb") as fin:
-        hierarchy = pickle.load(fin)
-
-    return (concept_name, hierarchy)
-
-concept_name, hierarchy = load_hierarchy()
+concept_name, hierarchy = load_mesh("hierarchy")
 
 def mesh_filter(concepts):
     """Removes redundant disease concepts from a list using the MeSH hierarchy.

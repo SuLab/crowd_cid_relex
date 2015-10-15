@@ -1,7 +1,7 @@
 """
 Tong Shu Li
 Created on: 2015-09-01
-Last updated: 2015-10-05
+Last updated: 2015-10-14
 
 Parses the MeSH XML file into a useable format.
 """
@@ -38,19 +38,47 @@ def parse_mesh_xml(fname):
 
     return (concept_name, hierarchy)
 
-def main():
-    parent = os.path.abspath("..")
-    fname = os.path.join(parent, "data/mesh_ontology/mesh2015.xml")
+def parse_supplement(fname):
+    """Determine the official names of the supplemental concepts."""
+    tree = ET.parse(fname)
+    root = tree.getroot()
 
+    mapping = dict()
+    for record in root.iter("SupplementalRecord"):
+        uid = record.find("SupplementalRecordUI").text
+        name = record.find("./SupplementalRecordName/String").text
+
+        mapping[uid] = name
+
+    return mapping
+
+def load_mesh(fname):
+    assert fname in ["supp", "hierarchy"], "Invalid MeSH pickle name"
+
+    cur = os.path.dirname(__file__)
+
+    loc = os.path.join(cur, "..", "data", "mesh_ontology", "mesh_{}.pickle".format(fname))
+    with open(os.path.abspath(loc), "rb") as fin:
+        val = pickle.load(fin)
+
+    return val
+
+def main():
+    loc = os.path.join("..", "data", "mesh_ontology")
+
+    fname = os.path.abspath(os.path.join(loc, "supp2015.xml"))
+    supplement = parse_supplement(fname)
+
+    with open(os.path.join(loc, "mesh_supp.pickle"), "wb") as fout:
+        pickle.dump(supplement, fout)
+
+#-------------------------------------------------------------------------------
+
+    fname = os.path.abspath(os.path.join(loc, "mesh2015.xml"))
     concept_name, hierarchy = parse_mesh_xml(fname)
 
-    # save to file
-    data_dir = os.path.join(parent, "data/mesh_ontology")
-    with open(os.path.join(data_dir, "mesh_names.pickle"), "wb") as fout:
-        pickle.dump(concept_name, fout)
-
-    with open(os.path.join(data_dir, "mesh_hierarchy.pickle"), "wb") as fout:
-        pickle.dump(hierarchy, fout)
+    with open(os.path.join(loc, "mesh_hierarchy.pickle"), "wb") as fout:
+        pickle.dump((concept_name, hierarchy), fout)
 
 if __name__ == "__main__":
     main()
