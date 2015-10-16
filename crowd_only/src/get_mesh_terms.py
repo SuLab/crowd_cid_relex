@@ -1,7 +1,6 @@
 # Tong Shu Li
-# Last updated: 2015-10-14
-"""Grab MeSH terms for a PubMed abstract using Eutils.
-"""
+# Last updated: 2015-10-15
+"""Grab MeSH terms for a PubMed abstract using Eutils."""
 
 from collections import defaultdict
 import numpy as np
@@ -48,13 +47,17 @@ class Article:
                 qualifiers = node.findall("QualifierName")
                 if not qualifiers:
                     temp["descriptor"].append(desc.attrib["UI"])
+                    temp["desc_name"].append(desc.text)
                     temp["qualifier"].append(np.nan)
+                    temp["qual_name"].append(np.nan)
                     temp["major_topic"].append(desc_major)
                 else:
                     for qual in qualifiers:
                         temp["descriptor"].append(desc.attrib["UI"])
+                        temp["desc_name"].append(desc.text)
                         temp["qualifier"].append(qual.attrib["UI"])
-                        temp["major_topic"].append(desc_major or qual.attrib["MajorTopicYN"])
+                        temp["qual_name"].append(qual.text)
+                        temp["major_topic"].append(desc_major or qual.attrib["MajorTopicYN"] == "Y")
 
             return pd.DataFrame(temp)
 
@@ -71,7 +74,6 @@ class Article:
         # get the abstract (which may not exist)
         node = loc.find("./Abstract/AbstractText")
         self.abstract = node.text if node is not None else None
-
 
         # parse out all the chemicals mentioned
         self.chemical_terms = [node.attrib["UI"]
