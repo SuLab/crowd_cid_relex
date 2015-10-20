@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-10-05
+# Last updated: 2015-10-19
 """Data models for BioCreative V task 3.
 
 These data models were created to simplify the tasks of:
@@ -11,8 +11,10 @@ These data models were created to simplify the tasks of:
 """
 from collections import defaultdict
 from itertools import islice
+import pickle
 
 from .lingpipe.file_util import read_file
+from .lingpipe.file_util import save_file
 from .lingpipe.split_sentences import split_abstract
 
 def is_MeSH_id(uid):
@@ -467,6 +469,7 @@ class Paper:
         """
         return potential_relation in self.gold_relations
 
+
 def parse_input(loc, fname, is_gold = True, return_format = "list",
     fix_acronyms = True):
     """Parse a PubTator formatted file and return a set of Paper objects."""
@@ -521,3 +524,17 @@ def parse_input(loc, fname, is_gold = True, return_format = "list",
         return {paper.pmid : paper for paper in papers}
 
     return papers
+
+
+def parse_file(save_loc, **kwargs):
+    """Uses a cached version of the save file if possible."""
+    res = save_file(save_loc)
+    if res is not None:
+        return res
+
+    res = parse_input(kwargs["loc"], kwargs["fname"],
+        is_gold = kwargs["is_gold"], return_format = kwargs["return_format"],
+        fix_acronyms = kwargs["fix_acronyms"])
+
+    save_file(save_loc, res)
+    return res
