@@ -1,11 +1,12 @@
 # Tong Shu Li
-# Last updated 2015-07-30
+# Last updated 2015-08-24
 """
 Takes raw CrowdFlower data and groups data together by
 individual work units. Aggregates the votes based on
 a specific column and creates a summary data frame.
 """
 import pandas as pd
+from operator import add
 
 def aggregate_votes(column_name, data_frame, mapping = None):
     """
@@ -33,7 +34,7 @@ def aggregate_votes(column_name, data_frame, mapping = None):
             value = mapping[value]
 
         if value in res:
-            res[value] = map(add, res[value], [conf_score, num_votes])
+            res[value] = list(map(add, res[value], [conf_score, num_votes]))
         else:
             res[value] = [conf_score, num_votes]
 
