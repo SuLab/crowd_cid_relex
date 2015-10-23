@@ -509,7 +509,7 @@ def parse_input(loc, fname, is_gold = True, return_format = "list",
                 abstract = vals[2]
             elif vals[1] == "CID":
                 assert int(vals[0]) == pmid
-                relations.append(Relation(pmid, vals[2], vals[3]))
+                relations.append(Relation(pmid, vals[2], vals[3], flat = False))
             else:
                 # an annotation
                 if len(vals) == 5: # no identifier was assigned
