@@ -1,5 +1,5 @@
 # Tong Shu Li
-# Last updated: 2015-10-15
+# Last updated: 2015-11-24
 """Grab MeSH terms for a PubMed abstract using Eutils."""
 
 from collections import defaultdict
@@ -35,6 +35,15 @@ class Article:
     """
     def __init__(self, pmid):
         """Creates an article summary by querying the PubMed API."""
+
+        def get_publication_type():
+            """Parse out publication type classifications"""
+            temp = defaultdict(list)
+            for node in tree.findall(".//PublicationTypeList/PublicationType"):
+                temp["pub_type"].append(node.attrib["UI"])
+                temp["pub_name"].append(node.text)
+
+            return pd.DataFrame(temp)
 
         def get_mesh_terms():
             """Parse out MeSH annotations from the XML and store as a dataframe.
@@ -82,6 +91,9 @@ class Article:
 
         # parse out the mesh annotations
         self.mesh_terms = get_mesh_terms()
+
+        # get the type of publication
+        self.pub_type = get_publication_type()
 
     def __repr__(self):
         return "<{}>: PMID:{}. '{}'\n{} MeSH terms".format(self.__class__.__name__,
