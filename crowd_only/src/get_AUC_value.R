@@ -1,4 +1,5 @@
-# last updated 2015-06-25 tong shu li
+# Tong Shu Li
+# Last updated: 2015-11-25
 
 # calculates the AUC value for a ROC curve
 # if a filename and title are provided,

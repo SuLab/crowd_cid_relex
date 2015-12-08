@@ -10,6 +10,9 @@ from collections import defaultdict
 import pandas as pd
 
 def F_score(precision, recall):
+    if precision + recall == 0:
+        return 0
+
     return 2 * (precision * recall) / (precision + recall)
 
 def all_F_scores(score_column, class_column, data_frame):
