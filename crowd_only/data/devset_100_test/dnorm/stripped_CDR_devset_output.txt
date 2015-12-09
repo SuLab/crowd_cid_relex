@@ -1,0 +1,1165 @@
+2917114|t|Glycopyrronium requirements for antagonism of the muscarinic side effects of edrophonium.
+2917114|a|We have compared, in 60 adult patients, the cardiovascular effects of glycopyrronium 5 micrograms kg-1 and 10 micrograms kg-1 given either simultaneously or 1 min before edrophonium 1 mg kg-1. Significant differences between the four groups were detected (P less than 0.001). Both groups receiving 10 micrograms kg-1 showed increases in heart rate of up to 30 beat min-1 (95% confidence limits 28-32 beat min-1). Use of glycopyrronium 5 micrograms kg-1 provided greater cardiovascular stability and, given 1 min before the edrophonium, was sufficient to minimize early, edrophonium-induced bradycardias. This low dose of glycopyrronium provided good control of oropharyngeal secretions.
+2917114	680	692	bradycardias	Disease	MESH:D001919
+
+18657397|t|Detailed spectral profile analysis of penicillin-induced epileptiform activity in anesthetized rats.
+18657397|a|Penicillin model is a widely used experimental model for epilepsy research. In the present study we aimed to portray a detailed spectral analysis of penicillin-induced epileptiform activity in comparison with basal brain activity in anesthetized Wistar rats. Male Wistar rats were anesthetized with i.p. urethane and connected to an electrocorticogram setup. After a short period of basal activity recording, epileptic focus was induced by injecting 400IU/2 microl penicillin-G potassium into the left lateral ventricle while the cortical activity was continuously recorded. Basal activity, latent period and the penicillin-induced epileptiform activity periods were then analyzed using both conventional methods and spectral analysis. Spectral analyses were conducted by dividing the whole spectrum into different frequency bands including delta, theta (slow and fast), alpha-sigma, beta (1 and 2) and gamma (1 and 2) bands. Our results show that the most affected frequency bands were delta, theta, beta-2 and gamma-2 bands during the epileptiform activity and there were marked differences in terms of spectral densities between three investigated episodes (basal activity, latent period and epileptiform activity). Our results may help to analyze novel data obtained using similar experimental models and the simple analysis method described here can be used in similar studies to investigate the basic neuronal mechanism of this or other types of experimental epilepsies.
+18657397	57	78	epileptiform activity	Disease	MESH:D004827
+18657397	158	166	epilepsy	Disease	MESH:D004827
+18657397	269	290	epileptiform activity	Disease	MESH:D004827
+18657397	510	519	epileptic	Disease	MESH:D004827
+18657397	733	754	epileptiform activity	Disease	MESH:D004827
+18657397	1138	1159	epileptiform activity	Disease	MESH:D004827
+18657397	1296	1317	epileptiform activity	Disease	MESH:D004827
+18657397	1566	1576	epilepsies	Disease	MESH:D004827
+
+16192988|t|Methamphetamine causes alterations in the MAP kinase-related pathways in the brains of mice that display increased aggressiveness.
+16192988|a|Aggressive behaviors have been reported in patients who suffer from some psychiatric disorders, and are common in methamphetamine (METH) abusers. Herein, we report that multiple (but not single) injections of METH significantly increased aggressiveness in male CD-1 mice. This increase in aggressiveness was not secondary to METH-induced hyperactivity. Analysis of protein expression using antibody microarrays and Western blotting revealed differential changes in MAP kinase-related pathways after multiple and single METH injections. There were statistically significant (p<0.05) decreases in MEK1, Erk2p, GSK3alpha, 14-3-3e, and MEK7 in the striata of mice after multiple injections of METH. MEK1 was significantly decreased also after a single injection of METH, but to a much lesser degree than after multiple injections of METH. In the frontal cortex, there was a statistically significant decrease in GSK3alpha after multiple (but not single) injections of METH. These findings suggest that alterations in MAP kinase-related pathways in the prefronto-striatal circuitries might be involved in the manifestation of aggressive behaviors in mice.
+16192988	115	129	aggressiveness	Disease	MESH:D001523
+16192988	131	151	Aggressive behaviors	Disease	MESH:D001523
+16192988	204	225	psychiatric disorders	Disease	MESH:D001523
+16192988	369	383	aggressiveness	Disease	MESH:D001523
+16192988	420	434	aggressiveness	Disease	MESH:D001523
+16192988	469	482	hyperactivity	Disease	MESH:D006948
+16192988	1252	1272	aggressive behaviors	Disease	MESH:D001523
+
+9875685|t|Therapeutic drug monitoring of tobramycin: once-daily versus twice-daily dosage schedules.
+9875685|a|OBJECTIVE: To evaluate the effect of dosage regimen (once-daily vs. twice-daily) of tobramicyn on steady-state serum concentrations and toxicity. MATERIALS AND METHODS: Patients undergoing treatment with i.v. tobramycin (4 mg/kg/day) were randomised to two groups. Group OD (n = 22) received a once-daily dose of tobramycin and group TD (n = 21) received the same dose divided into two doses daily. Tobramycin serum concentrations (peak and trough) were measured by enzyme multiplied immunoassay. The renal and auditory functions of the patients were monitored before, during and immediately after treatment. RESULTS: The two groups were comparable with respect to sex, age, body weight and renal function. No statistically significant differences were found in mean daily dose, duration of treatment, or cumulative dose. Trough concentrations were < 2 g/ml in the two groups (100%). Peak concentrations were > 6 microg/ml in 100% of the OD group and in 67% of the TD group (P< 0.01). Mean peak concentrations were markedly different: 11.00+/-2.89 microg/ml in OD vs. 6.53+/-1.45 microg/ml in TD (P< 0.01). The pharmacokinetics parameters were: Ke, (0.15+/-0.03/h in OD vs. 0.24+/-0.06/h in TD), t1/2, (4.95+/-1.41 h in OD vs. 3.07+/-0.71 h in TD), Vd (0.35+/-0.11 l/kg in OD vs. 0.33+/-0.09 l/kg in TD), Cl (0.86+/-0.29 ml/min/kg in OD vs. 1.28+/-0.33 ml/min/kg in TD). Increased serum creatinine was observed in 73% of patients in OD versus 57% of patients in TD, without evidence of nephrotoxicity. In TD group, three patients developed decreased auditory function, of which one presented with an auditory loss of -30 dB, whereas in the OD group only one patient presented decreased auditory function. CONCLUSION: This small study suggests that a once-daily dosing regimen of tobramycin is at least as effective as and is no more and possibly less toxic than the twice-daily regimen. Using a single-dose therapy, peak concentration determination is not necessary, only trough samples should be monitored to ensure levels below 2 microg/ml.
+9875685	227	235	toxicity	Disease	MESH:D064420
+9875685	1631	1658	decreased auditory function	Disease	MESH:D034381
+9875685	1691	1704	auditory loss	Disease	MESH:D054062
+9875685	1767	1794	decreased auditory function	Disease	MESH:D034381
+
+9041081|t|Effect of myopic excimer laser photorefractive keratectomy on the electrophysiologic function of the retina and optic nerve.
+9041081|a|PURPOSE: To assess by electrophysiologic testing the effect of photorefractive keratectomy (PRK) on the retina and optic nerve. SETTING: Eye Clinic, S. Salvatore Hospital, L'Aquila University, Italy. METHODS: Standard pattern electroretinograms (P-ERGs) and standard pattern visual evoked potentials (P-VEPs) were done in 25 eyes of 25 patients who had myopic PRK for an attempted correction between 5.00 and 15.00 diopters (D) (mean 8.00 D). Testing was done preoperatively and 3, 6, 12, and 18 months postoperatively. The contralateral eyes served as controls. During the follow-up, 3 patients (12%) developed steroid-induced elevated intraocular pressure (IOP) that resolved after corticosteroid therapy was discontinued. RESULTS: No statistically significant differences were seen between treated and control eyes nor between treated eyes preoperatively and postoperatively. CONCLUSION: Myopic excimer laser PRK did not seem to affect the posterior segment. The transient steroid-induced IOP rise did not seem to cause functional impairment.
+9041081	753	782	elevated intraocular pressure	Disease	MESH:D009798
+9041081	1117	1125	IOP rise	Disease	MESH:D009798
+
+8305357|t|Liposomal daunorubicin in advanced Kaposi's sarcoma: a phase II study.
+8305357|a|We report a non-randomized Phase II clinical trial to assess the efficacy and safety of liposomal daunorubicin (DaunoXome) in the treatment of AIDS related Kaposi's sarcoma. Eleven homosexual men with advanced Kaposi's sarcoma were entered in the trial. Changes in size, colour and associated oedema of selected 'target' lesions were measured. Clinical, biochemical and haematological toxicities were assessed. Ten subjects were evaluated. A partial response was achieved in four, of whom two subsequently relapsed. Stabilization of Kaposi's sarcoma occurred in the remaining six, maintained until the end of the trial period in four. The drug was generally well tolerated, with few mild symptoms of toxicity. The main problem encountered was haematological toxicity, with three subjects experiencing severe neutropenia (neutrophil count < 0.5 x 10(9)/l). There was no evidence of cardiotoxicity. In this small patient sample, liposomal daunorubicin was an effective and well tolerated agent in the treatment of Kaposi's sarcoma.
+8305357	35	51	Kaposi's sarcoma	Disease	MESH:D012514
+8305357	214	218	AIDS	Disease	MESH:D000163
+8305357	227	243	Kaposi's sarcoma	Disease	MESH:D012514
+8305357	281	297	Kaposi's sarcoma	Disease	MESH:D012514
+8305357	364	370	oedema	Disease	MESH:D004487
+8305357	456	466	toxicities	Disease	MESH:D064420
+8305357	604	620	Kaposi's sarcoma	Disease	MESH:D012514
+8305357	771	779	toxicity	Disease	MESH:D064420
+8305357	829	837	toxicity	Disease	MESH:D064420
+8305357	879	890	neutropenia	Disease	MESH:D009503
+8305357	952	966	cardiotoxicity	Disease	MESH:D066126
+8305357	1083	1099	Kaposi's sarcoma	Disease	MESH:D012514
+
+7651879|t|Seizure after flumazenil administration in a pediatric patient.
+7651879|a|Flumazenil is a benzodiazepine receptor antagonist used to reverse sedation and respiratory depression induced by benzodiazepines. Seizures and cardiac arrhythmias have complicated its use in adult patients. Overdose patients who have coingested tricyclic antidepressants have a higher risk of these complications. Little information exists concerning adverse effects of flumazenil in children. We report the occurrence of a generalized tonic-clonic seizure in a pediatric patient following the administration of flumazenil.
+7651879	0	7	Seizure	Disease	MESH:D012640
+7651879	144	166	respiratory depression	Disease	MESH:D012131
+7651879	195	203	Seizures	Disease	MESH:D012640
+7651879	208	227	cardiac arrhythmias	Disease	MESH:D001145
+7651879	272	280	Overdose	Disease	MESH:D062787
+7651879	501	521	tonic-clonic seizure	Disease	MESH:D012640
+
+1564236|t|Relation of perfusion defects observed with myocardial contrast echocardiography to the severity of coronary stenosis: correlation with thallium-201 single-photon emission tomography.
+1564236|a|It has been previously shown that myocardial contrast echocardiography is a valuable technique for delineating regions of myocardial underperfusion secondary to coronary occlusion and to critical coronary stenoses in the presence of hyperemic stimulation. The aim of this study was to determine whether myocardial contrast echocardiography performed with a stable solution of sonicated albumin could detect regions of myocardial underperfusion resulting from various degrees of coronary stenosis. The perfusion defect produced in 16 open chest dogs was compared with the anatomic area at risk measured by the postmortem dual-perfusion technique and with thallium-201 single-photon emission tomography (SPECT). During a transient (20-s) coronary occlusion, a perfusion defect was observed with contrast echocardiography in 14 of the 15 dogs in which the occlusion was produced. The perfusion defect correlated significantly with the anatomic area at risk (r = 0.74; p less than 0.002). During dipyridamole-induced hyperemia, 12 of the 16 dogs with a partial coronary stenosis had a visible area of hypoperfusion by contrast echocardiography. The four dogs without a perfusion defect had a stenosis that resulted in a mild (0% to 50%) reduction in dipyridamole-induced hyperemia. The size of the perfusion defect during stenosis correlated significantly with the anatomic area at risk (r = 0.61; p = 0.02). Thallium-201 SPECT demonstrated a perfusion defect in all 14 dogs analyzed during dipyridamole-induced hyperemia; the size of the perfusion defect correlated with the anatomic area at risk (r = 0.58; p less than 0.03) and with the perfusion defect by contrast echocardiography (r = 0.58; p less than 0.03). Thus, myocardial contrast echocardiography can be used to visualize and quantitate the amount of jeopardized myocardium during moderate to severe degrees of coronary stenosis. The results obtained show a correlation with the anatomic area at risk similar to that obtained with thallium-201 SPECT.
+1564236	100	117	coronary stenosis	Disease	MESH:D023921
+1564236	345	363	coronary occlusion	Disease	MESH:D054059
+1564236	380	397	coronary stenoses	Disease	MESH:D023921
+1564236	662	679	coronary stenosis	Disease	MESH:D023921
+1564236	920	938	coronary occlusion	Disease	MESH:D054059
+1564236	1197	1206	hyperemia	Disease	MESH:D006940
+1564236	1241	1258	coronary stenosis	Disease	MESH:D023921
+1564236	1451	1460	hyperemia	Disease	MESH:D006940
+1564236	1692	1701	hyperemia	Disease	MESH:D006940
+1564236	2053	2070	coronary stenosis	Disease	MESH:D023921
+
+19135948|t|Graft-versus-host disease prophylaxis with everolimus and tacrolimus is associated with a high incidence of sinusoidal obstruction syndrome and microangiopathy: results of the EVTAC trial.
+19135948|a|A calcineurin inhibitor combined with methotrexate is the standard prophylaxis for graft-versus-host disease (GVHD) after allogeneic hematopoietic stem cell transplantation (HSCT). Everolimus, a derivative of sirolimus, seems to mediate antileukemia effects. We report on a combination of everolimus and tacrolimus in 24 patients (median age, 62 years) with either myelodysplastic syndrome (MDS; n = 17) or acute myeloid leukemia (AML; n = 7) undergoing intensive conditioning followed by HSCT from related (n = 4) or unrelated (n = 20) donors. All patients engrafted, and only 1 patient experienced grade IV mucositis. Nine patients (37%) developed acute grade II-IV GVHD, and 11 of 17 evaluable patients (64%) developed chronic extensive GVHD. Transplantation-associated microangiopathy (TMA) occurred in 7 patients (29%), with 2 cases of acute renal failure. The study was terminated prematurely because an additional 6 patients (25%) developed sinusoidal obstruction syndrome (SOS), which was fatal in 2 cases. With a median follow-up of 26 months, the 2-year overall survival rate was 47%. Although this new combination appears to be effective as a prophylactic regimen for acute GVHD, the incidence of TMA and SOS is considerably higher than seen with other regimens.
+19135948	0	25	Graft-versus-host disease	Disease	MESH:D006086
+19135948	108	139	sinusoidal obstruction syndrome	Disease	MESH:D006504
+19135948	144	159	microangiopathy	Disease	MESH:D057049
+19135948	272	297	graft-versus-host disease	Disease	MESH:D006086
+19135948	299	303	GVHD	Disease	MESH:D006086
+19135948	554	578	myelodysplastic syndrome	Disease	MESH:D009190
+19135948	580	583	MDS	Disease	MESH:D009190
+19135948	596	618	acute myeloid leukemia	Disease	MESH:D015470
+19135948	620	623	AML	Disease	MESH:D015470
+19135948	798	807	mucositis	Disease	MESH:D052016
+19135948	857	861	GVHD	Disease	MESH:D006086
+19135948	929	933	GVHD	Disease	MESH:D006086
+19135948	935	977	Transplantation-associated microangiopathy	Disease	MESH:D014652
+19135948	979	982	TMA	Disease	MESH:D014652
+19135948	1030	1049	acute renal failure	Disease	MESH:D058186
+19135948	1137	1168	sinusoidal obstruction syndrome	Disease	MESH:D006504
+19135948	1170	1173	SOS	Disease	MESH:D006504
+19135948	1374	1378	GVHD	Disease	MESH:D006086
+19135948	1397	1400	TMA	Disease	MESH:D014652
+19135948	1405	1408	SOS	Disease	MESH:D006504
+
+19370593|t|Long term hormone therapy for perimenopausal and postmenopausal women.
+19370593|a|BACKGROUND: Hormone therapy (HT) is widely used for controlling menopausal symptoms and has also been used for the management and prevention of cardiovascular disease, osteoporosis and dementia in older women. This is an updated version of the original Cochrane review first published in 2005. OBJECTIVES: To assess the effect of long-term HT on mortality, cardiovascular outcomes, cancer, gallbladder disease, cognition, fractures and quality of life. SEARCH STRATEGY: We searched the following databases to November 2007: Trials Register of the Cochrane Menstrual Disorders and Subfertility Group, Cochrane Central Register of Controlled Trials, MEDLINE, EMBASE, Biological Abstracts. Also relevant non-indexed journals and conference abstracts. SELECTION CRITERIA: Randomised double-blind trials of HT versus placebo, taken for at least one year by perimenopausal or postmenopausal women. HT included oestrogens, with or without progestogens, via oral, transdermal, subcutaneous or transnasal routes. DATA COLLECTION AND ANALYSIS: Two authors independently assessed trial quality and extracted data. MAIN RESULTS: Nineteen trials involving 41,904 women were included. In relatively healthy women, combined continuous HT significantly increased the risk of venous thrombo-embolism or coronary event (after one year's use), stroke (after three years), breast cancer and gallbladder disease. Long-term oestrogen-only HT significantly increased the risk of venous thrombo-embolism, stroke and gallbladder disease (after one to two years, three years and seven years' use respectively), but did not significantly increase the risk of breast cancer. The only statistically significant benefits of HT were a decreased incidence of fractures and (for combined HT) colon cancer, with long-term use. Among women aged over 65 who were relatively healthy (i.e. generally fit, without overt disease) and taking continuous combined HT, there was a statistically significant increase in the incidence of dementia. Among women with cardiovascular disease, long-term use of combined continuous HT significantly increased the risk of venous thrombo-embolism.One trial analysed subgroups of 2839 relatively healthy 50 to 59 year old women taking combined continuous HT and 1637 taking oestrogen-only HT, versus similar-sized placebo groups. The only significantly increased risk reported was for venous thrombo-embolism in women taking combined continuous HT: their absolute risk remained low, at less than 1/500. However, this study was not powered to detect differences between groups of younger women. AUTHORS' CONCLUSIONS: HT is not indicated for the routine management of chronic disease. We need more evidence on the safety of HT for menopausal symptom control, though short-term use appears to be relatively safe for healthy younger women.
+19370593	215	237	cardiovascular disease	Disease	MESH:D002318
+19370593	239	251	osteoporosis	Disease	MESH:D010024
+19370593	256	264	dementia	Disease	MESH:D003704
+19370593	453	459	cancer	Disease	MESH:D009369
+19370593	461	480	gallbladder disease	Disease	MESH:D005705
+19370593	493	502	fractures	Disease	MESH:D050723
+19370593	627	646	Menstrual Disorders	Disease	MESH:D008599
+19370593	1330	1353	venous thrombo-embolism	Disease	MESH:D054556
+19370593	1396	1402	stroke	Disease	MESH:D020521
+19370593	1424	1437	breast cancer	Disease	MESH:D001943
+19370593	1442	1461	gallbladder disease	Disease	MESH:D005705
+19370593	1527	1550	venous thrombo-embolism	Disease	MESH:D054556
+19370593	1552	1558	stroke	Disease	MESH:D020521
+19370593	1563	1582	gallbladder disease	Disease	MESH:D005705
+19370593	1703	1716	breast cancer	Disease	MESH:D001943
+19370593	1798	1807	fractures	Disease	MESH:D050723
+19370593	1830	1842	colon cancer	Disease	MESH:D003110
+19370593	2063	2071	dementia	Disease	MESH:D003704
+19370593	2090	2112	cardiovascular disease	Disease	MESH:D002318
+19370593	2190	2213	venous thrombo-embolism	Disease	MESH:D054556
+19370593	2451	2474	venous thrombo-embolism	Disease	MESH:D054556
+
+12452237|t|Can lidocaine reduce succinylcholine induced postoperative myalgia?
+12452237|a|This study was undertaken to determine the effect of lidocaine pretreatment on reduction of succinylcholine-induced myalgia in patients undergoing general anesthesia for gynecological surgery. One hundred and thirty-five patients were assigned to one of three groups in a prospective, double blind, randomized manner. Group PS, the control group, received normal saline and succinylcholine 1.5 mg x kg(-1); Group LS, lidocaine 1.5 mg x kg(-1) and succinylcholine 1.5 mg x kg(-1); Group PR, normal saline and rocuronium 0.6 mg x kg(-1). Morphine 0.1 mg x kg(-1) iv was given for premedication and all patients were monitored with a noninvasive blood pressure monitor, ECG and pulse oximetry. Anesthesia was induced with 5 mg.kg(-1) thiopental iv. followed by succinylcholine (Group PS, LS) or rocuronium (Group PR) for tracheal intubation. Following administration of these agents, the presence, and degree of fasciculation were assessed visually on a four point scale by one investigator who was blinded to the drug administered. The blood pressure and heart rate of each patient were monitored on nine occasions. Twenty-four hours later, any myalgia experienced was assessed according to a structured questionaire and graded by a four point scale by one investigator blinded to the intraoperative management. The results indicate that muscle fasciculation was not found in Group PR while the patients in Group LS had a lower incidence of muscle fasciculation than those in Group PS (p < 0.001). At 24 h, the incidence of myalgia was higher in Group PS than in Group LS and PR (p < 0.05). A correlation was not found between the incidence of myalgia and the occurrence of muscle fasciculation. The changes in systolic and diastolic blood pressure and heart rate were not significant among the three groups. In conclusion, where succinylcholine is used, lidocaine is proven to be the useful pretreatment agent for the reduction of postoperative myalgia.
+12452237	45	66	postoperative myalgia	Disease	MESH:D010149
+12452237	184	191	myalgia	Disease	MESH:D063806
+12452237	977	990	fasciculation	Disease	MESH:D005207
+12452237	1211	1218	myalgia	Disease	MESH:D063806
+12452237	1404	1424	muscle fasciculation	Disease	MESH:D005207
+12452237	1507	1527	muscle fasciculation	Disease	MESH:D005207
+12452237	1590	1597	myalgia	Disease	MESH:D063806
+12452237	1710	1717	myalgia	Disease	MESH:D063806
+12452237	1740	1760	muscle fasciculation	Disease	MESH:D005207
+12452237	1998	2019	postoperative myalgia	Disease	MESH:D010149
+
+9564988|t|Open-label assessment of levofloxacin for the treatment of acute bacterial sinusitis in adults.
+9564988|a|PURPOSE: To evaluate the efficacy and safety of levofloxacin (500 mg orally once daily for 10 to 14 days) in treating adult outpatients with acute bacterial sinusitis. PATIENTS AND METHODS: A total of 329 patients enrolled in the study at 24 centers. All patients had a pre-therapy Gram's stain and culture of sinus exudate obtained by antral puncture or nasal endoscopy. Clinical response was assessed on the basis of signs and symptoms and sinus radiograph or computed tomography results. Microbiologic cure rates were determined on the basis of presumed plus documented eradication of the pre-therapy pathogen(s). RESULTS: The most common pathogens were Haemophilus influenzae, Streptococcus pneumoniae, Staphylococcus aureus, and Moraxella catarrhalis. Of 300 clinically evaluable patients, 175 (58%) were cured and 90 (30%) were improved at the post-therapy evaluation, resulting in a clinical success rate of 88%. Thirty-five patients (12%) clinically failed treatment. The microbiologic eradication rate (presumed plus documented) among 138 microbiologically evaluable patients was 92%. Microbiologic eradication rates (presumed plus documented) of the most common pathogens ranged from 93% (M. catarrhalis) to 100% (S. pneumoniae) at the post-therapy visit. All but one of the 265 patients who were cured or improved at post-therapy returned for a long-term follow-up visit; 243 (92%) remained well 4 to 6 weeks after therapy; and 21 (8%) had a relapse of symptoms. Adverse events considered to be related to levofloxacin administration were reported by 29 patients (9%). The most common drug-related adverse events were diarrhea, flatulence, and nausea; most adverse events were mild to moderate in severity. CONCLUSION: The results of this study indicate that levofloxacin 500 mg once daily is an effective and safe treatment for acute bacterial sinusitis.
+9564988	75	84	sinusitis	Disease	MESH:D012852
+9564988	253	262	sinusitis	Disease	MESH:D012852
+9564988	1725	1733	diarrhea	Disease	MESH:D003967
+9564988	1735	1745	flatulence	Disease	MESH:D005414
+9564988	1751	1757	nausea	Disease	MESH:D009325
+9564988	1952	1961	sinusitis	Disease	MESH:D012852
+
+8586822|t|Contribution of the sympathetic nervous system to salt-sensitivity in lifetime captopril-treated spontaneously hypertensive rats.
+8586822|a|OBJECTIVE: To test the hypothesis that, in lifetime captopril-treated spontaneously hypertensive rats (SHR), the sympathetic nervous system contributes importantly to the hypertensive effect of dietary sodium chloride supplementation. METHODS: Male SHR (aged 6 weeks) that had been treated from conception onward with either captopril or vehicle remained on a basal sodium chloride diet or were fed a high sodium chloride diet. After 2 weeks, the rats were subjected to ganglionic blockade and 2 days later, an infusion of clonidine. RESULTS: Lifetime captopril treatment significantly lowered mean arterial pressure in both groups. Intravenous infusion of the ganglionic blocker hexamethonium resulted in a rapid decline in MAP that eliminated the dietary sodium chloride-induced increase in MAP in both groups. Infusion of the central nervous system alpha2-adrenergic receptor agonist clonidine also resulted in a greater reduction in MAP in both groups of SHR that were fed the high (compared with the basal) sodium chloride diet. CONCLUSIONS: In both lifetime captopril-treated and control SHR, the sympathetic nervous system contributes to the pressor effects of a high sodium chloride diet.
+8586822	111	123	hypertensive	Disease	MESH:D006973
+8586822	214	226	hypertensive	Disease	MESH:D006973
+8586822	301	313	hypertensive	Disease	MESH:D006973
+
+16596970|t|Pilocarpine seizures cause age-dependent impairment in auditory location discrimination.
+16596970|a|Children who have status epilepticus have continuous or rapidly repeating seizures that may be life-threatening and may cause life-long changes in brain and behavior. The extent to which status epilepticus causes deficits in auditory discrimination is unknown. A naturalistic auditory location discrimination method was used to evaluate this question using an animal model of status epilepticus. Male Sprague-Dawley rats were injected with saline on postnatal day (P) 20, or a convulsant dose of pilocarpine on P20 or P45. Pilocarpine on either day induced status epilepticus; status epilepticus at P45 resulted in CA3 cell loss and spontaneous seizures, whereas P20 rats had no cell loss or spontaneous seizures. Mature rats were trained with sound-source location and sound-silence discriminations. Control (saline P20) rats acquired both discriminations immediately. In status epilepticus (P20) rats, acquisition of the sound-source location discrimination was moderately impaired. Status epilepticus (P45) rats failed to acquire either sound-source location or sound-silence discriminations. Status epilepticus in rat causes an age-dependent, long-term impairment in auditory discrimination. This impairment may explain one cause of impaired auditory location discrimination in humans.
+16596970	12	20	seizures	Disease	MESH:D012640
+16596970	41	87	impairment in auditory location discrimination	Disease	MESH:D001308
+16596970	107	125	status epilepticus	Disease	MESH:D013226
+16596970	163	171	seizures	Disease	MESH:D012640
+16596970	276	294	status epilepticus	Disease	MESH:D013226
+16596970	302	337	deficits in auditory discrimination	Disease	MESH:D001308
+16596970	465	483	status epilepticus	Disease	MESH:D013226
+16596970	646	664	status epilepticus	Disease	MESH:D013226
+16596970	666	684	status epilepticus	Disease	MESH:D013226
+16596970	734	742	seizures	Disease	MESH:D012640
+16596970	793	801	seizures	Disease	MESH:D012640
+16596970	962	980	status epilepticus	Disease	MESH:D013226
+16596970	1074	1092	Status epilepticus	Disease	MESH:D013226
+16596970	1185	1203	Status epilepticus	Disease	MESH:D013226
+16596970	1246	1283	impairment in auditory discrimination	Disease	MESH:D001308
+16596970	1326	1367	impaired auditory location discrimination	Disease	MESH:D001308
+
+15565293|t|Optical coherence tomography can measure axonal loss in patients with ethambutol-induced optic neuropathy.
+15565293|a|PURPOSE: To map and identify the pattern, in vivo, of axonal degeneration in ethambutol-induced optic neuropathy using optical coherence tomography (OCT). Ethambutol is an antimycobacterial agent often used to treat tuberculosis. A serious complication of ethambutol is an optic neuropathy that impairs visual acuity, contrast sensitivity, and color vision. However, early on, when the toxic optic neuropathy is mild and partly reversible, the funduscopic findings are often subtle and easy to miss. METHODS: Three subjects with a history of ethambutol (EMB)-induced optic neuropathy of short-, intermediate-, and long-term visual deficits were administered a full neuro-ophthalmologic examination including visual acuity, color vision, contrast sensitivity, and fundus examination. In addition, OCT (OCT 3000, Humphrey-Zeiss, Dublin, CA) was performed on both eyes of each subject using the retinal nerve fiber layer (RNFL) analysis protocol. OCT interpolates data from 100 points around the optic nerve to effectively map out the RNFL. RESULTS: The results were compared to the calculated average RNFL of normal eyes accumulated from four prior studies using OCT, n=661. In all subjects with history of EMB-induced optic neuropathy, there was a mean loss of 72% nerve fiber layer thickness in the temporal quadrant (patient A, with eventual recovery of visual acuity and fields, 58% loss; patient B, with intermediate visual deficits, 68% loss; patient C, with chronic visual deficits, 90% loss), with an average mean optic nerve thickness of 26+/-16 microm. There was a combined mean loss of 46% of fibers from the superior, inferior, and nasal quadrants in the (six) eyes of all three subjects (mean average thickness of 55+/-29 microm). In both sets (four) of eyes of the subjects with persistent visual deficits (patients B and C), there was an average loss of 79% of nerve fiber thickness in the temporal quadrant. CONCLUSIONS: The OCT results in these patients with EMB-induced optic neuropathy show considerable loss especially of the temporal fibers. This is consistent with prior histopathological studies that show predominant loss of parvo-cellular axons (or small-caliber axons) within the papillo-macular bundle in toxic or hereditary optic neuropathies. OCT can be a valuable tool in the quantitative analysis of optic neuropathies. Additionally, in terms of management of EMB-induced optic neuropathy, it is important to properly manage ethambutol dosing in patients with renal impairment and to achieve proper transition to a maintenance dose once an appropriate loading dose has been reached.
+15565293	89	105	optic neuropathy	Disease	MESH:D009901
+15565293	161	180	axonal degeneration	Disease	MESH:D009410
+15565293	203	219	optic neuropathy	Disease	MESH:D009901
+15565293	323	335	tuberculosis	Disease	MESH:D014376
+15565293	380	396	optic neuropathy	Disease	MESH:D009901
+15565293	499	515	optic neuropathy	Disease	MESH:D009901
+15565293	674	690	optic neuropathy	Disease	MESH:D009901
+15565293	731	746	visual deficits	Disease	MESH:D014786
+15565293	1324	1340	optic neuropathy	Disease	MESH:D009901
+15565293	1527	1542	visual deficits	Disease	MESH:D014786
+15565293	1578	1593	visual deficits	Disease	MESH:D014786
+15565293	1909	1924	visual deficits	Disease	MESH:D014786
+15565293	2093	2109	optic neuropathy	Disease	MESH:D009901
+15565293	2357	2375	optic neuropathies	Disease	MESH:D009901
+15565293	2436	2454	optic neuropathies	Disease	MESH:D009901
+15565293	2508	2524	optic neuropathy	Disease	MESH:D009901
+15565293	2596	2612	renal impairment	Disease	MESH:D007674
+
+15266215|t|Effects of the cyclooxygenase-2 specific inhibitor valdecoxib versus nonsteroidal antiinflammatory agents and placebo on cardiovascular thrombotic events in patients with arthritis.
+15266215|a|There have been concerns that the risk of cardiovascular thrombotic events may be higher with cyclooxygenase (COX)-2-specific inhibitors than nonselective nonsteroidal antiinflammatory drugs (NSAIDs). We evaluated cardiovascular event data for valdecoxib, a new COX-2-specific inhibitor in approximately 8000 patients with osteoarthritis and rheumatoid arthritis treated with this agent in randomized clinical trials. The incidence of cardiovascular thrombotic events (cardiac, cerebrovascular and peripheral vascular, or arterial thrombotic) was determined by analyzing pooled valdecoxib (10-80 mg daily), nonselective NSAID (diclofenac 75 mg bid, ibuprofen 800 mg tid, or naproxen 500 mg bid) and placebo data from 10 randomized osteoarthritis and rheumatoid arthritis trials that were 6-52 weeks in duration. The incidence rates of events were determined in all patients (n = 7934) and in users of low-dose (< or =325 mg daily) aspirin (n = 1051) and nonusers of aspirin (n = 6883). Crude and exposure-adjusted incidences of thrombotic events were similar for valdecoxib, NSAIDs, and placebo. The risk of serious thrombotic events was also similar for each valdecoxib dose. Thrombotic risk was consistently higher for users of aspirin users than nonusers of aspirin (placebo, 1.4% vs. 0%; valdecoxib, 1.7% vs. 0.2%; NSAIDs, 1.9% vs. 0.5%). The rates of events in users of aspirin were similar for all 3 treatment groups and across valdecoxib doses. Short- and intermediate-term treatment with therapeutic (10 or 20 mg daily) and supratherapeutic (40 or 80 mg daily) valdecoxib doses was not associated with an increased incidence of thrombotic events relative to nonselective NSAIDs or placebo in osteoarthritis and rheumatoid arthritis patients in controlled clinical trials.
+15266215	136	146	thrombotic	Disease	MESH:D013927
+15266215	171	180	arthritis	Disease	MESH:D001168
+15266215	239	249	thrombotic	Disease	MESH:D013927
+15266215	505	519	osteoarthritis	Disease	MESH:D010003
+15266215	524	544	rheumatoid arthritis	Disease	MESH:D001172
+15266215	632	642	thrombotic	Disease	MESH:D013927
+15266215	713	723	thrombotic	Disease	MESH:D013927
+15266215	913	927	osteoarthritis	Disease	MESH:D010003
+15266215	932	952	rheumatoid arthritis	Disease	MESH:D001172
+15266215	1210	1220	thrombotic	Disease	MESH:D013927
+15266215	1298	1308	thrombotic	Disease	MESH:D013927
+15266215	1359	1369	Thrombotic	Disease	MESH:D013927
+15266215	1818	1828	thrombotic	Disease	MESH:D013927
+15266215	1882	1896	osteoarthritis	Disease	MESH:D010003
+15266215	1901	1921	rheumatoid arthritis	Disease	MESH:D001172
+
+9270571|t|Potential therapeutic use of the selective dopamine D1 receptor agonist, A-86929: an acute study in parkinsonian levodopa-primed monkeys.
+9270571|a|The clinical utility of dopamine (DA) D1 receptor agonists in the treatment of Parkinson's disease (PD) is still unclear. The therapeutic use of selective DA D1 receptor agonists such as SKF-82958 (6-chloro-7,8-dihydroxy-3-allyl-1-phenyl-2,3,4,5-tetrahydro-1H-3-benzaze pine hydrobromide) and A-77636 ([1R, 3S] 3-[1'-admantyl]-1-aminomethyl-3,4-dihydro-5,6-dihydroxy-1H-2-benzo pyran hydrochloride) seems limited because of their duration of action, which is too short for SKF-82958 (< 1 hr) and too long for A-77636 (> 20 hr, leading to behavioral tolerance). We therefore conducted the present acute dose-response study in four 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP)-exposed cynomolgus monkeys primed to exhibit levodopa-induced dyskinesias to evaluate the locomotor and dyskinetic effects on challenge with four doses (from 0.03 to 1.0 mg/kg) of A-86929 ([-]-[5aR,11bS]-4,5,5a,6,7,11b-hexahydro-2-propyl-3-thia-5-+ ++azacyclopent-1- ena[c]phenathrene-9-10-diol), a selective and full DA D1-like receptor agonist with an intermediate duration of action. Levodopa and the DA D2-like receptor agonist, LY-171555 ([4aR-trans]-4,4a,5,6,7,8,8a,9-o-dihydro-5n-propyl-2H-pyrazo lo-3-4-quinoline hydrochloride) were also used for comparison. Acute administration of A-86929 was as efficacious in alleviating MPTP-induced parkinsonism as levodopa and LY-171555, but was less likely to reproduce the levodopa-induced dyskinesias in these animals than with either LY-171555 or subsequent challenge of levodopa. Selective stimulation of the DA D1 receptor may provide better integration of neural inputs transmitted to the internal segment of the globus pallidus (referred to as the basal ganglia output) compared with levodopa and selective DA D2 receptor agonist. Potent DA D1 receptor agents with an intermediate duration of efficacy such as A-86929 (approximately 4 hr at higher doses tested) are potential therapeutic tools in PD and merit further attention.
+9270571	100	112	parkinsonian	Disease	MESH:D010300
+9270571	217	236	Parkinson's disease	Disease	MESH:D010300
+9270571	238	240	PD	Disease	MESH:D010300
+9270571	882	893	dyskinesias	Disease	MESH:D004409
+9270571	924	934	dyskinetic	Disease	MESH:D004409
+9270571	1466	1478	parkinsonism	Disease	MESH:D010302
+9270571	1560	1571	dyskinesias	Disease	MESH:D004409
+9270571	2073	2075	PD	Disease	MESH:D010300
+
+6150641|t|Comparison of the effectiveness of ranitidine and cimetidine in inhibiting acid secretion in patients with gastric hypersecretory states.
+6150641|a|The H2-histamine receptor antagonists ranitidine and cimetidine were compared for their abilities to control gastric acid hypersecretion on a short- and long-term basis in 22 patients with gastric acid hypersecretory states. Nineteen patients had Zollinger-Ellison syndrome, one patient had systemic mastocytosis, and two patients had idiopathic hypersecretion. The rates of onset of the action of cimetidine and ranitidine were the same. The actions of both drugs were increased by anticholinergic agents, and there was a close correlation between the daily maintenance dose of each drug needed to control acid secretion. However, ranitidine was threefold more potent than cimetidine both in acute inhibition studies and in the median maintenance dose needed (1.2 g per day for ranitidine and 3.6 g per day for cimetidine). Sixty percent of the males developed breast changes or impotence while taking cimetidine and in all cases these changes disappeared when cimetidine was replaced by ranitidine. Treatment with high doses of cimetidine (one to 60 months; median, 11 months) or ranitidine (two to 31 months; median, 14 months) was not associated with hepatic or hematologic toxicity or alterations of serum gastrin concentrations, but ranitidine therapy was associated with a significantly lower serum creatinine level than seen with cimetidine therapy. The results show that both drugs can adequately inhibit acid secretion in patients with gastric hypersecretory states. Both are safe at high doses, but ranitidine is threefold more potent and does not cause the antiandrogen side effects frequently seen with high doses of cimetidine.
+6150641	385	411	Zollinger-Ellison syndrome	Disease	MESH:D015043
+6150641	429	450	systemic mastocytosis	Disease	MESH:D034721
+6150641	1018	1027	impotence	Disease	MESH:D007172
+6150641	1293	1324	hepatic or hematologic toxicity	Disease	MESH:D056486
+
+3300918|t|St. Anthony's fire, then and now: a case report and historical review.
+3300918|a|A rare case of morbid vasospasm, together with striking angiographic findings, is described secondary to the ingestion of methysergide by a 48-year-old woman. A brief review of the literature on similar cases is presented. A discussion of the history of ergot includes its original discovery, the epidemics of gangrene that it has caused through the ages and its past and present role in the management of migraine headache. Despite the advent of calcium channel blockers and beta-adrenergic antagonists, ergot preparations continue to play a major role in migraine therapy, so that the danger of St. Anthony's fire persists.
+3300918	4	18	Anthony's fire	Disease	MESH:D004881
+3300918	93	102	vasospasm	Disease	MESH:D020301
+3300918	477	485	migraine	Disease	MESH:D008881
+3300918	486	494	headache	Disease	MESH:D006261
+3300918	628	636	migraine	Disease	MESH:D008881
+3300918	672	686	Anthony's fire	Disease	MESH:D004881
+
+2826064|t|Beta-2-adrenoceptor-mediated hypokalemia and its abolishment by oxprenolol.
+2826064|a|The time course and concentration-effect relationship of terbutaline-induced hypokalemia was studied, using computer-aided pharmacokinetic-dynamic modeling. Subsequently we investigated the efficacy of oxprenolol in antagonizing such hypokalemia, together with the pharmacokinetic interaction between both drugs. Six healthy subjects were given a 0.5 mg subcutaneous dose of terbutaline on two occasions: 1 hour after oral administration of a placebo and 1 hour after 80 mg oxprenolol orally. In the 7-hour period after terbutaline administration, plasma samples were taken for determination of plasma potassium levels and drug concentrations. The sigmoid Emax model offered a good description of the relation between terbutaline concentrations and potassium effects. Oxprenolol caused decreases of 65% and 56% of terbutaline volume of distribution and clearance, respectively, and an increase of 130% of its AUC. In spite of higher terbutaline concentrations after oxprenolol pretreatment, the hypokalemia was almost completely antagonized by the beta 2-blocking action.
+2826064	29	40	hypokalemia	Disease	MESH:D007008
+2826064	153	164	hypokalemia	Disease	MESH:D007008
+2826064	310	321	hypokalemia	Disease	MESH:D007008
+2826064	1071	1082	hypokalemia	Disease	MESH:D007008
+
+1535072|t|Yohimbine treatment of sexual side effects induced by serotonin reuptake blockers.
+1535072|a|BACKGROUND: Preclinical and clinical studies suggest that yohimbine facilitates sexual behavior and may be helpful in the treatment of male impotence. A single case report suggests that yohimbine may be used to treat the sexual side effects of clomipramine. This study evaluated yohimbine as a treatment for the sexual side effects caused by serotonin reuptake blockers. METHOD: Six patients with either obsessive compulsive disorder, trichotillomania, anxiety, or affective disorders who suffered sexual side effects after treatment with serotonin reuptake blockers were given yohimbine on a p.r.n. basis in an open clinical trial. Various doses of yohimbine were used to determine the ideal dose for each patient. RESULTS: Five of the six patients experienced improved sexual functioning after taking yohimbine. One patient who failed to comply with yohimbine treatment had no therapeutic effects. Side effects of yohimbine included excessive sweating, increased anxiety, and a wound-up feeling in some patients. CONCLUSION: The results of this study indicate that yohimbine may be an effective treatment for the sexual side effects caused by serotonin reuptake blockers. Future controlled studies are needed to further investigate the effectiveness and safety of yohimbine for this indication.
+1535072	23	42	sexual side effects	Disease	MESH:D020018
+1535072	218	232	male impotence	Disease	MESH:D007172
+1535072	304	323	sexual side effects	Disease	MESH:D020018
+1535072	395	414	sexual side effects	Disease	MESH:D020018
+1535072	487	516	obsessive compulsive disorder	Disease	MESH:D009771
+1535072	518	534	trichotillomania	Disease	MESH:D014256
+1535072	536	543	anxiety	Disease	MESH:D001008
+1535072	548	567	affective disorders	Disease	MESH:D019964
+1535072	581	600	sexual side effects	Disease	MESH:D020018
+1535072	1048	1055	anxiety	Disease	MESH:D001008
+1535072	1198	1217	sexual side effects	Disease	MESH:D020018
+
+3708922|t|Experimental cyclosporine nephrotoxicity: risk of concomitant chemotherapy.
+3708922|a|The role of cyclosporine (CSA) alone or in combination with various chemotherapeutics in the development of renal toxicity was evaluated in rats. Administration of 20 mg/kg/day CSA for 4 weeks caused renal functional and structural changes similar to those reported in man. The combined administration of CSA and various chemotherapeutic drugs with a nephrotoxic potential, such as gentamicin (at therapeutic doses), amphothericin B and ketoconazole, which are frequently used in immunosuppressed patients, did not aggravate the CSA induced toxicity in the rat model. Gentamicin at toxic doses, however, increased CSA nephrotoxicity. Thus, the nephrotoxicity induced by CSA has a different pathogenetic mechanism.
+3708922	184	198	renal toxicity	Disease	MESH:D007674
+3708922	617	625	toxicity	Disease	MESH:D064420
+
+1610717|t|Cocaine-induced brainstem seizures and behavior.
+1610717|a|A variety of abnormal sensory/motor behaviors associated with electrical discharges recorded from the bilateral brainstem were induced in adult WKY rats by mechanical (electrode implants) and DC electrical current stimulations and by acute and chronic administration of cocaine. The electrode implant implicated one side or the other of the reticular system of the brainstem but subjects were not incapacitated by the stimulations. Cocaine (40 mg/kg) was injected subcutaneously for an acute experiment and subsequent 20 mg/kg doses twice daily for 3 days in a chronic study. Cocaine generated more abnormal behaviors in the brainstem perturbation group, especially the electrically perturbated subjects. The abnormal behaviors were yawning, retrocollis, hyperactivity, hypersensitivity, "beating drum" behavior, squealing, head bobbing, circling, sniffing, abnormal posturing, and facial twitching. Shifts in the power frequency spectra of the discharge patterns were noted between quiet and pacing behavioral states. Hypersensitivity to various auditory, tactile, and visual stimulation was present and shifts in the brainstem ambient power spectral frequency occurred in response to tactile stimulation. These findings suggest that the brainstem generates and propagates pathological discharges that can be elicited by mechanical and DC electrical perturbation. Cocaine was found to activate the discharge system and thus induce abnormal behaviors that are generated at the discharge site and at distant sites to which the discharge propagates. Cognitive functions may also be involved since dopaminergic and serotonergic cellular elements at the brainstem level are also implicated.
+1610717	26	34	seizures	Disease	MESH:D012640
+1610717	804	817	hyperactivity	Disease	MESH:D006948
+1610717	819	835	hypersensitivity	Disease	MESH:D004342
+1610717	1068	1084	Hypersensitivity	Disease	MESH:D004342
+
+10743694|t|Treatment of tacrolimus-related adverse effects by conversion to cyclosporine in liver transplant recipients.
+10743694|a|When tacrolimus side effects persist despite dose reduction, conversion to cyclosporine-based immunosuppression (CyA) is necessary. We characterized tacrolimus side effects that warranted discontinuation of the drug, and outcomes after conversion. Of 388 liver recipients who received tacrolimus as primary immunosuppression, 70 required conversion to CyA. We recorded indication for conversion, whether conversion was early or late after transplantation, tacrolimus dose and trough blood level at conversion, and incidence of rejection after conversion. Conversion was early in 29 patients (41.4%) and late in 41 (58.6%). Indications for early conversion were neurotoxicity (20), (insulin-dependent) diabetes mellitus (IDDM) (5), nephrotoxicity (3), gastrointestinal (GI) toxicity (6), and cardiomyopathy (1), and for late conversion were neurotoxicity (15), IDDM (12), nephrotoxicity (3), GI toxicity (5), hepatotoxicity (6), post-transplant lmphoproliferate disease (PTLD) (2), cardiomyopathy (1), hemolytic anemia (1), and pruritus (1). All early-conversion patients showed improvement/resolution of symptoms. Among late-conversion patients, 37 (90.2%) had improvement/resolution; in 4 (9.8%), adverse effects persisted. The overall rejection rate was 30%. Sixty-two patients (88.6%) are alive with functioning grafts 686 +/- 362 days (range, 154-1433 days) after conversion. When tacrolimus side effects are unresponsive to dose reduction, conversion to CyA can be accomplished safely, with no increased risk of rejection and excellent long-term outcome.
+10743694	771	784	neurotoxicity	Disease	MESH:D020258
+10743694	830	834	IDDM	Disease	MESH:D003922
+10743694	861	891	gastrointestinal (GI) toxicity	Disease	MESH:D005767
+10743694	901	915	cardiomyopathy	Disease	MESH:D009202
+10743694	950	963	neurotoxicity	Disease	MESH:D020258
+10743694	970	974	IDDM	Disease	MESH:D003922
+10743694	1001	1012	GI toxicity	Disease	MESH:D005767
+10743694	1038	1078	post-transplant lmphoproliferate disease	Disease	MESH:D007674
+10743694	1080	1084	PTLD	Disease	MESH:D007674
+10743694	1091	1105	cardiomyopathy	Disease	MESH:D009202
+10743694	1111	1127	hemolytic anemia	Disease	MESH:D000743
+10743694	1137	1145	pruritus	Disease	MESH:D011537
+
+15858223|t|Valproic acid I: time course of lipid peroxidation biomarkers, liver toxicity, and valproic acid metabolite levels in rats.
+15858223|a|A single dose of valproic acid (VPA), which is a widely used antiepileptic drug, is associated with oxidative stress in rats, as recently demonstrated by elevated levels of 15-F(2t)-isoprostane (15-F(2t)-IsoP). To determine whether there was a temporal relationship between VPA-associated oxidative stress and hepatotoxicity, adult male Sprague-Dawley rats were treated ip with VPA (500 mg/kg) or 0.9% saline (vehicle) once daily for 2, 4, 7, 10, or 14 days. Oxidative stress was assessed by determining plasma and liver levels of 15-F(2t)-IsoP, lipid hydroperoxides (LPO), and thiobarbituric acid reactive substances (TBARs). Plasma and liver 15-F(2t)-IsoP were elevated and reached a plateau after day 2 of VPA treatment compared to control. Liver LPO levels were not elevated until day 7 of treatment (1.8-fold versus control, p < 0.05). Liver and plasma TBARs were not increased until 14 days (2-fold vs. control, p < 0.05). Liver toxicity was evaluated based on serum levels of alpha-glutathione S-transferase (alpha-GST) and by histology. Serum alpha-GST levels were significantly elevated by day 4, which corresponded to hepatotoxicity as shown by the increasing incidence of inflammation of the liver capsule, necrosis, and steatosis throughout the study. The liver levels of beta-oxidation metabolites of VPA were decreased by day 14, while the levels of 4-ene-VPA and (E)-2,4-diene-VPA were not elevated throughout the study. Overall, these findings indicate that VPA treatment results in oxidative stress, as measured by levels of 15-F(2t)-IsoP, which precedes the onset of necrosis, steatosis, and elevated levels of serum alpha-GST.
+15858223	63	77	liver toxicity	Disease	MESH:D056486
+15858223	1053	1067	Liver toxicity	Disease	MESH:D056486
+15858223	1307	1319	inflammation	Disease	MESH:D007249
+15858223	1342	1350	necrosis	Disease	MESH:D009336
+15858223	1356	1365	steatosis	Disease	MESH:D005234
+15858223	1709	1717	necrosis	Disease	MESH:D009336
+15858223	1719	1728	steatosis	Disease	MESH:D005234
+
+15811908|t|Pheochromocytoma unmasked by amisulpride and tiapride.
+15811908|a|OBJECTIVE: To describe the unmasking of pheochromocytoma in a patient treated with amisulpride and tiapride. CASE SUMMARY: A 42-year-old white man developed acute hypertension with severe headache and vomiting 2 hours after the first doses of amisulpride 100 mg and tiapride 100 mg. Both drugs were immediately discontinued, and the patient recovered after subsequent nicardipine and verapamil treatment. Abdominal ultrasound showed an adrenal mass, and postoperative histologic examination confirmed the diagnosis of pheochromocytoma. DISCUSSION: Drug-induced symptoms of pheochromocytoma are often associated with the use of substituted benzamide drugs, but the underlying mechanism is unknown. In our case, use of the Naranjo probability scale indicated a possible relationship between the hypertensive crisis and amisulpride and tiapride therapy. CONCLUSIONS: As of March 24, 2005, this is the first reported case of amisulpride- and tiapride-induced hypertensive crisis in a patient with pheochromocytoma. Physicians and other healthcare professionals should be aware of this potential adverse effect of tiapride and amisulpride.
+15811908	0	16	Pheochromocytoma	Disease	MESH:D010673
+15811908	95	111	pheochromocytoma	Disease	MESH:D010673
+15811908	218	230	hypertension	Disease	MESH:D006973
+15811908	243	251	headache	Disease	MESH:D006261
+15811908	256	264	vomiting	Disease	MESH:D014839
+15811908	573	589	pheochromocytoma	Disease	MESH:D010673
+15811908	628	644	pheochromocytoma	Disease	MESH:D010673
+15811908	848	860	hypertensive	Disease	MESH:D006973
+15811908	1010	1022	hypertensive	Disease	MESH:D006973
+15811908	1048	1064	pheochromocytoma	Disease	MESH:D010673
+
+17682013|t|Delayed leukoencephalopathy with stroke-like presentation in chemotherapy recipients.
+17682013|a|BACKGROUND: A transient leukoencephalopathy mimicking cerebrovascular accident has been described as a complication of chemotherapy, most commonly in recipients of intrathecal methotrexate for childhood leukaemia. Recently published neuroimaging data suggest a common pathophysiology associated with a variety of chemotherapy agents and modes of administration. METHODS: We reviewed the medical literature for single reports and case series of patients presenting with stroke-like episodes while receiving systemic or intrathecal chemotherapy. We only included studies providing detailed neuroimaging data. Patients with cerebrovascular accidents were excluded. RESULTS: We identified 27 reports of toxic leukoencephalopathy in patients treated with methotrexate (intrathecal, systemic), 5-fluorouracil and its derivative carmofur, and capecitabine. Diffusion weighted imaging (DWI) of all patients revealed well demarcated hyperintense lesions within the subcortical white matter of the cerebral hemispheres and the corpus callosum, corresponding to areas of decreased proton diffusion on apparent diffusion coefficient (ADC) maps (available in 21/27 patients). Lesions exceeded the confines of adjacent vascular territories. Complete resolution of symptoms within 1-4 days was accompanied by normalisation of ADC abnormalities. However, fluid attenuated inversion recovery (FLAIR) sequences frequently revealed persistent white matter abnormalities. CONCLUSIONS: Several pathophysiological models of delayed leukoencephalopathy after exposure to intrathecal or systemic chemotherapy have been proposed. DWI findings in this cohort are indicative of cytotoxic oedema within cerebral white matter and lend support to an at least partially reversible metabolic derangement as the basis for this syndrome.
+17682013	8	27	leukoencephalopathy	Disease	MESH:D056784
+17682013	33	39	stroke	Disease	MESH:D020521
+17682013	110	129	leukoencephalopathy	Disease	MESH:D056784
+17682013	140	164	cerebrovascular accident	Disease	MESH:D020521
+17682013	289	298	leukaemia	Disease	MESH:D007938
+17682013	555	561	stroke	Disease	MESH:D020521
+17682013	707	732	cerebrovascular accidents	Disease	MESH:D020521
+17682013	791	810	leukoencephalopathy	Disease	MESH:D056784
+17682013	1023	1066	lesions within the subcortical white matter	Disease	MESH:D056784
+17682013	1510	1536	white matter abnormalities	Disease	MESH:D056784
+17682013	1596	1615	leukoencephalopathy	Disease	MESH:D056784
+17682013	1737	1782	cytotoxic oedema within cerebral white matter	Disease	MESH:D001929
+
+11705128|t|Management strategies for ribavirin-induced hemolytic anemia in the treatment of hepatitis C: clinical and economic implications.
+11705128|a|OBJECTIVES: Recently published studies have demonstrated increased efficacy and cost-effectiveness of combination therapy with interferon and alpha-2b/ribavirin compared with interferon-alpha monotherapy in the treatment of chronic hepatitis C (CHC). Combination therapy is associated with a clinically important adverse effect: ribavirin-induced hemolytic anemia (RIHA). The objective of this study was to evaluate the direct health-care costs and management of RIHA during treatment of CHC in a clinical trial setting. METHODS: A systematic literature review was conducted to synthesize information on the incidence and management of RIHA. Decision-analytic techniques were used to estimate the cost of treating RIHA. Uncertainty was evaluated using sensitivity analyses. RESULTS: RIHA, defined as a reduction in hemoglobin to less than 100 g/L, occurs in approximately 7% to 9% of patients treated with combination therapy. The standard of care for management of RIHA is reduction or discontinuation of the ribavirin dosage. We estimated the direct cost of treating clinically significant RIHA to be  170 per patient receiving combination therapy per 48-week treatment course (range  68- 692). The results of the one-way sensitivity analyses ranged from  57 to  317. In comparison, the cost of 48 weeks of combination therapy is  16,459. CONCLUSIONS: The direct cost of treating clinically significant RIHA is 1% ( 170/ 16,459) of drug treatment costs. Questions remain about the optimal dose of ribavirin and the incidence of RIHA in a real-world population. Despite these uncertainties, this initial evaluation of the direct cost of treating RIHA provides an estimate of the cost and management implications of this clinically important adverse effect.
+11705128	26	60	ribavirin-induced hemolytic anemia	Disease	MESH:D000743
+11705128	81	92	hepatitis C	Disease	MESH:D006526
+11705128	354	373	chronic hepatitis C	Disease	MESH:D019698
+11705128	375	378	CHC	Disease	MESH:D019698
+11705128	459	493	ribavirin-induced hemolytic anemia	Disease	MESH:D000743
+11705128	495	499	RIHA	Disease	MESH:D000743
+11705128	593	597	RIHA	Disease	MESH:D000743
+11705128	618	621	CHC	Disease	MESH:D019698
+11705128	766	770	RIHA	Disease	MESH:D000743
+11705128	844	848	RIHA	Disease	MESH:D000743
+11705128	913	917	RIHA	Disease	MESH:D000743
+11705128	1096	1100	RIHA	Disease	MESH:D000743
+11705128	1222	1226	RIHA	Disease	MESH:D000743
+11705128	1535	1539	RIHA	Disease	MESH:D000743
+11705128	1660	1664	RIHA	Disease	MESH:D000743
+11705128	1777	1781	RIHA	Disease	MESH:D000743
+
+2322844|t|Nociceptive effects induced by intrathecal administration of prostaglandin D2, E2, or F2 alpha to conscious mice.
+2322844|a|The effects of intrathecal administration of prostaglandins on pain responses in conscious mice were evaluated by using hot plate and acetic acid writhing tests. Prostaglandin D2 (0.5-3 ng/mouse) had a hyperalgesic action on the response to a hot plate during a 3-60 min period after injection. Prostaglandin E2 showed a hyperalgesic effect at doses of 1 pg to 10 ng/mouse, but the effect lasted shorter (3-30 min) than that of prostaglandin D2. Similar results were obtained by acetic acid writhing tests. The hyperalgesic effect of prostaglandin D2 was blocked by simultaneous injection of a substance P antagonist (greater than or equal to 100 ng) but not by AH6809, a prostanoid EP1-receptor antagonist. Conversely, prostaglandin E2-induced hyperalgesia was blocked by AH6809 (greater than or equal to 500 ng) but not by the substance P antagonist. Prostaglandin F2 alpha had little effect on pain responses. These results demonstrate that both prostaglandin D2 and prostaglandin E2 exert hyperalgesia in the spinal cord, but in different ways.
+2322844	177	181	pain	Disease	MESH:D010146
+2322844	316	328	hyperalgesic	Disease	MESH:D006930
+2322844	435	447	hyperalgesic	Disease	MESH:D006930
+2322844	625	637	hyperalgesic	Disease	MESH:D006930
+2322844	859	871	hyperalgesia	Disease	MESH:D006930
+2322844	1011	1015	pain	Disease	MESH:D010146
+2322844	1107	1119	hyperalgesia	Disease	MESH:D006930
+
+20042557|t|Sedation depth during spinal anesthesia and the development of postoperative delirium in elderly patients undergoing hip fracture repair.
+20042557|a|OBJECTIVE: To determine whether limiting intraoperative sedation depth during spinal anesthesia for hip fracture repair in elderly patients can decrease the prevalence of postoperative delirium. PATIENTS AND METHODS: We performed a double-blind, randomized controlled trial at an academic medical center of elderly patients (>or=65 years) without preoperative delirium or severe dementia who underwent hip fracture repair under spinal anesthesia with propofol sedation. Sedation depth was titrated using processed electroencephalography with the bispectral index (BIS), and patients were randomized to receive either deep (BIS, approximately 50) or light (BIS, >or=80) sedation. Postoperative delirium was assessed as defined by Diagnostic and Statistical Manual of Mental Disorders (Third Edition Revised) criteria using the Confusion Assessment Method beginning at any time from the second day after surgery. RESULTS: From April 2, 2005, through October 30, 2008, a total of 114 patients were randomized. The prevalence of postoperative delirium was significantly lower in the light sedation group (11/57 [19%] vs 23/57 [40%] in the deep sedation group; P=.02), indicating that 1 incident of delirium will be prevented for every 4.7 patients treated with light sedation. The mean +/- SD number of days of delirium during hospitalization was lower in the light sedation group than in the deep sedation group (0.5+/-1.5 days vs 1.4+/-4.0 days; P=.01). CONCLUSION: The use of light propofol sedation decreased the prevalence of postoperative delirium by 50% compared with deep sedation. Limiting depth of sedation during spinal anesthesia is a simple, safe, and cost-effective intervention for preventing postoperative delirium in elderly patients that could be widely and readily adopted.
+20042557	63	85	postoperative delirium	Disease	MESH:D011183
+20042557	117	129	hip fracture	Disease	MESH:D006620
+20042557	238	250	hip fracture	Disease	MESH:D006620
+20042557	309	331	postoperative delirium	Disease	MESH:D011183
+20042557	498	506	delirium	Disease	MESH:D003693
+20042557	517	525	dementia	Disease	MESH:D003704
+20042557	540	552	hip fracture	Disease	MESH:D006620
+20042557	817	839	Postoperative delirium	Disease	MESH:D011183
+20042557	904	920	Mental Disorders	Disease	MESH:D001523
+20042557	1163	1185	postoperative delirium	Disease	MESH:D011183
+20042557	1332	1340	delirium	Disease	MESH:D003693
+20042557	1445	1453	delirium	Disease	MESH:D003693
+20042557	1665	1687	postoperative delirium	Disease	MESH:D011183
+20042557	1842	1864	postoperative delirium	Disease	MESH:D011183
+
+11868798|t|Spironolactone: is it a novel drug for the prevention of amphotericin B-related hypokalemia in cancer patients?
+11868798|a|OBJECTIVE: Nephrotoxicity is the major adverse effect of amphotericin B (AmB), often limiting administration of full dosage. Selective distal tubular epithelial toxicity seems to be responsible for the profound potassium wasting that is a major clinical side effect of treatment with AmB. Potassium depletion also potentiates the tubular toxicity of AmB. This study was designed to assess the ability of spironolactone to reduce potassium requirements and to prevent hypokalemia in neutropenic patients on AmB treatment. METHODS: In this study 26 patients with various hematological disorders were randomized to receive either intravenous AmB alone or AmB and oral spironolactone 100 mg twice daily when developing a proven or suspected fungal infection. RESULTS: Patients receiving concomitant AmB and spironolactone had significantly higher plasma potassium levels than those receiving AmB alone (P = 0.0027). Those patients receiving AmB and spironolactone required significantly less potassium supplementation to maintain their plasma potassium within the normal range (P = 0.022). Moreover, urinary potassium losses were significantly less in patients receiving AmB and spironolactone than those receiving AmB alone (P = 0.040). CONCLUSION: This study showed that spironolactone can reduce potassium requirements and prevent hypokalemia by reducing urinary potassium loss in neutropenic patients on AmB treatment.
+11868798	80	91	hypokalemia	Disease	MESH:D007008
+11868798	95	101	cancer	Disease	MESH:D009369
+11868798	273	281	toxicity	Disease	MESH:D064420
+11868798	450	458	toxicity	Disease	MESH:D064420
+11868798	579	590	hypokalemia	Disease	MESH:D007008
+11868798	594	605	neutropenic	Disease	MESH:D009503
+11868798	681	704	hematological disorders	Disease	MESH:D006402
+11868798	849	865	fungal infection	Disease	MESH:D009181
+11868798	1442	1453	hypokalemia	Disease	MESH:D007008
+11868798	1492	1503	neutropenic	Disease	MESH:D009503
+
+11860278|t|Dopamine D2 receptor signaling controls neuronal cell death induced by muscarinic and glutamatergic drugs.
+11860278|a|Dopamine (DA), through D1/D2 receptor-mediated signaling, plays a major role in the control of epileptic seizures arising in the limbic system. Excitotoxicity leading to neuronal cell death in the affected areas is a major consequence of seizures at the cellular level. In this respect, little is known about the role of DA receptors in the occurrence of epilepsy-induced neuronal cell death. Here we analyze the occurrence of seizures and neurotoxicity in D2R -/- mice treated with the cholinergic agonist pilocarpine. We compared these results with those previously obtained with kainic acid (KA), a potent glutamate agonist. Importantly, D2R -/- mice develop seizures at doses of both drugs that are not epileptogenic for WT littermates and show greater neurotoxicity. However, pilocarpine-induced seizures result in a more widespread neuronal death in both WT and D2R -/- brains in comparison to KA. Thus, the absence of D2R lowers the threshold for seizures induced by both glutamate and acetylcholine. Moreover, the dopaminergic control of epilepsy-induced neurodegeneration seems to be mediated by distinct interactions of D2R signaling with these two neurotransmitters.
+11860278	202	220	epileptic seizures	Disease	MESH:D004827
+11860278	345	353	seizures	Disease	MESH:D012640
+11860278	462	470	epilepsy	Disease	MESH:D004827
+11860278	534	542	seizures	Disease	MESH:D012640
+11860278	547	560	neurotoxicity	Disease	MESH:D020258
+11860278	769	777	seizures	Disease	MESH:D012640
+11860278	864	877	neurotoxicity	Disease	MESH:D020258
+11860278	908	916	seizures	Disease	MESH:D012640
+11860278	1061	1069	seizures	Disease	MESH:D012640
+11860278	1153	1161	epilepsy	Disease	MESH:D004827
+11860278	1170	1187	neurodegeneration	Disease	MESH:D019636
+
+11077455|t|Electro-oculography, electroretinography, visual evoked potentials, and multifocal electroretinography in patients with vigabatrin-attributed visual field constriction.
+11077455|a|PURPOSE: Symptomatic visual field constriction thought to be associated with vigabatrin has been reported. The current study investigated the visual fields and visual electrophysiology of eight patients with known vigabatrin-attributed visual field loss, three of whom were reported previously. Six of the patients were no longer receiving vigabatrin. METHODS: The central and peripheral fields were examined with the Humphrey Visual Field Analyzer. Full visual electrophysiology, including flash electroretinography (ERG), pattern electroretinography, multifocal ERG using the VERIS system, electro-oculography, and flash and pattern visual evoked potentials, was undertaken. RESULTS: Seven patients showed marked visual field constriction with some sparing of the temporal visual field. The eighth exhibited concentric constriction. Most electrophysiological responses were usually just within normal limits; two patients had subnormal Arden electro-oculography indices; and one patient showed an abnormally delayed photopic b wave. However, five patients showed delayed 30-Hz flicker b waves, and seven patients showed delayed oscillatory potentials. Multifocal ERG showed abnormalities that sometimes correlated with the visual field appearance and confirmed that the deficit occurs at the retinal level. CONCLUSION: Marked visual field constriction appears to be associated with vigabatrin therapy. The field defects and some electrophysiological abnormalities persist when vigabatrin therapy is withdrawn.
+11077455	142	167	visual field constriction	Disease	MESH:D014786
+11077455	190	215	visual field constriction	Disease	MESH:D014786
+11077455	405	422	visual field loss	Disease	MESH:D014786
+11077455	884	909	visual field constriction	Disease	MESH:D014786
+11077455	1497	1522	visual field constriction	Disease	MESH:D014786
+
+11063349|t|Conversion to rapamycin immunosuppression in renal transplant recipients: report of an initial experience.
+11063349|a|BACKGROUND: The aim of this study is to evaluate the effects of RAPA conversion in patients undergoing cyclosporine (CsA) or tacrolimus (Tac) toxicity. METHODS: Twenty renal transplant recipients were switched to fixed dose rapamycin (RAPA) (5 mg/day) 0 to 204 months posttransplant. Drug monitoring was not initially used to adjust doses. The indications for switch were chronic CsA or Tac nephrotoxicity (12), acute CsA or Tac toxicity (3), severe facial dysmorphism (2), posttransplant lymphoproliferative disorder (PTLD) in remission (2), and hepatotoxicity in 1. Follow-up is 7 to 24 months. RESULTS: In the 12 patients switched because of chronic nephrotoxicity there was a significant decrease in serum creatinine [233+/-34 to 210+/-56 micromol/liter (P<0.05) at 6 months]. Facial dysmorphism improved in two patients. No relapse of PTLD was observed. Five patients developed pneumonia (two Pneumocystis carinii pneumonia, one infectious mononucleosis with polyclonal PTLD lung infiltrate) and two had bronchiolitis obliterans. There were no deaths. RAPA was discontinued in four patients, because of pneumonia in two, PTLD in one, and oral aphtous ulcers in one. RAPA levels were high (>15 ng/ml) in 7 of 13 (54%) patients. CONCLUSIONS: RAPA conversion provides adequate immunosuppression to enable CsA withdrawal. However, when converting patients to RAPA drug levels should be monitored to avoid over-immunosuppression and adequate antiviral and Pneumocystis carinii pneumonia prophylaxis should be given.
+11063349	249	257	toxicity	Disease	MESH:D064420
+11063349	536	544	toxicity	Disease	MESH:D064420
+11063349	557	575	facial dysmorphism	Disease	MESH:C565579
+11063349	581	624	posttransplant lymphoproliferative disorder	Disease	MESH:D008232
+11063349	626	630	PTLD	Disease	MESH:D008232
+11063349	888	906	Facial dysmorphism	Disease	MESH:C565579
+11063349	947	951	PTLD	Disease	MESH:D008232
+11063349	990	999	pneumonia	Disease	MESH:D011014
+11063349	1005	1035	Pneumocystis carinii pneumonia	Disease	MESH:D011020
+11063349	1041	1065	infectious mononucleosis	Disease	MESH:D007244
+11063349	1082	1086	PTLD	Disease	MESH:D008232
+11063349	1116	1140	bronchiolitis obliterans	Disease	MESH:D001989
+11063349	1215	1224	pneumonia	Disease	MESH:D011014
+11063349	1233	1237	PTLD	Disease	MESH:D008232
+11063349	1255	1269	aphtous ulcers	Disease	MESH:D014456
+11063349	1563	1593	Pneumocystis carinii pneumonia	Disease	MESH:D011020
+
+9669632|t|Effects of cisapride on symptoms and postcibal small-bowel motor function in patients with irritable bowel syndrome.
+9669632|a|BACKGROUND: Irritable bowel syndrome is a common cause of abdominal pain and discomfort and may be related to disordered gastrointestinal motility. Our aim was to assess the effects of long-term treatment with a prokinetic agent, cisapride, on postprandial jejunal motility and symptoms in the irritable bowel syndrome (IBS). METHODS: Thirty-eight patients with IBS (constipation-predominant, n = 17; diarrhoea-predominant, n = 21) underwent 24-h ambulatory jejunal manometry before and after 12 week's treatment [cisapride, 5 mg three times daily (n = 19) or placebo (n = 19)]. RESULTS: In diarrhoea-predominant patients significant differences in contraction characteristics were observed between the cisapride and placebo groups. In cisapride-treated diarrhoea-predominant patients the mean contraction amplitude was higher (29.3 +/- 3.2 versus 24.9 +/- 2.6 mm Hg, cisapride versus placebo (P < 0.001); pretreatment, 25.7 +/- 6.0 mm Hg), the mean contraction duration longer (3.4 +/- 0.2 versus 3.0 +/- 0.2 sec, cisapride versus placebo (P < 0.001); pretreatment, 3.1 +/- 0.5 sec), and the mean contraction frequency lower (2.0 +/- 0.2 versus 2.5 +/- 0.4 cont./min, cisapride versus placebo (P < 0.001); pretreatment, 2.5 +/- 1.1 cont./min] than patients treated with placebo. No significant differences in jejunal motility were found in the constipation-predominant IBS group. Symptoms were assessed by using a visual analogue scale before and after treatment. Symptom scores relating to the severity of constipation were lower in cisapride-treated constipation-predominant IBS patients [score, 54 +/- 5 versus 67 +/- 14 mm, cisapride versus placebo (P < 0.05); pretreatment, 62 +/- 19 mm]. Diarrhoea-predominant IBS patients had a higher pain score after cisapride therapy [score, 55 +/- 15 versus 34 +/- 12 mm, cisapride versus placebo (P < 0.05); pretreatment, 67 +/- 19 mm]. CONCLUSION: Cisapride affects jejunal contraction characteristics and some symptoms in IBS.
+9669632	91	115	irritable bowel syndrome	Disease	MESH:D043183
+9669632	129	153	Irritable bowel syndrome	Disease	MESH:D043183
+9669632	175	189	abdominal pain	Disease	MESH:D015746
+9669632	227	263	disordered gastrointestinal motility	Disease	MESH:D005767
+9669632	411	435	irritable bowel syndrome	Disease	MESH:D043183
+9669632	437	440	IBS	Disease	MESH:D043183
+9669632	479	482	IBS	Disease	MESH:D043183
+9669632	484	496	constipation	Disease	MESH:D003248
+9669632	518	527	diarrhoea	Disease	MESH:D003967
+9669632	708	717	diarrhoea	Disease	MESH:D003967
+9669632	871	880	diarrhoea	Disease	MESH:D003967
+9669632	1462	1474	constipation	Disease	MESH:D003248
+9669632	1487	1490	IBS	Disease	MESH:D043183
+9669632	1625	1637	constipation	Disease	MESH:D003248
+9669632	1670	1682	constipation	Disease	MESH:D003248
+9669632	1695	1698	IBS	Disease	MESH:D043183
+9669632	1812	1821	Diarrhoea	Disease	MESH:D003967
+9669632	1834	1837	IBS	Disease	MESH:D043183
+9669632	1860	1864	pain	Disease	MESH:D010146
+9669632	2087	2090	IBS	Disease	MESH:D043183
+
+8492347|t|Tetany and rhabdomyolysis due to surreptitious furosemide--importance of magnesium supplementation.
+8492347|a|Diuretics may induce hypokalemia, hypocalcemia and hypomagnesemia. While severe hypokalemia may cause muscle weakness, severe hypomagnesemia is associated with muscle spasms and tetany which cannot be corrected by potassium and calcium supplementation alone (1,2). Surreptitious diuretic ingestion has been described, mainly in women who are concerned that they are obese or edematous. Symptomatic hypokalemia has been reported in such patients (3-7) and in one case hypocalcemia was observed (8), but the effects of magnesium depletion were not noted in these patients.
+8492347	0	6	Tetany	Disease	MESH:D013746
+8492347	11	25	rhabdomyolysis	Disease	MESH:D012206
+8492347	121	132	hypokalemia	Disease	MESH:D007008
+8492347	134	146	hypocalcemia	Disease	MESH:D006996
+8492347	151	165	hypomagnesemia	Disease	MESH:C537153
+8492347	180	191	hypokalemia	Disease	MESH:D007008
+8492347	202	217	muscle weakness	Disease	MESH:D018908
+8492347	226	240	hypomagnesemia	Disease	MESH:C537153
+8492347	260	273	muscle spasms	Disease	MESH:D013035
+8492347	278	284	tetany	Disease	MESH:D013746
+8492347	466	471	obese	Disease	MESH:D009765
+8492347	475	484	edematous	Disease	MESH:D004487
+8492347	498	509	hypokalemia	Disease	MESH:D007008
+8492347	567	579	hypocalcemia	Disease	MESH:D006996
+
+6111982|t|Pharmacology of GYKI-41 099 (chlorpropanol, Tobanum) a new potent beta-adrenergic antagonist.
+6111982|a|The compound GYKI-41 099, as a beta-adrenergic antagonist, is 3-8 times more potent than propranolol in vitro and in vivo. Its antiarrhythmic effectiveness surpasses that of propranolol and pindolol inhibiting the ouabain arrhythmia in dogs and cats. GYKI-41 900 has a negligible cardiodepressant activity; it is not cardioselective. The compound shows a rapid and long lasting effect. There was a prolonged elimination of the radioactivity after the injection of 14C-41 099 to rats and dogs. The half life of the unlabeled substance in humans was more than 10 hours.
+6111982	316	326	arrhythmia	Disease	MESH:D001145
+
+15893386|t|Succinylcholine-induced masseter muscle rigidity during bronchoscopic removal of a tracheal foreign body.
+15893386|a|Masseter muscle rigidity during general anesthesia is considered an early warning sign of a possible episode of malignant hyperthermia. The decision whether to continue or discontinue the procedure depends on the urgency of the surgery and severity of masseter muscle rigidity. Here, we describe a case of severe masseter muscle rigidity (jaw of steel) after succinylcholine (Sch) administration during general anesthetic management for rigid bronchoscopic removal of a tracheal foreign body. Anesthesia was continued uneventfully with propofol infusion while all facilities were available to detect and treat malignant hyperthermia.
+15893386	24	48	masseter muscle rigidity	Disease	MESH:D014313
+15893386	106	130	Masseter muscle rigidity	Disease	MESH:D014313
+15893386	218	240	malignant hyperthermia	Disease	MESH:D008305
+15893386	358	382	masseter muscle rigidity	Disease	MESH:D014313
+15893386	419	443	masseter muscle rigidity	Disease	MESH:D014313
+15893386	445	457	jaw of steel	Disease	MESH:D014313
+15893386	716	738	malignant hyperthermia	Disease	MESH:D008305
+
+3088349|t|Transient contralateral rotation following unilateral substantia nigra lesion reflects susceptibility of the nigrostriatal system to exhaustion by amphetamine.
+3088349|a|Following unilateral 6-OHDA induced SN lesion, a transient period of contralateral rotation has been reported to precede the predominant ipsilateral circling. In order to clarify the nature of this initial contralateral rotation we examined the effect of the duration of recovery period after the lesion, on amphetamine-induced rotational behavior. Three days post lesion, most rats circled predominantly contralaterally to the lesion. Such contralateral rotation may result from either degeneration-induced breakdown of the DA pool, or lesion-induced increase of DA turnover in the spared neurons. A substantial degree of contralateral preference was still evident when amphetamine was administered for the first time 24 days after lesioning, indicating involvement of spared cells in the contralateral rotation. However, regardless of the duration of recovery (and irrespective of either lesion volume, amphetamine dose, or post-lesion motor exercise), amphetamine-induced rotation tended to become gradually more ipsilateral as the observation session progressed, and all rats circled ipsilaterally to the lesion in response to further amphetamine injections. These findings suggest that amphetamine has an irreversible effect on the post-lesion DA pool contributing to contralateral rotation.
+3088349	10	32	contralateral rotation	Disease	MESH:D009069
+3088349	54	77	substantia nigra lesion	Disease	MESH:D001927
+3088349	196	205	SN lesion	Disease	MESH:D001927
+3088349	229	251	contralateral rotation	Disease	MESH:D009069
+3088349	297	317	ipsilateral circling	Disease	MESH:D009069
+3088349	366	388	contralateral rotation	Disease	MESH:D009069
+3088349	488	507	rotational behavior	Disease	MESH:D009069
+3088349	601	623	contralateral rotation	Disease	MESH:D009069
+3088349	950	972	contralateral rotation	Disease	MESH:D009069
+3088349	1135	1143	rotation	Disease	MESH:D009069
+3088349	1433	1455	contralateral rotation	Disease	MESH:D009069
+
+2004015|t|Sensitivity of erythroid progenitor colonies to erythropoietin in azidothymidine treated immunodeficient mice.
+2004015|a|The anaemia induced by 3'-azido-3'dideoxythymidine (AZT) is poorly understood. We have used a murine model of AIDS, infection of female C57BL/6 mice with LP-BM5 murine leukaemia (MuLV) virus, to determine if AZT-induced anaemia is due, in part, to decreased responsiveness of erythropoietic precursors (BFU-e) to erythropoietin (EPO). Mice in the early stage of LP-BM5 MuLV disease were given AZT in their drinking water at 1.0 and 2.5 mg/ml. AZT produced anaemia in both groups, in a dose-dependent fashion. Despite the anaemia, the number of splenic and bone marrow BFU-e in AZT treated mice increased up to five-fold over levels observed in infected untreated animals after 15 d of treatment. Colony formation by splenic and bone marrow BFUe was stimulated at lower concentrations of EPO in mice receiving AZT for 15 d than for infected, untreated mice. By day 30, sensitivity of both splenic and bone marrow BFU-e of treated animals returned to that observed from cells of infected untreated animals. The mean plasma levels of EPO observed in AZT treated mice were appropriate for the degree of anaemia observed when compared with phenylhydrazine (PHZ) treated mice. The numbers of BFU-e and the percentage of bone marrow erythroblasts observed were comparable in AZT and PHZ treated mice with similar degrees of anaemia. However, reticulocytosis was inappropriate for the degree of anaemia observed in AZT treated infected mice. AZT-induced peripheral anaemia in the face of increased numbers of BFU-e and increased levels of plasma EPO suggest a lesion in terminal differentiation.
+2004015	89	104	immunodeficient	Disease	MESH:D007153
+2004015	115	122	anaemia	Disease	MESH:D000740
+2004015	221	225	AIDS	Disease	MESH:D000163
+2004015	227	236	infection	Disease	MESH:D007239
+2004015	279	288	leukaemia	Disease	MESH:D007938
+2004015	331	338	anaemia	Disease	MESH:D000740
+2004015	567	574	anaemia	Disease	MESH:D000740
+2004015	632	639	anaemia	Disease	MESH:D000740
+2004015	1210	1217	anaemia	Disease	MESH:D000740
+2004015	1428	1435	anaemia	Disease	MESH:D000740
+2004015	1446	1461	reticulocytosis	Disease	MESH:D045262
+2004015	1498	1505	anaemia	Disease	MESH:D000740
+2004015	1568	1575	anaemia	Disease	MESH:D000740
+
+1423339|t|Amnestic syndrome associated with propranolol toxicity: a case report.
+1423339|a|An elderly woman developed an Alzheimer-like subacute dementia as a result of propranolol toxicity. Analysis of the manifestations showed that severe impairment of memory accounted for virtually all of the abnormalities. There is evidence that cerebral reactions to drug toxicity can exhibit patterns that suggest highly selective involvement of functional subdivisions of the brain.
+1423339	0	17	Amnestic syndrome	Disease	MESH:D000647
+1423339	46	54	toxicity	Disease	MESH:D064420
+1423339	101	110	Alzheimer	Disease	MESH:D000544
+1423339	125	133	dementia	Disease	MESH:D003704
+1423339	161	169	toxicity	Disease	MESH:D064420
+1423339	342	350	toxicity	Disease	MESH:D064420
+
+1628552|t|Chloroquine related complete heart block with blindness: case report.
+1628552|a|A 27-year old African woman with history of regular chloroquine ingestion presented with progressive deterioration of vision, easy fatiguability, dyspnoea, dizziness progressing to syncopal attacks. Ophthalmological assessment revealed features of chloroquine retinopathy, cardiac assessment revealed features of heart failure and a complete heart block with right bundle branch block pattern. The heart block was treated by pacemaker insertion and the heart failure resolved spontaneously following chloroquine discontinuation. She however remains blind.
+1628552	29	40	heart block	Disease	MESH:D006327
+1628552	46	55	blindness	Disease	MESH:D001766
+1628552	171	194	deterioration of vision	Disease	MESH:D014786
+1628552	201	214	fatiguability	Disease	MESH:D005221
+1628552	226	235	dizziness	Disease	MESH:D004244
+1628552	251	267	syncopal attacks	Disease	MESH:D013575
+1628552	330	341	retinopathy	Disease	MESH:D012164
+1628552	383	396	heart failure	Disease	MESH:D006333
+1628552	412	423	heart block	Disease	MESH:D006327
+1628552	429	454	right bundle branch block	Disease	MESH:D002037
+1628552	468	479	heart block	Disease	MESH:D006327
+1628552	523	536	heart failure	Disease	MESH:D006333
+1628552	619	624	blind	Disease	MESH:D001766
+
+11524350|t|Systemic toxicity and resuscitation in bupivacaine-, levobupivacaine-, or ropivacaine-infused rats.
+11524350|a|We compared the systemic toxicity of bupivacaine, levobupivacaine, and ropivacaine in anesthetized rats. We also compared the ability to resuscitate rats after lethal doses of these local anesthetics. Bupivacaine, levobupivacaine, or ropivacaine was infused at a rate of 2 mg. kg(-1). min(-1) while electrocardiogram, electroencephalogram, and arterial pressure were continuously monitored. When asystole was recorded, drug infusion was stopped and a resuscitation sequence was begun. Epinephrine 0.01 mg/kg was administered at 1-min intervals while external cardiac compressions were applied. Resuscitation was considered successful when a systolic arterial pressure > or =100 mm Hg was achieved within 5 min. The cumulative doses of levobupivacaine and ropivacaine that produced seizures were similar and were larger than those of bupivacaine. The cumulative doses of levobupivacaine that produced dysrhythmias and asystole were smaller than the corresponding doses of ropivacaine, but they were larger than those of bupivacaine. The number of successful resuscitations did not differ among groups. However, a smaller dose of epinephrine was required in the Ropivacaine group than in the other groups. We conclude that the systemic toxicity of levobupivacaine is intermediate between that of ropivacaine and bupivacaine when administered at the same rate and that ropivacaine-induced cardiac arrest appears to be more susceptible to treatment than that induced by bupivacaine or levobupivacaine.
+11524350	9	17	toxicity	Disease	MESH:D064420
+11524350	125	133	toxicity	Disease	MESH:D064420
+11524350	496	504	asystole	Disease	MESH:D006323
+11524350	881	889	seizures	Disease	MESH:D012640
+11524350	1000	1012	dysrhythmias	Disease	MESH:D001145
+11524350	1017	1025	asystole	Disease	MESH:D006323
+11524350	1334	1342	toxicity	Disease	MESH:D064420
+11524350	1486	1500	cardiac arrest	Disease	MESH:D006323
+
+8800187|t|Effect of calcium chloride and 4-aminopyridine therapy on desipramine toxicity in rats.
+8800187|a|BACKGROUND: Hypotension is a major contributor to mortality in tricyclic antidepressant overdose. Recent data suggest that tricyclic antidepressants inhibit calcium influx in some tissues. This study addressed the potential role of calcium channel blockade in tricyclic antidepressant-induced hypotension. METHODS: Two interventions were studied that have been shown previously to improve blood pressure with calcium channel blocker overdose. CaCl2 and 4-aminopyridine. Anesthetized rats received the tricyclic antidepressant desipramine IP to produce hypotension, QRS prolongation, and bradycardia. Fifteen min later, animals received CaCl2, NaHCO3, or saline. In a second experiment, rats received tricyclic antidepressant desipramine IP followed in 15 min by 4-aminopyridine or saline. RESULTS: NaHCO3 briefly (5 min) reversed hypotension and QRS prolongation. CaCl2 and 4-aminopyridine failed to improve blood pressure. The incidence of ventricular arrhythmias (p = 0.004) and seizures (p = 0.03) in the CaCl2 group was higher than the other groups. CONCLUSION: The administration of CaCl2 or 4-aminopyridine did not reverse tricyclic antidepressant-induced hypotension in rats. CaCl2 therapy may possibly worsen both cardiovascular and central nervous system toxicity. These findings do not support a role for calcium channel inhibition in the pathogenesis of tricyclic antidepressant-induced hypotension.
+8800187	70	78	toxicity	Disease	MESH:D064420
+8800187	100	111	Hypotension	Disease	MESH:D007022
+8800187	176	184	overdose	Disease	MESH:D062787
+8800187	381	392	hypotension	Disease	MESH:D007022
+8800187	521	529	overdose	Disease	MESH:D062787
+8800187	640	651	hypotension	Disease	MESH:D007022
+8800187	675	686	bradycardia	Disease	MESH:D001919
+8800187	918	929	hypotension	Disease	MESH:D007022
+8800187	1029	1052	ventricular arrhythmias	Disease	MESH:D001145
+8800187	1069	1077	seizures	Disease	MESH:D012640
+8800187	1250	1261	hypotension	Disease	MESH:D007022
+8800187	1310	1360	cardiovascular and central nervous system toxicity	Disease	MESH:D002318
+8800187	1486	1497	hypotension	Disease	MESH:D007022
+
+6892185|t|Effect of calcium chloride on gross behavioural changes produced by carbachol and eserine in cats.
+6892185|a|The effect of calcium chloride injected into the cerebral ventricles of group-housed unanaesthetized cats upon vocalization (rage, hissing and snarling), fighting (attack with paws and claws, defense with paws and claws and biting), mydriasis, tremor and clonic-tonic convulsions produced by carbachol and eserine injected similarly was investigated. Calcium chloride depressed or almost completely abolished the vocalization and fighting due to carbachol and eserine. On the other hand, mydriasis, tremor and clonic-tonic convulsions evoked by carbachol and eserine were not significantly changed by calcium chloride. It is apparent that calcium chloride can "dissociate" vocalization and fighting from autonomic and motor phenomena such as mydriasis, tremor and clonic-tonic convulsions caused by carbachol and eserine. Calcium chloride inhibited the vocalization and fighting produced by carbachol and eserine most probably by a nonspecific stabilizing action on central muscarinic cholinoceptive sites. These results further support the view that calcium ions in excess have an atropine-like action also in the central nervous system.
+6892185	332	341	mydriasis	Disease	MESH:D015878
+6892185	343	349	tremor	Disease	MESH:D014202
+6892185	354	378	clonic-tonic convulsions	Disease	MESH:D004830
+6892185	587	596	mydriasis	Disease	MESH:D015878
+6892185	598	604	tremor	Disease	MESH:D014202
+6892185	609	633	clonic-tonic convulsions	Disease	MESH:D004830
+6892185	841	850	mydriasis	Disease	MESH:D015878
+6892185	852	858	tremor	Disease	MESH:D014202
+6892185	863	887	clonic-tonic convulsions	Disease	MESH:D004830
+
+6118280|t|Serotonergic drugs, benzodiazepines and baclofen block muscimol-induced myoclonic jerks in a strain of mice.
+6118280|a|In male Swiss mice, muscimol produced myoclonic jerks. A 3 mg/kg (i.p.) dose induced this response in all of the mice tested and the peak response of 73 jerks per min was observed between 27 and 45 min. Increasing the brain serotonin levels by the administration of 5-hydroxytryptophan (80-160 mg/kg) in combination with a peripheral decarboxylase inhibitor resulted in an inhibition of the muscimol effect. However, in a similar experiment l-dopa (80-160 mg/kg) was without effect. In doses of 3-10 mg/kg, the serotonin receptor agonist MK-212 caused a dose-dependent blockade of the response of muscimol. Of the benzodiazepines, clonazepam (0.1-0.3 mg/kg) was found to be several fold more potent than diazepam (0.3-3 mg/kg) in blocking the myoclonic jerks. While (-)-baclofen (1-3 mg/kg) proved to be an effective antagonist of muscimol, its (+)-isomer (5-20 mg/kg) lacked this property. Considering the fact that 5-HTP and the benzodiazepines have been found to be beneficial in the management of clinical myoclonus, the muscimol-induced myoclonus seems to be a satisfactory animal model that may prove useful for the development of new drug treatments for this condition. Our present study indicated the possible value of MK-212 and (-)-baclofen in the management of clinical myoclonus.
+6118280	72	87	myoclonic jerks	Disease	MESH:D009207
+6118280	147	162	myoclonic jerks	Disease	MESH:D009207
+6118280	852	867	myoclonic jerks	Disease	MESH:D009207
+6118280	1119	1128	myoclonus	Disease	MESH:D009207
+6118280	1151	1160	myoclonus	Disease	MESH:D009207
+6118280	1390	1399	myoclonus	Disease	MESH:D009207
+
+3703509|t|Hyperglycemic acidotic coma and death in Kearns-Sayre syndrome.
+3703509|a|This paper presents the clinical and metabolic findings in two young boys with long-standing Kearns-Sayre syndrome. Following short exposure to oral prednisone, both boys developed lethargy, increasing somnolence, polydipsia, polyphagia, and polyuria. Both presented in the emergency room with profound coma, hypotension, severe hyperglycemia, and acidosis. Nonketotic lactic acidosis was present in one and ketosis without a known serum lactate level was present in the other. Respiratory failure rapidly ensued and both patients expired in spite of efforts at resuscitation. We believe these two cases represent a newly described and catastrophic metabolic-endocrine failure in the Kearns-Sayre syndrome.
+3703509	0	27	Hyperglycemic acidotic coma	Disease	MESH:D003128
+3703509	41	62	Kearns-Sayre syndrome	Disease	MESH:D007625
+3703509	157	178	Kearns-Sayre syndrome	Disease	MESH:D007625
+3703509	245	253	lethargy	Disease	MESH:D053609
+3703509	266	276	somnolence	Disease	MESH:D006970
+3703509	278	288	polydipsia	Disease	MESH:D059606
+3703509	290	300	polyphagia	Disease	MESH:D006963
+3703509	306	314	polyuria	Disease	MESH:D011141
+3703509	367	371	coma	Disease	MESH:D003128
+3703509	373	384	hypotension	Disease	MESH:D007022
+3703509	393	406	hyperglycemia	Disease	MESH:D006943
+3703509	412	420	acidosis	Disease	MESH:D000138
+3703509	433	448	lactic acidosis	Disease	MESH:D000140
+3703509	472	479	ketosis	Disease	MESH:D007662
+3703509	542	561	Respiratory failure	Disease	MESH:D012131
+3703509	713	740	metabolic-endocrine failure	Disease	MESH:D004700
+3703509	748	769	Kearns-Sayre syndrome	Disease	MESH:D007625
+
+20683499|t|Effects of active constituents of Crocus sativus L., crocin on streptozocin-induced model of sporadic Alzheimer's disease in male rats.
+20683499|a|BACKGROUND: The involvement of water-soluble carotenoids, crocins, as the main and active components of Crocus sativus L. extract in learning and memory processes has been proposed. In the present study, the effect of crocins on sporadic Alzheimer's disease induced by intracerebroventricular (icv) streptozocin (STZ) in male rats was investigated. METHODS: Male adult Wistar rats (n = 90 and 260-290 g) were divided into 1, control; 2 and 3, crocins (15 and 30 mg/kg); 4, STZ; 5 and 6, STZ + crocins (15 and 30 mg/kg) groups. In Alzheimer's disease groups, rats were injected with STZ-icv bilaterally (3 mg/kg) in first day and 3 days later, a similar STZ-icv application was repeated. In STZ + crocin animal groups, crocin was applied in doses of 15 and 30 mg/kg, i.p., one day pre-surgery and continued for three weeks. Prescription of crocin in each dose was repeated once for two days. However, the learning and memory performance was assessed using passive avoidance paradigm, and for spatial cognition evaluation, Y-maze task was used. RESULTS: It was found out that crocin (30 mg/kg)-treated STZ-injected rats show higher correct choices and lower errors in Y-maze than vehicle-treated STZ-injected rats. In addition, crocin in the mentioned dose could significantly attenuated learning and memory impairment in treated STZ-injected group in passive avoidance test. CONCLUSION: Therefore, these results demonstrate the effectiveness of crocin (30 mg/kg) in antagonizing the cognitive deficits caused by STZ-icv in rats and its potential in the treatment of neurodegenerative diseases such as Alzheimer's disease.
+20683499	102	121	Alzheimer's disease	Disease	MESH:D000544
+20683499	374	393	Alzheimer's disease	Disease	MESH:D000544
+20683499	666	685	Alzheimer's disease	Disease	MESH:D000544
+20683499	1422	1452	learning and memory impairment	Disease	MESH:D008569
+20683499	1618	1636	cognitive deficits	Disease	MESH:D003072
+20683499	1701	1727	neurodegenerative diseases	Disease	MESH:D019636
+20683499	1736	1755	Alzheimer's disease	Disease	MESH:D000544
+
+20466178|t|Rosaceiform dermatitis associated with topical tacrolimus treatment.
+20466178|a|We describe herein 3 patients who developed rosacea-like dermatitis eruptions while using 0.03% or 0.1% tacrolimus ointment for facial dermatitis. Skin biopsy specimens showed telangiectasia and noncaseating epithelioid granulomatous tissue formation in the papillary to mid dermis. Continuous topical use of immunomodulators such as tacrolimus or pimecrolimus should be regarded as a potential cause of rosaceiform dermatitis, although many cases have not been reported.
+20466178	12	22	dermatitis	Disease	MESH:D003872
+20466178	113	120	rosacea	Disease	MESH:D012393
+20466178	126	136	dermatitis	Disease	MESH:D003872
+20466178	137	146	eruptions	Disease	MESH:D003875
+20466178	197	214	facial dermatitis	Disease	MESH:D005148
+20466178	245	259	telangiectasia	Disease	MESH:D013684
+20466178	485	495	dermatitis	Disease	MESH:D003872
+
+11282081|t|Effects of verapamil on atrial fibrillation and its electrophysiological determinants in dogs.
+11282081|a|BACKGROUND: Atrial tachycardia-induced remodeling promotes the occurrence and maintenance of atrial fibrillation (AF) and decreases L-type Ca(2+) current. There is also a clinical suggestion that acute L-type Ca(2) channel blockade can promote AF, consistent with an AF promoting effect of Ca(2+) channel inhibition. METHODS: To evaluate the potential mechanisms of AF promotion by Ca(2+) channel blockers, we administered verapamil to morphine-chloralose anesthetized dogs. Diltiazem was used as a comparison drug and autonomic blockade with atropine and nadolol was applied in some experiments. Epicardial mapping with 240 epicardial electrodes was used to evaluate activation during AF. RESULTS: Verapamil caused AF promotion in six dogs, increasing mean duration of AF induced by burst pacing, from 8+/-4 s (mean+/-S.E.) to 95+/-39 s (P<0.01 vs. control) at a loading dose of 0.1 mg/kg and 228+/-101 s (P<0.0005 vs. control) at a dose of 0.2 mg/kg. Underlying electrophysiological mechanisms were studied in detail in five additional dogs under control conditions and in the presence of the higher dose of verapamil. In these experiments, verapamil shortened mean effective refractory period (ERP) from 122+/-5 to 114+/-4 ms (P<0.02) at a cycle length of 300 ms, decreased ERP heterogeneity (from 15+/-1 to 10+/-1%, P<0.05), heterogeneously accelerated atrial conduction and decreased the cycle length of AF (94+/-4 to 84+/-3 ms, P<0.005). Diltiazem did not affect ERP, AF cycle length or AF duration, but produced conduction acceleration similar to that caused by verapamil (n=5). In the presence of autonomic blockade, verapamil failed to promote AF and increased, rather than decreasing, refractoriness. Neither verapamil nor diltiazem affected atrial conduction in the presence of autonomic blockade. Epicardial mapping suggested that verapamil promoted AF by increasing the number of simultaneous wavefronts reflected by separate zones of reactivation in each cycle. CONCLUSIONS: Verapamil promotes AF in normal dogs by promoting multiple circuit reentry, an effect dependent on intact autonomic tone and not shared by diltiazem.
+11282081	24	43	atrial fibrillation	Disease	MESH:D001281
+11282081	107	125	Atrial tachycardia	Disease	MESH:D013617
+11282081	188	207	atrial fibrillation	Disease	MESH:D001281
+11282081	209	211	AF	Disease	MESH:D001281
+11282081	339	341	AF	Disease	MESH:D001281
+11282081	362	364	AF	Disease	MESH:D001281
+11282081	461	463	AF	Disease	MESH:D001281
+11282081	781	783	AF	Disease	MESH:D001281
+11282081	811	813	AF	Disease	MESH:D001281
+11282081	865	867	AF	Disease	MESH:D001281
+11282081	1504	1506	AF	Disease	MESH:D001281
+11282081	1569	1571	AF	Disease	MESH:D001281
+11282081	1588	1590	AF	Disease	MESH:D001281
+11282081	1748	1750	AF	Disease	MESH:D001281
+11282081	1957	1959	AF	Disease	MESH:D001281
+11282081	2103	2105	AF	Disease	MESH:D001281
+
+16471092|t|Urinary symptoms and quality of life changes in Thai women with overactive bladder after tolterodine treatment.
+16471092|a|OBJECTIVES: To study the urinary symptoms and quality of life changes in Thai women with overactive bladder (OAB) after tolterodine treatment. MATERIAL AND METHOD: Thirty women (aged 30-77 years) diagnosed as having OAB at the Gynecology Clinic, King Chulalongkorn Memorial Hospital from January to April 2004 were included in the present study. Tolterodine 2 mg, twice daily was given. After 8 weeks treatment, changes in micturition diary variables and tolerability were determined. Short form 36 (SF36) questionaires (Thai version) were given before and after 8 weeks of treatment. RESULTS: At 8 weeks, all micturition per day decreased from 16. 7 +/- 5. 3 to 6. 7 +/- 2.4 times per day. The number of nocturia episodes decreased from 5.4 +/- 4.2 to 1.1 +/- 1.0 times per night. The most common side effect was dry month in 5 cases (16.7%) with 2 cases reporting a moderate degree and 1 case with severe degree. Only one case (3.3%) withdrew from the present study due to a severe dry mouth. The SF-36 scores changed significantly in the domains of physical functioning, role function emotional, social function and mental heath. CONCLUSION: Tolterodine was well tolerated and its effects improved the quality of life in Thai women with OAB.
+16471092	64	82	overactive bladder	Disease	MESH:D053201
+16471092	201	219	overactive bladder	Disease	MESH:D053201
+16471092	221	224	OAB	Disease	MESH:D053201
+16471092	328	331	OAB	Disease	MESH:D053201
+16471092	817	825	nocturia	Disease	MESH:D053158
+16471092	926	935	dry month	Disease	MESH:D014987
+16471092	1096	1105	dry mouth	Disease	MESH:D014987
+16471092	1352	1355	OAB	Disease	MESH:D053201
+
+16174948|t|Absence of acute cerebral vasoconstriction after cocaine-associated subarachnoid hemorrhage.
+16174948|a|INTRODUCTION: Cocaine use has been associated with neurovascular complications, including arterial vasoconstriction and vasculitis. However, there are few studies of angiographic effects of cocaine on human cerebral arteries. Information on these effects could be obtained from angiograms of patients with cocaine-associated subarachnoid hemorrhage (SAH) who underwent angiography shortly after cocaine use. METHODS: We screened patients with SAH retrospectively and identified those with positive urine toxicology for cocaine or its metabolites. Quantitative arterial diameter measurements from angiograms of these patients were compared to measurements from control patients with SAH who were matched for factors known to influence arterial diameter. Qualitative comparisons of small artery changes also were made. RESULTS: Thirteen patients with positive cocaine toxicology were compared to 26 controls. There were no significant differences between groups in the mean diameters of the intradural internal carotid, sphenoidal segment of the middle cerebral, precommunicating segment of the anterior cerebral, or basilar arteries (p greater than 0.05 for all comparisons, unpaired t-tests). There also were no significant differences between groups when expressing diameters as the sum of the precommunicating segment of the anterior cerebral + sphenoidal segment of the middle cerebral + supraclinoid internal carotid artery + basilar artery divided by the diameter of the petrous internal carotid artery (p greater than 0.05, unpaired t-tests). Qualitative assessments showed two arterial irregularities in the distal vasculature in each group. CONCLUSION: No quantitative evidence for narrowing of large cerebral arteries or qualitative angiographic evidence for distal narrowing or vasculitis could be found in patients who underwent angiography after aneurysmal SAH associated with cocaine use.
+16174948	68	91	subarachnoid hemorrhage	Disease	MESH:D013345
+16174948	144	171	neurovascular complications	Disease	MESH:D013901
+16174948	213	223	vasculitis	Disease	MESH:D014657
+16174948	418	441	subarachnoid hemorrhage	Disease	MESH:D013345
+16174948	443	446	SAH	Disease	MESH:D013345
+16174948	536	539	SAH	Disease	MESH:D013345
+16174948	775	778	SAH	Disease	MESH:D013345
+16174948	1881	1891	vasculitis	Disease	MESH:D014657
+16174948	1951	1961	aneurysmal	Disease	MESH:D000783
+16174948	1962	1965	SAH	Disease	MESH:D013345
+
+12448656|t|A phase II study of thalidomide in advanced metastatic renal cell carcinoma.
+12448656|a|OBJECTIVES: To evaluate the toxicity and activity of thalidomide in patients with advanced metastatic renal cell cancer and to measure changes of one angiogenic factor, vascular endothelial growth factor (VEGF)165, with therapy. PATIENTS AND METHODS: 29 patients were enrolled on a study of thalidomide using an intra-patient dose escalation schedule. Patients began thalidomide at 400 mg/d and escalated as tolerated to 1200 mg/d by day 54. Fifty-nine per cent of patients had had previous therapy with IL-2 and 52% were performance status 2 or 3. Systemic plasma VEGF165 levels were measured by dual monoclonal ELISA in 8 patients. RESULTS: 24 patients were evaluable for response with one partial response of 11 months duration of a patient with hepatic and pulmonary metastases (4%), one minor response, and 2 patients stable for over 6 months. Somnolence and constipation were prominent toxicities and most patients could not tolerate the 1200 mg/day dose level. Systemic plasma VEGF165 levels did not change with therapy. CONCLUSION: These results are consistent with a low level of activity of thalidomide in renal cell carcinoma. Administration of doses over 800 mg/day was difficult to achieve in this patient population, however lower doses were practical. The dose-response relationship, if any, of thalidomide for renal cell carcinoma is unclear.
+12448656	55	75	renal cell carcinoma	Disease	MESH:D002292
+12448656	105	113	toxicity	Disease	MESH:D064420
+12448656	179	196	renal cell cancer	Disease	MESH:D007680
+12448656	848	858	metastases	Disease	MESH:D009362
+12448656	926	936	Somnolence	Disease	MESH:D006970
+12448656	941	953	constipation	Disease	MESH:D003248
+12448656	969	979	toxicities	Disease	MESH:D064420
+12448656	1193	1213	renal cell carcinoma	Disease	MESH:D002292
+12448656	1403	1423	renal cell carcinoma	Disease	MESH:D002292
+
+10523326|t|Nitric oxide synthase expression in the course of lead-induced hypertension.
+10523326|a|We recently showed elevated reactive oxygen species (ROS), reduced urinary excretion of NO metabolites (NOx), and increased NO sequestration as nitrotyrosine in various tissues in rats with lead-induced hypertension. This study was designed to discern whether the reduction in urinary NOx in lead-induced hypertension is, in part, due to depressed NO synthase (NOS) expression. Male Sprague-Dawley rats were randomly assigned to a lead-treated group (given lead acetate, 100 ppm, in drinking water and regular rat chow), a group given lead and vitamin E-fortified chow, or a normal control group given either regular food and water or vitamin E-fortified food for 12 weeks. Tail blood pressure, urinary NOx excretion, plasma malondialdehyde (MDA), and endothelial and inducible NOS (eNOS and iNOS) isotypes in the aorta and kidney were measured. The lead-treated group exhibited a rise in blood pressure and plasma MDA concentration, a fall in urinary NOx excretion, and a paradoxical rise in vascular and renal tissue eNOS and iNOS expression. Vitamin E supplementation ameliorated hypertension, lowered plasma MDA concentration, and raised urinary NOx excretion while significantly lowering vascular, but not renal, tissue eNOS and iNOS expression. Vitamin E supplementation had no effect on either blood pressure, plasma MDA, or NOS expression in the control group. The study also revealed significant inhibition of NOS enzymatic activity by lead in cell-free preparations. In conclusion, lead-induced hypertension in this model was associated with a compensatory upregulation of renal and vascular eNOS and iNOS expression. This is, in part, due to ROS-mediated NO inactivation, lead-associated inhibition of NOS activity, and perhaps stimulatory actions of increased shear stress associated with hypertension.
+10523326	63	75	hypertension	Disease	MESH:D006973
+10523326	280	292	hypertension	Disease	MESH:D006973
+10523326	382	394	hypertension	Disease	MESH:D006973
+10523326	1160	1172	hypertension	Disease	MESH:D006973
+10523326	1582	1594	hypertension	Disease	MESH:D006973
+10523326	1878	1890	hypertension	Disease	MESH:D006973
+
+9636837|t|Carboplatin toxic effects on the peripheral nervous system of the rat.
+9636837|a|BACKGROUND: The most striking of carboplatin's advantages (CBDCA) over cisplatin (CDDP) is its markedly reduced rate of neurotoxic effects. However, the use of CBDCA higher-intensity schedules and the association with other neurotoxic drugs in polychemotherapy may cause some concern about its safety with respect to peripheral nervous system damage. MATERIALS AND METHODS: Two different schedules of CBDCA administration (10 mg/kg and 15 mg/kg i.p. twice a week for nine times) were evaluated in Wistar rats. Neurotoxicity was assessed for behavioral (tail-flick test), neurophysiological (nerve conduction velocity in the tail nerve), morphological, morphometrical and analytical effects. RESULTS: CBDCA administration induced dose-dependent peripheral neurotoxicity. Pain perception and nerve conduction velocity in the tail were significantly impaired, particularly after the high-dose treatment. The dorsal root ganglia sensory neurons and, to a lesser extent, satellite cells showed the same changes as those induced by CDDP, mainly affecting the nucleus and nucleolus of ganglionic sensory neurons. Moreover, significant amounts of platinum were detected in the dorsal root ganglia and kidney after CBDCA treatment. CONCLUSIONS: CBDCA is neurotoxic in our model, and the type of pathological changes it induces are so closely similar to those caused by CDDP that it is probable that neurotoxicity is induced in the two drugs by the same mechanism. This model can be used alone or in combination with other drugs to explore the effect of CBDCA on the peripheral nervous system.
+9636837	191	201	neurotoxic	Disease	MESH:D020258
+9636837	295	305	neurotoxic	Disease	MESH:D020258
+9636837	388	420	peripheral nervous system damage	Disease	MESH:D010523
+9636837	581	594	Neurotoxicity	Disease	MESH:D020258
+9636837	815	839	peripheral neurotoxicity	Disease	MESH:D010523
+9636837	841	845	Pain	Disease	MESH:D010146
+9636837	1316	1326	neurotoxic	Disease	MESH:D020258
+9636837	1461	1474	neurotoxicity	Disease	MESH:D020258
+
+9098464|t|A murine model of adenomyosis: the effects of hyperprolactinemia induced by fluoxetine hydrochloride, a selective serotonin reuptake inhibitor, on adenomyosis induction in Wistar albino rats.
+9098464|a|OBJECTIVE: The aim of this study was to investigate whether fluoxetine given to castrated and noncastrated rats caused hyperprolactinemia and its effects with respect to adenomyosis. DESIGN: Fluoxetine, a serotonin reuptake inhibitor, was given to Wistar Albino rats for 98 days to produce hyperprolactinemia. The drug was given to two groups consisting of castrated and noncastrated rats and compared to two groups of castrated and noncastrated controls. Prolactin levels were measured and the uteri of the rats were removed for histopathological analysis at the end of 98 days. SETTING: Marmara University School of Medicine, Department of Histology and Embryology, Zeynep Kamil Women and Children's Hospital. MAIN OUTCOME MEASURES: Serum prolactin levels, uterine histopathology. RESULTS: The prolactin levels of castrated and noncastrated groups treated with fluoxetine were statistically significantly higher when compared to their respective control groups. Histological studies revealed 11 cases of adenomyosis, all within the noncastrated group receiving fluoxetine. CONCLUSION: It was suggested that high serum prolactin levels cause degeneration of myometrial cells in the presence of ovarian steroids that results in a myometrial invasion by endometrial stroma. This invasion eventually progresses to adenomyosis.
+9098464	18	29	adenomyosis	Disease	MESH:D062788
+9098464	46	64	hyperprolactinemia	Disease	MESH:D006966
+9098464	147	158	adenomyosis	Disease	MESH:D062788
+9098464	311	329	hyperprolactinemia	Disease	MESH:D006966
+9098464	362	373	adenomyosis	Disease	MESH:D062788
+9098464	482	500	hyperprolactinemia	Disease	MESH:D006966
+9098464	1198	1209	adenomyosis	Disease	MESH:D062788
+9098464	1504	1515	adenomyosis	Disease	MESH:D062788
+
+8424298|t|Effects of deliberate hypotension induced by labetalol with isoflurane on neuropsychological function.
+8424298|a|The effect of deliberate hypotension on brain function measured by neuropsychological tests was studied in 41 adult patients. Twenty-four patients were anaesthetized for middle-ear surgery with deliberate hypotension induced by labetalol with isoflurane (hypotensive group). Seventeen patients without hypotension served as a control group. The mean arterial pressure was 77 +/- 2 mmHg (10.3 +/- 0.3 kPa) before hypotension and 50 +/- 0 mmHg (6.7 +/- 0.0 kPa) during hypotension in the hypotensive group, and 86 +/- 2 mmHg (11.5 +/- 0.3 kPa) during anaesthesia in the control group. The following psychological tests were performed: four subtests of the Wechsler Adult Intelligence Scale (similarities, digit span, vocabulary and digit symbol), Trail-Making tests A and B, Zung tests (self-rating anxiety scale and self-rating depression scale) and two-part memory test battery with immediate and delayed recall. The tests were performed preoperatively and 2 days postoperatively. There were no statistically significant differences between the groups in any of the tests in the changes from preoperative value to postoperative value. The results indicate that hypotension induced by labetalol with isoflurane has no significant harmful effects on mental functions compared to normotensive anaesthesia.
+8424298	22	33	hypotension	Disease	MESH:D007022
+8424298	128	139	hypotension	Disease	MESH:D007022
+8424298	308	319	hypotension	Disease	MESH:D007022
+8424298	358	369	hypotensive	Disease	MESH:D007022
+8424298	405	416	hypotension	Disease	MESH:D007022
+8424298	515	526	hypotension	Disease	MESH:D007022
+8424298	570	581	hypotension	Disease	MESH:D007022
+8424298	589	600	hypotensive	Disease	MESH:D007022
+8424298	900	907	anxiety	Disease	MESH:D001008
+8424298	930	940	depression	Disease	MESH:D003866
+8424298	1264	1275	hypotension	Disease	MESH:D007022
+
+7880714|t|Auditory disturbance associated with interscalene brachial plexus block.
+7880714|a|We performed an audiometric study in 20 patients who underwent surgery of the shoulder region under an interscalene brachial plexus block (IBPB). Bupivacaine 0.75% with adrenaline was given followed by a 24-hr continuous infusion of 0.25% bupivacaine. Three audiometric threshold measurements (0.25-18 kHz) were made: the first before IBPB, the second 2-6 h after surgery and the third on the first day after operation. In four patients hearing impairment on the side of the block was demonstrated after operation, in three measurements on the day of surgery and in one on the following day. The frequencies at which the impairment occurred varied between patients; in one only low frequencies (0.25-0.5 kHz) were involved. The maximum change in threshold was 35 dB at 6 kHz measured at the end of the continuous infusion of bupivacaine. This patient had hearing threshold changes (15-20 dB) at 6-10 kHz on the opposite side also. IBPB may cause transient auditory dysfunction in the ipsilateral ear, possibly via an effect on sympathetic innervation.
+7880714	510	528	hearing impairment	Disease	MESH:D034381
+7880714	1029	1049	auditory dysfunction	Disease	MESH:D006311
+
+3969369|t|Promotional effects of testosterone and dietary fat on prostate carcinogenesis in genetically susceptible rats.
+3969369|a|Germfree (GF) Lobund strain Wistar (LW) rats, fed vegetable diet L-485, have developed prostate adenocarcinomas spontaneously (10% incidence) at average age 34 months. Conventional LW rats, implanted with testosterone at age 4 months, developed a higher incidence of prostate cancer after an average interval of 14 months: 24% had developed gross tumors, and 40% when it included microscopic tumors. Preliminary results indicate that testosterone-treated LW rats that were fed the same diet, which was supplemented with corn oil up to 20% fat, developed prostate cancer after intervals of 6-12 months. Aged GF Sprague-Dawley (SD) rats have not developed prostate cancer spontaneously. Conventional SD rats fed diet L-485 and treated with testosterone developed only prostatitis. Experimental designs should consider genetic susceptibility as a basic prerequisite for studies on experimental prostate cancer.
+3969369	64	78	carcinogenesis	Disease	MESH:D063646
+3969369	199	223	prostate adenocarcinomas	Disease	MESH:D011471
+3969369	379	394	prostate cancer	Disease	MESH:D011471
+3969369	459	465	tumors	Disease	MESH:D009369
+3969369	504	510	tumors	Disease	MESH:D009369
+3969369	666	681	prostate cancer	Disease	MESH:D011471
+3969369	766	781	prostate cancer	Disease	MESH:D011471
+3969369	878	889	prostatitis	Disease	MESH:D053448
+3969369	1003	1018	prostate cancer	Disease	MESH:D011471
+
+326460|t|Amelioration of bendrofluazide-induced hypokalemia by timolol.
+326460|a|The beta adrenergic blocking drug, timolol, tended to correct the hypokalemia of short-term bendrofluazide treatment in 6 healthy male subjects and although the effect was small it was significant. Timolol also reduced the rise in plasma aldosterone and urine potassium excretion following bendrofluazide and increased the urine sodium/potassium ratio. There was no evidence of a shift of potassium from the intracellular to the extracellular space.
+326460	39	50	hypokalemia	Disease	MESH:D007008
+326460	129	140	hypokalemia	Disease	MESH:D007008
+
+18356633|t|An evaluation of amikacin nephrotoxicity in the hematology/oncology population.
+18356633|a|Amikacin is an aminoglycoside commonly used to provide empirical double gram-negative treatment for febrile neutropenia and other suspected infections. Strategies of extended-interval and conventional dosing have been utilized extensively in the general medical population; however, data are lacking to support a dosing strategy in the hematology/oncology population. To evaluate amikacin-associated nephrotoxicity in an adult hematology/oncology population, a prospective, randomized, open-label trial was conducted at a university-affiliated medical center. Forty patients with a diagnosis consistent with a hematologic/oncologic disorder that required treatment with an aminoglycoside were randomized to either conventional or extended-interval amikacin. The occurrence of nephrotoxicity by means of an increase in serum creatinine and evaluation of efficacy via amikacin serum concentrations with respective pathogens were assessed. The occurrence of nephrotoxicity was similar between the conventional and extended-interval groups, at 10% and 5%, respectively (P = 1.00). Six patients in the conventional group had a positive culture, compared with none in the extended-interval group (P = 0.002). The occurrence of nephrotoxicity was similar between the two dosing regimens, but the distribution of risk factors was variable between the two groups. Efficacy could not be assessed.
+18356633	180	199	febrile neutropenia	Disease	MESH:D064147
+18356633	220	230	infections	Disease	MESH:D007239
+18356633	690	720	hematologic/oncologic disorder	Disease	MESH:D006402
+
+8686832|t|Leg and back pain after spinal anaesthesia involving hyperbaric 5% lignocaine.
+8686832|a|Fifty-four patients, aged 27-90 years, who were given lignocaine 5% in 6.8% glucose solution for spinal anaesthesia were studied. Thirteen of these patients experienced pain in the legs and/or back after recovery from anaesthesia. The patients affected were younger (p < 0.05) and the site of the dural puncture was higher (p < 0.01) than those individuals without pain. Five of the 13 patients (38%) with pain and seven of the 41 patients (17%) without pain admitted to a high alcohol intake, which might be a contributing factor. Leg and/or back pain is associated with the intrathecal use of hyperbaric 5% lignocaine.
+8686832	0	17	Leg and back pain	Disease	MESH:D001416
+8686832	248	276	pain in the legs and/or back	Disease	MESH:D001416
+8686832	444	448	pain	Disease	MESH:D010146
+8686832	485	489	pain	Disease	MESH:D010146
+8686832	533	537	pain	Disease	MESH:D010146
+8686832	611	631	Leg and/or back pain	Disease	MESH:D001416
+
+8111719|t|Hallucinations and ifosfamide-induced neurotoxicity.
+8111719|a|BACKGROUND: Hallucinations as a symptom of central neurotoxicity are a known but poorly described side effect of ifosfamide. Most cases of ifosfamide-induced hallucinations have been reported with other mental status changes. METHODS: The authors interviewed six persons with ifosfamide-induced hallucinations in the presence of a clear sensorium. All patients were receiving high-dose ifosfamide as part of their bone marrow transplant procedure. RESULTS: Hallucinations occurred only when the patient's eyes were closed and, in all but one case, were reported as disturbing or frightening. Underreporting of these hallucinations by patients is likely. CONCLUSIONS: Hallucinations may be the sole or first manifestation of neurotoxicity. The incidence may be dose and infusion-time related. The clinician should be alerted for possible ifosfamide-induced hallucinations, which may occur without other signs of neurotoxicity. "Eyes-closed" hallucinatory experiences appear to be an unusual feature of this presentation. Patients anxious about this experience respond well to support and education about this occurrence. Optimal pharmacologic management of disturbed patients is unclear. If agitation becomes marked, high-potency neuroleptics (i.e., haloperidol) may be effective.
+8111719	0	14	Hallucinations	Disease	MESH:D006212
+8111719	38	51	neurotoxicity	Disease	MESH:D020258
+8111719	65	79	Hallucinations	Disease	MESH:D006212
+8111719	104	117	neurotoxicity	Disease	MESH:D020258
+8111719	211	225	hallucinations	Disease	MESH:D006212
+8111719	348	362	hallucinations	Disease	MESH:D006212
+8111719	510	524	Hallucinations	Disease	MESH:D006212
+8111719	669	683	hallucinations	Disease	MESH:D006212
+8111719	720	734	Hallucinations	Disease	MESH:D006212
+8111719	777	790	neurotoxicity	Disease	MESH:D020258
+8111719	909	923	hallucinations	Disease	MESH:D006212
+8111719	964	977	neurotoxicity	Disease	MESH:D020258
+8111719	1243	1252	agitation	Disease	MESH:D011595
+
+3311455|t|Cardiac transplantation: improved quality of survival with a modified immunosuppressive protocol.
+3311455|a|The effects on renal function on two different immunosuppressive protocols were evaluated retrospectively in two subsequent groups of heart transplant recipients. In group I, cyclosporine was given before the procedure at a loading dose of 17.5 mg/kg and then continued after the procedure to keep a whole blood level about 1000 ng/ml. In group II, cyclosporine was started only after the procedure at a lower dosage and was complemented by azathioprine, which was used for the first postoperative week. Group II showed a better perioperative renal function as determined by serum blood urea nitrogen and serum creatinine levels. Group II also showed a significant decrease of chronic nephrotoxicity secondary to long-term therapy with cyclosporine. Despite this improvement in late renal function, group II still shows a slow rise in serum creatinine. We think that even these lower dosages of cyclosporine can cause chronic nephrotoxicity and that further modification of the immunosuppressive regimen is required to completely abolish this toxic side effect.
+
+982002|t|Acute renal failure subsequent to the administration of rifampicin. A follow-up study of cases reported earlier.
+982002|a|A clinical presentation is made of a 2-3 year follow-up of six cases of acute renal failure that have been reported earlier. The patients had developed transient renal failure after the intermittent administration of rifampicin. The stage of olig-anuria lasted for 1-3 weeks, and five of the patients were treated by hemodialysis. Two of the patients died due to unrelated causes during the follow-up period. The four patients re-examined were clinically cured. Pathologic findings by light microscopy and immunofluorescence at biopsy were scarce. Nothing abnormal was seen by electron microscopy in two of the cases studied. Renal function was normal. In three cases the excretion at 131I-hippuran renography was slightly slowed. Although in the acute stage the renal lesions histologically appeared toxic, evidence suggestive of an immunological mechanism cannot be excluded.
+982002	0	19	Acute renal failure	Disease	MESH:D058186
+982002	185	204	acute renal failure	Disease	MESH:D058186
+982002	275	288	renal failure	Disease	MESH:D051437
+982002	360	366	anuria	Disease	MESH:D001002
+982002	876	889	renal lesions	Disease	MESH:D007674
+
+21418164|t|CCNU (lomustine) toxicity in dogs: a retrospective study (2002-07).
+21418164|a|OBJECTIVE: To describe the incidence of haematological, renal, hepatic and gastrointestinal toxicities in tumour-bearing dogs receiving 1-(2-chloroethyl)-3-cyclohexyl-1-nitrosourea (CCNU). DESIGN: The medical records of 206 dogs that were treated with CCNU at the Melbourne Veterinary Specialist Centre between February 2002 and December 2007 were retrospectively evaluated. RESULTS: Of the 206 dogs treated with CCNU, 185 met the inclusion criteria for at least one class of toxicity. CCNU was used most commonly in the treatment of lymphoma, mast cell tumour, brain tumour, histiocytic tumours and epitheliotropic lymphoma. Throughout treatment, 56.9% of dogs experienced neutropenia, 34.2% experienced anaemia and 14.2% experienced thrombocytopenia. Gastrointestinal toxicosis was detected in 37.8% of dogs, the most common sign of which was vomiting (24.3%). Potential renal toxicity and elevated alanine transaminase (ALT) concentration were reported in 12.2% and 48.8% of dogs, respectively. The incidence of hepatic failure was 1.2%. CONCLUSIONS: CCNU-associated toxicity in dogs is common, but is usually not life threatening.
+21418164	17	25	toxicity	Disease	MESH:D064420
+21418164	108	170	haematological, renal, hepatic and gastrointestinal toxicities	Disease	MESH:D056486
+21418164	544	552	toxicity	Disease	MESH:D064420
+21418164	602	610	lymphoma	Disease	MESH:D008223
+21418164	612	628	mast cell tumour	Disease	MESH:D034801
+21418164	630	642	brain tumour	Disease	MESH:D001932
+21418164	644	663	histiocytic tumours	Disease	MESH:D015620
+21418164	668	692	epitheliotropic lymphoma	Disease	MESH:D008223
+21418164	742	753	neutropenia	Disease	MESH:D009503
+21418164	773	780	anaemia	Disease	MESH:D000740
+21418164	803	819	thrombocytopenia	Disease	MESH:D013921
+21418164	821	847	Gastrointestinal toxicosis	Disease	MESH:D005767
+21418164	913	921	vomiting	Disease	MESH:D014839
+21418164	947	955	toxicity	Disease	MESH:D064420
+21418164	1083	1098	hepatic failure	Disease	MESH:D017093
+21418164	1138	1146	toxicity	Disease	MESH:D064420
+
+33969|t|Ethopropazine and benztropine in neuroleptic-induced parkinsonism.
+33969|a|In a 12-week controlled study ethopropazine was compared to benztropine in the treatment of parkinsonism induced by fluphenazine enanthate in 60 schizophrenic outpatients. Ethopropazine and benztropine were found to be equally effective in controlling parkinsonian symptoms and were as efficacious as procyclidine, their previous antiparkinsonian drug. However, benztropine treated patients had a significant increase in tardive dyskinesia compared to their condition during procyclindine treatment, and significantly more anxiety and depression than ethopropazine treated patients. This suggests that benztropine is not the anticholinergic drug of choice in the treatment of neuroleptic-induced parkinsonian symptoms, because of its more toxic central and peripheral atropinic effect.
+33969	53	65	parkinsonism	Disease	MESH:D010302
+33969	159	171	parkinsonism	Disease	MESH:D010302
+33969	212	225	schizophrenic	Disease	MESH:D012559
+33969	319	340	parkinsonian symptoms	Disease	MESH:D010302
+33969	488	506	tardive dyskinesia	Disease	MESH:D004409
+33969	590	597	anxiety	Disease	MESH:D001008
+33969	602	612	depression	Disease	MESH:D003866
+33969	763	784	parkinsonian symptoms	Disease	MESH:D010302
+
+11999899|t|Behavioral effects of MK-801 on reserpine-treated mice.
+11999899|a|The effects of dizocilpine (MK-801), a noncompetitive N-methyl-D-aspartate (NMDA) receptor antagonist, were studied on dopamine-related behaviors induced by reserpine treatments. This study focuses on behavioral syndromes that may used as models for Parkinson's disease, or tardive dyskinesia, and its response after glutamatergic blockage. Reserpine (1 mg/kg), administered once every other day for 4 days, produced increases in orofacial dyskinesia, tongue protrusion and vacuous chewing in mice, which are signs indicative of tardive dyskinesia. Reserpine also produced tremor and catalepsy, which are signs suggestive of Parkinson's disease. MK-801 (0.1 mg/kg), administered 30 min before the observation test, prevented the vacuous chewing movements, tongue protrusions and catalepsy induced by reserpine. However, MK-801 injection produced a significant increase of tremor in reserpine-treated mice. Reserpine (1 mg/kg), administered 90 min before the test and followed by apomophine injection (0.1 mg/kg) 5 min before the test, did not produce oral dyskinesia in mice. On the other hand, reserpine induced increases in tremor and catalepsy compared to control mice. MK-801 (0.1 mg/kg) administration attenuated the catalepsy and tremor induced by reserpine. Pretreatment with reserpine (1 mg/kg) 24 h before the observation test produced increases in vacuous chewing movements and tongue protrusion, as well as increases in tremor and catalepsy, whereas MK-801 (0.1 mg/kg) injection 90 min before the test reversed the effects of reserpine. These results show that reserpine produces different and abnormal movements, which are related to dose and schedule employed and can be considered as parkinsonian-like and tardive dsykinesia signs. The glutamatergic blockage produced by NMDA can restore these signs, such as vacuous chewing movements, tongue protrusions, catalepsy and tremor according to the employed model.
+11999899	306	325	Parkinson's disease	Disease	MESH:D010300
+11999899	330	348	tardive dyskinesia	Disease	MESH:D004409
+11999899	486	506	orofacial dyskinesia	Disease	MESH:D004409
+11999899	585	603	tardive dyskinesia	Disease	MESH:D004409
+11999899	629	635	tremor	Disease	MESH:D014202
+11999899	640	649	catalepsy	Disease	MESH:D002375
+11999899	681	700	Parkinson's disease	Disease	MESH:D010300
+11999899	835	844	catalepsy	Disease	MESH:D002375
+11999899	928	934	tremor	Disease	MESH:D014202
+11999899	1107	1122	oral dyskinesia	Disease	MESH:D004409
+11999899	1182	1188	tremor	Disease	MESH:D014202
+11999899	1193	1202	catalepsy	Disease	MESH:D002375
+11999899	1278	1287	catalepsy	Disease	MESH:D002375
+11999899	1292	1298	tremor	Disease	MESH:D014202
+11999899	1487	1493	tremor	Disease	MESH:D014202
+11999899	1498	1507	catalepsy	Disease	MESH:D002375
+11999899	1661	1679	abnormal movements	Disease	MESH:D004409
+11999899	1754	1766	parkinsonian	Disease	MESH:D010300
+11999899	1776	1794	tardive dsykinesia	Disease	MESH:D009069
+11999899	1926	1935	catalepsy	Disease	MESH:D002375
+11999899	1940	1946	tremor	Disease	MESH:D014202
+
+9201797|t|The attenuating effect of carteolol hydrochloride, a beta-adrenoceptor antagonist, on neuroleptic-induced catalepsy in rats.
+9201797|a|It is known that beta-adrenoceptor antagonists are effective in the treatment of akathisia, one of the extrapyramidal side effects that occur during neuroleptic treatment. Neuroleptic-induced catalepsy, a model of neuroleptic-induced extrapyramidal side effects, was considered suitable as a model for predicting neuroleptic-induced akathisia in humans, although neuroleptic-induced catalepsy was not considered a specific test for neuroleptic-induced akathisia. Therefore, the effects of carteolol, a beta-adrenoceptor antagonist, on haloperidol-induced catalepsy in rats were behaviorally studied and compared with those of propranolol and biperiden, a muscarinic receptor antagonist. Carteolol, as well as propranolol and biperiden, inhibited the haloperidol-induced catalepsy. The inhibitory effect of carteolol was almost comparable to that of propranolol, but was weaker than that of biperiden. Carteolol did not evoke postsynaptic dopamine receptor-stimulating behavioral signs such as stereotypy and hyperlocomotion in rats. Carteolol did not antagonize the inhibitory effects of haloperidol on apomorphine-induced stereotypy and locomotor activity in rats. In addition, carteolol did not evoke 5-HT1A receptor-stimulating behavioral signs such as flat body posture and forepaw treading and did not inhibit 5-hydroxytryptophan-induced head twitch in rats. Finally, carteolol did not inhibit physostigmine-induced lethality in rats. These results strongly suggest that carteolol improves haloperidol-induced catalepsy via its beta-adrenoceptor antagonistic activity and is expected to be effective in the treatment of akathisia without attenuating neuroleptic-induced antipsychotic effects due to its postsynaptic dopamine receptor antagonistic activity.
+9201797	106	115	catalepsy	Disease	MESH:D002375
+9201797	206	215	akathisia	Disease	MESH:D011595
+9201797	317	326	catalepsy	Disease	MESH:D002375
+9201797	458	467	akathisia	Disease	MESH:D011595
+9201797	508	517	catalepsy	Disease	MESH:D002375
+9201797	577	586	akathisia	Disease	MESH:D011595
+9201797	680	689	catalepsy	Disease	MESH:D002375
+9201797	895	904	catalepsy	Disease	MESH:D002375
+9201797	1640	1649	catalepsy	Disease	MESH:D002375
+9201797	1750	1759	akathisia	Disease	MESH:D011595
+
+8267029|t|Penicillamine-induced rapidly progressive glomerulonephritis in a patient with rheumatoid arthritis.
+8267029|a|A 67-year-old woman with rheumatoid arthritis presented rapidly progressive glomerulonephritis (RPGN) after 5 months of D-penicillamine (250 mg/day) treatment. Light microscopy study showed severe glomerulonephritis with crescent formation in 60% of the glomeruli and infiltration of inflammatory cells in the wall of an arteriole. Immunofluorescence revealed scanty granular IgG, IgA and C3 deposits along the capillary walls and mesangium. The patient was treated with steroid pulse, plasmapheresis, cyclophosphamide and antiplatelet agents. A complete recovery of renal function was achieved in a few weeks. This new case of RPGN in the course of D-penicillamine treatment emphasizes the need for frequent monitoring of renal function and evaluation of urinary sediment and proteinuria in these patients. The prompt discontinuation of D-penicillamine and vigorous treatment measures could allow for a good prognosis as in this case.
+8267029	22	60	rapidly progressive glomerulonephritis	Disease	MESH:C538458
+8267029	79	99	rheumatoid arthritis	Disease	MESH:D001172
+8267029	126	146	rheumatoid arthritis	Disease	MESH:D001172
+8267029	157	195	rapidly progressive glomerulonephritis	Disease	MESH:C538458
+8267029	197	201	RPGN	Disease	MESH:C538458
+8267029	298	316	glomerulonephritis	Disease	MESH:D005921
+8267029	729	733	RPGN	Disease	MESH:C538458
+8267029	878	889	proteinuria	Disease	MESH:D011507
+
+12911170|t|Ciprofloxacin-induced acute interstitial nephritis and autoimmune hemolytic anemia.
+12911170|a|Ciprofloxacin has been associated with several side effects including interstitial nephritis and hemolytic anemia. The combination of both side effects is extremely rare. In this report, we describe a case of ciprofloxacin-induced interstitial nephritis and autoimmune hemolytic anemia. Hemolytic anemia improved after stopping the drug and initiation of steroid therapy. Unfortunately, acute interstitial nephritis was irreversible and the patient developed end-stage renal disease.
+12911170	28	50	interstitial nephritis	Disease	MESH:D009395
+12911170	55	82	autoimmune hemolytic anemia	Disease	MESH:D000744
+12911170	154	176	interstitial nephritis	Disease	MESH:D009395
+12911170	181	197	hemolytic anemia	Disease	MESH:D000743
+12911170	315	337	interstitial nephritis	Disease	MESH:D009395
+12911170	342	369	autoimmune hemolytic anemia	Disease	MESH:D000744
+12911170	371	387	Hemolytic anemia	Disease	MESH:D000743
+12911170	477	499	interstitial nephritis	Disease	MESH:D009395
+12911170	543	566	end-stage renal disease	Disease	MESH:D007676
+
+2894433|t|Diazepam facilitates reflex bradycardia in conscious rats.
+2894433|a|The effects of diazepam on cardiovascular function were assessed in conscious rats. Intravenous administration of diazepam (1-30 mg kg-1) produced a dose-dependent decrease in both the mean arterial pressure and the heart rate. Also, reflex bradycardia was produced in rats by intravenous infusion of adrenaline (1.25-2.5 micrograms kg-1). Intravenous pretreatment of the rats with diazepam, although causing no change in the adrenaline-induced pressor effect, did enhance the adrenaline-induced reflex bradycardia. However, the diazepam enhancement of adrenaline-induced reflex bradycardia was antagonized by pretreatment of rats with an intravenous dose of picrotoxin (an agent blocks chloride channels by binding to sites associated with the benzodiazepine-GABA-chloride channel macromolecular complex). The data indicate that diazepam acts through the benzodiazepine-GABA-chloride channel macromolecular complex within the central nervous system to facilitate reflex bradycardia mediated through baroreceptor reflexes in response to an acute increase in arterial pressure.
+2894433	28	39	bradycardia	Disease	MESH:D001919
+2894433	300	311	bradycardia	Disease	MESH:D001919
+2894433	562	573	bradycardia	Disease	MESH:D001919
+2894433	638	649	bradycardia	Disease	MESH:D001919
+2894433	1030	1041	bradycardia	Disease	MESH:D001919
+
+1969772|t|Preservation of renal blood flow during hypotension induced with fenoldopam in dogs.
+1969772|a|The introduction of drugs that could induce hypotension with different pharmacological actions would be advantageous because side effects unique to a specific drug could be minimized by selecting appropriate therapy. Specific dopamine-1, (DA1) and dopamine-2 (DA2) receptor agonists are now under clinical investigation. Fenoldopam mesylate is a specific DA1 receptor agonist that lowers blood pressure by vasodilatation. The hypothesis that fenoldopam could be used to induce hypotension and preserve blood flow to the kidney was tested. Systemic aortic blood pressure and renal blood flow were measured continuously with a carotid arterial catheter and an electromagnetic flow probe respectively, in order to compare the cardiovascular and renal vascular effects of fenoldopam and sodium nitroprusside in ten dogs under halothane general anaesthesia. Mean arterial pressure was decreased 30 +/- 8 per cent from control with infusion of fenoldopam (3.4 +/- 2.0 micrograms.kg-1.min-1) and 34 +/- 4 per cent with infusion of sodium nitroprusside (5.9 micrograms.kg-1.min-1) (NS). Renal blood flow (RBF) increased during fenoldopam-induced hypotension 11 +/- 7 per cent and decreased 21 +/- 8 per cent during sodium nitroprusside-induced hypotension (P less than 0.01). Sodium nitroprusside is a non-selective arteriolar and venous vasodilator that can produce redistribution of blood flow away from the kidney during induced hypotension. Fenoldopam is a selective dopamine-1 (DA1) receptor agonist that causes vasodilatation to the kidney and other organs with DA1 receptors and preserves blood flow to the kidney during induced hypotension.
+1969772	40	51	hypotension	Disease	MESH:D007022
+1969772	129	140	hypotension	Disease	MESH:D007022
+1969772	562	573	hypotension	Disease	MESH:D007022
+1969772	1223	1234	hypotension	Disease	MESH:D007022
+1969772	1321	1332	hypotension	Disease	MESH:D007022
+1969772	1509	1520	hypotension	Disease	MESH:D007022
+1969772	1713	1724	hypotension	Disease	MESH:D007022
+
+19761039|t|Effect of Hibiscus rosa sinensis on reserpine-induced neurobehavioral and biochemical alterations in rats.
+19761039|a|Effect of methanolic extract of Hibiscus rosa sinensis (100-300 mg/kg) was studied on reserpine-induced orofacial dyskinesia and neurochemical alterations. The rats were treated with intraperitoneal reserpine (1 mg/kg, ip) for 3 days every other day. On day 5, vacuous chewing movements and tongue protrusions were counted for 5 min. Reserpine treated rats significantly developed vacuous chewing movements and tongue protrusions however, coadministration of Hibiscus rosa sinensis roots extract (100, 200 and 300 mg/kg, per orally) attenuated the effects. Biochemical analysis of brain revealed that the reserpine treatment significantly increased lipid peroxidation and decreased levels of superoxide dismutase (SOD), catalase (CAT) and glutathione reductase (GSH), an index of oxidative stress process. Coadministration of extract significantly reduced the lipid peroxidation and reversed the decrease in brain SOD, CAT and GSH levels. The results of the present study suggested that Hibiscus rosa sinensis had a protective role against reserpine-induced orofacial dyskinesia and oxidative stress.
+19761039	221	231	dyskinesia	Disease	MESH:D004409
+19761039	1175	1185	dyskinesia	Disease	MESH:D004409
+
+11704023|t|Comparison of aqueous and gellan ophthalmic timolol with placebo on the 24-hour heart rate response in patients on treatment for glaucoma.
+11704023|a|PURPOSE: Topical beta-blocker treatment is routine therapy in the management of patients with glaucoma. Therapy results in systemic absorption, however, the degree of reduction of resting and peak heart rate has not been quantified. DESIGN: This trial evaluated the effect of placebo, 0.5% aqueous timolol (timolol solution) and a 0.5% timolol suspension that forms a gel on application to the conjunctiva (timolol gellan) on the 24-hour heart rate in patients currently being treated for glaucoma to quantify the reduction in mean heart rate. METHODS: Forty-three Caucasian patients with primary open-angle glaucoma or ocular hypertension with a mean (+/-SD) age of 63 (+/-8) years were randomized and crossed over in a double-masked manner to 14 days of treatment with placebo (morning and evening in both eyes), timolol solution (morning and evening in both eyes), or timolol gellan (morning in both eyes with placebo in the evening). On the 13th day of each period, heart rate was recorded continuously during a typical, ambulant 24-hour period. RESULTS: Both timolol solution and timolol gellan reduced the mean 24-hour heart rate compared with placebo (P < or = .001), and this reduction was most pronounced during the daytime (-7.5% change in mean heart rate, -5.7 beats/min). Timolol gellan showed a numerically but not significantly smaller reduction in 24-hour heart rate, compared with timolol solution. During the night, the mean 12-hour heart rate on placebo and timolol gellan were both significantly less than on timolol solution; the difference between solution and gellan treatments was statistically significant (P = .01). CONCLUSIONS: Both timolol solution and timolol gellan decrease the mean 24-hour heart rate compared with placebo. This response was most pronounced during the active daytime period. These data quantify the modest bradycardia associated with ophthalmic beta-blocker therapy in a typical patient population on therapy for glaucoma. Although exercise performance was not assessed in this trial, reductions of this magnitude should not have substantial clinical consequences.
+11704023	129	137	glaucoma	Disease	MESH:D005901
+11704023	233	241	glaucoma	Disease	MESH:D005901
+11704023	628	636	glaucoma	Disease	MESH:D005901
+11704023	736	755	open-angle glaucoma	Disease	MESH:D005902
+11704023	759	778	ocular hypertension	Disease	MESH:D006973
+11704023	1993	2004	bradycardia	Disease	MESH:D001919
+11704023	2100	2108	glaucoma	Disease	MESH:D005901
+
+18006530|t|Reduction of pain during induction with target-controlled propofol and remifentanil.
+18006530|a|BACKGROUND: Pain on injection of propofol is unpleasant. We hypothesized that propofol infusion pain might be prevented by infusing remifentanil before starting the propofol infusion in a clinical setting where target-controlled infusions (TCI) of both drugs were used. A prospective, randomized, double-blind, placebo-controlled trial was performed to determine the effect-site concentration (Ce) of remifentanil to prevent the pain without producing complications. METHODS: A total of 128 patients undergoing general surgery were randomly allocated to receive normal saline (control) or remifentanil to a target Ce of 2 ng ml(-1) (R2), 4 ng ml(-1) (R4), or 6 ng ml(-1) (R6) administered via TCI. After the target Ce was achieved, the infusion of propofol was started. Remifentanil-related complications were assessed during the remifentanil infusion, and pain caused by propofol was evaluated using a four-point scale during the propofol infusion. RESULTS: The incidence of pain was significantly lower in Groups R4 and R6 than in the control and R2 groups (12/32 and 6/31 vs 26/31 and 25/32, respectively, P<0.001). Pain was less severe in Groups R4 and R6 than in the control and R2 groups (P<0.001). However, both incidence and severity of pain were not different between Groups R4 and R6. No significant complications were observed during the study. CONCLUSIONS: During induction of anaesthesia with TCI of propofol and remifentanil, a significant reduction in propofol infusion pain was achieved without significant complications by prior administration of remifentanil at a target Ce of 4 ng ml(-1).
+18006530	13	17	pain	Disease	MESH:D010146
+18006530	97	101	Pain	Disease	MESH:D010146
+18006530	181	185	pain	Disease	MESH:D010146
+18006530	514	518	pain	Disease	MESH:D010146
+18006530	942	946	pain	Disease	MESH:D010146
+18006530	1061	1065	pain	Disease	MESH:D010146
+18006530	1204	1208	Pain	Disease	MESH:D010146
+18006530	1330	1334	pain	Disease	MESH:D010146
+18006530	1570	1574	pain	Disease	MESH:D010146
+
+10910842|t|Prednisolone-induced muscle dysfunction is caused more by atrophy than by altered acetylcholine receptor expression.
+10910842|a|Large doses of glucocorticoids can alter muscle physiology and susceptibility to neuromuscular blocking drugs by mechanisms not clearly understood. We investigated the effects of moderate and large doses of prednisolone on muscle function and pharmacology, and their relationship to changes in muscle size and acetylcholine receptor (AChR) expression. With institutional approval, 35 Sprague-Dawley rats were randomly allocated to receive daily subcutaneous doses of 10 mg/kg prednisolone (P10 group), 100 mg/kg prednisolone (P100 group), or an equal volume of saline (S group) for 7 days. A fourth group of rats was pair fed (food restricted) with the P100 rats for 7 days (FR group). On Day 8, the nerve-evoked peak twitch tensions, tetanic tensions, and fatigability, and the dose-response curves of d-tubocurarine in the tibialis cranialis muscle were measured in vivo and related to muscle mass or expression of AChRs. Rate of body weight gain was depressed in the P100, FR, and P10 groups compared with the S group. Tibialis muscle mass was smaller in the P100 group than in the P10 or S groups. The evoked peak twitch and tetanic tensions were less in the P100 group than in the P10 or S groups, however, tension per milligram of muscle mass was greater in the P100 group than in the S group. The 50% effective dose of d-tubocurarine (microg/kg) in the tibialis muscle was smaller in the P10 (33.6 +/- 5.4) than in the S (61.9 +/- 5.0) or the P100 (71.3 +/- 9.6) groups. AChR expression was less in the P10 group than in the S group. The evoked tensions correlated with muscle mass (r(2) = 0.32, P < 0.001), however, not with expression of AChR. The 50% effective dose of d-tubocurarine did not correlate with muscle mass or AChR expression. Our results suggest that the neuromuscular dysfunction after prednisolone is dose-dependent, and derives primarily from muscle atrophy and derives less so from changes in AChR expression. IMPLICATIONS: The mechanisms by which chronic glucocorticoid therapy alters neuromuscular physiology and pharmacology are unclear. We suggest that the observed effects are dose-dependent and derive primarily from muscle atrophy and derive less from changes in acetylcholine receptor expression.
+10910842	21	39	muscle dysfunction	Disease	MESH:D009135
+10910842	58	65	atrophy	Disease	MESH:D001284
+10910842	1895	1920	neuromuscular dysfunction	Disease	MESH:D009468
+10910842	1986	2000	muscle atrophy	Disease	MESH:D009133
+10910842	2267	2281	muscle atrophy	Disease	MESH:D009133
+
+7542793|t|Nephrotoxicity of cyclosporin A and FK506: inhibition of calcineurin phosphatase.
+7542793|a|Cyclosporin A (CsA; 50 mg/kg) and Fujimycine (FK506; 5 mg/kg), but not the related macrolide immunosuppressant rapamycin (5 mg/kg), caused a reduction of glomerular filtration rate, degenerative changes of proximal tubular epithelium, and hypertrophy of the juxtaglomerular apparatus in male Wistar rats when given for 10 days. The molecular mechanisms of CsA and FK506 toxicity were investigated. Cyclophilin A and FK506-binding protein, the main intracytoplasmic receptors for CsA and FK506, respectively, were each detected in renal tissue extract. In the kidney, high levels of immunoreactive and enzymatically active calcineurin were found which were inhibited by the immunosuppressants CsA and FK506, but not by rapamycin. Finally, specific immunophilin-drug-calcineurin complexes formed only in the presence of CsA and FK506, but not rapamycin. These results suggest that the nephrotoxic effects of CsA and FK506 is likely mediated through binding to renal immunophilin and inhibiting calcineurin phosphatase.
+7542793	321	332	hypertrophy	Disease	MESH:D006984
+7542793	452	460	toxicity	Disease	MESH:D064420
+
+20533999|t|Dopamine is not essential for the development of methamphetamine-induced neurotoxicity.
+20533999|a|It is widely believed that dopamine (DA) mediates methamphetamine (METH)-induced toxicity to brain dopaminergic neurons, because drugs that interfere with DA neurotransmission decrease toxicity, whereas drugs that increase DA neurotransmission enhance toxicity. However, temperature effects of drugs that have been used to manipulate brain DA neurotransmission confound interpretation of the data. Here we show that the recently reported ability of L-dihydroxyphenylalanine to reverse the protective effect of alpha-methyl-para-tyrosine on METH-induced DA neurotoxicity is also confounded by drug effects on body temperature. Further, we show that mice genetically engineered to be deficient in brain DA develop METH neurotoxicity, as long as the thermic effects of METH are preserved. In addition, we demonstrate that mice genetically engineered to have unilateral brain DA deficits develop METH-induced dopaminergic deficits that are of comparable magnitude on both sides of the brain. Taken together, these findings demonstrate that DA is not essential for the development of METH-induced dopaminergic neurotoxicity and suggest that mechanisms independent of DA warrant more intense investigation.
+20533999	73	86	neurotoxicity	Disease	MESH:D020258
+20533999	169	177	toxicity	Disease	MESH:D064420
+20533999	273	281	toxicity	Disease	MESH:D064420
+20533999	340	348	toxicity	Disease	MESH:D064420
+20533999	644	657	neurotoxicity	Disease	MESH:D020258
+20533999	805	818	neurotoxicity	Disease	MESH:D020258
+20533999	993	1014	dopaminergic deficits	Disease	MESH:D009461
+20533999	1193	1206	neurotoxicity	Disease	MESH:D020258
+
+10225068|t|Cauda equina syndrome after spinal anaesthesia with hyperbaric 5% lignocaine: a review of six cases of cauda equina syndrome reported to the Swedish Pharmaceutical Insurance 1993-1997.
+10225068|a|Six cases of cauda equina syndrome with varying severity were reported to the Swedish Pharmaceutical Insurance during the period 1993-1997. All were associated with spinal anaesthesia using hyperbaric 5% lignocaine. Five cases had single-shot spinal anaesthesia and one had a repeat spinal anaesthetic due to inadequate block. The dose of hyperbaric 5% lignocaine administered ranged from 60 to 120 mg. Three of the cases were most likely caused by direct neurotoxicity of hyperbaric 5% lignocaine. In the other 3 cases, direct neurotoxicity was also probable, but unfortunately radiological investigations were not done to definitely exclude a compressive aetiology. All cases sustained permanent neurological deficits. We recommend that hyperbaric lignocaine should be administered in concentrations not greater than 2% and at a total dose preferably not exceeding 60 mg.
+10225068	0	21	Cauda equina syndrome	Disease	MESH:D011128
+10225068	103	124	cauda equina syndrome	Disease	MESH:D011128
+10225068	198	219	cauda equina syndrome	Disease	MESH:D011128
+10225068	641	654	neurotoxicity	Disease	MESH:D020258
+10225068	713	726	neurotoxicity	Disease	MESH:D020258
+10225068	883	904	neurological deficits	Disease	MESH:D009461
+
+7803371|t|Cognitive deterioration from long-term abuse of dextromethorphan: a case report.
+7803371|a|Dextromethorphan (DM), the dextrorotatory isomer of 3-hydroxy-N-methylmorphinan, is the main ingredient in a number of widely available, over-the-counter antitussives. Initial studies (Bornstein 1968) showed that it possessed no respiratory suppressant effects and no addiction liability. Subsequently, however, several articles reporting abuse of this drug have appeared in the literature. The drug is known to cause a variety of acute toxic effects, ranging from nausea, restlessness, insomnia, ataxia, slurred speech and nystagmus to mood changes, perceptual alterations, inattention, disorientation and aggressive behavior (Rammer et al 1988; Katona and Watson 1986; Isbell and Fraser 1953; Devlin et al 1985; McCarthy 1971; Dodds and Revai 1967; Degkwitz 1964; Hildebrand et al 1989). There have also been two reported fatalities from DM overdoses (Fleming 1986). However, there are no reports describing the effects of chronic abuse. This report describes a case of cognitive deterioration resulting from prolonged use of DM.
+7803371	0	23	Cognitive deterioration	Disease	MESH:D003072
+7803371	546	552	nausea	Disease	MESH:D009325
+7803371	554	566	restlessness	Disease	MESH:D011595
+7803371	568	576	insomnia	Disease	MESH:D007319
+7803371	578	584	ataxia	Disease	MESH:D001259
+7803371	605	614	nystagmus	Disease	MESH:D009759
+7803371	688	707	aggressive behavior	Disease	MESH:D001523
+7803371	1053	1076	cognitive deterioration	Disease	MESH:D003072
+
+7437994|t|Long-term lithium treatment and the kidney. Interim report on fifty patients.
+7437994|a|This is a report on the first part of our study of the effects of long-term lithium treatment on the kidney. Creatinine clearance, maximum urinary osmolality and 24 hour urine volume have been tested in 50 affectively ill patients who have been on long-term lithium for more than one year. These findings have been compared with norms and with values of the same tests from screening prior to lithium, available for most of our patients. No evidence was found for any reduction of glomerular filtration during lithium treatment. Low clearance values found in several patients could be accounted for by their age and their pre-lithium values. Urinary concentration defect appeared frequent but the extent of the impairment is difficult to assess because of the uncertainty about the norms applicable to this group of patients. The concentration defect appeared reversible, at least in part. Polyuria above 3 litres/24 hours was found in 10% of patients. An attempt is made to draw practical conclusions from the preliminary findings.
+7437994	968	976	Polyuria	Disease	MESH:D011141
+
+6496797|t|Complete heart block following a single dose of trazodone.
+6496797|a|Forty minutes after receiving a single starting dose of trazodone, a patient developed complete heart block. The case illustrates that, despite the results of earlier studies, trazodone's effect on cardiac conduction may be severe in individuals at risk for conduction delay.
+6496797	9	20	heart block	Disease	MESH:D006327
+6496797	155	166	heart block	Disease	MESH:D006327
+
+2598570|t|The epidemiology of the acute flank pain syndrome from suprofen.
+2598570|a|Suprofen, a new nonsteroidal anti-inflammatory drug, was marketed in early 1986 as an analgesic agent. Until physicians began reporting an unusual acute flank pain syndrome to the spontaneous reporting system, 700,000 persons used the drug in the United States. Through August 1986, a total of 163 cases of this syndrome were reported. To elucidate the epidemiology of the syndrome, a case-control study was performed, comparing 62 of the case patients who had been reported to the spontaneous reporting system to 185 suprofen-exposed control subjects who did not have the syndrome. Case patients were more likely to be men (odds ratio, 3.8; 95% confidence interval, 1.2-12.1), suffer from hay fever and asthma (odds ratio, 3.4; 95% confidence interval, 1.0-11.9); to participate in regular exercise (odds ratio, 5.9; 95% confidence interval, 1.1-30.7), especially in the use of Nautilus equipment (p = 0.02); and to use alcohol (odds ratio, 4.4; 95% confidence interval, 1.1-17.5). Possible risk factors included young age, concurrent use of other analgesic agents (especially ibuprofen), preexisting renal disease, a history of kidney stones, a history of gout, a recent increase in activity, a recent increase in sun exposure, and residence in the Sunbelt. These were findings that were suggestive but did not reach conventional statistical significance. These findings are consistent with the postulated mechanism for this unusual syndrome: acute diffuse crystallization of uric acid in renal tubules.
+2598570	30	40	flank pain	Disease	MESH:D021501
+2598570	218	228	flank pain	Disease	MESH:D021501
+2598570	755	764	hay fever	Disease	MESH:D006255
+2598570	769	775	asthma	Disease	MESH:D001249
+2598570	1167	1180	renal disease	Disease	MESH:D007674
+2598570	1195	1208	kidney stones	Disease	MESH:D007669
+2598570	1223	1227	gout	Disease	MESH:D006073
+
+11337188|t|Cutaneous leucocytoclastic vasculitis associated with oxacillin.
+11337188|a|A 67-year-old man who was treated with oxacillin for one week because of Staphylococcus aureus bacteremia, developed renal failure and diffuse, symmetric, palpable purpuric lesions on his feet. Necrotic blisters were noted on his fingers. Skin biopsies showed findings diagnostic of leucocytoclastic vasculitis. Oxacillin was discontinued and patient was treated with corticosteroids. The rash disappeared after three weeks and renal function returned to normal. Leucocytoclastic vasculitis presents as palpable purpura of the lower extremities often accompanied by abdominal pain, arthralgia, and renal involvement. Etiologic factors or associated disorders include infections, medications, collagen vascular disease and neoplasia. However, in half of the cases no etiologic factor is identified. Usually it is a self-limited disorder, but corticosteroid therapy may be needed in life-threatening cases since early treatment with corticosteroids in severe cases can prevent complications. Oxacillin should be included among the drugs that can cause leucocytoclastic vasculitis.
+11337188	0	37	Cutaneous leucocytoclastic vasculitis	Disease	MESH:D014657
+11337188	138	170	Staphylococcus aureus bacteremia	Disease	MESH:D016470
+11337188	182	195	renal failure	Disease	MESH:D051437
+11337188	229	245	purpuric lesions	Disease	MESH:D011693
+11337188	259	276	Necrotic blisters	Disease	MESH:D009336
+11337188	348	375	leucocytoclastic vasculitis	Disease	MESH:D014657
+11337188	454	458	rash	Disease	MESH:D005076
+11337188	528	555	Leucocytoclastic vasculitis	Disease	MESH:D014657
+11337188	577	584	purpura	Disease	MESH:D011693
+11337188	631	645	abdominal pain	Disease	MESH:D015746
+11337188	647	657	arthralgia	Disease	MESH:D018771
+11337188	663	680	renal involvement	Disease	MESH:D007674
+11337188	732	742	infections	Disease	MESH:D007239
+11337188	757	782	collagen vascular disease	Disease	MESH:D003095
+11337188	787	796	neoplasia	Disease	MESH:D009369
+11337188	1115	1142	leucocytoclastic vasculitis	Disease	MESH:D014657
+
+2257294|t|Benzylacyclouridine reverses azidothymidine-induced marrow suppression without impairment of anti-human immunodeficiency virus activity.
+2257294|a|Increased extracellular concentrations of uridine (Urd) have been reported to reduce, in vitro, azidothymidine (AZT)-induced inhibition of human granulocyte-macrophage progenitor cells without impairment of its antihuman immunodeficiency virus (HIV) activity. Because of the clinical toxicities associated with chronic Urd administration, the ability of benzylacyclouridine (BAU) to effect, in vivo, AZT-induced anemia and leukopenia was assessed. This agent inhibits Urd catabolism and, in vivo, increases the plasma concentration of Urd in a dose-dependent manner, without Urd-related toxicity. In mice rendered anemic and leukopenic by the administration of AZT for 28 days in drinking water (1.5 mg/mL), the continued administration of AZT plus daily BAU (300 mg/kg, orally) partially reversed AZT-induced anemia and leukopenia (P less than .05), increased peripheral reticulocytes (to 4.9%, P less than .01), increased cellularity in the marrow, and improved megaloblastosis. When coadministered with AZT from the onset of drug administration, BAU reduced AZT-induced marrow toxicity. In vitro, at a concentration of 100 mumol/L, BAU possesses minimal anti-HIV activity and has no effect on the ability of AZT to reverse the HIV-induced cytopathic effect in MT4 cells. The clinical and biochemical implications of these findings are discussed.
+2257294	52	70	marrow suppression	Disease	MESH:D001855
+2257294	104	120	immunodeficiency	Disease	MESH:D007153
+2257294	358	374	immunodeficiency	Disease	MESH:D007153
+2257294	421	431	toxicities	Disease	MESH:D064420
+2257294	549	555	anemia	Disease	MESH:D000740
+2257294	560	570	leukopenia	Disease	MESH:D007970
+2257294	724	732	toxicity	Disease	MESH:D064420
+2257294	947	953	anemia	Disease	MESH:D000740
+2257294	958	968	leukopenia	Disease	MESH:D007970
+2257294	1210	1225	marrow toxicity	Disease	MESH:D001855
+
+10840460|t|Cyclophosphamide-induced cystitis in freely-moving conscious rats: behavioral approach to a new model of visceral pain.
+10840460|a|PURPOSE: To develop a model of visceral pain in rats using a behavioral approach. Cyclophosphamide (CP), an antitumoral agent known to produce toxic effects on the bladder wall through its main toxic metabolite acrolein, was used to induce cystitis. MATERIALS AND METHODS: CP was administered at doses of 50, 100 and 200 mg./kg. i.p. to male rats, and their behavior observed and scored. The effects of morphine (0.5 to 4 mg./kg. i.v.) on CP-induced behavioral modifications were tested administered alone and after naloxone (1 mg./kg. s.c.). In addition, 90 minutes after CP injection, that is, at the time of administration of morphine, the bladder was removed in some rats for histological examination. Finally, to show that the bladder is essential for the CP-induced behavioral modifications, female rats also received CP at doses of 200 mg./kg. i.p. and of 20 mg. by the intravesical route, and acrolein at doses of 0.5 mg. by the intravesical route and of 5 mg./kg. i.v. RESULTS: CP dose-relatedly induced marked behavioral modifications in male rats: breathing rate decrease, closing of the eyes and occurrence of specific postures. Morphine dose-dependently reversed these behavioral disorders. A dose of 0.5 mg./kg. produced a reduction of almost 50% of the behavioral score induced by CP 200 mg./kg. This effect was completely prevented by pretreatment with naloxone. At the time of administration of morphine, histological modifications of the bladder wall, such as chorionic and muscle layer edema, were observed. In female rats, CP 200 mg./kg. i.p. produced the same marked behavioral modifications as those observed in male rats. Administered at the dose of 20 mg. intravesically, CP did not produce any behavioral effects, whereas acrolein at 0.5 mg. intravesically induced behavioral modifications identical to those under CP 200 mg./kg. i.p., with the same maximal levels. Conversely, acrolein 5 mg./kg. i.v. did not produce any behavioral effects at all. CONCLUSIONS: Overall, these results indicate that this experimental model of CP-induced cystitis may be an interesting new behavioral model of inflammatory visceral pain, allowing a better understanding of these painful syndromes and thus a better therapeutic approach to them.
+10840460	25	33	cystitis	Disease	MESH:D003556
+10840460	105	118	visceral pain	Disease	MESH:D059265
+10840460	151	164	visceral pain	Disease	MESH:D059265
+10840460	360	368	cystitis	Disease	MESH:D003556
+10840460	1302	1322	behavioral disorders	Disease	MESH:D001523
+10840460	1625	1630	edema	Disease	MESH:D004487
+10840460	2182	2190	cystitis	Disease	MESH:D003556
+10840460	2250	2263	visceral pain	Disease	MESH:D059265
+10840460	2306	2323	painful syndromes	Disease	MESH:D010146
+
+15266362|t|Hypersensitivity myocarditis complicating hypertrophic cardiomyopathy heart.
+15266362|a|The present report describes a case of eosinophilic myocarditis complicating hypertrophic cardiomyopathy. The 47-year-old female patient, known to have hypertrophic cardiomyopathy, was admitted with biventricular failure and managed aggressively with dobutamine infusion and other drugs while being assessed for heart transplantation. On transthoracic echocardiogram, she had moderate left ventricular dysfunction with regional variability and moderate mitral regurgitation. The recipient's heart showed the features of apical hypertrophic cardiomyopathy and myocarditis with abundant eosinophils. Myocarditis is rare and eosinophilic myocarditis is rarer. It is likely that the hypersensitivity (eosinophilic) myocarditis was related to dobutamine infusion therapy. Eosinophilic myocarditis has been reported with an incidence of 2.4% to 7.2% in explanted hearts and may be related to multidrug therapy.
+15266362	0	16	Hypersensitivity	Disease	MESH:D004342
+15266362	17	28	myocarditis	Disease	MESH:D009205
+15266362	42	69	hypertrophic cardiomyopathy	Disease	MESH:D002312
+15266362	116	140	eosinophilic myocarditis	Disease	MESH:D009205
+15266362	154	181	hypertrophic cardiomyopathy	Disease	MESH:D002312
+15266362	229	256	hypertrophic cardiomyopathy	Disease	MESH:D002312
+15266362	276	297	biventricular failure	Disease	MESH:D051437
+15266362	462	490	left ventricular dysfunction	Disease	MESH:D018487
+15266362	530	550	mitral regurgitation	Disease	MESH:D008944
+15266362	604	631	hypertrophic cardiomyopathy	Disease	MESH:D002312
+15266362	636	647	myocarditis	Disease	MESH:D009205
+15266362	675	686	Myocarditis	Disease	MESH:D009205
+15266362	699	723	eosinophilic myocarditis	Disease	MESH:D009205
+15266362	756	772	hypersensitivity	Disease	MESH:D004342
+15266362	774	786	eosinophilic	Disease	MESH:D004802
+15266362	788	799	myocarditis	Disease	MESH:D009205
+15266362	844	868	Eosinophilic myocarditis	Disease	MESH:D009205
+
+16225977|t|Amisulpride related tic-like symptoms in an adolescent schizophrenic.
+16225977|a|Tic disorders can be effectively treated by atypical antipsychotics such as risperidone, olanzapine and ziprasidone. However, there are two case reports that show tic-like symptoms, including motor and phonic variants, occurring during treatment with quetiapine or clozapine. We present a 15-year-old girl schizophrenic who developed frequent involuntary eye-blinking movements after 5 months of amisulpride treatment (1000 mg per day). The tic-like symptoms resolved completely after we reduced the dose of amisulpride down to 800 mg per day. However, her psychosis recurred after the dose reduction. We then placed her on an additional 100 mg per day of quetiapine. She has been in complete remission under the combined medications for more than one year and maintains a fair role function. No more tic-like symptoms or other side effects have been reported. Together with previously reported cases, our patient suggests that tic-like symptoms might occur in certain vulnerable individuals during treatment with atypical antipsychotics such as quetiapine, clozapine, or amisulpride.
+16225977	20	37	tic-like symptoms	Disease	MESH:D013981
+16225977	55	68	schizophrenic	Disease	MESH:D012559
+16225977	70	83	Tic disorders	Disease	MESH:D013981
+16225977	233	250	tic-like symptoms	Disease	MESH:D013981
+16225977	376	389	schizophrenic	Disease	MESH:D012559
+16225977	413	447	involuntary eye-blinking movements	Disease	MESH:D020820
+16225977	511	528	tic-like symptoms	Disease	MESH:D013981
+16225977	627	636	psychosis	Disease	MESH:D011605
+16225977	871	888	tic-like symptoms	Disease	MESH:D013981
+16225977	998	1015	tic-like symptoms	Disease	MESH:D013981
+
+10328196|t|Systemic toxicity following administration of sirolimus (formerly rapamycin) for psoriasis: association of capillary leak syndrome with apoptosis of lesional lymphocytes.
+10328196|a|BACKGROUND: Sirolimus (formerly rapamycin) is an immunosuppressive agent that interferes with T-cell activation. After 2 individuals with psoriasis developed a capillary leak syndrome following treatment with oral sirolimus lesional skin cells and activated peripheral blood cells were analyzed for induction of apoptosis. OBSERVATIONS: A keratome skin specimen from 1 patient with sirolimus-induced capillary leak syndrome had a 2.3-fold increase in percentage of apoptotic cells (to 48%) compared with an unaffected sirolimus-treated patient with psoriasis (21%). Activated peripheral blood T cells from patients with psoriasis tended to exhibit greater spontaneous or dexamethasone-induced apoptosis than did normal T cells, particularly in the presence of sirolimus. CONCLUSIONS: Severe adverse effects of sirolimus include fever, anemia, and capillary leak syndrome. These symptoms may be the result of drug-induced apoptosis of lesional leukocytes, especially activated T lymphocytes, and possibly release of inflammatory mediators. Because patients with severe psoriasis may develop capillary leak from various systemic therapies, clinical monitoring is advisable for patients with inflammatory diseases who are treated with immune modulators.
+10328196	9	17	toxicity	Disease	MESH:D064420
+10328196	81	90	psoriasis	Disease	MESH:D011565
+10328196	107	130	capillary leak syndrome	Disease	MESH:D019559
+10328196	309	318	psoriasis	Disease	MESH:D011565
+10328196	331	354	capillary leak syndrome	Disease	MESH:D019559
+10328196	571	594	capillary leak syndrome	Disease	MESH:D019559
+10328196	720	729	psoriasis	Disease	MESH:D011565
+10328196	791	800	psoriasis	Disease	MESH:D011565
+10328196	999	1004	fever	Disease	MESH:D005334
+10328196	1006	1012	anemia	Disease	MESH:D000740
+10328196	1018	1041	capillary leak syndrome	Disease	MESH:D019559
+10328196	1239	1248	psoriasis	Disease	MESH:D011565
+10328196	1261	1275	capillary leak	Disease	MESH:D019559
+10328196	1360	1381	inflammatory diseases	Disease	MESH:D007249
+
+8480959|t|Efficacy and tolerability of lovastatin in 3390 women with moderate hypercholesterolemia.
+8480959|a|OBJECTIVE: To evaluate the efficacy and safety of lovastatin in women with moderate hypercholesterolemia. DESIGN: The Expanded Clinical Evaluation of Lovastatin (EXCEL) Study, a multicenter, double-blind, diet- and placebo-controlled trial, in which participants were randomly assigned to receive placebo or lovastatin at doses of 20 or 40 mg once daily, or 20 or 40 mg twice daily for 48 weeks. SETTING: Ambulatory patients recruited by 362 participating centers throughout the United States. PATIENTS: Women (n = 3390) from the total cohort of 8245 volunteers. MEASUREMENTS: Plasma total, low-density lipoprotein (LDL), and high-density lipoprotein (HDL) cholesterol, and triglycerides; and laboratory and clinical evidence of adverse events monitored periodically throughout the study. RESULTS: Among women, lovastatin (20 to 80 mg/d) produced sustained (12- to 48-week), dose-related changes (P < 0.001): decreases in LDL cholesterol (24% to 40%) and triglycerides (9% to 18%), and increases in HDL cholesterol (6.7% to 8.6%). Depending on the dose, from 82% to 95% of lovastatin-treated women achieved the National Cholesterol Education Program goal of LDL cholesterol levels less than 4.14 mmol/L (160 mg/dL), and 40% to 87% achieved the goal of 3.36 mmol/L (130 mg/dL). Successive transaminase elevations greater than three times the upper limit of normal occurred in 0.1% of women and were dose dependent above the 20-mg dose. Myopathy, defined as muscle symptoms with creatine kinase elevations greater than 10 times the upper limit of normal, was rare and associated with the highest recommended daily dose of lovastatin (80 mg). Estrogen-replacement therapy appeared to have no effect on either the efficacy or safety profile of lovastatin. CONCLUSION: Lovastatin is highly effective and generally well tolerated as therapy for primary hypercholesterolemia in women.
+8480959	68	88	hypercholesterolemia	Disease	MESH:D006937
+8480959	174	194	hypercholesterolemia	Disease	MESH:D006937
+8480959	1525	1533	Myopathy	Disease	MESH:D009135
+8480959	1937	1957	hypercholesterolemia	Disease	MESH:D006937
+
+3973521|t|Time course alterations of QTC interval due to hypaque 76.
+3973521|a|Sequential measurement of QT interval during left ventricular angiography was made 30 seconds and one, three, five and ten minutes after injection of hypaque 76. The subjects were ten patients found to have normal left ventricles and coronary arteries. Significant QTC prolongation occurred in 30 seconds to one minute in association with marked hypotension and elevation of cardiac output.
+3973521	324	340	QTC prolongation	Disease	MESH:D008133
+3973521	405	416	hypotension	Disease	MESH:D007022
+
+1595783|t|Amiodarone pulmonary toxicity.
+1595783|a|Amiodarone is an effective antiarrhythmic agent whose utility is limited by many side-effects, the most problematic being pneumonitis. The pulmonary toxicity of amiodarone is thought to result from direct injury related to the intracellular accumulation of phospholipid and T cell-mediated hypersensitivity pneumonitis. The clinical and radiographic features of amiodarone-induced pulmonary toxicity are characteristic but nonspecific. The diagnosis depends on exclusion of other entities, such as heart failure, infection, and malignancy. While withdrawal of amiodarone leads to clinical improvement in majority of cases, this is not always possible or advisable. Dose reduction or concomitant steroid therapy may have a role in selected patients.
+1595783	11	29	pulmonary toxicity	Disease	MESH:D008171
+1595783	153	164	pneumonitis	Disease	MESH:D011014
+1595783	170	188	pulmonary toxicity	Disease	MESH:D008171
+1595783	321	349	hypersensitivity pneumonitis	Disease	MESH:D004342
+1595783	412	430	pulmonary toxicity	Disease	MESH:D008171
+1595783	529	542	heart failure	Disease	MESH:D006333
+1595783	544	553	infection	Disease	MESH:D007239
+1595783	559	569	malignancy	Disease	MESH:D009369
+
+18483878|t|Exaggerated expression of inflammatory mediators in vasoactive intestinal polypeptide knockout (VIP-/-) mice with cyclophosphamide (CYP)-induced cystitis.
+18483878|a|Vasoactive intestinal polypeptide (VIP) is an immunomodulatory neuropeptide distributed in micturition pathways. VIP(-/-) mice exhibit altered bladder function and neurochemical properties in micturition pathways after cyclophosphamide (CYP)-induced cystitis. Given VIP's role as an anti-inflammatory mediator, we hypothesized that VIP(-/-) mice would exhibit enhanced inflammatory mediator expression after cystitis. A mouse inflammatory cytokine and receptor RT2 profiler array was used to determine regulated transcripts in the urinary bladder of wild type (WT) and VIP(-/-) mice with or without CYP-induced cystitis (150 mg/kg; i.p.; 48 h). Four binary comparisons were made: WT control versus CYP treatment (48 h), VIP(-/-) control versus CYP treatment (48 h), WT control versus VIP(-/-) control, and WT with CYP treatment (48 h) versus VIP(-/-) with CYP treatment (48 h). The genes presented represent (1) greater than 1.5-fold change in either direction and (2) the p value is less than 0.05 for the comparison being made. Several regulated genes were validated using enzyme-linked immunoassays including IL-1beta and CXCL1. CYP treatment significantly (p < or = 0.001) increased expression of CXCL1 and IL-1beta in the urinary bladder of WT and VIP(-/-) mice, but expression in VIP(-/-) mice with CYP treatment was significantly (p < or = 0.001) greater (4.2- to 13-fold increase) than that observed in WT urinary bladder (3.6- to 5-fold increase). The data suggest that in VIP(-/-) mice with bladder inflammation, inflammatory mediators are increased above that observed in WT with CYP. This shift in balance may contribute to increased bladder dysfunction in VIP(-/-) mice with bladder inflammation and altered neurochemical expression in micturition pathways.
+18483878	145	153	cystitis	Disease	MESH:D003556
+18483878	405	413	cystitis	Disease	MESH:D003556
+18483878	563	571	cystitis	Disease	MESH:D003556
+18483878	766	774	cystitis	Disease	MESH:D003556
+18483878	1656	1676	bladder inflammation	Disease	MESH:D001749
+18483878	1801	1820	bladder dysfunction	Disease	MESH:D001745
+18483878	1843	1863	bladder inflammation	Disease	MESH:D001749
+
+15096016|t|Pallidal stimulation: an alternative to pallidotomy?
+15096016|a|A resurgence of interest in the surgical treatment of Parkinson's disease (PD) came with the rediscovery of posteroventral pallidotomy by Laitinen in 1985. Laitinen's procedure improved most symptoms in drug-resistant PD, which engendered wide interest in the neurosurgical community. Another lesioning procedure, ventrolateral thalamotomy, has become a powerful alternative to stimulate the nucleus ventralis intermedius, producing high long-term success rates and low morbidity rates. Pallidal stimulation has not met with the same success. According to the literature pallidotomy improves the "on" symptoms of PD, such as dyskinesias, as well as the "off" symptoms, such as rigidity, bradykinesia, and on-off fluctuations. Pallidal stimulation improves bradykinesia and rigidity to a minor extent; however, its strength seems to be in improving levodopa-induced dyskinesias. Stimulation often produces an improvement in the hyper- or dyskinetic upper limbs, but increases the "freezing" phenomenon in the lower limbs at the same time. Considering the small increase in the patient's independence, the high costs of bilateral implants, and the difficulty most patients experience in handling the devices, the question arises as to whether bilateral pallidal stimulation is a real alternative to pallidotomy.
+15096016	107	126	Parkinson's disease	Disease	MESH:D010300
+15096016	128	130	PD	Disease	MESH:D010300
+15096016	271	273	PD	Disease	MESH:D010300
+15096016	666	668	PD	Disease	MESH:D010300
+15096016	678	689	dyskinesias	Disease	MESH:D004409
+15096016	730	738	rigidity	Disease	MESH:D009127
+15096016	740	752	bradykinesia	Disease	MESH:D018476
+15096016	809	821	bradykinesia	Disease	MESH:D018476
+15096016	826	834	rigidity	Disease	MESH:D009127
+15096016	918	929	dyskinesias	Disease	MESH:D004409
+15096016	980	1000	hyper- or dyskinetic	Disease	MESH:D004409
+
+10565806|t|Hypomania-like syndrome induced by olanzapine.
+10565806|a|We report a female patient with a diagnosis of a not otherwise specified psychotic disorder (DSM-IV) who developed hypomania shortly after the introduction of olanzapine treatment.
+10565806	120	138	psychotic disorder	Disease	MESH:D011618
+
+7710775|t|Time dependence of plasma malondialdehyde, oxypurines, and nucleosides during incomplete cerebral ischemia in the rat.
+7710775|a|Incomplete cerebral ischemia (30 min) was induced in the rat by bilaterally clamping the common carotid arteries. Peripheral venous blood samples were withdrawn from the femoral vein four times (once every 5 min) before ischemia (0 time) and 5, 15, and 30 min after ischemia. Plasma extracts were analyzed by a highly sensitive high-performance liquid chromatographic method for the direct determination of malondialdehyde, oxypurines, and nucleosides. During ischemia, a time-dependent increase of plasma oxypurines and nucleosides was observed. Plasma malondialdehyde, which was present in minimal amount at zero time (0.058 mumol/liter plasma; SD 0.015), increased after 5 min of ischemia, resulting in a fivefold increase after 30 min of carotid occlusion (0.298 mumol/liter plasma; SD 0.078). Increased plasma malondialdehyde was also recorded in two other groups of animals subjected to the same experimental model, one receiving 20 mg/kg b.w. of the cyclooxygenase inhibitor acetylsalicylate intravenously immediately before ischemia, the other receiving 650 micrograms/kg b.w. of the hypotensive drug nitroprusside at a flow rate of 103 microliters/min intravenously during ischemia, although in this latter group malondialdehyde was significantly higher. The present data indicate that the determination of malondialdehyde, oxypurines, and nucleosides in peripheral blood, may be used to monitor the metabolic alterations of tissues occurring during ischemic phenomena.(ABSTRACT TRUNCATED AT 250 WORDS)
+7710775	89	106	cerebral ischemia	Disease	MESH:D002545
+7710775	130	147	cerebral ischemia	Disease	MESH:D002545
+7710775	339	347	ischemia	Disease	MESH:D007511
+7710775	385	393	ischemia	Disease	MESH:D007511
+7710775	579	587	ischemia	Disease	MESH:D007511
+7710775	802	810	ischemia	Disease	MESH:D007511
+7710775	1151	1159	ischemia	Disease	MESH:D007511
+7710775	1211	1222	hypotensive	Disease	MESH:D007022
+7710775	1301	1309	ischemia	Disease	MESH:D007511
+7710775	1578	1586	ischemic	Disease	MESH:D007511
+
+7650771|t|Cholinergic toxicity resulting from ocular instillation of echothiophate iodide eye drops.
+7650771|a|A patient developed a severe cholinergic syndrome from the use of echothiophate iodide ophthalmic drops, presented with profound muscle weakness and was initially given the diagnosis of myasthenia gravis. Red blood cell and serum cholinesterase levels were severely depressed and symptoms resolved spontaneously following discontinuation of the eye drops.
+7650771	12	20	toxicity	Disease	MESH:D064420
+7650771	220	235	muscle weakness	Disease	MESH:D018908
+7650771	277	294	myasthenia gravis	Disease	MESH:D009157
+
+6454943|t|Effect of captopril on pre-existing and aminonucleoside-induced proteinuria in spontaneously hypertensive rats.
+6454943|a|Proteinuria is a side effect of captopril treatment in hypertensive patients. The possibility of reproducing the same renal abnormality with captopril was examined in SHR. Oral administration of captopril at 100 mg/kg for 14 days failed to aggravate proteinuria pre-existing in SHR. Also, captopril treatment failed to potentiate or facilitate development of massive proteinuria invoked by puromycin aminonucleoside in SHR. Captopril had little or no demonstrable effects on serum electrolyte concentrations, excretion of urine, sodium and potassium, endogenous creatinine clearance, body weight, and food and water consumption. However, ketone bodies were consistently present in urine and several lethalities occurred during multiple dosing of captopril in SHR.
+6454943	64	75	proteinuria	Disease	MESH:D011507
+6454943	93	105	hypertensive	Disease	MESH:D006973
+6454943	112	123	Proteinuria	Disease	MESH:D011507
+6454943	167	179	hypertensive	Disease	MESH:D006973
+6454943	230	247	renal abnormality	Disease	MESH:D007674
+6454943	362	373	proteinuria	Disease	MESH:D011507
+6454943	479	490	proteinuria	Disease	MESH:D011507
+
+803783|t|Water intoxication associated with oxytocin administration during saline-induced abortion.
+803783|a|Four cases of water intoxication in connection with oxytocin administration during saline-induced abortions are described. The mechanism of water intoxication is discussed in regard to these cases. Oxytocin administration during midtrimester-induced abortions is advocated only if it can be carried out under careful observations of an alert nursing staff, aware of the symptoms of water intoxication and instructed to watch the diuresis and report such early signs of the syndrome as asthenia, muscular irritability, or headaches. The oxytocin should be given only in Ringers lactate or, alternately, in Ringers lactate and a 5 per cent dextrose and water solutions. The urinary output should be monitored and the oxytocin administration discontinued and the serum electrolytes checked if the urinary output decreases. The oxytocin should not be administered in excess of 36 hours. If the patient has not aborted by then the oxytocin should be discontinued for 10 to 12 hours in order to perform electrolyte determinations and correct any electrolyte imbalance.
+803783	0	18	Water intoxication	Disease	MESH:D014869
+803783	81	89	abortion	Disease	MESH:D000031
+803783	105	123	water intoxication	Disease	MESH:D014869
+803783	189	198	abortions	Disease	MESH:D000031
+803783	231	249	water intoxication	Disease	MESH:D014869
+803783	341	350	abortions	Disease	MESH:D000031
+803783	473	491	water intoxication	Disease	MESH:D014869
+803783	576	584	asthenia	Disease	MESH:D001247
+803783	595	607	irritability	Disease	MESH:D001523
+803783	612	621	headaches	Disease	MESH:D006261
+
