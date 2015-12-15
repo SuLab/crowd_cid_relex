@@ -1,0 +1,1307 @@
+2515254|t|Source of pain and primitive dysfunction in migraine: an identical site?
+2515254|a|Twenty common migraine patients received a one sided frontotemporal application of nitroglycerin (10 patients) or placebo ointment (10 patients) in a double blind study. Early onset migraine attacks were induced by nitroglycerin in seven out of 10 patients versus no patient in the placebo group. Subsequently 20 migraine patients, who developed an early onset attack with frontotemporal nitroglycerin, received the drug in a second induction test at other body areas. No early onset migraine was observed. Thus the migraine-inducing effect of nitroglycerin seems to depend on direct stimulation of the habitual site of pain, suggesting that the frontotemporal region is of crucial importance in the development of a migraine crisis. This is not consistent with a CNS origin of migraine attack.
+2515254	10	14	pain	Disease	D010146
+2515254	44	52	migraine	Disease	D008881
+2515254	87	95	migraine	Disease	D008881
+2515254	156	169	nitroglycerin	Chemical	D005996
+2515254	255	263	migraine	Disease	D008881
+2515254	288	301	nitroglycerin	Chemical	D005996
+2515254	386	394	migraine	Disease	D008881
+2515254	461	474	nitroglycerin	Chemical	D005996
+2515254	557	565	migraine	Disease	D008881
+2515254	589	597	migraine	Disease	D008881
+2515254	617	630	nitroglycerin	Chemical	D005996
+2515254	693	697	pain	Disease	D010146
+2515254	790	798	migraine	Disease	D008881
+2515254	851	859	migraine	Disease	D008881
+2515254	CID	D005996	D008881
+
+2670794|t|Effects of an inhibitor of angiotensin converting enzyme (Captopril) on pulmonary and renal insufficiency due to intravascular coagulation in the rat.
+2670794|a|Induction of intravascular coagulation and inhibition of fibrinolysis by injection of thrombin and tranexamic acid (AMCA) in the rat gives rise to pulmonary and renal insufficiency resembling that occurring after trauma or sepsis in man. Injection of Captopril (1 mg/kg), an inhibitor of angiotensin converting enzyme (ACE), reduced both pulmonary and renal insufficiency in this rat model. The lung weights were lower and PaO2 was improved in rats given this enzyme-blocking agent. The contents of albumin in the lungs were not changed, indicating that Captopril did not influence the extravasation of protein. Renal damage as reflected by an increase in serum urea and in kidney weight was prevented by Captopril. The amount of fibrin in the kidneys was also considerably lower than in animals which received thrombin and AMCA alone. It is suggested that the effects of Captopril on the lungs may be attributable to a vasodilatory effect due to a reduction in the circulating level of Angiotension II and an increase in prostacyclin (secondary to an increase in bradykinin). Captopril may, by the same mechanism, reduce the increase in glomerular filtration that is known to occur after an injection of thrombin, thereby diminishing the aggregation of fibrin monomers in the glomeruli, with the result that less fibrin will be deposited and thus less kidney damage will be produced.
+2670794	27	38	angiotensin	Chemical	D000809
+2670794	58	67	Captopril	Chemical	D002216
+2670794	72	105	pulmonary and renal insufficiency	Disease	D011665|D051437	pulmonary insufficiency|renal insufficiency
+2670794	113	138	intravascular coagulation	Disease	D004211
+2670794	164	189	intravascular coagulation	Disease	D004211
+2670794	250	265	tranexamic acid	Chemical	D014148
+2670794	267	271	AMCA	Chemical	D014148
+2670794	298	331	pulmonary and renal insufficiency	Disease	D011665|D051437	pulmonary insufficiency|renal insufficiency
+2670794	364	370	trauma	Disease	D014947
+2670794	374	380	sepsis	Disease	D018805
+2670794	402	411	Captopril	Chemical	D002216
+2670794	439	450	angiotensin	Chemical	D000809
+2670794	489	522	pulmonary and renal insufficiency	Disease	D011665|D051437	pulmonary insufficiency|renal insufficiency
+2670794	705	714	Captopril	Chemical	D002216
+2670794	763	775	Renal damage	Disease	D007674
+2670794	813	817	urea	Chemical	D014508
+2670794	856	865	Captopril	Chemical	D002216
+2670794	975	979	AMCA	Chemical	D014148
+2670794	1023	1032	Captopril	Chemical	D002216
+2670794	1138	1153	Angiotension II	Chemical	D000804
+2670794	1173	1185	prostacyclin	Chemical	D011464
+2670794	1215	1225	bradykinin	Chemical	D001920
+2670794	1228	1237	Captopril	Chemical	D002216
+2670794	1504	1517	kidney damage	Disease	D007674
+2670794	CID	D014148	D004211
+
+2924746|t|Chronic carbamazepine treatment in the rat: efficacy, toxicity, and effect on plasma and tissue folate concentrations.
+2924746|a|Folate depletion has often been a problem in chronic antiepileptic drug (AED) therapy. Carbamazepine (CBZ), a commonly used AED, has been implicated in some clinical studies. A rat model was developed to examine the effects of chronic CBZ treatment on folate concentrations in the rat. In the course of developing this model, a common vehicle, propylene glycol, by itself in high doses, was found to exhibit protective properties against induced seizures and inhibited weight gain. Seizures induced by hexafluorodiethyl ether (HFDE) were also found to be a more sensitive measure of protection by CBZ than seizures induced by maximal electroshock (MES). Oral administration of CBZ as an aqueous suspension every 8 h at a dose of 250 mg/kg was continuously protective against HFDE-induced seizures and was minimally toxic as measured by weight gain over 8 weeks of treatment. The CBZ levels measured in plasma and brain of these animals, however, were below those normally considered protective. This treatment with CBZ had no apparent adverse effect on folate concentrations in the rat, and, indeed, the folate concentration increased in liver after 6 weeks of treatment and in plasma at 8 weeks of treatment.
+2924746	8	21	carbamazepine	Chemical	D002220
+2924746	54	62	toxicity	Disease	D064420
+2924746	96	102	folate	Chemical	D005492
+2924746	119	125	Folate	Chemical	D005492
+2924746	206	219	Carbamazepine	Chemical	D002220
+2924746	221	224	CBZ	Chemical	D002220
+2924746	354	357	CBZ	Chemical	D002220
+2924746	371	377	folate	Chemical	D005492
+2924746	463	479	propylene glycol	Chemical	D019946
+2924746	565	573	seizures	Disease	D012640
+2924746	588	599	weight gain	Disease	D015430
+2924746	601	609	Seizures	Disease	D012640
+2924746	621	644	hexafluorodiethyl ether	Chemical	D005481
+2924746	646	650	HFDE	Chemical	D005481
+2924746	716	719	CBZ	Chemical	D002220
+2924746	725	733	seizures	Disease	D012640
+2924746	796	799	CBZ	Chemical	D002220
+2924746	894	898	HFDE	Chemical	D005481
+2924746	907	915	seizures	Disease	D012640
+2924746	955	966	weight gain	Disease	D015430
+2924746	998	1001	CBZ	Chemical	D002220
+2924746	1134	1137	CBZ	Chemical	D002220
+2924746	1172	1178	folate	Chemical	D005492
+2924746	1223	1229	folate	Chemical	D005492
+2924746	CID	D005481	D012640
+
+3425586|t|Dapsone-associated Heinz body hemolytic anemia in a Cambodian woman with hemoglobin E trait.
+3425586|a|A Cambodian woman with hemoglobin E trait (AE) and leprosy developed a Heinz body hemolytic anemia while taking a dose of dapsone (50 mg/day) not usually associated with clinical hemolysis. Her red blood cells (RBCs) had increased incubated Heinz body formation, decreased reduced glutathione (GSH), and decreased GSH stability. The pentose phosphate shunt activity of the dapsone-exposed AE RBCs was increased compared to normal RBCs. Although the AE RBCs from an individual not taking dapsone had increased incubated Heinz body formation, the GSH content and GSH stability were normal. The pentose phosphate shunt activity of the non-dapsone-exposed AE RBCs was decreased compared to normal RBCs. Thus, AE RBCs appear to have an increased sensitivity to oxidant stress both in vitro and in vivo, since dapsone does not cause hemolytic anemia at this dose in hematologically normal individuals. Given the influx of Southeast Asians into the United States, oxidant medications should be used with caution, especially if an infection is present, in individuals of ethnic backgrounds that have an increased prevalence of hemoglobin E.
+3425586	0	7	Dapsone	Chemical	D003622
+3425586	30	46	hemolytic anemia	Disease	D000743
+3425586	144	151	leprosy	Disease	D007918
+3425586	175	191	hemolytic anemia	Disease	D000743
+3425586	215	222	dapsone	Chemical	D003622
+3425586	272	281	hemolysis	Disease	D006461
+3425586	374	385	glutathione	Chemical	D005978
+3425586	387	390	GSH	Chemical	D005978
+3425586	407	410	GSH	Chemical	D005978
+3425586	426	443	pentose phosphate	Chemical	D010428
+3425586	466	473	dapsone	Chemical	D003622
+3425586	580	587	dapsone	Chemical	D003622
+3425586	638	641	GSH	Chemical	D005978
+3425586	654	657	GSH	Chemical	D005978
+3425586	685	702	pentose phosphate	Chemical	D010428
+3425586	729	736	dapsone	Chemical	D003622
+3425586	897	904	dapsone	Chemical	D003622
+3425586	920	936	hemolytic anemia	Disease	D000743
+3425586	1116	1125	infection	Disease	D007239
+3425586	CID	D003622	D000743
+
+6692345|t|Effect of aspirin on N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide-induced epithelial proliferation in the urinary bladder and forestomach of the rat.
+6692345|a|The co-administration of aspirin with N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide (FANFT) to rats resulted in a reduced incidence of FANFT-induced bladder carcinomas but a concomitant induction of forestomach tumors. An autoradiographic study was performed on male F-344 rats fed diet containing FANFT at a level of 0.2% and/or aspirin at a level of 0.5% to evaluate the effect of aspirin on the increased cell proliferation induced by FANFT in the forestomach and bladder. FANFT-induced cell proliferation in the bladder was significantly suppressed by aspirin co-administration after 4 weeks but not after 12 weeks. In the forestomach, and also in the liver, aspirin did not affect the FANFT-induced increase in labeling index. The present results are consistent with the carcinogenicity experiment suggesting that different mechanisms are involved in FANFT carcinogenesis in the bladder and forestomach, and that aspirin's effect on FANFT in the forestomach is not due to an irritant effect associated with increased cell proliferation. Also, there appears to be an adaptation by the rats to the chronic ingestion of aspirin.
+6692345	10	17	aspirin	Chemical	D001241
+6692345	21	66	N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide	Chemical	D005200
+6692345	176	183	aspirin	Chemical	D001241
+6692345	189	234	N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide	Chemical	D005200
+6692345	236	241	FANFT	Chemical	D005200
+6692345	286	291	FANFT	Chemical	D005200
+6692345	300	318	bladder carcinomas	Disease	D001749
+6692345	350	368	forestomach tumors	Disease	D013274
+6692345	449	454	FANFT	Chemical	D005200
+6692345	481	488	aspirin	Chemical	D001241
+6692345	534	541	aspirin	Chemical	D001241
+6692345	589	594	FANFT	Chemical	D005200
+6692345	627	632	FANFT	Chemical	D005200
+6692345	707	714	aspirin	Chemical	D001241
+6692345	814	821	aspirin	Chemical	D001241
+6692345	841	846	FANFT	Chemical	D005200
+6692345	1007	1012	FANFT	Chemical	D005200
+6692345	1013	1027	carcinogenesis	Disease	D063646
+6692345	1069	1076	aspirin	Chemical	D001241
+6692345	1089	1094	FANFT	Chemical	D005200
+6692345	1273	1280	aspirin	Chemical	D001241
+6692345	CID	D005200	D001749
+6692345	CID	D005200	D013274
+
+7834920|t|Crescentic fibrillary glomerulonephritis associated with intermittent rifampin therapy for pulmonary tuberculosis.
+7834920|a|This case study reveals an unusual finding of rapidly proliferative crescentic glomerulonephritis in a patient treated with rifampin who had no other identifiable causes for developing this disease. This patient underwent a 10-month regimen of rifampin and isoniazid for pulmonary tuberculosis and was discovered to have developed signs of severe renal failure five weeks after completion of therapy. Renal biopsy revealed severe glomerulonephritis with crescents, electron dense fibrillar deposits and moderate lymphocytic interstitial infiltrate. Other possible causes of rapidly progressive glomerulonephritis were investigated and ruled out. This report documents the unusual occurrence of rapidly progressive glomerulonephritis with crescents and fibrillar glomerulonephritis in a patient treated with rifampin.
+7834920	22	40	glomerulonephritis	Disease	D005921
+7834920	70	78	rifampin	Chemical	D012293
+7834920	91	113	pulmonary tuberculosis	Disease	D014397
+7834920	194	212	glomerulonephritis	Disease	D005921
+7834920	239	247	rifampin	Chemical	D012293
+7834920	359	367	rifampin	Chemical	D012293
+7834920	372	381	isoniazid	Chemical	D007538
+7834920	386	408	pulmonary tuberculosis	Disease	D014397
+7834920	462	475	renal failure	Disease	D051437
+7834920	545	563	glomerulonephritis	Disease	D005921
+7834920	709	727	glomerulonephritis	Disease	D005921
+7834920	829	847	glomerulonephritis	Disease	D005921
+7834920	877	895	glomerulonephritis	Disease	D005921
+7834920	922	930	rifampin	Chemical	D012293
+7834920	CID	D012293	D005921
+7834920	CID	D012293	D051437
+
+11706060|t|Combined antiretroviral therapy causes cardiomyopathy and elevates plasma lactate in transgenic AIDS mice.
+11706060|a|Highly active antiretroviral therapy (HAART) is implicated in cardiomyopathy (CM) and in elevated plasma lactate (LA) in AIDS through mechanisms of mitochondrial dysfunction. To determine mitochondrial events from HAART in vivo, 8-week-old hemizygous transgenic AIDS mice (NL4-3Delta gag/pol; TG) and wild-type FVB/n littermates were treated with the HAART combination of zidovudine, lamivudine, and indinavir or vehicle control for 10 days or 35 days. At termination of the experiments, mice underwent echocardiography, quantitation of abundance of molecular markers of CM (ventricular mRNA encoding atrial natriuretic factor [ANF] and sarcoplasmic calcium ATPase [SERCA2]), and determination of plasma LA. Myocardial histologic features were analyzed semiquantitatively and results were confirmed by transmission electron microscopy. After 35 days in the TG + HAART cohort, left ventricular mass increased 160% by echocardiography. Molecularly, ANF mRNA increased 250% and SERCA2 mRNA decreased 57%. Biochemically, LA was elevated (8.5 +/- 2.0 mM). Pathologically, granular cytoplasmic changes were found in cardiac myocytes, indicating enlarged, damaged mitochondria. Findings were confirmed ultrastructurally. No changes were found in other cohorts. After 10 days, only ANF was elevated, and only in the TG + HAART cohort. Results show that cumulative HAART caused mitochondrial CM with elevated LA in AIDS transgenic mice.
+11706060	39	53	cardiomyopathy	Disease	D009202
+11706060	74	81	lactate	Chemical	D019344
+11706060	96	100	AIDS	Disease	D000163
+11706060	169	183	cardiomyopathy	Disease	D009202
+11706060	185	187	CM	Disease	D009202
+11706060	212	219	lactate	Chemical	D019344
+11706060	221	223	LA	Chemical	D019344
+11706060	228	232	AIDS	Disease	D000163
+11706060	255	280	mitochondrial dysfunction	Disease	D028361
+11706060	369	373	AIDS	Disease	D000163
+11706060	479	489	zidovudine	Chemical	D015215
+11706060	491	501	lamivudine	Chemical	D019259
+11706060	507	516	indinavir	Chemical	D019469
+11706060	678	680	CM	Disease	D009202
+11706060	757	764	calcium	Chemical	D002118
+11706060	811	813	LA	Chemical	D019344
+11706060	1124	1126	LA	Chemical	D019344
+11706060	1490	1492	CM	Disease	D009202
+11706060	1507	1509	LA	Chemical	D019344
+11706060	1513	1517	AIDS	Disease	D000163
+11706060	CID	D019469	D009202
+11706060	CID	D019259	D009202
+11706060	CID	D015215	D009202
+
+12653683|t|Epithelial sodium channel (ENaC) subunit mRNA and protein expression in rats with puromycin aminonucleoside-induced nephrotic syndrome.
+12653683|a|In experimental nephrotic syndrome, urinary sodium excretion is decreased during the early phase of the disease. The molecular mechanism(s) leading to salt retention has not been completely elucidated. The rate-limiting constituent of collecting duct sodium transport is the epithelial sodium channel (ENaC). We examined the abundance of ENaC subunit mRNAs and proteins in puromycin aminonucleoside (PAN)-induced nephrotic syndrome. The time courses of urinary sodium excretion, plasma aldosterone concentration and proteinuria were studied in male Sprague-Dawley rats treated with a single dose of either PAN or vehicle. The relative amounts of alphaENaC, betaENaC and gammaENaC mRNAs were determined in kidneys from these rats by real-time quantitative TaqMan PCR, and the amounts of proteins by Western blot. The kinetics of urinary sodium excretion and the appearance of proteinuria were comparable with those reported previously. Sodium retention occurred on days 2, 3 and 6 after PAN injection. A significant up-regulation of alphaENaC and betaENaC mRNA abundance on days 1 and 2 preceded sodium retention on days 2 and 3. Conversely, down-regulation of alphaENaC, betaENaC and gammaENaC mRNA expression on day 3 occurred in the presence of high aldosterone concentrations, and was followed by a return of sodium excretion to control values. The amounts of alphaENaC, betaENaC and gammaENaC proteins were not increased during PAN-induced sodium retention. In conclusion, ENaC mRNA expression, especially alphaENaC, is increased in the very early phase of the experimental model of PAN-induced nephrotic syndrome in rats, but appears to escape from the regulation by aldosterone after day 3.
+12653683	11	17	sodium	Chemical	D012964
+12653683	82	107	puromycin aminonucleoside	Chemical	D011692
+12653683	116	134	nephrotic syndrome	Disease	D009404
+12653683	152	170	nephrotic syndrome	Disease	D009404
+12653683	180	186	sodium	Chemical	D012964
+12653683	387	393	sodium	Chemical	D012964
+12653683	422	428	sodium	Chemical	D012964
+12653683	509	534	puromycin aminonucleoside	Chemical	D011692
+12653683	536	539	PAN	Chemical	D011692
+12653683	549	567	nephrotic syndrome	Disease	D009404
+12653683	597	603	sodium	Chemical	D012964
+12653683	622	633	aldosterone	Chemical	D000450
+12653683	652	663	proteinuria	Disease	D011507
+12653683	742	745	PAN	Chemical	D011692
+12653683	972	978	sodium	Chemical	D012964
+12653683	1011	1022	proteinuria	Disease	D011507
+12653683	1071	1077	Sodium	Chemical	D012964
+12653683	1122	1125	PAN	Chemical	D011692
+12653683	1231	1237	sodium	Chemical	D012964
+12653683	1388	1399	aldosterone	Chemical	D000450
+12653683	1448	1454	sodium	Chemical	D012964
+12653683	1568	1571	PAN	Chemical	D011692
+12653683	1580	1586	sodium	Chemical	D012964
+12653683	1723	1726	PAN	Chemical	D011692
+12653683	1735	1753	nephrotic syndrome	Disease	D009404
+12653683	1808	1819	aldosterone	Chemical	D000450
+12653683	CID	D011692	D011507
+12653683	CID	D011692	D009404
+
+18417364|t|Nicotine-induced nystagmus correlates with midpontine activation.
+18417364|a|The pathomechanism of nicotine-induced nystagmus (NIN) is unknown. The aim of this study was to delineate brain structures that are involved in NIN generation. Eight healthy volunteers inhaled nicotine in darkness during a functional magnetic resonance imaging (fMRI) experiment; eye movements were registered using video-oculography. NIN correlated with blood oxygen level-dependent (BOLD) activity levels in a midpontine site in the posterior basis pontis. NIN-induced midpontine activation may correspond to activation of the dorsomedial pontine nuclei and the nucleus reticularis tegmenti pontis, structures known to participate in the generation of multidirectional saccades and smooth pursuit eye movements.
+18417364	0	8	Nicotine	Chemical	D009538
+18417364	17	26	nystagmus	Disease	D009759
+18417364	88	96	nicotine	Chemical	D009538
+18417364	105	114	nystagmus	Disease	D009759
+18417364	116	119	NIN	Disease	D009759
+18417364	210	213	NIN	Disease	D009759
+18417364	259	267	nicotine	Chemical	D009538
+18417364	401	404	NIN	Disease	D009759
+18417364	427	433	oxygen	Chemical	D010100
+18417364	525	528	NIN	Disease	D009759
+18417364	CID	D009538	D009759
+
+18442015|t|Protective effect of verapamil on gastric hemorrhagic ulcers in severe atherosclerotic rats.
+18442015|a|Studies concerning with pathogenesis of gastric hemorrhage and mucosal ulceration produced in atherosclerotic rats are lacking. The aim of this study is to examine the role of gastric acid back-diffusion, mast cell histamine release, lipid peroxide (LPO) generation and mucosal microvascular permeability in modulating gastric hemorrhage and ulcer in rats with atherosclerosis induced by coadministration of vitamin D2 and cholesterol. Additionally, the protective effect of verapamil on this ulcer model was evaluated. Male Wistar rats were challenged intragastrically once daily for 9 days with 1.0 ml/kg of corn oil containing vitamin D2 and cholesterol to induce atherosclerosis. Control rats received corn oil only. After gastric surgery, rat stomachs were irrigated for 3 h with either simulated gastric juice or normal saline. Gastric acid back-diffusion, mucosal LPO generation, histamine concentration, microvascular permeability, luminal hemoglobin content and ulcer areas were determined. Elevated atherosclerotic parameters, such as serum calcium, total cholesterol and low-density lipoprotein concentration were obtained in atherosclerotic rats. Severe gastric ulcers accompanied with increased ulcerogenic factors, including gastric acid back-diffusion, histamine release, LPO generation and luminal hemoglobin content were also observed in these rats. Moreover, a positive correlation of histamine to gastric hemorrhage and to ulcer was found in those atherosclerotic rats. This hemorrhagic ulcer and various ulcerogenic parameters were dose-dependently ameliorated by daily intragastric verapamil. Atherosclerosis could produce gastric hemorrhagic ulcer via aggravation of gastric acid back-diffusion, LPO generation, histamine release and microvascular permeability that could be ameliorated by verapamil in rats.
+18442015	21	30	verapamil	Chemical	D014700
+18442015	34	53	gastric hemorrhagic	Disease	D006471
+18442015	54	60	ulcers	Disease	D014456
+18442015	71	86	atherosclerotic	Disease	D050197
+18442015	133	151	gastric hemorrhage	Disease	D006471
+18442015	187	202	atherosclerotic	Disease	D050197
+18442015	308	317	histamine	Chemical	D006632
+18442015	412	430	gastric hemorrhage	Disease	D006471
+18442015	435	440	ulcer	Disease	D014456
+18442015	454	469	atherosclerosis	Disease	D050197
+18442015	501	511	vitamin D2	Chemical	D004872
+18442015	516	527	cholesterol	Chemical	D002784
+18442015	568	577	verapamil	Chemical	D014700
+18442015	586	591	ulcer	Disease	D014456
+18442015	723	733	vitamin D2	Chemical	D004872
+18442015	738	749	cholesterol	Chemical	D002784
+18442015	760	775	atherosclerosis	Disease	D050197
+18442015	980	989	histamine	Chemical	D006632
+18442015	1033	1040	luminal	Chemical	D010634
+18442015	1064	1069	ulcer	Disease	D014456
+18442015	1102	1117	atherosclerotic	Disease	D050197
+18442015	1144	1151	calcium	Chemical	D002118
+18442015	1159	1170	cholesterol	Chemical	D002784
+18442015	1230	1245	atherosclerotic	Disease	D050197
+18442015	1267	1273	ulcers	Disease	D014456
+18442015	1361	1370	histamine	Chemical	D006632
+18442015	1399	1406	luminal	Chemical	D010634
+18442015	1496	1505	histamine	Chemical	D006632
+18442015	1509	1527	gastric hemorrhage	Disease	D006471
+18442015	1535	1540	ulcer	Disease	D014456
+18442015	1560	1575	atherosclerotic	Disease	D050197
+18442015	1587	1598	hemorrhagic	Disease	D006471
+18442015	1599	1604	ulcer	Disease	D014456
+18442015	1696	1705	verapamil	Chemical	D014700
+18442015	1707	1722	Atherosclerosis	Disease	D050197
+18442015	1737	1756	gastric hemorrhagic	Disease	D006471
+18442015	1757	1762	ulcer	Disease	D014456
+18442015	1827	1836	histamine	Chemical	D006632
+18442015	1905	1914	verapamil	Chemical	D014700
+18442015	CID	D004872	D006471
+18442015	CID	D004872	D050197
+18442015	CID	D002784	D006471
+18442015	CID	D002784	D014456
+18442015	CID	D002784	D050197
+18442015	CID	D004872	D014456
+
+869641|t|Mediation of enhanced reflex vagal bradycardia by L-dopa via central dopamine formation in dogs.
+869641|a|L-Dopa (5 mg/kg i.v.) decreased blood pressure and heart rate after extracerebral decarboxylase inhibition with MK-486 (25 mg/kg i.v.) in anesthetize MAO-inhibited dogs. In addition, reflex bradycardia caused by injected norepinephrine was significantly enhanced by L-dopa, DL-Threo-dihydroxyphenylserine had no effect on blood pressure, heart rate or reflex responses to norepinephrine. FLA-63, a dopamine-beta-oxidase inhibitor, did not have any effect on the hypotension, bradycardia or reflex-enhancing effect of L-dopa. Pimozide did not affect the actions of L-dopa on blood pressure and heart rate but completely blocked the enhancement of reflexes. Removal of the carotid sinuses caused an elevation blood pressure and heart rate and abolished the negative chronotropic effect of norepinephrine. However, L-dopa restored the bradycardia caused by norepinephrine in addition to decreasing blood pressure and heart rate. 5-HTP (5 mg/kg i.v.) decreased blood pressure and heart rate and decreased the reflex bradycardia to norepinephrine. It is concluded that L-dopa enhances reflex bradycardia through central alpha-receptor stimulation. Furthermore, the effects are mediated through dopamine rather than norepinephrine and do not require the carotid sinus baroreceptors.
+869641	35	46	bradycardia	Disease	D001919
+869641	50	56	L-dopa	Chemical	D007980
+869641	69	77	dopamine	Chemical	D004298
+869641	97	103	L-Dopa	Chemical	D007980
+869641	209	215	MK-486	Chemical	D002230
+869641	247	250	MAO	Chemical	D008995
+869641	287	298	bradycardia	Disease	D001919
+869641	318	332	norepinephrine	Chemical	D009638
+869641	363	369	L-dopa	Chemical	D007980
+869641	371	401	DL-Threo-dihydroxyphenylserine	Chemical	D015103
+869641	469	483	norepinephrine	Chemical	D009638
+869641	485	491	FLA-63	Chemical	D005406
+869641	495	503	dopamine	Chemical	D004298
+869641	559	570	hypotension	Disease	D007022
+869641	572	583	bradycardia	Disease	D001919
+869641	614	620	L-dopa	Chemical	D007980
+869641	622	630	Pimozide	Chemical	D010868
+869641	661	667	L-dopa	Chemical	D007980
+869641	884	898	norepinephrine	Chemical	D009638
+869641	909	915	L-dopa	Chemical	D007980
+869641	929	940	bradycardia	Disease	D001919
+869641	951	965	norepinephrine	Chemical	D009638
+869641	1023	1028	5-HTP	Chemical	D006916
+869641	1109	1120	bradycardia	Disease	D001919
+869641	1124	1138	norepinephrine	Chemical	D009638
+869641	1161	1167	L-dopa	Chemical	D007980
+869641	1184	1195	bradycardia	Disease	D001919
+869641	1286	1294	dopamine	Chemical	D004298
+869641	1307	1321	norepinephrine	Chemical	D009638
+869641	CID	D009638	D001919
+
+1749407|t|Cocaine-induced myocardial infarction: clinical observations and pathogenetic considerations.
+1749407|a|Clinical and experimental data published to date suggest several possible mechanisms by which cocaine may result in acute myocardial infarction. In individuals with preexisting, high-grade coronary arterial narrowing, acute myocardial infarction may result from an increase in myocardial oxygen demand associated with cocaine-induced increase in rate-pressure product. In other individuals with no underlying atherosclerotic obstruction, coronary occlusion may be due to spasm, thrombus, or both. With regard to spasm, the clinical findings are largely circumstantial, and the locus of cocaine-induced vasoconstriction remains speculative. Although certain clinical and experimental findings support the hypothesis that spasm involves the epicardial, medium-size vessels, other data suggest intramural vasoconstriction. Diffuse intramural vasoconstriction is not consistent with reports of segmental, discrete infarction. Whereas certain in vivo data suggest that these effects are alpha-mediated, other in vitro data suggest the opposite. The finding of cocaine-induced vasoconstriction in segments of (noninnervated) human umbilical artery suggests that the presence or absence of intact innervation is not sufficient to explain the discrepant data involving the possibility of alpha-mediated effects. Finally, the contribution of a primary, thrombotic effect of cocaine has not been excluded.
+1749407	0	7	Cocaine	Chemical	D003042
+1749407	16	37	myocardial infarction	Disease	D009203
+1749407	188	195	cocaine	Chemical	D003042
+1749407	210	237	acute myocardial infarction	Disease	D009203
+1749407	312	339	acute myocardial infarction	Disease	D009203
+1749407	382	388	oxygen	Chemical	D010100
+1749407	412	419	cocaine	Chemical	D003042
+1749407	503	530	atherosclerotic obstruction	Disease	D050197
+1749407	532	550	coronary occlusion	Disease	D054059
+1749407	565	570	spasm	Disease	D013035
+1749407	572	580	thrombus	Disease	D013927
+1749407	606	611	spasm	Disease	D013035
+1749407	680	687	cocaine	Chemical	D003042
+1749407	814	819	spasm	Disease	D013035
+1749407	1004	1014	infarction	Disease	D007238
+1749407	1149	1156	cocaine	Chemical	D003042
+1749407	1438	1448	thrombotic	Disease	D013927
+1749407	1459	1466	cocaine	Chemical	D003042
+1749407	CID	D003042	D009203
+
+1919871|t|Irreversible damage to the medullary interstitium in experimental analgesic nephropathy in F344 rats.
+1919871|a|Renal papillary necrosis (RPN) and a decreased urinary concentrating ability developed during continuous long-term treatment with aspirin and paracetamol in female Fischer 344 rats. Renal structure and concentrating ability were examined after a recovery period of up to 18 weeks, when no analgesics were given, to investigate whether the analgesic-induced changes were reversible. There was no evidence of repair to the damaged medullary interstitial matrix, or proliferation of remaining undamaged type 1 medullary interstitial cells after the recovery period following analgesic treatment. The recovery of urinary concentrating ability was related to the length of analgesic treatment and the extent of the resulting inner medullary structural damage. During the early stages of analgesic treatment, the changes in urinary concentrating ability were reversible, but after prolonged analgesic treatment, maximum urinary concentrating ability failed to recover. This study shows that prolonged analgesic treatment in Fischer 344 rats causes progressive and irreversible damage to the interstitial matrix and type 1 interstitial cells leading to RPN. The associated urinary concentrating defect is reversible only during the early stages of structural damage to the inner medulla.
+1919871	76	87	nephropathy	Disease	D007674
+1919871	102	126	Renal papillary necrosis	Disease	D007681
+1919871	128	131	RPN	Disease	D007681
+1919871	232	239	aspirin	Chemical	D001241
+1919871	244	255	paracetamol	Chemical	D000082
+1919871	1248	1251	RPN	Disease	D007681
+1919871	CID	D000082	D007681
+1919871	CID	D001241	D007681
+
+9406968|t|Upregulation of the expression of vasopressin gene in the paraventricular and supraoptic nuclei of the lithium-induced diabetes insipidus rat.
+9406968|a|The expression of arginine vasopressin (AVP) gene in the paraventricular (PVN) and supraoptic nuclei (SON) was investigated in rats with lithium (Li)-induced polyuria, using in situ hybridization histochemistry and radioimmunoassay. The male Wistar rats consuming a diet that contained LiCl (60 mmol/kg) for 4 weeks developed marked polyuria. The Li-treated rats produced a large volume of hypotonic urine with low ionic concentrations. Plasma sodium concentrations were found to be slightly increased in the Li-treated rats compared with those in controls. Plasma concentration of AVP and transcripts of AVP gene in the PVN and SON were significantly increased in the Li-treated rats compared with controls. These results suggest that dehydration and/or the activation of visceral afferent inputs may contribute to the elevation of plasma AVP and the upregulation of AVP gene expression in the PVN and the SON of the Li-induced diabetes insipidus rat.
+9406968	34	45	vasopressin	Chemical	D014667
+9406968	103	110	lithium	Chemical	D008094
+9406968	119	137	diabetes insipidus	Disease	D003919
+9406968	161	181	arginine vasopressin	Chemical	D001127
+9406968	183	186	AVP	Chemical	D001127
+9406968	280	287	lithium	Chemical	D008094
+9406968	289	291	Li	Chemical	D008094
+9406968	301	309	polyuria	Disease	D011141
+9406968	429	433	LiCl	Chemical	D018021
+9406968	476	484	polyuria	Disease	D011141
+9406968	490	492	Li	Chemical	D008094
+9406968	587	593	sodium	Chemical	D012964
+9406968	652	654	Li	Chemical	D008094
+9406968	725	728	AVP	Chemical	D001127
+9406968	748	751	AVP	Chemical	D001127
+9406968	812	814	Li	Chemical	D008094
+9406968	879	890	dehydration	Disease	D003681
+9406968	983	986	AVP	Chemical	D001127
+9406968	1011	1014	AVP	Chemical	D001127
+9406968	1061	1063	Li	Chemical	D008094
+9406968	1072	1090	diabetes insipidus	Disease	D003919
+9406968	CID	D018021	D011141
+
+12789195|t|Pseudoacromegaly induced by the long-term use of minoxidil.
+12789195|a|Acromegaly is an endocrine disorder caused by chronic excessive growth hormone secretion from the anterior pituitary gland. Significant disfiguring changes occur as a result of bone, cartilage, and soft tissue hypertrophy, including the thickening of the skin, coarsening of facial features, and cutis verticis gyrata. Pseudoacromegaly, on the other hand, is the presence of similar acromegaloid features in the absence of elevated growth hormone or insulin-like growth factor levels. We present a patient with pseudoacromegaly that resulted from the long-term use of minoxidil at an unusually high dose. This is the first case report of pseudoacromegaly as a side effect of minoxidil use.
+12789195	0	16	Pseudoacromegaly	Disease	D004194
+12789195	49	58	minoxidil	Chemical	D008914
+12789195	60	70	Acromegaly	Disease	D000172
+12789195	77	95	endocrine disorder	Disease	D004700
+12789195	270	281	hypertrophy	Disease	D006984
+12789195	356	377	cutis verticis gyrata	Disease	C535610
+12789195	379	395	Pseudoacromegaly	Disease	D004194
+12789195	571	587	pseudoacromegaly	Disease	D004194
+12789195	628	637	minoxidil	Chemical	D008914
+12789195	698	714	pseudoacromegaly	Disease	D004194
+12789195	735	744	minoxidil	Chemical	D008914
+12789195	CID	D008914	D000172
+
+14765563|t|Risks of the consumption of beverages containing quinine.
+14765563|a|Although the United States Food and Drug Administration banned its use for nocturnal leg cramps due to lack of safety and efficacy, quinine is widely available in beverages including tonic water and bitter lemon. Numerous anecdotal reports suggest that products containing quinine may produce neurological complications, including confusion, altered mental status, seizures, and coma, particularly in older women. Psychologists need to inquire about consumption of quinine-containing beverages as part of an evaluation process.
+14765563	49	56	quinine	Chemical	D011803
+14765563	133	153	nocturnal leg cramps	Disease	D020922
+14765563	190	197	quinine	Chemical	D011803
+14765563	331	338	quinine	Chemical	D011803
+14765563	351	377	neurological complications	Disease	D002493
+14765563	389	398	confusion	Disease	D003221
+14765563	423	431	seizures	Disease	D012640
+14765563	437	441	coma	Disease	D003128
+14765563	523	530	quinine	Chemical	D011803
+14765563	CID	D011803	D003221
+14765563	CID	D011803	D003128
+14765563	CID	D011803	D012640
+
+15036754|t|Organophosphate-induced convulsions and prevention of neuropathological damages.
+15036754|a|Such organophosphorus (OP) compounds as diisopropylfluorophosphate (DFP), sarin and soman are potent inhibitors of acetylcholinesterases (AChEs) and butyrylcholinesterases (BChEs). The acute toxicity of OPs is the result of their irreversible binding with AChEs in the central nervous system (CNS), which elevates acetylcholine (ACh) levels. The protective action of subcutaneously (SC) administered antidotes or their combinations in DFP (2.0 mg/kg BW) intoxication was studied in 9-10-weeks-old Han-Wistar male rats. The rats received AChE reactivator pralidoxime-2-chloride (2PAM) (30.0 mg/kg BW), anticonvulsant diazepam (2.0 mg/kg BW), A(1)-adenosine receptor agonist N(6)-cyclopentyl adenosine (CPA) (2.0 mg/kg BW), NMDA-receptor antagonist dizocilpine maleate (+-MK801 hydrogen maleate) (2.0 mg/kg BW) or their combinations with cholinolytic drug atropine sulfate (50.0 mg/kg BW) immediately or 30 min after the single SC injection of DFP. The control rats received atropine sulfate, but also saline and olive oil instead of other antidotes and DFP, respectively. All rats were terminated either 24 h or 3 weeks after the DFP injection. The rats treated with DFP-atropine showed severe typical OP-induced toxicity signs. When CPA, diazepam or 2PAM was given immediately after DFP-atropine, these treatments prevented, delayed or shortened the occurrence of serious signs of poisoning. Atropine-MK801 did not offer any additional protection against DFP toxicity. In conclusion, CPA, diazepam and 2PAM in combination with atropine prevented the occurrence of serious signs of poisoning and thus reduced the toxicity of DFP in rat.
+15036754	0	15	Organophosphate	Chemical	D010755
+15036754	24	35	convulsions	Disease	D012640
+15036754	54	79	neuropathological damages	Disease	D004194
+15036754	86	102	organophosphorus	Chemical	D010755
+15036754	104	106	OP	Chemical	D010755
+15036754	121	147	diisopropylfluorophosphate	Chemical	D007531
+15036754	149	152	DFP	Chemical	D007531
+15036754	155	160	sarin	Chemical	D012524
+15036754	165	170	soman	Chemical	D012999
+15036754	272	280	toxicity	Disease	D064420
+15036754	284	287	OPs	Chemical	D010755
+15036754	395	408	acetylcholine	Chemical	D000109
+15036754	410	413	ACh	Chemical	D000109
+15036754	516	519	DFP	Chemical	D007531
+15036754	635	657	pralidoxime-2-chloride	Chemical	D011220
+15036754	659	663	2PAM	Chemical	D011220
+15036754	697	705	diazepam	Chemical	D003975
+15036754	727	736	adenosine	Chemical	D000241
+15036754	754	780	N(6)-cyclopentyl adenosine	Chemical	C048599
+15036754	782	785	CPA	Chemical	C048599
+15036754	803	807	NMDA	Chemical	D016202
+15036754	828	847	dizocilpine maleate	Chemical	D016291
+15036754	935	951	atropine sulfate	Chemical	D001285
+15036754	1023	1026	DFP	Chemical	D007531
+15036754	1054	1070	atropine sulfate	Chemical	D001285
+15036754	1133	1136	DFP	Chemical	D007531
+15036754	1210	1213	DFP	Chemical	D007531
+15036754	1247	1250	DFP	Chemical	D007531
+15036754	1251	1259	atropine	Chemical	D001285
+15036754	1282	1284	OP	Chemical	D010755
+15036754	1293	1301	toxicity	Disease	D064420
+15036754	1314	1317	CPA	Chemical	C048599
+15036754	1319	1327	diazepam	Chemical	D003975
+15036754	1331	1335	2PAM	Chemical	D011220
+15036754	1364	1367	DFP	Chemical	D007531
+15036754	1368	1376	atropine	Chemical	D001285
+15036754	1462	1471	poisoning	Disease	D011041
+15036754	1473	1481	Atropine	Chemical	D001285
+15036754	1482	1487	MK801	Chemical	D016291
+15036754	1536	1539	DFP	Chemical	D007531
+15036754	1540	1548	toxicity	Disease	D064420
+15036754	1565	1568	CPA	Chemical	C048599
+15036754	1570	1578	diazepam	Chemical	D003975
+15036754	1583	1587	2PAM	Chemical	D011220
+15036754	1608	1616	atropine	Chemical	D001285
+15036754	1662	1671	poisoning	Disease	D011041
+15036754	1693	1701	toxicity	Disease	D064420
+15036754	1705	1708	DFP	Chemical	D007531
+15036754	CID	D007531	D012640
+
+15145918|t|Differential modulation by estrogen of alpha2-adrenergic and I1-imidazoline receptor-mediated hypotension in female rats.
+15145918|a|We have recently shown that estrogen negatively modulates the hypotensive effect of clonidine (mixed alpha2-/I1-receptor agonist) in female rats and implicates the cardiovascular autonomic control in this interaction. The present study investigated whether this effect of estrogen involves interaction with alpha2- and/or I1-receptors. Changes evoked by a single intraperitoneal injection of rilmenidine (600 microg/kg) or alpha-methyldopa (100 mg/kg), selective I1- and alpha2-receptor agonists, respectively, in blood pressure, hemodynamic variability, and locomotor activity were assessed in radiotelemetered sham-operated and ovariectomized (Ovx) Sprague-Dawley female rats with or without 12-wk estrogen replacement. Three time domain indexes of hemodynamic variability were employed: the standard deviation of mean arterial pressure as a measure of blood pressure variability and the standard deviation of beat-to-beat intervals (SDRR) and the root mean square of successive differences in R-wave-to-R-wave intervals as measures of heart rate variability. In sham-operated rats, rilmenidine or alpha-methyldopa elicited similar hypotension that lasted at least 5 h and was associated with reductions in standard deviation of mean arterial pressure. SDRR was reduced only by alpha-methyldopa. Ovx significantly enhanced the hypotensive response to alpha-methyldopa, in contrast to no effect on rilmenidine hypotension. The enhanced alpha-methyldopa hypotension in Ovx rats was paralleled with further reduction in SDRR and a reduced locomotor activity. Estrogen replacement (17beta-estradiol subcutaneous pellet, 14.2 microg/day, 12 wk) of Ovx rats restored the hemodynamic and locomotor effects of alpha-methyldopa to sham-operated levels. These findings suggest that estrogen downregulates alpha2- but not I1-receptor-mediated hypotension and highlight a role for the cardiac autonomic control in alpha-methyldopa-estrogen interaction.
+15145918	27	35	estrogen	Chemical	D004967
+15145918	64	75	imidazoline	Chemical	D048288
+15145918	94	105	hypotension	Disease	D007022
+15145918	150	158	estrogen	Chemical	D004967
+15145918	184	195	hypotensive	Disease	D007022
+15145918	206	215	clonidine	Chemical	D003000
+15145918	394	402	estrogen	Chemical	D004967
+15145918	514	525	rilmenidine	Chemical	C032302
+15145918	545	561	alpha-methyldopa	Chemical	D008750
+15145918	822	830	estrogen	Chemical	D004967
+15145918	1207	1218	rilmenidine	Chemical	C032302
+15145918	1222	1238	alpha-methyldopa	Chemical	D008750
+15145918	1256	1267	hypotension	Disease	D007022
+15145918	1402	1418	alpha-methyldopa	Chemical	D008750
+15145918	1451	1462	hypotensive	Disease	D007022
+15145918	1475	1491	alpha-methyldopa	Chemical	D008750
+15145918	1521	1532	rilmenidine	Chemical	C032302
+15145918	1533	1544	hypotension	Disease	D007022
+15145918	1559	1575	alpha-methyldopa	Chemical	D008750
+15145918	1576	1587	hypotension	Disease	D007022
+15145918	1650	1678	a reduced locomotor activity	Disease	D001523
+15145918	1702	1718	17beta-estradiol	Chemical	D004958
+15145918	1826	1842	alpha-methyldopa	Chemical	D008750
+15145918	1896	1904	estrogen	Chemical	D004967
+15145918	1956	1967	hypotension	Disease	D007022
+15145918	2026	2042	alpha-methyldopa	Chemical	D008750
+15145918	2043	2051	estrogen	Chemical	D004967
+15145918	CID	C032302	D007022
+15145918	CID	D008750	D007022
+
+3371379|t|Verapamil-induced carbamazepine neurotoxicity. A report of two cases.
+3371379|a|Two patients with signs of carbamazepine neurotoxicity after combined treatment with verapamil showed complete recovery after discontinuation of the calcium entry blocker. Use of verapamil in combination with carbamazepine should either be avoided or prescribed only with appropriate adjustment of the carbamazepine dose (usually reduction of the carbamazepine dose by one half).
+3371379	0	9	Verapamil	Chemical	D014700
+3371379	18	31	carbamazepine	Chemical	D002220
+3371379	32	45	neurotoxicity	Disease	D020258
+3371379	97	110	carbamazepine	Chemical	D002220
+3371379	111	124	neurotoxicity	Disease	D020258
+3371379	155	164	verapamil	Chemical	D014700
+3371379	219	226	calcium	Chemical	D002118
+3371379	249	258	verapamil	Chemical	D014700
+3371379	279	292	carbamazepine	Chemical	D002220
+3371379	372	385	carbamazepine	Chemical	D002220
+3371379	417	430	carbamazepine	Chemical	D002220
+3371379	CID	D014700	D020258
+3371379	CID	D002220	D020258
+
+7453952|t|Attenuation of the lithium-induced diabetes-insipidus-like syndrome by amiloride in rats.
+7453952|a|The effect of amiloride on lithium-induced polydipsia and polyuria and on the lithium concentration in the plasma, brain, kidney, thyroid and red blood cells was investigated in rats, chronically treated with LiCl. Amiloride reduced the drinking and urine volume of rats in an acute (6 or 12 h) and a subacute (3 days) experiment. 6 h after the administration of amiloride, a reduction was observed in the lithium content of the renal medulla but not in the other organs studied. At 12 h, all the tissues showed a slight increase in lithium levels. After 3 days of combined treatment, a marked elevation in plasma and tissue lithium levels accompanied a reduction in water intake. In all the experiments, the attenuation of the lithium-induced diabetes-insipidus-like syndrome by amiloride was accompanied by a reduction of the ratio between the lithium concentration in the renal medulla and its levels in the blood and an elevation in the plasma potassium level. It is concluded that acute amiloride administration to lithium-treated patients suffering from polydipsia and polyuria might relieve these patients but prolonged amiloride supplementation would result in elevated lithium levels and might be hazardous.
+7453952	19	26	lithium	Chemical	D008094
+7453952	35	67	diabetes-insipidus-like syndrome	Disease	D003919
+7453952	71	80	amiloride	Chemical	D000584
+7453952	104	113	amiloride	Chemical	D000584
+7453952	117	124	lithium	Chemical	D008094
+7453952	133	143	polydipsia	Disease	D059606
+7453952	148	156	polyuria	Disease	D011141
+7453952	168	175	lithium	Chemical	D008094
+7453952	299	303	LiCl	Chemical	D018021
+7453952	305	314	Amiloride	Chemical	D000584
+7453952	453	462	amiloride	Chemical	D000584
+7453952	496	503	lithium	Chemical	D008094
+7453952	623	630	lithium	Chemical	D008094
+7453952	715	722	lithium	Chemical	D008094
+7453952	818	825	lithium	Chemical	D008094
+7453952	834	866	diabetes-insipidus-like syndrome	Disease	D003919
+7453952	870	879	amiloride	Chemical	D000584
+7453952	936	943	lithium	Chemical	D008094
+7453952	1038	1047	potassium	Chemical	D011188
+7453952	1082	1091	amiloride	Chemical	D000584
+7453952	1110	1117	lithium	Chemical	D008094
+7453952	1150	1160	polydipsia	Disease	D059606
+7453952	1165	1173	polyuria	Disease	D011141
+7453952	1217	1226	amiloride	Chemical	D000584
+7453952	1268	1275	lithium	Chemical	D008094
+7453952	CID	D008094	D003919
+
+10706004|t|Changes of sodium and ATP affinities of the cardiac (Na,K)-ATPase during and after nitric oxide deficient hypertension.
+10706004|a|In the cardiovascular system, NO is involved in the regulation of a variety of functions. Inhibition of NO synthesis induces sustained hypertension. In several models of hypertension, elevation of intracellular sodium level was documented in cardiac tissue. To assess the molecular basis of disturbances in transmembraneous transport of Na+, we studied the response of cardiac (Na,K)-ATPase to NO-deficient hypertension induced in rats by NO-synthase inhibition with 40 mg/kg/day N(G)-nitro-L-arginine methyl ester (L-NAME) for 4 four weeks. After 4-week administration of L-NAME, the systolic blood pressure (SBP) increased by 36%. Two weeks after terminating the treatment, the SBP recovered to control value. When activating the (Na,K)-ATPase with its substrate ATP, no changes in Km and Vmax values were observed in NO-deficient rats. During activation with Na+, the Vmax remained unchanged, however the K(Na) increased by 50%, indicating a profound decrease in the affinity of the Na+-binding site in NO-deficient rats. After recovery from hypertension, the activity of (Na,K)-ATPase increased, due to higher affinity of the ATP-binding site, as revealed from the lowered Km value for ATP. The K(Na) value for Na+ returned to control value. Inhibition of NO-synthase induced a reversible hypertension accompanied by depressed Na+-extrusion from cardiac cells as a consequence of deteriorated Na+-binding properties of the (Na,K)-ATPase. After recovery of blood pressure to control values, the extrusion of Na+ from cardiac cells was normalized, as revealed by restoration of the (Na,K)-ATPase activity.
+10706004	11	17	sodium	Chemical	D012964
+10706004	22	25	ATP	Chemical	D000255
+10706004	53	55	Na	Chemical	D012964
+10706004	56	57	K	Chemical	D011188
+10706004	83	95	nitric oxide	Chemical	D009569
+10706004	106	118	hypertension	Disease	D006973
+10706004	150	152	NO	Chemical	D009569
+10706004	224	226	NO	Chemical	D009569
+10706004	255	267	hypertension	Disease	D006973
+10706004	290	302	hypertension	Disease	D006973
+10706004	331	337	sodium	Chemical	D012964
+10706004	457	459	Na	Chemical	D012964
+10706004	498	500	Na	Chemical	D012964
+10706004	501	502	K	Chemical	D011188
+10706004	514	516	NO	Chemical	D009569
+10706004	527	539	hypertension	Disease	D006973
+10706004	559	561	NO	Chemical	D009569
+10706004	600	634	N(G)-nitro-L-arginine methyl ester	Chemical	D019331
+10706004	636	642	L-NAME	Chemical	D019331
+10706004	693	699	L-NAME	Chemical	D019331
+10706004	853	855	Na	Chemical	D012964
+10706004	856	857	K	Chemical	D011188
+10706004	885	888	ATP	Chemical	D000255
+10706004	940	942	NO	Chemical	D009569
+10706004	982	984	Na	Chemical	D012964
+10706004	1028	1029	K	Chemical	D011188
+10706004	1030	1032	Na	Chemical	D012964
+10706004	1106	1108	Na	Chemical	D012964
+10706004	1126	1128	NO	Chemical	D009569
+10706004	1165	1177	hypertension	Disease	D006973
+10706004	1196	1198	Na	Chemical	D012964
+10706004	1199	1200	K	Chemical	D011188
+10706004	1250	1253	ATP	Chemical	D000255
+10706004	1310	1313	ATP	Chemical	D000255
+10706004	1319	1320	K	Chemical	D011188
+10706004	1321	1323	Na	Chemical	D012964
+10706004	1335	1337	Na	Chemical	D012964
+10706004	1380	1382	NO	Chemical	D009569
+10706004	1413	1425	hypertension	Disease	D006973
+10706004	1441	1450	depressed	Disease	D003866
+10706004	1451	1453	Na	Chemical	D012964
+10706004	1517	1519	Na	Chemical	D012964
+10706004	1548	1550	Na	Chemical	D012964
+10706004	1551	1552	K	Chemical	D011188
+10706004	1631	1633	Na	Chemical	D012964
+10706004	1705	1707	Na	Chemical	D012964
+10706004	1708	1709	K	Chemical	D011188
+10706004	CID	D009569	D006973
+
+11334364|t|In vivo protection of dna damage associated apoptotic and necrotic cell deaths during acetaminophen-induced nephrotoxicity, amiodarone-induced lung toxicity and doxorubicin-induced cardiotoxicity by a novel IH636 grape seed proanthocyanidin extract.
+11334364|a|Grape seed extract, primarily a mixture of proanthocyanidins, has been shown to modulate a wide-range of biological, pharmacological and toxicological effects which are mainly cytoprotective. This study assessed the ability of IH636 grape seed proanthocyanidin extract (GSPE) to prevent acetaminophen (AAP)-induced nephrotoxicity, amiodarone (AMI)-induced lung toxicity, and doxorubicin (DOX)-induced cardiotoxicity in mice. Experimental design consisted of four groups: control (vehicle alone), GSPE alone, drug alone and GSPE+drug. For the cytoprotection study, animals were orally gavaged 100 mg/Kg GSPE for 7-10 days followed by i.p. injections of organ specific three drugs (AAP: 500 mg/Kg for 24 h; AMI: 50 mg/Kg/day for four days; DOX: 20 mg/Kg for 48 h). Parameters of study included analysis of serum chemistry (ALT, BUN and CPK), and orderly fragmentation of genomic DNA (both endonuclease-dependent and independent) in addition to microscopic evaluation of damage and/or protection in corresponding PAS stained tissues. Results indicate that GSPE preexposure prior to AAP, AMI and DOX, provided near complete protection in terms of serum chemistry changes (ALT, BUN and CPK), and significantly reduced DNA fragmentation. Histopathological examination of kidney, heart and lung sections revealed moderate to massive tissue damage with a variety of morphological aberrations by all the three drugs in the absence of GSPE preexposure than in its presence. GSPE+drug exposed tissues exhibited minor residual damage or near total recovery. Additionally, histopathological alterations mirrored both serum chemistry changes and the pattern of DNA fragmentation. Interestingly, all the drugs, such as, AAP, AMI and DOX induced apoptotic death in addition to necrosis in the respective organs which was very effectively blocked by GSPE. Since AAP, AMI and DOX undergo biotransformation and are known to produce damaging radicals in vivo, the protection by GSPE may be linked to both inhibition of metabolism and/or detoxification of cytotoxic radicals. In addition, its' presumed contribution to DNA repair may be another important attribute, which played a role in the chemoprevention process. Additionally, this may have been the first report on AMI-induced apoptotic death in the lung tissue. Taken together, these events undoubtedly establish GSPE's abundant bioavailability, and the power to defend multiple target organs from toxic assaults induced by structurally diverse and functionally different entities in vivo.
+11334364	58	66	necrotic	Disease	D009336
+11334364	86	99	acetaminophen	Chemical	D000082
+11334364	108	122	nephrotoxicity	Disease	D007674
+11334364	124	134	amiodarone	Chemical	D000638
+11334364	143	156	lung toxicity	Disease	D008171
+11334364	161	172	doxorubicin	Chemical	D004317
+11334364	181	195	cardiotoxicity	Disease	D066126
+11334364	207	248	IH636 grape seed proanthocyanidin extract	Chemical	C511402
+11334364	250	268	Grape seed extract	Chemical	C511402
+11334364	293	310	proanthocyanidins	Chemical	D044945
+11334364	477	518	IH636 grape seed proanthocyanidin extract	Chemical	C511402
+11334364	520	524	GSPE	Chemical	C511402
+11334364	537	550	acetaminophen	Chemical	D000082
+11334364	552	555	AAP	Chemical	D000082
+11334364	565	579	nephrotoxicity	Disease	D007674
+11334364	581	591	amiodarone	Chemical	D000638
+11334364	593	596	AMI	Chemical	D000638
+11334364	606	619	lung toxicity	Disease	D008171
+11334364	625	636	doxorubicin	Chemical	D004317
+11334364	638	641	DOX	Chemical	D004317
+11334364	651	665	cardiotoxicity	Disease	D066126
+11334364	746	750	GSPE	Chemical	C511402
+11334364	773	777	GSPE	Chemical	C511402
+11334364	852	856	GSPE	Chemical	C511402
+11334364	930	933	AAP	Chemical	D000082
+11334364	955	958	AMI	Chemical	D000638
+11334364	988	991	DOX	Chemical	D004317
+11334364	1303	1307	GSPE	Chemical	C511402
+11334364	1329	1332	AAP	Chemical	D000082
+11334364	1334	1337	AMI	Chemical	D000638
+11334364	1342	1345	DOX	Chemical	D004317
+11334364	1576	1589	tissue damage	Disease	D017695
+11334364	1675	1679	GSPE	Chemical	C511402
+11334364	1714	1718	GSPE	Chemical	C511402
+11334364	1955	1958	AAP	Chemical	D000082
+11334364	1960	1963	AMI	Chemical	D000638
+11334364	1968	1971	DOX	Chemical	D004317
+11334364	2011	2019	necrosis	Disease	D009336
+11334364	2083	2087	GSPE	Chemical	C511402
+11334364	2095	2098	AAP	Chemical	D000082
+11334364	2100	2103	AMI	Chemical	D000638
+11334364	2108	2111	DOX	Chemical	D004317
+11334364	2208	2212	GSPE	Chemical	C511402
+11334364	2500	2503	AMI	Chemical	D000638
+11334364	2599	2603	GSPE	Chemical	C511402
+11334364	CID	D000638	D009336
+11334364	CID	D004317	D009336
+11334364	CID	D000082	D009336
+11334364	CID	D000082	D007674
+11334364	CID	D000638	D008171
+11334364	CID	D004317	D066126
+
+18261172|t|Development of proteinuria after switch to sirolimus-based immunosuppression in long-term cardiac transplant patients.
+18261172|a|Calcineurin-inhibitor therapy can lead to renal dysfunction in heart transplantation patients. The novel immunosuppressive (IS) drug sirolmus (Srl) lacks nephrotoxic effects; however, proteinuria associated with Srl has been reported following renal transplantation. In cardiac transplantation, the incidence of proteinuria associated with Srl is unknown. In this study, long-term cardiac transplant patients were switched from cyclosporine to Srl-based IS. Concomitant IS consisted of mycophenolate mofetil +/- steroids. Proteinuria increased significantly from a median of 0.13 g/day (range 0-5.7) preswitch to 0.23 g/day (0-9.88) at 24 months postswitch (p = 0.0024). Before the switch, 11.5% of patients had high-grade proteinuria (>1.0 g/day); this increased to 22.9% postswitch (p = 0.006). ACE inhibitor and angiotensin-releasing blocker (ARB) therapy reduced proteinuria development. Patients without proteinuria had increased renal function (median 42.5 vs. 64.1, p = 0.25), whereas patients who developed high-grade proteinuria showed decreased renal function at the end of follow-up (median 39.6 vs. 29.2, p = 0.125). Thus, proteinuria may develop in cardiac transplant patients after switch to Srl, which may have an adverse effect on renal function in these patients. Srl should be used with ACEi/ARB therapy and patients monitored for proteinuria and increased renal dysfunction.
+18261172	15	26	proteinuria	Disease	D011507
+18261172	43	52	sirolimus	Chemical	D020123
+18261172	161	178	renal dysfunction	Disease	D007674
+18261172	252	260	sirolmus	Chemical	D020123
+18261172	262	265	Srl	Chemical	D020123
+18261172	273	284	nephrotoxic	Disease	D007674
+18261172	303	314	proteinuria	Disease	D011507
+18261172	331	334	Srl	Chemical	D020123
+18261172	431	442	proteinuria	Disease	D011507
+18261172	459	462	Srl	Chemical	D020123
+18261172	547	559	cyclosporine	Chemical	D016572
+18261172	563	566	Srl	Chemical	D020123
+18261172	605	626	mycophenolate mofetil	Chemical	C063008
+18261172	631	639	steroids	Chemical	D013256
+18261172	842	853	proteinuria	Disease	D011507
+18261172	916	929	ACE inhibitor	Chemical	D000806
+18261172	934	963	angiotensin-releasing blocker	Chemical	D057911
+18261172	965	968	ARB	Chemical	D057911
+18261172	986	997	proteinuria	Disease	D011507
+18261172	1028	1039	proteinuria	Disease	D011507
+18261172	1145	1156	proteinuria	Disease	D011507
+18261172	1254	1265	proteinuria	Disease	D011507
+18261172	1325	1328	Srl	Chemical	D020123
+18261172	1400	1403	Srl	Chemical	D020123
+18261172	1424	1428	ACEi	Chemical	D000806
+18261172	1429	1432	ARB	Chemical	D057911
+18261172	1468	1479	proteinuria	Disease	D011507
+18261172	1494	1511	renal dysfunction	Disease	D007674
+18261172	CID	D020123	D011507
+
+19729346|t|Comparative cognitive and subjective side effects of immediate-release oxycodone in healthy middle-aged and older adults.
+19729346|a|This study measured the objective and subjective neurocognitive effects of a single 10-mg dose of immediate-release oxycodone in healthy, older (> 65 years), and middle-aged (35 to 55 years) adults who were not suffering from chronic or significant daily pain. Seventy-one participants completed 2 separate study days and were blind to medication condition (placebo, 10-mg oxycodone). Plasma oxycodone concentration peaked between 60 and 90 minutes postdose (P < .01) and pupil size, an indication of physiological effects of the medication, peaked at approximately 90 to 120 minutes postdose (P < .01). Significant declines in simple and sustained attention, working memory, and verbal memory were observed at 1 hour postdose compared to baseline for both age groups with a trend toward return to baseline by 5 hours postdose. For almost all cognitive measures, there were no medication by age-interaction effects, which indicates that the 2 age groups exhibited similar responses to the medication challenge. This study suggests that for healthy older adults who are not suffering from chronic pain, neurocognitive and pharmacodynamic changes in response to a 10-mg dose of immediate-release oxycodone are similar to those observed for middle-aged adults. PERSPECTIVE: Study findings indicate that the metabolism, neurocognitive effects, and physical side effects of oral oxycodone are similar for healthy middle-aged and older adults. Therefore, clinicians should not avoid prescribing oral opioids to older adults based on the belief that older adults are at higher risk for side effects than younger adults.
+19729346	71	80	oxycodone	Chemical	D010098
+19729346	238	247	oxycodone	Chemical	D010098
+19729346	377	381	pain	Disease	D010146
+19729346	495	504	oxycodone	Chemical	D010098
+19729346	514	523	oxycodone	Chemical	D010098
+19729346	738	815	declines in simple and sustained attention, working memory, and verbal memory	Disease	D003072|D008569	declines in simple and sustained attention|declines in working memory, and verbal memory
+19729346	1210	1222	chronic pain	Disease	D059350
+19729346	1316	1325	oxycodone	Chemical	D010098
+19729346	1496	1505	oxycodone	Chemical	D010098
+19729346	CID	D010098	D008569
+19729346	CID	D010098	D003072
+
+9351491|t|Extrapyramidal side effects with risperidone and haloperidol at comparable D2 receptor occupancy levels.
+9351491|a|Risperidone is an antipsychotic drug with high affinity at dopamine D2 and serotonin 5-HT2 receptors. Previous clinical studies have proposed that risperidone's pharmacologic profile may produce improved efficacy for negative psychotic symptoms and decreased propensity for extrapyramidal side effects; features shared by so-called 'atypical' neuroleptics. To determine if routine risperidone treatment is associated with a unique degree of D2 receptor occupancy and pattern of clinical effects, we used [123I]IBZM SPECT to determine D2 occupancy in subjects treated with routine clinical doses of risperidone (n = 12) or haloperidol (n = 7). Both risperidone and haloperidol produced D2 occupancy levels between approximately 60 and 90% at standard clinical doses. There was no significant difference between occupancy levels obtained with haloperidol or risperidone. Drug-induced parkinsonism was observed in subjects treated with risperidone (42%) and haloperidol (29%) and was observed at occupancy levels above 60%. Based on these observations, it is concluded that 5-HT2 blockade obtained with risperidone at D2 occupancy rates of 60% and above does not appear to protect against the risk for extrapyramidal side effects.
+9351491	33	44	risperidone	Chemical	D018967
+9351491	49	60	haloperidol	Chemical	D006220
+9351491	105	116	Risperidone	Chemical	D018967
+9351491	164	172	dopamine	Chemical	D004298
+9351491	180	195	serotonin 5-HT2	Chemical	D044348
+9351491	252	263	risperidone	Chemical	D018967
+9351491	331	349	psychotic symptoms	Disease	D011618
+9351491	486	497	risperidone	Chemical	D018967
+9351491	703	714	risperidone	Chemical	D018967
+9351491	727	738	haloperidol	Chemical	D006220
+9351491	753	764	risperidone	Chemical	D018967
+9351491	769	780	haloperidol	Chemical	D006220
+9351491	946	957	haloperidol	Chemical	D006220
+9351491	961	972	risperidone	Chemical	D018967
+9351491	974	999	Drug-induced parkinsonism	Disease	D010302
+9351491	1038	1049	risperidone	Chemical	D018967
+9351491	1060	1071	haloperidol	Chemical	D006220
+9351491	1205	1216	risperidone	Chemical	D018967
+9351491	CID	D018967	D010302
+9351491	CID	D006220	D010302
+
+2559236|t|Effect of converting enzyme inhibition on the course of adriamycin-induced nephropathy.
+2559236|a|The effect of the converting enzyme inhibitor (CEI) enalapril was assessed in Munich-Wistar rats with established adriamycin nephrosis. Rats were given a single dose of adriamycin and one month later divided into four groups matched for albuminuria, blood pressure, and plasma albumin concentration. Groups 1 and 3 remained untreated while groups 2 and 4 received enalapril. Groups 1 and 2 underwent micropuncture studies after 10 days. These short-term studies showed that enalapril reduced arterial blood pressure (101 +/- 2 vs. 124 +/- 3 mm Hg, group 2 vs. 1, P less than 0.05) and glomerular capillary pressure (54 +/- 1 vs. 61 +/- 2 mm Hg, P less than 0.05) without reducing albuminuria (617 +/- 50 vs. 570 +/- 47 mg/day) or GFR (1.03 +/- 0.04 vs. 1.04 +/- 0.11 ml/min). Groups 3 and 4 were studied at four and at six months to assess the effect of enalapril on progression of renal injury in adriamycin nephrosis. Chronic enalapril treatment reduced blood pressure without reducing albuminuria in group 4. Untreated group 3 rats exhibited a progressive reduction in GFR (0.35 +/- 0.08 ml/min at 4 months, 0.27 +/- 0.07 ml/min at 6 months). Enalapril treatment blunted but did not prevent reduction in GFR in group 4 (0.86 +/- 0.15 ml/min at 4 months, 0.69 +/- 0.13 ml/min at 6 months, both P less than 0.05 vs. group 3). Reduction in GFR was associated with the development of glomerular sclerosis in both treated and untreated rats.(ABSTRACT TRUNCATED AT 250 WORDS)
+2559236	56	66	adriamycin	Chemical	D004317
+2559236	75	86	nephropathy	Disease	D007674
+2559236	140	149	enalapril	Chemical	D004656
+2559236	202	212	adriamycin	Chemical	D004317
+2559236	213	222	nephrosis	Disease	D009401
+2559236	257	267	adriamycin	Chemical	D004317
+2559236	325	336	albuminuria	Disease	D000419
+2559236	452	461	enalapril	Chemical	D004656
+2559236	562	571	enalapril	Chemical	D004656
+2559236	768	779	albuminuria	Disease	D000419
+2559236	942	951	enalapril	Chemical	D004656
+2559236	970	982	renal injury	Disease	D007674
+2559236	986	996	adriamycin	Chemical	D004317
+2559236	997	1006	nephrosis	Disease	D009401
+2559236	1016	1025	enalapril	Chemical	D004656
+2559236	1076	1087	albuminuria	Disease	D000419
+2559236	1234	1243	Enalapril	Chemical	D004656
+2559236	1471	1491	glomerular sclerosis	Disease	D007674
+2559236	CID	D004317	D000419
+2559236	CID	D004317	D009401
+
+21029050|t|Butyrylcholinesterase gene mutations in patients with prolonged apnea after succinylcholine for electroconvulsive therapy.
+21029050|a|BACKGROUND: patients undergoing electroconvulsive therapy (ECT) often receive succinylcholine as part of the anesthetic procedure. The duration of action may be prolonged in patients with genetic variants of the butyrylcholinesterase enzyme (BChE), the most common being the K- and the A-variants. The aim of the study was to assess the clinical significance of genetic variants in butyrylcholinesterase gene (BCHE) in patients with a suspected prolonged duration of action of succinylcholine after ECT. METHODS: a total of 13 patients were referred to the Danish Cholinesterase Research Unit after ECT during 38 months. We determined the BChE activity and the BCHE genotype using molecular genetic methods, the duration of apnea, time to sufficient spontaneous ventilation and whether neuromuscular monitoring was used. The duration of apnea was compared with published data on normal subjects. RESULTS: in 11 patients, mutations were found in the BCHE gene, the K-variant being the most frequent. The duration of apnea was 5-15 min compared with 3-5.3 min from the literature. Severe distress was noted in the recovery phase in two patients. Neuromuscular monitoring was used in two patients. CONCLUSION: eleven of 13 patients with a prolonged duration of action of succinylcholine had mutations in BCHE, indicating that this is the possible reason for a prolonged period of apnea. We recommend objective neuromuscular monitoring during the first ECT.
+21029050	64	69	apnea	Disease	D001049
+21029050	76	91	succinylcholine	Chemical	D013390
+21029050	201	216	succinylcholine	Chemical	D013390
+21029050	600	615	succinylcholine	Chemical	D013390
+21029050	847	852	apnea	Disease	D001049
+21029050	960	965	apnea	Disease	D001049
+21029050	1138	1143	apnea	Disease	D001049
+21029050	1391	1406	succinylcholine	Chemical	D013390
+21029050	1500	1505	apnea	Disease	D001049
+21029050	CID	D013390	D001049
+
+19037603|t|Prophylactic use of lamivudine with chronic immunosuppressive therapy for rheumatologic disorders.
+19037603|a|The objective of this study was to report our experience concerning the effectiveness of the prophylactic administration of lamivudine in hepatitis B virus surface antigen (HBs Ag) positive patients with rheumatologic disease. From June 2004 to October 2006, 11 HBs Ag positive patients with rheumatologic diseases, who were on both immunosuppressive and prophylactic lamivudine therapies, were retrospectively assessed. Liver function tests, hepatitis B virus (HBV) serologic markers, and HBV DNA levels of the patients during follow-up were obtained from hospital file records. Eleven patients (six male) with median age 47 years (range 27-73), median disease duration 50 months (range 9-178) and median follow-up period of patients 13.8 months (range 5-27) were enrolled in this study. Lamivudine therapy was started 3-7 days prior to immunosuppressive therapy in all patients. Baseline, liver function tests were elevated in two patients (fourth patient: ALT:122 IU/l, AST:111 IU/l, tenth patient:ALT:294 IU/l, AST:274 IU/l, with minimal changes in the liver biopsy in both). Shortly after treatment their tests normalized and during follow-up period none of the patients had abnormal liver function tests. In four patients HBV DNA levels were higher than normal at baseline. Two of these normalized and the others increased later. In three additional patients, HBV DNA levels were increased during follow-up. None of the patients had significant clinical sings of HBV activation. Lamivudine was well tolerated and was continued in all patients. Prophylactic administration of lamivudine in patients who required immunosuppressive therapy seems to be safe, well tolerated and effective in preventing HBV reactivation.
+19037603	20	30	lamivudine	Chemical	D019259
+19037603	74	97	rheumatologic disorders	Disease	D012216
+19037603	223	233	lamivudine	Chemical	D019259
+19037603	237	270	hepatitis B virus surface antigen	Chemical	D006514
+19037603	272	278	HBs Ag	Chemical	D006514
+19037603	303	324	rheumatologic disease	Disease	D012216
+19037603	361	367	HBs Ag	Chemical	D006514
+19037603	391	413	rheumatologic diseases	Disease	D012216
+19037603	467	477	lamivudine	Chemical	D019259
+19037603	542	553	hepatitis B	Disease	D006509
+19037603	888	898	Lamivudine	Chemical	D019259
+19037603	1279	1302	abnormal liver function	Disease	D056486
+19037603	1584	1594	Lamivudine	Chemical	D019259
+19037603	1680	1690	lamivudine	Chemical	D019259
+19037603	CID	D006514	D006509
+
+18791946|t|Severe thrombocytopenia and haemolytic anaemia associated with ciprofloxacin: a case report with fatal outcome.
+18791946|a|Haematological adverse reactions associated with fatal outcome are rare during treatment with ciprofloxacin. A 30-year old Caucasian man reported with abdominal pain and jaundice after 3-day administration of oral ciprofloxacin for a suspect of urinary tract infection. Clinical evaluations suggested an initial diagnosis of severe thrombocytopenia and haemolysis. The patient progressively developed petechiae and purpura on thorax and lower limbs. Despite pharmacological and supportive interventions, laboratory parameters worsened and the patient died 17 hours after admission. An accurate autopsy revealed most organs with diffuse petechial haemorrhages. No signs of bone marrow depression were found. No thrombi or signs of microangiopathies were observed in arterial vessels. Blood and urine cultures did not show any bacterial growth. This case report shows that ciprofloxacin may precipitate life-threatening thrombocytopenia and haemolytic anaemia, even in the early phases of treatment and without apparent previous exposures.
+18791946	7	23	thrombocytopenia	Disease	D013921
+18791946	28	46	haemolytic anaemia	Disease	D000743
+18791946	63	76	ciprofloxacin	Chemical	D002939
+18791946	206	219	ciprofloxacin	Chemical	D002939
+18791946	263	277	abdominal pain	Disease	D015746
+18791946	282	290	jaundice	Disease	D007565
+18791946	326	339	ciprofloxacin	Chemical	D002939
+18791946	357	380	urinary tract infection	Disease	D014552
+18791946	444	460	thrombocytopenia	Disease	D013921
+18791946	465	475	haemolysis	Disease	D006461
+18791946	513	522	petechiae	Disease	D011693
+18791946	527	534	purpura	Disease	D011693
+18791946	758	770	haemorrhages	Disease	D006470
+18791946	784	806	bone marrow depression	Disease	D001855
+18791946	822	829	thrombi	Disease	D013927
+18791946	842	859	microangiopathies	Disease	D014652
+18791946	983	996	ciprofloxacin	Chemical	D002939
+18791946	1030	1046	thrombocytopenia	Disease	D013921
+18791946	1051	1069	haemolytic anaemia	Disease	D000743
+18791946	CID	D002939	D011693
+18791946	CID	D002939	D007565
+18791946	CID	D002939	D013921
+18791946	CID	D002939	D000743
+18791946	CID	D002939	D015746
+
+17344566|t|Simvastatin-induced bilateral leg compartment syndrome and myonecrosis associated with hypothyroidism.
+17344566|a|A 54-year-old hypothyroid male taking thyroxine and simvastatin presented with bilateral leg compartment syndrome and myonecrosis. Urgent fasciotomies were performed and the patient made an uneventful recovery with the withdrawal of simvastatin. It is likely that this complication will be seen more often with the increased worldwide use of this drug and its approval for all arteriopathic patients.
+17344566	0	11	Simvastatin	Chemical	D019821
+17344566	34	54	compartment syndrome	Disease	D003161
+17344566	59	70	myonecrosis	Disease	D009135
+17344566	87	101	hypothyroidism	Disease	D007037
+17344566	117	128	hypothyroid	Disease	D007037
+17344566	141	150	thyroxine	Chemical	D013974
+17344566	155	166	simvastatin	Chemical	D019821
+17344566	196	216	compartment syndrome	Disease	D003161
+17344566	221	232	myonecrosis	Disease	D009135
+17344566	336	347	simvastatin	Chemical	D019821
+17344566	480	493	arteriopathic	Disease	D014652
+17344566	CID	D019821	D003161
+
+17042910|t|Anti-oxidant effects of atorvastatin in dexamethasone-induced hypertension in the rat.
+17042910|a|1. Dexamethasone (Dex)-induced hypertension is characterized by endothelial dysfunction associated with nitric oxide (NO) deficiency and increased superoxide (O2-) production. Atorvastatin (Ato) possesses pleiotropic properties that have been reported to improve endothelial function through increased availability of NO and reduced O2- production in various forms of hypertension. In the present study, we investigated whether 50 mg/kg per day, p.o., Ato could prevent endothelial NO synthase (eNOS) downregulation and the increase in O2- in Sprague-Dawley (SD) rats, thereby reducing blood pressure. 2. Male SD rats (n = 30) were treated with Ato (50 mg/kg per day in drinking water) or tap water for 15 days. Dexamethasone (10 microg/kg per day, s.c.) or saline was started after 4 days in Ato-treated and non-treated rats and continued for 11-13 days. Systolic blood pressure (SBP) was measured on alternate days using the tail-cuff method. Endothelial function was assessed by acetylcholine-induced vasorelaxation and phenylephrine-induced vasoconstriction in aortic segments. Vascular eNOS mRNA was assessed by semi-quantitative reverse transcription-polymerase chain reaction. 3. In rats treated with Dex alone, SBP was increased from 109 +/- 2 to 133 +/- 2 mmHg on Days 4 and Day 14, respectively (P < 0.001). In the Ato + Dex group, SBP was increased from 113 +/- 2 to 119 +/- 2 mmHg on Days 4 to 14, respectively (P < 0.001), but was significantly lower than SBP in the group treated with Dex alone (P < 0.05). Endothelial-dependent relaxation and eNOS mRNA expression were greater in the Dex + Ato group than in the Dex only group (P < 0.05 and P < 0.0001, respectively). Aortic superoxide production was lower in the Dex + Ato group compared with the group treated with Dex alone (P < 0.0001). 4. Treatment with Ato improved endothelial function, reduced superoxide production and reduced SBP in Dex-treated SD rats.
+17042910	24	36	atorvastatin	Chemical	C065179
+17042910	40	53	dexamethasone	Chemical	D003907
+17042910	62	74	hypertension	Disease	D006973
+17042910	90	103	Dexamethasone	Chemical	D003907
+17042910	105	108	Dex	Chemical	D003907
+17042910	118	130	hypertension	Disease	D006973
+17042910	191	203	nitric oxide	Chemical	D009569
+17042910	205	207	NO	Chemical	D009569
+17042910	234	244	superoxide	Chemical	D013481
+17042910	246	249	O2-	Chemical	D013481
+17042910	263	275	Atorvastatin	Chemical	C065179
+17042910	277	280	Ato	Chemical	C065179
+17042910	405	407	NO	Chemical	D009569
+17042910	420	423	O2-	Chemical	D013481
+17042910	455	467	hypertension	Disease	D006973
+17042910	539	542	Ato	Chemical	C065179
+17042910	569	571	NO	Chemical	D009569
+17042910	623	626	O2-	Chemical	D013481
+17042910	732	735	Ato	Chemical	C065179
+17042910	799	812	Dexamethasone	Chemical	D003907
+17042910	880	883	Ato	Chemical	C065179
+17042910	1069	1082	acetylcholine	Chemical	D000109
+17042910	1110	1123	phenylephrine	Chemical	D010656
+17042910	1295	1298	Dex	Chemical	D003907
+17042910	1412	1415	Ato	Chemical	C065179
+17042910	1418	1421	Dex	Chemical	D003907
+17042910	1586	1589	Dex	Chemical	D003907
+17042910	1686	1689	Dex	Chemical	D003907
+17042910	1692	1695	Ato	Chemical	C065179
+17042910	1714	1717	Dex	Chemical	D003907
+17042910	1777	1787	superoxide	Chemical	D013481
+17042910	1816	1819	Dex	Chemical	D003907
+17042910	1822	1825	Ato	Chemical	C065179
+17042910	1869	1872	Dex	Chemical	D003907
+17042910	1911	1914	Ato	Chemical	C065179
+17042910	1954	1964	superoxide	Chemical	D013481
+17042910	1995	1998	Dex	Chemical	D003907
+17042910	CID	D003907	D006973
+
+7516729|t|Interactive effects of variations in [Na]o and [Ca]o on rat atrial spontaneous frequency.
+7516729|a|The effects of varying the extracellular concentrations of Na and Ca ([Na]o and [Ca]o) on both, the spontaneous beating and the negative chronotropic action of verapamil, were studied in the isolated rat atria. Basal frequency (BF) evaluated by surface electrogram was 223 +/- 4 beats/min. in control Krebs-Ringer containing 137 mM Na and 1.35 mM Ca (N). It decreased by 16 +/- 3% by lowering [Na]o to 78 mM (LNa), 23 +/- 2% by lowering simultaneously [Na]o to 78 mM and [Ca]o to 0.675 mM (LNa+LCa) and 31 +/- 5% by lowering [Na]o to 78 mM plus increasing [Ca]o to 3.6 mM (LNa+HCa). At normal [Na]o, decrease (0.675 mM) or increase (3.6 mM) of [Ca]o did not modify BF; a reduction of ten times (0.135 mM of normal [Ca]o was effective to reduce BF by 40 +/- 13%. All negative chronotropic effects were BF-dependent. Dose-dependent bradycardia induced by verapamil was potentiated by LNa, LCa, and HCa. Independent but not additive effects of Na and Ca are shown by decreases in the values of [verapamil]o needed to reduce BF by 30% (IC30) with the following order of inhibitory potency: LNa > LCa > HCa > N, resulting LNa+HCa similar to LNa. The [verapamil]o that arrested atrial beating (AC) was also potentiated with the order LNa = LNa+LCa = LNa+HCa = LCa > HCa = N. The results indicate that rat atrial spontaneous beating is more dependent on [Na]o than on [Ca]o in a range of +/- 50% of their normal concentration. Also the enhancement of verapamil effects on atrial beating was more pronounced at LNa than at LCa.(ABSTRACT TRUNCATED AT 250 WORDS)
+7516729	38	40	Na	Chemical	D012964
+7516729	48	50	Ca	Chemical	D002118
+7516729	149	151	Na	Chemical	D012964
+7516729	156	158	Ca	Chemical	D002118
+7516729	161	163	Na	Chemical	D012964
+7516729	171	173	Ca	Chemical	D002118
+7516729	250	259	verapamil	Chemical	D014700
+7516729	422	424	Na	Chemical	D012964
+7516729	437	439	Ca	Chemical	D002118
+7516729	484	486	Na	Chemical	D012964
+7516729	543	545	Na	Chemical	D012964
+7516729	562	564	Ca	Chemical	D002118
+7516729	616	618	Na	Chemical	D012964
+7516729	647	649	Ca	Chemical	D002118
+7516729	684	686	Na	Chemical	D012964
+7516729	735	737	Ca	Chemical	D002118
+7516729	805	807	Ca	Chemical	D002118
+7516729	920	931	bradycardia	Disease	D001919
+7516729	943	952	verapamil	Chemical	D014700
+7516729	1031	1033	Na	Chemical	D012964
+7516729	1038	1040	Ca	Chemical	D002118
+7516729	1082	1091	verapamil	Chemical	D014700
+7516729	1236	1245	verapamil	Chemical	D014700
+7516729	1438	1440	Na	Chemical	D012964
+7516729	1452	1454	Ca	Chemical	D002118
+7516729	1534	1543	verapamil	Chemical	D014700
+7516729	CID	D014700	D001919
+
+6666578|t|D-penicillamine-induced angiopathy in rats. The effect of high dose D-penicillamine treatment on aortic permeability to albumin and on the ultrastructure of the vessel.
+6666578|a|Male Sprague-Dawley rats were treated with D-penicillamine (D-pen) 500 mg/kg/day for 10 or 42 days. Pair fed rats served as controls. Changes in aortic morphology were examined by light- and transmission-electron microscopy (TEM). In addition, the endothelial permeability and the penetration through the aortic wall of albumin were studied 10 minutes, 24 and 48 hours after i. v. injection of human serum 131I-albumin (131I-HSA). TEM revealed extensive elastolysis in the arterial wall of D-pen-treated rats, consistent with an inhibitory effect on crosslink formation. In experimental animals excess deposition of collagen and glycoaminoglycans was observed in the subendothelial and medial layer of the aortic wall, together with prominent basal membrane substance around aortic smooth muscle cells. The aorta/serum-ratio and the radioactive build-up 24 and 48 hours after injection of 131I-HSA was reduced in animals treated with D-pen for 42 days, indicating an impeded transmural transport of tracer which may be caused by a steric exclusion effect of abundant hyaluronate. The endothelial ultrastructure was unaffected by D-pen, and no differences in aortic 131I-HSA radioactivity or aorta/serum-ratio were recorded between experimental and control groups 10 minutes after tracer injection, indicating that the permeability of the endothelial barrier to albumin remained unaffected by D-pen treatment. These observations support the hypothesis that treatment with high doses of D-pen may induce a fibroproliferative response in rat aorta, possibly by an inhibitory effect on the cross-linking of collagen and elastin.
+6666578	0	15	D-penicillamine	Chemical	D010396
+6666578	24	34	angiopathy	Disease	D001018
+6666578	68	83	D-penicillamine	Chemical	D010396
+6666578	212	227	D-penicillamine	Chemical	D010396
+6666578	229	234	D-pen	Chemical	D010396
+6666578	659	664	D-pen	Chemical	D010396
+6666578	1103	1108	D-pen	Chemical	D010396
+6666578	1236	1247	hyaluronate	Chemical	D006820
+6666578	1298	1303	D-pen	Chemical	D010396
+6666578	1561	1566	D-pen	Chemical	D010396
+6666578	1654	1659	D-pen	Chemical	D010396
+6666578	CID	D010396	D001018
+
+11279304|t|Brain natriuretic peptide is a predictor of anthracycline-induced cardiotoxicity.
+11279304|a|Anthracyclines are effective antineoplastic drugs, but they frequently cause dose-related cardiotoxicity. The cardiotoxicity of conventional anthracycline therapy highlights a need to search for methods that are highly sensitive and capable of predicting cardiac dysfunction. We measured the plasma level of brain natriuretic peptide (BNP) to determine whether BNP might serve as a simple diagnostic indicator of anthracycline-induced cardiotoxicity in patients with acute leukemia treated with a daunorubicin (DNR)-containing regimen. Thirteen patients with acute leukemia were treated with a DNR-containing regimen. Cardiac functions were evaluated with radionuclide angiography before chemotherapies. The plasma levels of atrial natriuretic peptide (ANP) and BNP were measured at the time of radionuclide angiography. Three patients developed congestive heart failure after the completion of chemotherapy. Five patients were diagnosed as having subclinical heart failure after the completion of chemotherapy. The plasma levels of BNP in all the patients with clinical and subclinical heart failure increased above the normal limit (40 pg/ml) before the detection of clinical or subclinical heart failure by radionuclide angiography. On the other hand, BNP did not increase in the patients without heart failure given DNR, even at more than 700 mg/m(2). The plasma level of ANP did not always increase in all the patients with clinical and subclinical heart failure. These preliminary results suggest that BNP may be useful as an early and sensitive indicator of anthracycline-induced cardiotoxicity.
+11279304	44	57	anthracycline	Chemical	D018943
+11279304	66	80	cardiotoxicity	Disease	D066126
+11279304	82	96	Anthracyclines	Chemical	D018943
+11279304	172	186	cardiotoxicity	Disease	D066126
+11279304	192	206	cardiotoxicity	Disease	D066126
+11279304	223	236	anthracycline	Chemical	D018943
+11279304	337	356	cardiac dysfunction	Disease	D006331
+11279304	495	508	anthracycline	Chemical	D018943
+11279304	517	531	cardiotoxicity	Disease	D066126
+11279304	549	563	acute leukemia	Disease	D015470
+11279304	579	591	daunorubicin	Chemical	D003630
+11279304	593	596	DNR	Chemical	D003630
+11279304	641	655	acute leukemia	Disease	D015470
+11279304	676	679	DNR	Chemical	D003630
+11279304	928	952	congestive heart failure	Disease	D006333
+11279304	1042	1055	heart failure	Disease	D006333
+11279304	1169	1182	heart failure	Disease	D006333
+11279304	1275	1288	heart failure	Disease	D006333
+11279304	1382	1395	heart failure	Disease	D006333
+11279304	1402	1405	DNR	Chemical	D003630
+11279304	1536	1549	heart failure	Disease	D006333
+11279304	1647	1660	anthracycline	Chemical	D018943
+11279304	1669	1683	cardiotoxicity	Disease	D066126
+11279304	CID	D003630	D006333
+
+10579464|t|A selective dopamine D4 receptor antagonist, NRA0160: a preclinical neuropharmacological profile.
+10579464|a|NRA0160, 5 - [2- ( 4- ( 3 - fluorobenzylidene) piperidin-1-yl) ethyl] - 4 -(4-fluorophenyl) thiazole-2-carboxamide, has a high affinity for human cloned dopamine D4.2, D4.4 and D4.7 receptors, with Ki values of 0.5, 0.9 and 2.7 nM, respectively. NRA0160 is over 20,000fold more potent at the dopamine D4.2 receptor compared with the human cloned dopamine D2L receptor. NRA0160 has negligible affinity for the human cloned dopamine D3 receptor (Ki=39 nM), rat serotonin (5-HT)2A receptors (Ki=180 nM) and rat alpha1 adrenoceptor (Ki=237 nM). NRA0160 and clozapine antagonized locomotor hyperactivity induced by methamphetamine (MAP) in mice. NRA0160 and clozapine antagonized MAP-induced stereotyped behavior in mice, although their effects did not exceed 50% inhibition, even at the highest dose given. NRA0160 and clozapine significantly induced catalepsy in rats, although their effects did not exceed 50% induction even at the highest dose given. NRA0160 and clozapine significantly reversed the disruption of prepulse inhibition (PPI) in rats produced by apomorphine. NRA0160 and clozapine significantly shortened the phencyclidine (PCP)-induced prolonged swimming latency in rats in a water maze task. These findings suggest that NRA0160 may have unique antipsychotic activities without the liability of motor side effects typical of classical antipsychotics.
+10579464	12	20	dopamine	Chemical	D004298
+10579464	45	52	NRA0160	Chemical	C121249
+10579464	98	105	NRA0160	Chemical	C121249
+10579464	107	212	5 - [2- ( 4- ( 3 - fluorobenzylidene) piperidin-1-yl) ethyl] - 4 -(4-fluorophenyl) thiazole-2-carboxamide	Chemical	C121249
+10579464	251	259	dopamine	Chemical	D004298
+10579464	344	351	NRA0160	Chemical	C121249
+10579464	390	398	dopamine	Chemical	D004298
+10579464	444	452	dopamine	Chemical	D004298
+10579464	467	474	NRA0160	Chemical	C121249
+10579464	520	528	dopamine	Chemical	D004298
+10579464	557	566	serotonin	Chemical	D012701
+10579464	568	572	5-HT	Chemical	D012701
+10579464	639	646	NRA0160	Chemical	C121249
+10579464	651	660	clozapine	Chemical	D003024
+10579464	683	696	hyperactivity	Disease	D006948
+10579464	708	723	methamphetamine	Chemical	D008694
+10579464	725	728	MAP	Chemical	D008694
+10579464	739	746	NRA0160	Chemical	C121249
+10579464	751	760	clozapine	Chemical	D003024
+10579464	773	776	MAP	Chemical	D008694
+10579464	901	908	NRA0160	Chemical	C121249
+10579464	913	922	clozapine	Chemical	D003024
+10579464	945	954	catalepsy	Disease	D002375
+10579464	1048	1055	NRA0160	Chemical	C121249
+10579464	1060	1069	clozapine	Chemical	D003024
+10579464	1157	1168	apomorphine	Chemical	D001058
+10579464	1170	1177	NRA0160	Chemical	C121249
+10579464	1182	1191	clozapine	Chemical	D003024
+10579464	1220	1233	phencyclidine	Chemical	D010622
+10579464	1235	1238	PCP	Chemical	D010622
+10579464	1333	1340	NRA0160	Chemical	C121249
+10579464	CID	D008694	D006948
+10579464	CID	D003024	D002375
+10579464	CID	C121249	D002375
+
+10406016|t|Effect of fucoidan treatment on collagenase-induced intracerebral hemorrhage in rats.
+10406016|a|Inflammatory cells are postulated to mediate some of the brain damage following ischemic stroke. Intracerebral hemorrhage is associated with more inflammation than ischemic stroke. We tested the sulfated polysaccharide fucoidan, which has been reported to reduce inflammatory brain damage, in a rat model of intracerebral hemorrhage induced by injection of bacterial collagenase into the caudate nucleus. Rats were treated with seven day intravenous infusion of fucoidan (30 micrograms h-1) or vehicle. The hematoma was assessed in vivo by magnetic resonance imaging. Motor behavior, passive avoidance, and skilled forelimb function were tested repeatedly for six weeks. Fucoidan-treated rats exhibited evidence of impaired blood clotting and hemodilution, had larger hematomas, and tended to have less inflammation in the vicinity of the hematoma after three days. They showed significantly more rapid improvement of motor function in the first week following hemorrhage and better memory retention in the passive avoidance test. Acute white matter edema and eventual neuronal loss in the striatum adjacent to the hematoma did not differ between the two groups. Investigation of more specific anti-inflammatory agents and hemodiluting agents are warranted in intracerebral hemorrhage.
+10406016	10	18	fucoidan	Chemical	C007789
+10406016	52	76	intracerebral hemorrhage	Disease	D002543
+10406016	143	155	brain damage	Disease	D001925
+10406016	166	181	ischemic stroke	Disease	D002544
+10406016	183	207	Intracerebral hemorrhage	Disease	D002543
+10406016	232	244	inflammation	Disease	D007249
+10406016	250	265	ischemic stroke	Disease	D002544
+10406016	305	313	fucoidan	Chemical	C007789
+10406016	362	374	brain damage	Disease	D001925
+10406016	394	418	intracerebral hemorrhage	Disease	D002543
+10406016	548	556	fucoidan	Chemical	C007789
+10406016	593	601	hematoma	Disease	D006406
+10406016	757	765	Fucoidan	Chemical	C007789
+10406016	801	824	impaired blood clotting	Disease	D020141
+10406016	829	841	hemodilution	Disease	D020141
+10406016	854	863	hematomas	Disease	D006406
+10406016	889	901	inflammation	Disease	D007249
+10406016	925	933	hematoma	Disease	D006406
+10406016	1047	1057	hemorrhage	Disease	D006470
+10406016	1123	1141	white matter edema	Disease	D001929
+10406016	1155	1168	neuronal loss	Disease	D009410
+10406016	1201	1209	hematoma	Disease	D006406
+10406016	1346	1370	intracerebral hemorrhage	Disease	D002543
+10406016	CID	C007789	D020141
+10406016	CID	C007789	D001929
+
+3101906|t|Hepatic reactions associated with ketoconazole in the United Kingdom.
+3101906|a|Ketoconazole was introduced in the United Kingdom in 1981. By November 1984 the Committee on Safety of Medicines had received 82 reports of possible hepatotoxicity associated with the drug, including five deaths. An analysis of the 75 cases that had been adequately followed up suggested that 16, including three deaths, were probably related to treatment with the drug. Of the remainder, 48 were possibly related to treatment, five were unlikely to be so, and six were unclassifiable. The mean age of patients in the 16 probable cases was 57.9, with hepatotoxicity being more common in women. The average duration of treatment before the onset of jaundice was 61 days. None of these well validated cases occurred within the first 10 days after treatment. The results of serum liver function tests suggested hepatocellular injury in 10 (63%); the rest showed a mixed pattern. In contrast, the results of histological examination of the liver often showed evidence of cholestasis. The characteristics of the 48 patients in the possible cases were similar. Allergic manifestations such as rash and eosinophilia were rare. Hepatitis was usually reversible when treatment was stopped, with the results of liver function tests returning to normal after an average of 3.1 months. In two of the three deaths probably associated with ketoconazole treatment the drug had been continued after the onset of jaundice and other symptoms of hepatitis. Clinical and biochemical monitoring at regular intervals for evidence of hepatitis is advised during long term treatment with ketoconazole to prevent possible serious hepatic injury.
+3101906	34	46	ketoconazole	Chemical	D007654
+3101906	70	82	Ketoconazole	Chemical	D007654
+3101906	219	233	hepatotoxicity	Disease	D056486
+3101906	275	281	deaths	Disease	D003643
+3101906	383	389	deaths	Disease	D003643
+3101906	621	635	hepatotoxicity	Disease	D056486
+3101906	718	726	jaundice	Disease	D007565
+3101906	878	899	hepatocellular injury	Disease	D056486
+3101906	1037	1048	cholestasis	Disease	D002779
+3101906	1157	1161	rash	Disease	D005076
+3101906	1166	1178	eosinophilia	Disease	D004802
+3101906	1190	1199	Hepatitis	Disease	D056486
+3101906	1364	1370	deaths	Disease	D003643
+3101906	1396	1408	ketoconazole	Chemical	D007654
+3101906	1466	1474	jaundice	Disease	D007565
+3101906	1497	1506	hepatitis	Disease	D056486
+3101906	1581	1590	hepatitis	Disease	D056486
+3101906	1634	1646	ketoconazole	Chemical	D007654
+3101906	1675	1689	hepatic injury	Disease	D056486
+3101906	CID	D007654	D007565
+3101906	CID	D007654	D002779
+3101906	CID	D007654	D056486
+
+8437969|t|Sinus arrest associated with continuous-infusion cimetidine.
+8437969|a|The administration of intermittent intravenous infusions of cimetidine is infrequently associated with the development of bradyarrhythmias. A 40-year-old man with leukemia and no history of cardiac disease developed recurrent, brief episodes of apparent sinus arrest while receiving continuous-infusion cimetidine 50 mg/hour. The arrhythmias were temporally related to cimetidine administration, disappeared after dechallenge, and did not recur during ranitidine treatment. This is the first reported case of sinus arrest associated with continuous-infusion cimetidine.
+8437969	0	12	Sinus arrest	Disease	D054138
+8437969	49	59	cimetidine	Chemical	D002927
+8437969	121	131	cimetidine	Chemical	D002927
+8437969	183	199	bradyarrhythmias	Disease	D001919
+8437969	224	232	leukemia	Disease	D007938
+8437969	251	266	cardiac disease	Disease	D006331
+8437969	315	327	sinus arrest	Disease	D054138
+8437969	364	374	cimetidine	Chemical	D002927
+8437969	391	402	arrhythmias	Disease	D001145
+8437969	430	440	cimetidine	Chemical	D002927
+8437969	513	523	ranitidine	Chemical	D011899
+8437969	570	582	sinus arrest	Disease	D054138
+8437969	619	629	cimetidine	Chemical	D002927
+8437969	CID	D002927	D054138
+8437969	CID	D002927	D001919
+
+2071257|t|Effect of L-alpha-glyceryl-phosphorylcholine on amnesia caused by scopolamine.
+2071257|a|The present study was carried out to test the effects of L-alpha-glycerylphosphorylcholine (L-alpha-GFC) on memory impairment induced by scopolamine in man. Thirty-two healthy young volunteers were randomly allocated to four different groups. They were given a ten day pretreatment with either L-alpha-GFC or placebo, p.o., and on the eleventh day either scopolamine or placebo, i.m. Before and 0.5, 1, 2, 3, and 6 h after injection the subjects were given attention and mnemonic tests. The findings of this study indicate that the drug is able to antagonize impairment of attention and memory induced by scopolamine.
+2071257	10	44	L-alpha-glyceryl-phosphorylcholine	Chemical	D005997
+2071257	48	55	amnesia	Disease	D000647
+2071257	66	77	scopolamine	Chemical	D012601
+2071257	136	169	L-alpha-glycerylphosphorylcholine	Chemical	D005997
+2071257	171	182	L-alpha-GFC	Chemical	D005997
+2071257	187	204	memory impairment	Disease	D008569
+2071257	216	227	scopolamine	Chemical	D012601
+2071257	373	384	L-alpha-GFC	Chemical	D005997
+2071257	434	445	scopolamine	Chemical	D012601
+2071257	638	672	impairment of attention and memory	Disease	D008569
+2071257	684	695	scopolamine	Chemical	D012601
+2071257	CID	D012601	D008569
+
+18703024|t|Prenatal protein deprivation alters dopamine-mediated behaviors and dopaminergic and glutamatergic receptor binding.
+18703024|a|Epidemiological evidence indicates that prenatal nutritional deprivation may increase the risk of schizophrenia. The goal of these studies was to use an animal model to examine the effects of prenatal protein deprivation on behaviors and receptor binding with relevance to schizophrenia. We report that prenatally protein deprived (PD) female rats showed an increased stereotypic response to apomorphine and an increased locomotor response to amphetamine in adulthood. These differences were not observed during puberty. No changes in haloperidol-induced catalepsy or MK-801-induced locomotion were seen following PD. In addition, PD female rats showed increased (3)H-MK-801 binding in the striatum and hippocampus, but not in the cortex. PD female rats also showed increased (3)H-haloperidol binding and decreased dopamine transporter binding in striatum. No statistically significant changes in behavior or receptor binding were found in PD males with the exception of increased (3)H-MK-801 binding in cortex. This animal model may be useful to explore the mechanisms by which prenatal nutritional deficiency enhances risk for schizophrenia in humans and may also have implications for developmental processes leading to differential sensitivity to drugs of abuse.
+18703024	36	44	dopamine	Chemical	D004298
+18703024	215	228	schizophrenia	Disease	D012559
+18703024	390	403	schizophrenia	Disease	D012559
+18703024	509	520	apomorphine	Chemical	D001058
+18703024	560	571	amphetamine	Chemical	D000661
+18703024	652	663	haloperidol	Chemical	D006220
+18703024	672	681	catalepsy	Disease	D002375
+18703024	685	691	MK-801	Chemical	D016291
+18703024	783	784	H	Chemical	D006859
+18703024	785	791	MK-801	Chemical	D016291
+18703024	896	897	H	Chemical	D006859
+18703024	898	909	haloperidol	Chemical	D006220
+18703024	932	940	dopamine	Chemical	D004298
+18703024	1101	1102	H	Chemical	D006859
+18703024	1103	1109	MK-801	Chemical	D016291
+18703024	1205	1227	nutritional deficiency	Disease	D044342
+18703024	1246	1259	schizophrenia	Disease	D012559
+18703024	CID	D006220	D002375
+
+17242861|t|Use of chromosome substitution strains to identify seizure susceptibility loci in mice.
+17242861|a|Seizure susceptibility varies among inbred mouse strains. Chromosome substitution strains (CSS), in which a single chromosome from one inbred strain (donor) has been transferred onto a second strain (host) by repeated backcrossing, may be used to identify quantitative trait loci (QTLs) that contribute to seizure susceptibility. QTLs for susceptibility to pilocarpine-induced seizures, a model of temporal lobe epilepsy, have not been reported, and CSS have not previously been used to localize seizure susceptibility genes. We report QTLs identified using a B6 (host) x A/J (donor) CSS panel to localize genes involved in susceptibility to pilocarpine-induced seizures. Three hundred fifty-five adult male CSS mice, 58 B6, and 39 A/J were tested for susceptibility to pilocarpine-induced seizures. Highest stage reached and latency to each stage were recorded for all mice. B6 mice were resistant to seizures and slower to reach stages compared to A/J mice. The CSS for Chromosomes 10 and 18 progressed to the most severe stages, diverging dramatically from the B6 phenotype. Latencies to stages were also significantly shorter for CSS10 and CSS18 mice. CSS mapping suggests seizure susceptibility loci on mouse Chromosomes 10 and 18. This approach provides a framework for identifying potentially novel homologous candidate genes for human temporal lobe epilepsy.
+17242861	51	58	seizure	Disease	D012640
+17242861	88	95	Seizure	Disease	D012640
+17242861	394	401	seizure	Disease	D012640
+17242861	445	456	pilocarpine	Chemical	D010862
+17242861	465	473	seizures	Disease	D012640
+17242861	486	508	temporal lobe epilepsy	Disease	D004833
+17242861	584	591	seizure	Disease	D012640
+17242861	730	741	pilocarpine	Chemical	D010862
+17242861	750	758	seizures	Disease	D012640
+17242861	858	869	pilocarpine	Chemical	D010862
+17242861	878	886	seizures	Disease	D012640
+17242861	990	998	seizures	Disease	D012640
+17242861	1265	1272	seizure	Disease	D012640
+17242861	1431	1453	temporal lobe epilepsy	Disease	D004833
+17242861	CID	D010862	D004833
+
+15859940|t|Causes of acute thrombotic microangiopathy in patients receiving kidney transplantation.
+15859940|a|OBJECTIVES: Thrombotic microangiopathy is a well-known problem in patients following renal transplantation. In postrenal transplantation, thrombotic microangiopathy is often a reflection of hemolytic uremic syndrome. We aimed to determine the causes of thrombotic microangiopathy in a population of renal transplantation recipients and discuss the literature. MATERIALS AND METHODS: We investigated the causes of thrombotic microangiopathy during a 1-year period, from June 2003 to June 2004, at the King Fahad National Guard Hospital in Riyadh, Saudi Arabia, by reviewing the slides of all transplant biopsies (n=25) performed during this interval. Pre- and posttransplant crossmatching was done when possible. RESULTS: Five cases of thrombotic microangiopathy were found. Three of these cases were from the 25 transplantations performed at King Fahad National Guard Hospital, while the other 2 transplantations had been performed abroad and were referred to us for follow-up. Three cases were related to cyclosporine, and 1 case was secondary to both cyclosporine and tacrolimus. The fifth case had features of thrombotic microangiopathy related to an antiphospholipid syndrome in a patient with systemic lupus erythematosus. CONCLUSIONS: In the literature, the most-frequent cause of hemolytic uremic syndrome in patients following renal transplantation is recurrence of the hemolytic uremic syndrome. Other causes include drug-related (cyclosporine, tacrolimus) toxicity, procoagulant status, and antibody-mediated rejection. We found that the most-frequent cause of thrombotic microangiopathy was drug related, secondary mainly to cyclosporine. In the current study, the frequency of thrombotic microangiopathy was similar to the percentage reported in the literature (20%).
+15859940	16	42	thrombotic microangiopathy	Disease	D057049
+15859940	101	127	Thrombotic microangiopathy	Disease	D057049
+15859940	227	253	thrombotic microangiopathy	Disease	D057049
+15859940	279	304	hemolytic uremic syndrome	Disease	D006463
+15859940	342	368	thrombotic microangiopathy	Disease	D057049
+15859940	502	528	thrombotic microangiopathy	Disease	D057049
+15859940	824	850	thrombotic microangiopathy	Disease	D057049
+15859940	1095	1107	cyclosporine	Chemical	D016572
+15859940	1142	1154	cyclosporine	Chemical	D016572
+15859940	1159	1169	tacrolimus	Chemical	D016559
+15859940	1202	1228	thrombotic microangiopathy	Disease	D057049
+15859940	1243	1268	antiphospholipid syndrome	Disease	D016736
+15859940	1287	1315	systemic lupus erythematosus	Disease	D008180
+15859940	1376	1401	hemolytic uremic syndrome	Disease	D006463
+15859940	1467	1492	hemolytic uremic syndrome	Disease	D006463
+15859940	1529	1541	cyclosporine	Chemical	D016572
+15859940	1543	1553	tacrolimus	Chemical	D016559
+15859940	1555	1563	toxicity	Disease	D064420
+15859940	1660	1686	thrombotic microangiopathy	Disease	D057049
+15859940	1725	1737	cyclosporine	Chemical	D016572
+15859940	1778	1804	thrombotic microangiopathy	Disease	D057049
+15859940	CID	D016572	D057049
+
+11875660|t|Sequential observations of exencephaly and subsequent morphological changes by mouse exo utero development system: analysis of the mechanism of transformation from exencephaly to anencephaly.
+11875660|a|Anencephaly has been suggested to develop from exencephaly; however, there is little direct experimental evidence to support this, and the mechanism of transformation remains unclear. We examined this theory using the exo utero development system that allows direct and sequential observations of mid- to late-gestation mouse embryos. We observed the exencephaly induced by 5-azacytidine at embryonic day 13.5 (E13.5), let the embryos develop exo utero until E18.5, and re-observed the same embryos at E18.5. We confirmed several cases of transformation from exencephaly to anencephaly. However, in many cases, the exencephalic brain tissue was preserved with more or less reduction during this period. To analyze the transformation patterns, we classified the exencephaly by size and shape of the exencephalic tissue into several types at E13.5 and E18.5. It was found that the transformation of exencephalic tissue was not simply size-dependent, and all cases of anencephaly at E18.5 resulted from embryos with a large amount of exencephalic tissue at E13.5. Microscopic observation showed the configuration of exencephaly at E13.5, frequent hemorrhaging and detachment of the neural plate from surface ectoderm in the exencephalic head at E15.5, and multiple modes of reduction in the exencephalic tissue at E18.5. From observations of the vasculature, altered distribution patterns of vessels were identified in the exencephalic head. These findings suggest that overgrowth of the exencephalic neural tissue causes the altered distribution patterns of vessels, subsequent peripheral circulatory failure and/or hemorrhaging in various parts of the exencephalic head, leading to the multiple modes of tissue reduction during transformation from exencephaly to anencephaly.
+11875660	27	38	exencephaly	Disease	D009436
+11875660	164	175	exencephaly	Disease	D009436
+11875660	179	190	anencephaly	Disease	D000757
+11875660	192	203	Anencephaly	Disease	D000757
+11875660	239	250	exencephaly	Disease	D009436
+11875660	543	554	exencephaly	Disease	D009436
+11875660	566	579	5-azacytidine	Chemical	D001374
+11875660	751	762	exencephaly	Disease	D009436
+11875660	766	777	anencephaly	Disease	D000757
+11875660	807	819	exencephalic	Disease	D009436
+11875660	953	964	exencephaly	Disease	D009436
+11875660	990	1002	exencephalic	Disease	D009436
+11875660	1089	1101	exencephalic	Disease	D009436
+11875660	1157	1168	anencephaly	Disease	D000757
+11875660	1223	1235	exencephalic	Disease	D009436
+11875660	1305	1316	exencephaly	Disease	D009436
+11875660	1336	1348	hemorrhaging	Disease	D006470
+11875660	1413	1425	exencephalic	Disease	D009436
+11875660	1480	1492	exencephalic	Disease	D009436
+11875660	1612	1624	exencephalic	Disease	D009436
+11875660	1677	1689	exencephalic	Disease	D009436
+11875660	1779	1798	circulatory failure	Disease	D012769
+11875660	1806	1818	hemorrhaging	Disease	D006470
+11875660	1843	1855	exencephalic	Disease	D009436
+11875660	1939	1950	exencephaly	Disease	D009436
+11875660	1954	1965	anencephaly	Disease	D000757
+11875660	CID	D001374	D000757
+
+11166519|t|Acute cocaine-induced seizures: differential sensitivity of six inbred mouse strains.
+11166519|a|Mature male and female mice from six inbred stains were tested for susceptibility to behavioral seizures induced by a single injection of cocaine. Cocaine was injected ip over a range of doses (50-100 mg/kg) and behavior was monitored for 20 minutes. Seizure end points included latency to forelimb or hindlimb clonus, latency to clonic running seizure and latency to jumping bouncing seizure. A range of strain specific sensitivities was documented with A/J and SJL mice being most sensitive and C57BL/6J most resistant. DBA/2J, BALB/cByJ and NZW/LacJ strains exhibited intermediate sensitivity. EEG recordings were made in SJL, A/J and C57BL/6J mice revealing a close correspondence between electrical activity and behavior. Additionally, levels of cocaine determined in hippocampus and cortex were not different between sensitive and resistant strains. Additional studies of these murine strains may be useful for investigating genetic influences on cocaine-induced seizures.
+11166519	6	13	cocaine	Chemical	D003042
+11166519	22	30	seizures	Disease	D012640
+11166519	182	190	seizures	Disease	D012640
+11166519	224	231	cocaine	Chemical	D003042
+11166519	233	240	Cocaine	Chemical	D003042
+11166519	337	344	Seizure	Disease	D012640
+11166519	431	438	seizure	Disease	D012640
+11166519	471	478	seizure	Disease	D012640
+11166519	837	844	cocaine	Chemical	D003042
+11166519	1039	1046	cocaine	Chemical	D003042
+11166519	1055	1063	seizures	Disease	D012640
+11166519	CID	D003042	D012640
+
+11928786|t|Bupropion (Zyban) toxicity.
+11928786|a|Bupropion is a monocyclic antidepressant structurally related to amphetamine. Zyban, a sustained-release formulation of bupropion hydrochloride, was recently released in Ireland, as a smoking cessation aid. In the initial 6 months since it's introduction, 12 overdose cases have been reported to The National Poisons Information Centre. 8 patients developed symptoms of toxicity. Common features included tachycardia, drowsiness, hallucinations and convulsions. Two patients developed severe cardiac arrhythmias, including one patient who was resuscitated following a cardiac arrest. All patients recovered without sequelae. We report a case of a 31 year old female who required admission to the Intensive Care Unit for ventilation and full supportive therapy, following ingestion of 13.5g bupropion. Recurrent seizures were treated with diazepam and broad complex tachycardia was successfully treated with adenosine. Zyban caused significant neurological and cardiovascular toxicity in overdose. The potential toxic effects should be considered when prescribing it as a smoking cessation aid.
+11928786	0	9	Bupropion	Chemical	D016642
+11928786	11	16	Zyban	Chemical	D016642
+11928786	18	26	toxicity	Disease	D064420
+11928786	28	37	Bupropion	Chemical	D016642
+11928786	54	68	antidepressant	Chemical	D000928
+11928786	93	104	amphetamine	Chemical	D000661
+11928786	106	111	Zyban	Chemical	D016642
+11928786	148	171	bupropion hydrochloride	Chemical	D016642
+11928786	287	295	overdose	Disease	D062787
+11928786	398	406	toxicity	Disease	D064420
+11928786	433	444	tachycardia	Disease	D013610
+11928786	458	472	hallucinations	Disease	D006212
+11928786	477	488	convulsions	Disease	D012640
+11928786	520	539	cardiac arrhythmias	Disease	D001145
+11928786	596	610	cardiac arrest	Disease	D006323
+11928786	818	827	bupropion	Chemical	D016642
+11928786	839	847	seizures	Disease	D012640
+11928786	866	874	diazepam	Chemical	D003975
+11928786	893	904	tachycardia	Disease	D013610
+11928786	935	944	adenosine	Chemical	D000241
+11928786	946	951	Zyban	Chemical	D016642
+11928786	971	1011	neurological and cardiovascular toxicity	Disease	D020258|D002318	neurological toxicity|cardiovascular toxicity
+11928786	1015	1023	overdose	Disease	D062787
+11928786	CID	D016642	D013610
+11928786	CID	D016642	D012640
+11928786	CID	D016642	D006212
+11928786	CID	D016642	D001145
+11928786	CID	D016642	D006323
+
+7977601|t|Survey of complications of indocyanine green angiography in Japan.
+7977601|a|PURPOSE: We evaluated the safety of indocyanine green for use in fundus angiography. METHODS: We sent a questionnaire concerning complications of indocyanine green to 32 institutions in Japan, which were selected on the basis of the client list from the Topcon Company, which manufactures the indocyanine green fundus camera. RESULTS: Ophthalmologists at 15 institutions responded, reporting a total of 3,774 indocyanine green angiograms performed on 2,820 patients between June 1984 and September 1992. Before angiography, intradermal or intravenous indocyanine green testing, or both was performed at 13 of 15 institutions. For three patients, the decision was made not to proceed with angiography after positive preangiographic testing. The dosage of indocyanine green used for angiography varied from 25 to 75 mg, depending upon the institution. There were 13 cases of adverse reactions (0.34%), ten of which were mild reactions such as nausea, exanthema, urtication, itchiness, and urgency to defecate, and did not require treatment. Also recorded were one case of pain of the vein, which required treatment, and two cases of hypotension. The two hypotensive patients required treatment for shock. CONCLUSIONS: A comparison of frequency of adverse reactions to indocyanine green with the previously reported frequency of such reactions to fluorescein sodium indicated that indocyanine green is a safe as fluorescein for use in angiography.
+7977601	27	44	indocyanine green	Chemical	D007208
+7977601	103	120	indocyanine green	Chemical	D007208
+7977601	213	230	indocyanine green	Chemical	D007208
+7977601	360	377	indocyanine green	Chemical	D007208
+7977601	476	493	indocyanine green	Chemical	D007208
+7977601	618	635	indocyanine green	Chemical	D007208
+7977601	821	838	indocyanine green	Chemical	D007208
+7977601	1008	1014	nausea	Disease	D009325
+7977601	1016	1025	exanthema	Disease	D005076
+7977601	1027	1037	urtication	Disease	D014581
+7977601	1039	1048	itchiness	Disease	D011537
+7977601	1137	1141	pain	Disease	D010146
+7977601	1198	1209	hypotension	Disease	D007022
+7977601	1219	1230	hypotensive	Disease	D007022
+7977601	1263	1268	shock	Disease	D012769
+7977601	1333	1350	indocyanine green	Chemical	D007208
+7977601	1411	1429	fluorescein sodium	Chemical	D019793
+7977601	1445	1462	indocyanine green	Chemical	D007208
+7977601	1476	1487	fluorescein	Chemical	D019793
+7977601	CID	D007208	D012769
+7977601	CID	D007208	D010146
+7977601	CID	D007208	D007022
+7977601	CID	D007208	D011537
+7977601	CID	D007208	D009325
+7977601	CID	D007208	D005076
+7977601	CID	D007208	D014581
+
+16330293|t|Safety profile of a nicotine lozenge compared with that of nicotine gum in adult smokers with underlying medical conditions: a 12-week, randomized, open-label study.
+16330293|a|BACKGROUND: Nicotine polacrilex lozenges deliver 25% to 27% more nicotine compared with equivalent doses of nicotine polacrilex gum. The increased nicotine exposure from the lozenge has raised questions about the relative safety of the lozenge and gum. OBJECTIVE: The objective of this study was to compare the safety profiles of the 4-mg nicotine lozenge and 4-mg nicotine gum in smokers with selected label-restricted diseases. METHODS: This was a multicenter, randomized, open-label study in adult smokers with heart disease, hypertension not controlled by medication, and/or diabetes mellitus. Patients were randomized in a 1:1 ratio to receive the 4-mg nicotine lozenge or 4-mg nicotine gum. Safety assessments were made at baseline and at 2, 4, 6, and 12 weeks after the start of product use. RESULTS: Nine hundred one patients were randomized to treatment, 447 who received the lozenge and 454 who received the gum (safety population). The majority were women (52.7%). Patients' mean age was 53.9 years, their mean weight was 193.9 pounds, and they smoked a mean of 25.2 cigarettes per day at baseline. Five hundred fifty-three patients, 264 taking the lozenge and 289 taking the gum, used the study product for > or =4 days per week during the first 2 weeks (evaluable population). The nicotine lozenge and nicotine gum were equally well tolerated, despite increased nicotine exposure from the lozenge. The incidence of adverse events in the 2 groups was similar during the first 2 weeks of product use (evaluation population: 55.3% lozenge, 54.7% gum), as well as during the entire study (safety population: 63.8% and 58.6%, respectively). Stratification of patients by sex, age, extent of concurrent smoking, extent of product use, and severity of adverse events revealed no clinically significant differences between the lozenge and gum. The most common adverse events were nausea (17.2% and 16.1%; 95% CI, -3.7 to 6.0), hiccups (10.7% and 6.6%; 95% CI, 0.5 to 7.8), and headache (8.7% and 9.9%; 95% Cl, -5.0 to 2.6). Serious adverse events were reported in 11 and 13 patients in the respective groups. Fewer than 6% of patients in either group were considered by the investigator to have a worsening of their overall disease condition during the study. The majority of patients (>60%) experienced no change in their disease status from baseline. CONCLUSION: The 4-mg nicotine lozenge and 4-mg nicotine gum had comparable safety profiles in these patients with label-restricted medical conditions.
+16330293	20	28	nicotine	Chemical	D009538
+16330293	59	67	nicotine	Chemical	D009538
+16330293	178	186	Nicotine	Chemical	D009538
+16330293	231	239	nicotine	Chemical	D009538
+16330293	274	282	nicotine	Chemical	D009538
+16330293	313	321	nicotine	Chemical	D009538
+16330293	505	513	nicotine	Chemical	D009538
+16330293	531	539	nicotine	Chemical	D009538
+16330293	680	693	heart disease	Disease	D006331
+16330293	695	707	hypertension	Disease	D006973
+16330293	745	762	diabetes mellitus	Disease	D003920
+16330293	824	832	nicotine	Chemical	D009538
+16330293	849	857	nicotine	Chemical	D009538
+16330293	1460	1468	nicotine	Chemical	D009538
+16330293	1481	1489	nicotine	Chemical	D009538
+16330293	1541	1549	nicotine	Chemical	D009538
+16330293	2051	2057	nausea	Disease	D009325
+16330293	2098	2105	hiccups	Disease	D006606
+16330293	2148	2156	headache	Disease	D006261
+16330293	2545	2553	nicotine	Chemical	D009538
+16330293	2571	2579	nicotine	Chemical	D009538
+16330293	CID	D009538	D009325
+16330293	CID	D009538	D006261
+16330293	CID	D009538	D006606
+
+9334596|t|Endocrine screening in 1,022 men with erectile dysfunction: clinical significance and cost-effective strategy.
+9334596|a|PURPOSE: We reviewed the results of serum testosterone and prolactin determination in 1,022 patients referred because of erectile dysfunction and compared the data with history, results of physical examination, other etiological investigations and effects of endocrine therapy to refine the rules of cost-effective endocrine screening and to pinpoint actual responsibility for hormonal abnormalities. MATERIALS AND METHODS: Testosterone and prolactin were determined by radioimmunoassay. Every patient was screened for testosterone and 451 were screened for prolactin on the basis of low sexual desire, gynecomastia or testosterone less than 4 ng./ml. Determination was repeated in case of abnormal first results. Prolactin results were compared with those of a previous personal cohort of 1,340 patients with erectile dysfunction and systematic prolactin determination. Main clinical criteria tested regarding efficiency in hormone determination were low sexual desire, small testes and gynecomastia. Endocrine therapy consisted of testosterone heptylate or human chorionic gonadotropin for hypogonadism and bromocriptine for hyperprolactinemia. RESULTS: Testosterone was less than 3 ng./ml. in 107 patients but normal in 40% at repeat determination. The prevalence of repeatedly low testosterone increased with age (4% before age 50 years and 9% 50 years or older). Two pituitary tumors were discovered after testosterone determination. Most of the other low testosterone levels seemed to result from nonorganic hypothalamic dysfunction because of normal serum luteinizing hormone and prolactin and to have only a small role in erectile dysfunction (definite improvement in only 16 of 44 [36%] after androgen therapy, normal morning or nocturnal erections in 30% and definite vasculogenic contributions in 42%). Determining testosterone only in cases of low sexual desire or abnormal physical examination would have missed 40% of the cases with low testosterone, including 37% of those subsequently improved by androgen therapy. Prolactin exceeded 20 ng./ml. in 5 men and was normal in 2 at repeat determination. Only 1 prolactinoma was discovered. These data are lower than those we found during the last 2 decades (overall prolactin greater than 20 ng./ml. in 1.86% of 1,821 patients, prolactinomas in 7, 0.38%). Bromocriptine was definitely effective in cases with prolactin greater than 35 ng./ml. (8 of 12 compared to only 9 of 22 cases with prolactin between 20 and 35 ng./ml.). Testosterone was low in less than 50% of cases with prolactin greater than 35 ng./ml. CONCLUSIONS: Low prevalences and effects of low testosterone and high prolactin in erectile dysfunction cannot justify their routine determination. However, cost-effective screening strategies recommended so far missed 40 to 50% of cases improved with endocrine therapy and the pituitary tumors. We now advocate that before age 50 years testosterone be determined only in cases of low sexual desire and abnormal physical examination but that it be measured in all men older than 50 years. Prolactin should be determined only in cases of low sexual desire, gynecomastia and/or testosterone less than 4 ng./ml.
+9334596	38	58	erectile dysfunction	Disease	D007172
+9334596	153	165	testosterone	Chemical	D013739
+9334596	232	252	erectile dysfunction	Disease	D007172
+9334596	535	547	Testosterone	Chemical	D013739
+9334596	630	642	testosterone	Chemical	D013739
+9334596	695	712	low sexual desire	Disease	D020018
+9334596	714	726	gynecomastia	Disease	D006177
+9334596	730	742	testosterone	Chemical	D013739
+9334596	921	941	erectile dysfunction	Disease	D007172
+9334596	1063	1080	low sexual desire	Disease	D020018
+9334596	1099	1111	gynecomastia	Disease	D006177
+9334596	1144	1166	testosterone heptylate	Chemical	C004648
+9334596	1203	1215	hypogonadism	Disease	D007006
+9334596	1220	1233	bromocriptine	Chemical	D001971
+9334596	1238	1256	hyperprolactinemia	Disease	D006966
+9334596	1267	1279	Testosterone	Chemical	D013739
+9334596	1396	1408	testosterone	Chemical	D013739
+9334596	1483	1499	pituitary tumors	Disease	D010911
+9334596	1522	1534	testosterone	Chemical	D013739
+9334596	1572	1584	testosterone	Chemical	D013739
+9334596	1625	1649	hypothalamic dysfunction	Disease	D007027
+9334596	1741	1761	erectile dysfunction	Disease	D007172
+9334596	1937	1949	testosterone	Chemical	D013739
+9334596	1967	1984	low sexual desire	Disease	D020018
+9334596	2062	2074	testosterone	Chemical	D013739
+9334596	2233	2245	prolactinoma	Disease	D015175
+9334596	2400	2413	prolactinomas	Disease	D015175
+9334596	2428	2441	Bromocriptine	Chemical	D001971
+9334596	2598	2610	Testosterone	Chemical	D013739
+9334596	2732	2744	testosterone	Chemical	D013739
+9334596	2767	2787	erectile dysfunction	Disease	D007172
+9334596	2962	2978	pituitary tumors	Disease	D010911
+9334596	3021	3033	testosterone	Chemical	D013739
+9334596	3065	3082	low sexual desire	Disease	D020018
+9334596	3221	3238	low sexual desire	Disease	D020018
+9334596	3240	3252	gynecomastia	Disease	D006177
+9334596	3260	3272	testosterone	Chemical	D013739
+9334596	CID	D013739	D020018
+
+6308277|t|Reduction in caffeine toxicity by acetaminophen.
+6308277|a|A patient who allegedly consumed 100 tablets of an over-the-counter analgesic containing sodium acetylsalicylate, caffeine, and acetaminophen displayed no significant CNS stimulation despite the presence of 175 micrograms of caffeine per mL of serum. Because salicylates have been reported to augment the stimulatory effects of caffeine on the CNS, attention was focused on the possibility that the presence of acetaminophen (52 micrograms/mL) reduced the CNS toxicity of caffeine. Studies in DBA/2J mice showed that: 1) pretreatment with acetaminophen (100 mg/kg) increased the interval between the administration of caffeine (300 to 450 mg/kg IP) and the onset of fatal convulsions by a factor of about two; and 2) pretreatment with acetaminophen (75 mg/kg) reduced the incidence of audiogenic seizures produced in the presence of caffeine (12.5 to 75 mg/kg IP). The frequency of sound-induced seizures after 12.5 or 25 mg/kg caffeine was reduced from 50 to 5% by acetaminophen. In the absence of caffeine, acetaminophen (up to 300 mg/kg) did not modify the seizures induced by maximal electroshock and did not alter the convulsant dose of pentylenetetrezol in mice (tests performed by the Anticonvulsant Screening Project of NINCDS). Acetaminophen (up to 150 micrograms/mL) did not retard the incorporation of radioactive adenosine into ATP in slices of rat cerebral cortex. Thus the mechanism by which acetaminophen antagonizes the actions of caffeine in the CNS remains unknown.
+6308277	13	21	caffeine	Chemical	D002110
+6308277	22	30	toxicity	Disease	D064420
+6308277	34	47	acetaminophen	Chemical	D000082
+6308277	138	161	sodium acetylsalicylate	Chemical	-1
+6308277	163	171	caffeine	Chemical	D002110
+6308277	177	190	acetaminophen	Chemical	D000082
+6308277	274	282	caffeine	Chemical	D002110
+6308277	377	385	caffeine	Chemical	D002110
+6308277	460	473	acetaminophen	Chemical	D000082
+6308277	509	517	toxicity	Disease	D064420
+6308277	521	529	caffeine	Chemical	D002110
+6308277	588	601	acetaminophen	Chemical	D000082
+6308277	667	675	caffeine	Chemical	D002110
+6308277	721	732	convulsions	Disease	D012640
+6308277	784	797	acetaminophen	Chemical	D000082
+6308277	845	853	seizures	Disease	D012640
+6308277	882	890	caffeine	Chemical	D002110
+6308277	945	953	seizures	Disease	D012640
+6308277	977	985	caffeine	Chemical	D002110
+6308277	1015	1028	acetaminophen	Chemical	D000082
+6308277	1048	1056	caffeine	Chemical	D002110
+6308277	1058	1071	acetaminophen	Chemical	D000082
+6308277	1109	1117	seizures	Disease	D012640
+6308277	1191	1208	pentylenetetrezol	Chemical	D010433
+6308277	1286	1299	Acetaminophen	Chemical	D000082
+6308277	1374	1383	adenosine	Chemical	D000241
+6308277	1389	1392	ATP	Chemical	D000255
+6308277	1455	1468	acetaminophen	Chemical	D000082
+6308277	1496	1504	caffeine	Chemical	D002110
+6308277	CID	D002110	D012640
+6308277	CID	D010433	D012640
+
+11961407|t|GLEPP1 receptor tyrosine phosphatase (Ptpro) in rat PAN nephrosis. A marker of acute podocyte injury.
+11961407|a|Glomerular epithelial protein 1 (GLEPP1) is a podocyte receptor membrane protein tyrosine phosphatase located on the apical cell membrane of visceral glomerular epithelial cell and foot processes. This receptor plays a role in regulating the structure and function of podocyte foot process. To better understand the utility of GLEPP1 as a marker of glomerular injury, the amount and distribution of GLEPP1 protein and mRNA were examined by immunohistochemistry, Western blot and RNase protection assay in a model of podocyte injury in the rat. Puromycin aminonucleoside nephrosis was induced by single intraperitoneal injection of puromycin aminonucleoside (PAN, 20 mg/100g BW). Tissues were analyzed at 0, 5, 7, 11, 21, 45, 80 and 126 days after PAN injection so as to include both the acute phase of proteinuria associated with foot process effacement (days 5-11) and the chronic phase of proteinuria associated with glomerulosclerosis (days 45-126). At day 5, GLEPP1 protein and mRNA were reduced from the normal range (265.2 +/- 79.6 x 10(6) moles/glomerulus and 100%) to 15% of normal (41.8 +/- 4.8 x 10(6) moles/glomerulus, p < 0.005). This occurred in association with an increase in urinary protein content from 1.8 +/- 1 to 99.0 +/- 61 mg/day (p < 0.001). In contrast, podocalyxin did not change significantly at this time. By day 11, GLEPP1 protein and mRNA had begun to return towards baseline. By day 45-126, at a time when glomerular scarring was present, GLEPP1 was absent from glomerulosclerotic areas although the total glomerular content of GLEPP1 was not different from normal. We conclude that GLEPP1 expression, unlike podocalyxin, reflects podocyte injury induced by PAN. GLEPP1 expression may be a useful marker of podocyte injury.
+11961407	16	24	tyrosine	Chemical	D014443
+11961407	52	55	PAN	Chemical	D011692
+11961407	56	65	nephrosis	Disease	D009401
+11961407	183	191	tyrosine	Chemical	D014443
+11961407	451	468	glomerular injury	Disease	D007674
+11961407	646	671	Puromycin aminonucleoside	Chemical	D011692
+11961407	672	681	nephrosis	Disease	D009401
+11961407	733	758	puromycin aminonucleoside	Chemical	D011692
+11961407	760	763	PAN	Chemical	D011692
+11961407	849	852	PAN	Chemical	D011692
+11961407	904	915	proteinuria	Disease	D011507
+11961407	993	1004	proteinuria	Disease	D011507
+11961407	1021	1039	glomerulosclerosis	Disease	D005921
+11961407	1790	1793	PAN	Chemical	D011692
+11961407	CID	D011692	D011507
+11961407	CID	D011692	D009401
+
