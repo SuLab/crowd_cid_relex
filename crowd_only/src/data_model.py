@@ -1,6 +1,6 @@
 # Tong Shu Li
 # First written: 2015-07-02
-# Last updated: 2015-10-19
+# Last updated: 2015-12-16
 """Data models for BioCreative V task 3.
 
 These data models were created to simplify the tasks of:
@@ -23,6 +23,10 @@ def is_MeSH_id(uid):
 #-------------------------------------------------------------------------------
 
 class Base:
+    """Base class.
+
+    Mainly used to define equality and non-equality comparisons.
+    """
     def __init__(self, uid):
         self.uid = uid
 
@@ -34,33 +38,80 @@ class Base:
 
     def __ne__(self, other):
         if isinstance(other, self.__class__):
-            return not self == other
+            return not(self == other)
 
         return NotImplemented
 
-class Ontology_ID(Base):
+class OntologyID(Base):
     """A single identifier from an existing biomedical ontology."""
 
     def __init__(self, text):
-        """Create an Ontology_ID from a string representation."""
+        """Create an OntologyID from a string representation."""
 
-        assert text.count(":") <= 1, "ID {0} is misformatted!".format(text)
-        assert "|" not in text, "Was given compound identifier!"
+        assert text.count(":") <= 1, "ID {} is misformatted!".format(text)
+        assert "|" not in text
+
         if ":" in text:
             self.uid_type, self.uid = text.split(":")
             if self.uid_type == "MESH":
-                assert is_MeSH_id(self.uid), "MeSH ID mismatch for {0}".format(text)
+                assert is_MeSH_id(self.uid), "{} not MeSH!".format(text)
         else:
             self.uid = text
             self.uid_type = "MESH" if is_MeSH_id(self.uid) else "unknown"
 
-        self.flat_repr = "{0}:{1}".format(self.uid_type, self.uid)
+        self.flat_repr = "{}:{}".format(self.uid_type, self.uid)
 
     def __repr__(self):
         return "<{0}>: {1}".format(self.__class__.__name__, self.flat_repr)
 
     def __hash__(self):
         return hash(self.flat_repr)
+
+    def __lt__(self, other):
+        """Sort OntologyIDs by their string representation."""
+        if isinstance(other, self.__class__):
+            return self.flat_repr < other.flat_repr
+
+        return NotImplemented
+
+class MultiID:
+    """One or more Ontology_IDs used to identify an Annotation.
+
+    The BioCreative dataset annoyingly can assign multiple MeSH or other
+    identifiers to a single annotation. However, in the gold standard relations
+    only single identifiers are used for concepts. Therefore some sort of
+    expansion is needed when converting annotations to relations which can be
+    compared with the gold standard.
+
+    This class aims to store all the IDs for an annotation and give easy access
+    to the MeSH ids contained within.
+
+    E.g., PMID 8638876 (development set)
+        The annotation used for a relation is "D002544|-1". No other
+        annotations contain D002544 as an identifier.
+    """
+
+    def __init__(self, text):
+        """Create a Multi_ID from a string."""
+        self.uids = tuple(sorted([Ontology_ID(v) for v in text.split("|")]))
+        self.flat_repr = "|".join([v.flat_repr for v in self.uids])
+
+    def get_mesh_only(self):
+        """Grabs the MeSH Ontology_IDs only."""
+        return tuple([v for v in self.uids if v.uid_type == "MESH"])
+
+    def has_mesh(self):
+        """Checks if any of the Ontology_IDs are MeSH."""
+        return any([v.uid_type == "MESH" for v in self.uids])
+
+    def update_ids(self, new_ids):
+        assert isinstance(new_uids, tuple)
+        self.uids = new_ids
+        self.flat_repr = "|".join([v.flat_repr for v in self.uids])
+
+    def __hash__(self):
+        return hash(self.uids)
+
 
 class Position(Base):
     def __init__(self, text, start, stop):
@@ -71,6 +122,7 @@ class Position(Base):
         assert self.start < self.stop, "{0} indicies reversed!".format(self)
         assert len(text) == self.stop - self.start, "{0} length mismatch!".format(self)
 
+
 class Annotation(Position):
     """A single mention of a concept in a piece of text."""
 
@@ -78,47 +130,25 @@ class Annotation(Position):
         Position.__init__(self, text, start, stop)
 
         self.stype = stype.lower()
-        assert self.stype in ["chemical", "disease"]
+        assert self.stype in ["chemical", "disease"], "Bad semtype: {}".format(self)
 
-        uids = [Ontology_ID(v) for v in uid.split("|")]
-        self.update_uid(frozenset(uids))
-
-    def update_uid(self, new_uid):
-        """Update the set of Ontology IDs for this annotation."""
-        assert isinstance(new_uid, frozenset), "New UID {0} is not a frozenset!".format(new_uid)
-        self.uid = new_uid
-        self.has_mesh = self.has_mesh_id()
-        self.flat_repr = "|".join([v.flat_repr for v in self.uid])
+        self.uids = MultiID(uid)
 
     def __repr__(self):
         return "<{0}>: '{1}'({2}:{3}) {4}-{5}".format(self.__class__.__name__,
-            self.text, self.stype, self.uid, self.start, self.stop)
+            self.text, self.stype, self.uids.flat_repr, self.start, self.stop)
 
     def __lt__(self, other):
-        """Sort annotations by starting position."""
+        """Sort annotations by position."""
         if isinstance(other, self.__class__):
-            return self.start < other.start
+            return self.start < other.start or
+                self.start == other.start and self.stop < other.stop
 
         return NotImplemented
 
-    def has_mesh_id(self):
-        """Check if any of the Ontology_IDs are MeSH IDs.
-
-        The gold standard only contains relations between MeSH identified
-        concepts.
-
-        E.g., PMID 8638876 (development set)
-            The annotation used for a relation is "D002544|-1". No other
-            annotations contain D002544 as an identifier.
-        """
-        for identifier in self.uid:
-            if identifier.uid_type == "MESH":
-                return True
-
-        return False
-
     def __hash__(self):
-        return hash((self.text, self.start, self.stop, self.stype, self.uid))
+        return hash((self.text, self.start, self.stop, self.stype, self.uids.flat_repr))
+
 
 class Sentence(Position):
     """A single sentence.
@@ -168,12 +198,11 @@ class Sentence(Position):
         """
         all_relations = defaultdict(set)
         for annot_A in self.annotations:
-            if annot_A.stype == "chemical" and annot_A.has_mesh:
+            if annot_A.stype == "chemical" and annot_A.uids.has_mesh():
                 for annot_B in self.annotations:
-                    if annot_B.stype == "disease" and annot_B.has_mesh:
-                        # relations between pairs of frozensets
+                    if annot_B.stype == "disease" and annot_B.uids.has_mesh():
                         rel_type = self.is_CID_relation(annot_A, annot_B)
-                        all_relations[rel_type].add((annot_A.uid, annot_B.uid))
+                        all_relations[rel_type].add((annot_A.uids, annot_B.uids))
 
         """
         In cases where we have a sentence with the following annotations:
@@ -187,6 +216,77 @@ class Sentence(Position):
         all_relations[False] -= all_relations[True]
         assert all_relations[False].isdisjoint(all_relations[True])
         return all_relations
+
+
+class SingleRelation(Base):
+    """A single CID relation between two single MeSH Ontology_IDs.
+
+    Relations contain information about the likely annotation they derived from,
+    as well as whether the concepts cooccurred within a sentence.
+
+    Mainly used to represent one gold standard relation. Relations which are
+    generated in a forward process from annotations (which may have Multi_IDs)
+    should not be kept in a Relation object, but should rather be processed
+    into a set of Relation objects.
+    """
+    def __init__(self, pmid, chem_id, dise_id, sent_cooccur, chem_annot, dise_annot):
+        """Create a new Relation object.
+
+        chem_id and dise_id are the single Ontology_IDs of the relation (gold
+        standard format).
+
+        sent_cooccur is a boolean representing whether the two concepts ever
+        cooccurred within any sentences.
+
+        chem_annot = the Multi_ID representing the annotation the chem_id derives
+        from
+
+        dise_annot = the Multi_ID representing the annotation the dise_id derives
+        from
+        """
+        self.pmid = int(pmid)
+
+        assert isinstance(chem_id, Ontology_ID)
+        assert isinstance(dise_id, Ontology_ID)
+
+        assert chem_id.uid_type == "MESH" and dise_id.uid_type == "MESH"
+
+        assert isinstance(chem_annot, Multi_ID)
+        assert isinstance(dise_annot, Multi_ID)
+
+        assert isinstance(sent_cooccur, bool)
+
+        self.chem = chem_id
+        self.dise = dise_id
+
+        self.sent_cooccur = sent_cooccur
+        self.chem_orig = chem_annot
+        self.dise_orig = dise_annot
+
+    def __repr__(self):
+        return "<{}>: {}&{}(PMID:{}, {}, {}, {})".format(self.__class__.__name__,
+            self.chem.flat_repr, self.dise.flat_repr, self.pmid,
+            int(self.sent_cooccur), self.chem_orig.flat_repr, self.dise_orig.flat_repr)
+
+    def __hash__(self):
+        return hash((self.pmid, self.chem_id.flat_repr, self.dise_id.flat_repr))
+
+
+class RelationSet:
+    """A collection of SingleRelation objects.
+
+    A data structure for holding the set of all gold standard relations
+    associated with a paper is needed. In addition, there needs to be a way to
+    store all the SingleRelations associated with the crowd predictions.
+
+    This data structure aims to fulfill this need, and is responsible for
+    determining the original annotations used for each gold standard relation.
+    """
+    def __init__(self, ):
+        pass
+
+
+# deprecated: ------------------------------------------------------------------
 
 class Simple_Rel:
     """A single simple chemical-induced disease relationship.
@@ -269,6 +369,8 @@ class Relation(Base):
         return "<{0}>: {1}. {2}-{3}".format(self.__class__.__name__,
             self.pmid, self.chemical_id, self.disease_id)
 
+# end deprecated ---------------------------------------------------------------
+
 
 class Paper:
     """A single academic abstract.
@@ -307,13 +409,13 @@ class Paper:
         if fix_acronyms:
             self.resolve_acronyms()
 
-        self.gold_relations = gold_relations # may be empty when not parsing gold
-
         self.chemicals, self.diseases = self.get_unique_concepts()
 
         # split sentences and generate sentence-bound relations
         self.sentences = self.split_sentences()
         self.poss_relations = self.classify_relations()
+
+        self.gold_relations = gold_relations # may be empty when not parsing gold
 
     def __repr__(self):
         return ("<{0}>: PMID {1}. {2} annotations, {3} gold relations\n"
@@ -325,12 +427,17 @@ class Paper:
 
     def has_correct_annotations(self):
         """Check that the annotation indicies produce the correct text snippet.
+
+        Also check that annotations do not overlap with one another.
         """
-        full_text = "{0} {1}".format(self.title, self.abstract)
-        for annotation in self.annotations:
-            fragment = full_text[annotation.start : annotation.stop]
-            assert fragment == annotation.text, ("PMID {0} {1} does not match"
-                "the text.".format(self.pmid, annotation))
+        text = "{} {}".format(self.title, self.abstract)
+        for annot in self.annotations:
+            assert text[annot.start : annot.stop] == annot.text,
+                "Annotation {} text mismatch".format(annot)
+
+        for i, annot in enumerate(self.annotations[:-1]):
+            assert self.annotations[i+1].start > annot.stop,
+                "Annotation overlap {}".format(annot)
 
         return True
 
@@ -351,7 +458,7 @@ class Paper:
         # if an abbreviation is included in parentheses, then it should
         # follow the definition annotation immediately
         for i, definition in enumerate(self.annotations[ : -1]):
-            if not used[i] and definition.has_mesh:
+            if not used[i] and definition.uids.has_mesh():
                 acronym = self.annotations[i + 1]
 
                 if (acronym.stype == definition.stype
@@ -365,10 +472,10 @@ class Paper:
                     for j, annot in enumerate(islice(self.annotations, i + 1, None)):
                         if (annot.stype == definition.stype
                             and not used[i + 1 + j]
-                            and not annot.has_mesh
+                            and not annot.uids.has_mesh()
                             and annot.text == acronym.text):
 
-                            self.annotations[i + 1 + j].update_uid(definition.uid)
+                            self.annotations[i + 1 + j].update_uid(definition.uids)
                             used[i + 1 + j] = True
 
     def get_unique_concepts(self):
@@ -378,8 +485,8 @@ class Paper:
         """
         res = defaultdict(set)
         for annotation in self.annotations:
-            if annotation.has_mesh:
-                res[annotation.stype].add(annotation.uid)
+            if annotation.uids.has_mesh():
+                res[annotation.stype].add(annotation.uids)
 
         return (res["chemical"], res["disease"])
 
@@ -470,46 +577,37 @@ class Paper:
         return potential_relation in self.gold_relations
 
 
-def parse_input(loc, fname, is_gold = True, return_format = "list",
-    fix_acronyms = True):
-    """Parse a PubTator formatted file and return a set of Paper objects."""
-    assert return_format in ["list", "dict"]
+def parse_input(loc, fname, is_gold = True, fix_acronyms = True):
+    """Parse a PubTator formatted file and return a dict of Paper objects."""
 
-    papers = []
+    papers = dict()
     counter = 0
     annotations = []
     relations = []
     for i, line in enumerate(read_file(fname, loc)):
-        if len(line) == 0:
-            # time to create the paper object
-            if is_gold:
-                papers.append(Paper(pmid, title, abstract, annotations,
-                    relations, fix_acronyms = False))
-            else:
-                papers.append(Paper(pmid, title, abstract, annotations,
-                    [], fix_acronyms = fix_acronyms))
+        if not line:
+            papers[pmid] = Paper(pmid, title, abstract, annotations,
+                relations, fix_acronyms = is_gold and fix_acronyms)
 
             counter = 0
             annotations = []
             relations = []
-        else:
-            if 0 <= counter <= 1:
-                vals = line.split('|')
-                assert len(vals) == 3, "Bad format for line {0}".format(i+1)
-            else:
-                vals = line.split('\t')
+        elif counter < 2:
+            vals = line.split('|')
+            assert len(vals) == 3, "Bad format for line {}".format(i+1)
+            assert vals[1] == ["t", "a"][counter]
 
             if counter == 0:
-                assert vals[1] == "t", "Bad format for line {0}".format(i+1)
                 pmid = int(vals[0])
                 title = vals[2]
-            elif counter == 1:
-                assert vals[1] == "a", "Bad format for line {0}".format(i+1)
-                assert int(vals[0]) == pmid
+            else:
+                assert pmid == int(vals[0])
                 abstract = vals[2]
-            elif vals[1] == "CID":
-                assert int(vals[0]) == pmid
-                relations.append(Relation(pmid, vals[2], vals[3], flat = False))
+        else:
+            vals = line.split('\t')
+            assert pmid == int(vals[0])
+            if vals[1] == "CID":
+                relations.append((OntologyID(vals[2]), OntologyID(vals[3])))
             else:
                 # an annotation
                 if len(vals) == 5: # no identifier was assigned
@@ -518,10 +616,7 @@ def parse_input(loc, fname, is_gold = True, return_format = "list",
                 assert 6 <= len(vals) <= 7, "Error on line {0}".format(i+1)
                 annotations.append(Annotation(vals[5], vals[4], vals[3], vals[1], vals[2]))
 
-            counter += 1
-
-    if return_format == "dict":
-        return {paper.pmid : paper for paper in papers}
+        counter += 1
 
     return papers
 
@@ -533,8 +628,7 @@ def parse_file(save_loc, **kwargs):
         return res
 
     res = parse_input(kwargs["loc"], kwargs["fname"],
-        is_gold = kwargs["is_gold"], return_format = kwargs["return_format"],
-        fix_acronyms = kwargs["fix_acronyms"])
+        is_gold = kwargs["is_gold"], fix_acronyms = kwargs["fix_acronyms"])
 
     save_file(save_loc, res)
     return res
