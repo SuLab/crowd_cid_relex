@@ -39,8 +39,11 @@ class Base:
 
 
 class OntologyID(Base):
-    """A single identifier from an existing biomedical ontology."""
+    """A single identifier from an existing biomedical ontology.
 
+    Training PMID 7265370 has the chemical D014527+D012492, but since it doesn't
+    show up in any gold standard relation we will ignore it.
+    """
     def __init__(self, text):
         """Create an OntologyID from a string representation."""
 
@@ -58,17 +61,10 @@ class OntologyID(Base):
         self.flat_repr = "{}:{}".format(self.uid_type, self.uid)
 
     def __repr__(self):
-        return "<{0}>: {1}".format(self.__class__.__name__, self.flat_repr)
+        return "<{}>: {}".format(self.__class__.__name__, self.flat_repr)
 
     def __hash__(self):
         return hash(self.flat_repr)
-
-    def __lt__(self, other):
-        """Sort OntologyIDs by their string representation."""
-        if isinstance(other, self.__class__):
-            return self.flat_repr < other.flat_repr
-
-        return NotImplemented
 
 
 class MultiID(Base):
@@ -87,19 +83,13 @@ class MultiID(Base):
         The annotation used for a relation is "D002544|-1". No other
         annotations contain D002544 as an identifier.
     """
-
     def __init__(self, text):
-        """Create a Multi_ID from a string."""
-        self.uid = tuple(sorted(OntologyID(v) for v in text.split("|")))
-        self.flat_repr = "|".join(v.flat_repr for v in self.uid)
+        """Create a MultiID from a string."""
+        self.uid = frozenset(OntologyID(v) for v in text.split("|"))
+        self.flat_repr = "|".join(sorted(v.flat_repr for v in self.uid))
 
     def get_mesh_only(self):
-        """Grabs the MeSH OntologyIDs only."""
-        return tuple(v for v in self.uid if v.uid_type == "MESH")
-
-    def has_mesh(self):
-        """Checks if any of the OntologyIDs are MeSH."""
-        return any(v.uid_type == "MESH" for v in self.uid)
+        return (v for v in self.uid if v.uid_type == "MESH")
 
     def update_ids(self, new_id):
         """Used to update an annotation's identity during acronym resolution."""
@@ -170,6 +160,8 @@ class Sentence(Position):
         # annotations should already be sorted at the paper stage
         self.annotations = annotations
 
+        self.concepts = self.get_unique_concepts()
+
         # generate the list of CID and non-CID relations bound to this sentence
         self.poss_relations = self.classify_relations()
 
@@ -177,6 +169,18 @@ class Sentence(Position):
         return "<{}>: PMID:{} '{}'({}-{})\nAnnotations: {}\n".format(
             self.__class__.__name__, self.pmid, self.text,
             self.start, self.stop, self.annotations)
+
+    def get_unique_concepts(self):
+        """Determine the unique chemical and disease identifiers for this paper.
+
+        Ignores any annotations which are not assigned MeSH identifiers.
+        """
+        res = defaultdict(set)
+        for annotation in self.annotations:
+            for mesh_id in annotation.uid.get_mesh_only():
+                res[annotation.stype].add(mesh_id)
+
+        return res
 
     def is_CID_relation(self, chemical, disease):
         """Determine if a chemical annotation and a disease annotation follow
@@ -197,13 +201,18 @@ class Sentence(Position):
         lists relations between MeSH concepts. Any non-MeSH concepts can be
         skipped.
         """
+        def select(stype):
+            """Loop through annotations."""
+            for concept in self.concepts[stype]:
+                for annot in self.annotations:
+                    if annot.stype == stype and concept in annot.uid.uid:
+                        yield (concept, annot)
+
         all_relations = defaultdict(set)
-        for annot_A in self.annotations:
-            if annot_A.stype == "chemical" and annot_A.uid.has_mesh():
-                for annot_B in self.annotations:
-                    if annot_B.stype == "disease" and annot_B.uid.has_mesh():
-                        rel_type = self.is_CID_relation(annot_A, annot_B)
-                        all_relations[rel_type].add((annot_A.uid, annot_B.uid))
+        for chem_id, chem_annot in select("chemical"):
+            for dise_id, dise_annot in select("disease"):
+                is_cid = self.is_CID_relation(chem_annot, dise_annot)
+                all_relations[is_cid].add((chem_id, dise_id))
 
         """
         In cases where we have a sentence with the following annotations:
@@ -219,73 +228,31 @@ class Sentence(Position):
         return all_relations
 
 
-class SingleRelation(Base):
+class Relation(Base):
     """A single CID relation between two single MeSH OntologyIDs.
 
-    Relations contain information about the likely annotation they derived from,
-    as well as whether the concepts cooccurred within a sentence.
-
-    Mainly used to represent one gold standard relation. Relations which are
-    generated in a forward process from annotations (which may have Multi_IDs)
-    should not be kept in a Relation object, but should rather be processed
-    into a set of Relation objects.
+    Relations contain information about whether the two concepts ever cooccurred
+    within the same sentence.
     """
-    def __init__(self, pmid, chem_id, dise_id, sent_cooccur, chem_annot, dise_annot):
-        """Create a new Relation object.
-
-        chem_id and dise_id are the single OntologyIDs of the relation (gold
-        standard format).
-
-        sent_cooccur is a boolean representing whether the two concepts ever
-        cooccurred within any sentences.
-
-        chem_annot = the Multi_ID representing the annotation the chem_id derives
-        from
-
-        dise_annot = the Multi_ID representing the annotation the dise_id derives
-        from
-        """
+    def __init__(self, pmid, chem_id, dise_id, origin):
         self.pmid = int(pmid)
 
         assert isinstance(chem_id, OntologyID)
         assert isinstance(dise_id, OntologyID)
 
         assert chem_id.uid_type == "MESH" and dise_id.uid_type == "MESH"
-
-        assert isinstance(chem_annot, MultiID)
-        assert isinstance(dise_annot, MultiID)
-
-        assert isinstance(sent_cooccur, bool)
+        assert origin in {"CID", "sent", "abs"}
 
         self.chem = chem_id
         self.dise = dise_id
-
-        self.sent_cooccur = sent_cooccur
-        self.chem_orig = chem_annot
-        self.dise_orig = dise_annot
+        self.origin = origin
 
     def __repr__(self):
-        return "<{}>: {}&{}(PMID:{}, {}, {}, {})".format(self.__class__.__name__,
-            self.chem, self.dise, self.pmid,
-            int(self.sent_cooccur), self.chem_orig, self.dise_orig)
+        return "<{}>: {}&{}(PMID:{}, {})".format(self.__class__.__name__,
+            self.chem, self.dise, self.pmid, self.origin)
 
     def __hash__(self):
-        return hash((self.pmid, self.chem, self.dise, self.sent_cooccur,
-            self.chem_orig, self.dise_orig))
-
-
-class RelationGroup:
-    """A collection of SingleRelation objects.
-
-    A data structure for holding the set of all gold standard relations
-    associated with a paper is needed. In addition, there needs to be a way to
-    store all the SingleRelations associated with the crowd predictions.
-
-    This data structure aims to fulfill this need, and is responsible for
-    determining the original annotations used for each gold standard relation.
-    """
-    def __init__(self, lel):
-        self.stuff = lel
+        return hash((self.pmid, self.chem, self.dise, self.origin))
 
 
 class Paper:
@@ -325,20 +292,21 @@ class Paper:
         if fix_acronyms:
             self.resolve_acronyms()
 
-        self.chemicals, self.diseases = self.get_unique_concepts()
+        self.concepts = self.get_unique_concepts()
 
         # split sentences and generate sentence-bound relations
         self.sentences = self.split_sentences()
         self.poss_relations = self.classify_relations()
 
-        self.gold_relations = gold_relations # may be empty when not parsing gold
+        self.gold_relations = self.organize_gold_rels(gold_relations)
 
     def __repr__(self):
         return ("<{0}>: PMID {1}. {2} annotations, {3} gold relations\n"
             "{4} unique chemical ids, {5} unique disease ids\n"
             "{6} sentences".format(self.__class__.__name__,
             self.pmid, len(self.annotations), len(self.gold_relations),
-            len(self.chemicals), len(self.diseases), len(self.sentences))
+            len(self.concepts["chemical"]), len(self.concepts["disease"]),
+            len(self.sentences))
         )
 
     def has_correct_annotations(self):
@@ -352,8 +320,12 @@ class Paper:
                 "Annotation {} text mismatch".format(annot))
 
         for i, annot in enumerate(self.annotations[:-1]):
-            assert self.annotations[i+1].start > annot.stop, (
-                "Annotation overlap {}".format(annot))
+            other = self.annotations[i + 1]
+            if other.start <= annot.stop:
+                print("Annotation overlap! PMID:{}".format(self.pmid))
+                print("'{}'({}-{}) and '{}'({}-{})".format(
+                    annot.text, annot.start, annot.stop,
+                    other.text, other.start, other.stop))
 
         return True
 
@@ -401,18 +373,10 @@ class Paper:
         """
         res = defaultdict(set)
         for annotation in self.annotations:
-            if annotation.uid.has_mesh():
-                res[annotation.stype].add(annotation.uid)
+            for mesh_id in annotation.uid.get_mesh_only():
+                res[annotation.stype].add(mesh_id)
 
-        return (res["chemical"], res["disease"])
-
-    def get_all_possible_relations(self):
-        """Return all possible unique chemical-disease identifier pairs."""
-        return {
-            (chemical_id, disease_id)
-            for chemical_id in self.chemicals
-                for disease_id in self.diseases
-        }
+        return res
 
     def split_sentences(self):
         """Split the abstract into individual sentences, and determine which
@@ -461,7 +425,14 @@ class Paper:
         2. Non-CID, sentence-bound relations
         3. Relations which are not sentence bound
         """
-        all_rels = self.get_all_possible_relations()
+        def get_all_possible_relations():
+            return {
+                (chem_id, dise_id)
+                for chem_id in self.concepts["chemical"]
+                    for dise_id in self.concepts["disease"]
+            }
+
+        all_rels = get_all_possible_relations()
 
         cid_rels = set()
         sentence_rels = set()
@@ -480,9 +451,21 @@ class Paper:
 
         return {
             "CID": cid_rels,
-            "sentence_non_CID": sentence_rels,
-            "not_sentence_bound": abs_rels
+            "sent": sentence_rels,
+            "abs": abs_rels
         }
+
+    def organize_gold_rels(self, gold_rels):
+        """Classify each gold standard relation."""
+        def origin(pair):
+            for key, value in self.poss_relations.items():
+                if pair in value:
+                    return key
+
+            raise Exception("Gold relation not in possible relation set.")
+
+        return [Relation(self.pmid, chem, dise, origin((chem, dise)))
+            for chem, dise in gold_rels]
 
 
 def parse_input(loc, fname, fix_acronyms = True):
