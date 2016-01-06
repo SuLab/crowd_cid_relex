@@ -1,0 +1,149 @@
+<!--
+Tong Shu Li
+Created on 2015-12-18
+Last updated 2015-12-21
+
+This is the set of instructions for the unified CDR verification task.
+-->
+
+Title: Determine whether a chemical contributes to a disease
+
+<h3>Overview</h3>
+<p>Doctors need to know what diseases a chemical or drug may cause when creating perscriptions. In this task, you will determine whether a passage of text says a chemical contributes to a disease.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    All mentions of one <span class="chemical">chemical</span> and one <span class="disease">disease</span> have been identified and highlighted in a passage of text. Sentences containing both the chemical and disease are underlined.
+  </li>
+  <li>
+    Chemicals or diseases may have multiple names (e.g., <span class="chemical">rapamycin</span> and <span class="chemical">sirolimus</span>). Assume that anything highlighted with the same colour is the same thing.
+  </li>
+
+  <li>
+    Use the entire text to determine whether the text says that the chemical is contributing to or causing the disease (for example, as a side effect). Select between:
+    <ul>
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice when the text says that the chemical (by itself or with other chemicals) directly contributes to or causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          The text does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice when the text does not say that the chemical contributes to the disease.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+
+<h3>Examples</h3>
+<ol>
+  <li>
+    <div class="example">
+      The chemotherapy drug <span class="chemical">feverolinus</span> has multiple side effects, including diarrhea, constipation, and <span class="disease">hair loss</span>.
+    </div>
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        <span class="chemical">Feverolinus</span> directly contributes to or causes <span class="disease">hair loss</span>.
+      </span>
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      The government has deemed <span class="chemical">Lipitor</span> safe for use in patients with <span class="disease">high cholesterol</span>.
+    </div>
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        The text does not say that <span class="chemical">Lipitor</span> contributes to or causes <span class="disease">high cholesterol</span>.
+      </span>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="example">
+      BACKGROUND: To determine the efficacy of <span class="chemical">Quentin</span> in a clinical setting.<br>
+      &hellip;<br>
+      EXPERIMENTAL DESIGN: A total of 1000 patients were recruited. Patients were given <span class="chemical">Quentin</span> and monitored for their response over 4 weeks.<br>
+      &hellip;<br>
+      RESULTS: Most (65%) patients had no problems. Grade &gt;= 3 <span class="disease">peripheral hematoma</span> and whooping cough arose in 3% of patients.
+    </div>
+
+    A passage will often first discuss what was tested in the background or introduction. Read the results section to determine what the scientists found.
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        <span class="chemical">Quentin</span> contributes to or causes <span class="disease">peripheral hematoma</span>.
+      </span>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="example">
+      Chronic myeloid leukemia (CML) is a type of cancer that affects white blood cells, and progression of CML can be slowed with <span class="chemical">corticosteroids</span>. Capecitabine, a <span class="chemical">corticosteroid</span>, is effective for treating CML in young adults. Side effects, though rare, may include <span class="disease">gastrointestinal hemorrhage</span>.
+    </div>
+
+    Do not confuse groups of chemicals (<span class="chemical">corticosteroids</span>) with specific chemicals (capecitabine). The side effect mentioned here (<span class="disease">gastrointestinal hemorrhage</span>) is caused by capecitabine, not by corticosteroids.
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        The text does not say that <span class="chemical">corticosteroids</span> contributes to or causes <span class="disease">gastrointestinal hemorrhage</span>.
+      </span>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="example">
+      A cohort of 100 men was given <span class="chemical">tanamycin</span> and maximidin and monitored for increases in heart rate. The dose of <span class="chemical">convamin</span> was 10 mg/kg. Four hours later, 15% of the men complained of <span class="disease">dizziness</span>.
+    </div>
+
+    Although not explicit, the text heavily implies that the two drugs maximidin and <span class="chemical">tanamycin/convamin</span> worked together to cause the <span class="disease">dizziness</span>.
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        <span class="chemical">tanamycin/convamin</span> directly contributes to or causes <span class="disease">dizziness</span>.
+      </span>
+    </div>
+  </li>
+
+
+  <li>
+    <div class="example">
+      A national mental health study found that 60% of patients developed <span class="disease">joint pain</span> in association with <span class="chemical">dinotefuran</span> beta-hydroxylase antagonists.
+    </div>
+
+    Protein names often include a chemical that the protein interacts with. Groups of chemicals are often named based on which proteins they target. Do not confuse the specific chemical in the name with the protein or group of chemicals.
+
+    Although <span class="chemical">dinotefuran</span> is a chemical, in context, the cause of <span class="disease">joint pain</span> is "dinotefuran beta-hydroxylase antagonists", which is a group of chemicals which bind to the protein "dinotefuran beta-hydroxylase".
+
+    <div class="ans_box">
+      <b>Correct answer:</b>
+      <span class="ans_choice">
+        The text does not say that <span class="chemical">dinotefuran</span> contributes to or causes <span class="disease">joint pain</span>.
+      </span>
+    </div>
+  </li>
+
+</ol>
+
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <code>tongli@scripps.edu</code> if you have any questions or comments.</p>

@@ -97,3 +97,9 @@ job 767273 launched at 5:14 pm 2015-08-18 and completed at 12:25 am on 2015-08-1
 jobs 771159 and 771158 were launched at 9:21 pm 2015-08-25
 job 771158 was completed at 12:05 am on 2015-08-26
 job 771159 was completed at 12:20 am on 2015-08-26
+
+
+job 847908 was launched at 10:35 am on 2016-01-06
+Settings: 6 units/page, 21 cents/page, 18 seconds/page minimum time
+Level 2 contributor, 70% accuracy minimum
+800 total test questions

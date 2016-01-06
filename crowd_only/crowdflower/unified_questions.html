@@ -1,0 +1,34 @@
+<!--
+Tong Shu Li
+Created on: 2015-12-17
+Last updated: 2015-12-21
+
+Question form for the unified chemical-disease relation verification task.
+One chemical-disease relation per task. Sentences containing co-occurrences are
+highlighted.
+-->
+
+<h3>In the following passage of text:</h3>
+
+<div class="full_abstract">
+  <div class="form_title">
+    {{form_title}}
+  </div>
+  <div class="abstract_body">
+    {{form_body}}
+  </div>
+</div>
+
+
+<cml:radios name="rel_resp" validates="required" gold="true"
+  aggregation="agg" label="The text &lt;em&gt;explicitly&lt;/em&gt; says that:">
+
+  <cml:radio value="yes_direct"
+    label="{{chemical_name}} directly contributes to or causes {{disease_name}}."/>
+
+  <cml:radio value="no_relation"
+    label="The text does not say that {{chemical_name}} contributes to or causes {{disease_name}}."/>
+
+</cml:radios>
+
+<cml:textarea name="comment_box" label="Leave any comments below: (optional)"/>
