@@ -1,6 +1,6 @@
 # Tong Shu Li
 # Created on: 2015-12-21
-# Last updated: 2015-12-21
+# Last updated: 2016-01-08
 """
 Create CrowdFlower work units.
 """
@@ -67,7 +67,7 @@ def process_sentence(chem, dise, sentence):
 
     return (names, form_text)
 
-def create_work_units(dataset):
+def create_work_units(dataset, uniq_id):
 
     def get_rels(paper):
         for origin, rels in paper.poss_relations.items():
@@ -82,7 +82,6 @@ def create_work_units(dataset):
         cid[pmid] = paper.poss_relations["CID"]
 
         for (chem, dise), origin in get_rels(paper):
-
             # individually highlight each sentence and grab names
             sentences = []
             names = defaultdict(set)
@@ -93,11 +92,8 @@ def create_work_units(dataset):
                     names[stype] |= snippets[stype]
 
             # join together
-
             form_title = sentences[0]
-            form_body = " ".join(sentences[1:])
-
-            form_body = create_sections(form_body)
+            form_body = create_sections(sentences[1:])
 
             res["pmid"].append(pmid)
             res["chemical_id"].append(chem.flat_repr)
@@ -114,6 +110,6 @@ def create_work_units(dataset):
             res["form_body"].append(form_body)
 
     res = pd.DataFrame(res)
-    res["uniq_id"] = pd.Series(["refine_try_1_{}".format(i) for i in res.index])
+    res["uniq_id"] = pd.Series(["{}_{}".format(uniq_id, i) for i in res.index])
 
     return (cid, res)
