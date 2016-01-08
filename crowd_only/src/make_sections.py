@@ -1,6 +1,6 @@
 # Tong Shu Li
 # Created on Wednesday 2015-07-22
-# Last updated 2016-01-07
+# Last updated 2016-01-08
 """
 This program takes the highlighted abstract and
 splits it into sections based on the headings
@@ -10,10 +10,10 @@ Previously this was done by querying the PubMed
 API to determine what the section names were,
 but now the section names have been cached instead.
 """
+from collections import defaultdict
 import os
 
 from .lingpipe.file_util import read_file
-from collections import defaultdict
 
 def create_sections(abstract):
     """
@@ -26,21 +26,23 @@ def create_sections(abstract):
 
     earliest_idx = defaultdict(set)
     for heading in all_section_names:
+        # assumes that each section name will only ever appear at most once
         start = abstract.find("{}:".format(heading))
         if start != -1:
             # record all headings ending at this position
             stop = start + len(heading)
             earliest_idx[stop].add(start)
 
-    positions = [0, len(abstract)]
-    for end_pos, starts in earliest_idx.items():
-        positions.append(min(starts))
+    positions = {min(starts) for end_pos, starts in earliest_idx.items()}
+    if not positions:
+        return abstract
 
-    positions = sorted(positions)
+    positions |= {0, len(abstract)}
+    positions = sorted(list(positions))
 
-    pieces = []
-    for i in range(len(positions) - 1):
-        text = abstract[positions[i] : positions[i+1]]
-        pieces.append("<p>{}</p>".format(text))
+    pieces = [
+        "<p>{}</p>".format(abstract[positions[i] : positions[i+1]])
+        for i in range(len(positions) - 1)
+    ]
 
     return "".join(pieces)
