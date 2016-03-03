@@ -2,7 +2,13 @@ __pycache__/
 .ipynb_checkpoints/
 .Rhistory*
 __init__.py
+*.pyc
 
+*.pickle
 
-crowd_only/data/tmchem/*
+*.class
 
+# Third party tools.
+crowd_only/src/Ab3P-v1.5/
+crowd_only/src/DNorm-0.0.7/
+crowd_only/src/tmChem.M2.ver02/
