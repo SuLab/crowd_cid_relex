@@ -346,7 +346,7 @@ class Paper:
         # if an abbreviation is included in parentheses, then it should
         # follow the definition annotation immediately
         for i, definition in enumerate(self.annotations[ : -1]):
-            if not used[i] and definition.uid.has_mesh():
+            if not used[i] and definition.uid.get_mesh_only():
                 acronym = self.annotations[i + 1]
 
                 if (acronym.stype == definition.stype
@@ -360,7 +360,7 @@ class Paper:
                     for j, annot in enumerate(islice(self.annotations, i + 1, None)):
                         if (annot.stype == definition.stype
                             and not used[i + 1 + j]
-                            and not annot.uid.has_mesh()
+                            and not annot.uid.get_mesh_only()
                             and annot.text == acronym.text):
 
                             self.annotations[i + 1 + j].update_uid(definition.uid)
