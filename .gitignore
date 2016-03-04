@@ -12,3 +12,6 @@ crowd_only/src/Ab3P-v1.5/
 crowd_only/src/DNorm-0.0.7/
 crowd_only/src/tmChem.M2.ver02/
 crowd_only/src/lingpipe/com/
+
+# tmChem output files
+crowd_only/data/tmchem/
