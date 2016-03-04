@@ -1,4 +1,5 @@
-# last updated 2015-06-25 tong shu li
+# Tong Shu Li
+# Last updated: 2015-11-25
 
 # calculates the AUC value for a ROC curve
 # if a filename and title are provided,
@@ -34,7 +35,9 @@ AUC_value <- function(fname, score_col, class_col,
         perf <- performance(pred, measure = "tpr", x.measure = "fpr")
         png(filename = curve_fname, height = 800, width = 800, bg = "white")
 
-        plot(perf, main = title, type = "o", col = rainbow(10))
+        plot(perf, main = title, type = "o", colorize = TRUE,
+            colorkey = TRUE, colorkey.relwidth = 0.5,
+            col = rainbow(10))
         abline(a = "0", b = "1", lty = 2)
         dev.off()
     }

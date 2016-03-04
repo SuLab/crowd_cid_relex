@@ -1,0 +1,32 @@
+<!--
+Tong Shu Li
+Created on 2015-07-06
+Last updated 2015-08-12
+
+Question form for the sentence-bound
+chemical-induced disease relationship
+verification task for BioCreative V.
+-->
+
+<h3>Read this sentence:</h3>
+
+<div class="form_sentence">
+  {{form_sentence}}
+</div>
+
+
+<cml:radios name="verify_relationship" validates="required"
+  gold="true" aggregation="agg" label="The sentence &lt;em&gt;explicitly&lt;/em&gt; says that:">
+
+  <cml:radio value="yes_direct"
+    label="{{chemical_name}} directly contributes to or causes {{disease_name}}."/>
+
+  <cml:radio value="yes_indirect"
+    label="{{chemical_name}}-induced [other disease] causes {{disease_name}}."/>
+
+  <cml:radio value="no_relation"
+    label="The sentence does not say that {{chemical_name}} contributes to or causes {{disease_name}}."/>
+
+</cml:radios>
+
+<cml:textarea name="comment_box" label="Leave any comments below: (optional)"/>

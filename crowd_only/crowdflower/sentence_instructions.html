@@ -1,0 +1,136 @@
+<!--
+Tong Shu Li
+First written 2015-07-06
+Last updated 2015-08-13
+
+This file contains the instructions for the easy,
+sentence-based chemical-disease relationship verification
+task for BioCreative V.
+
+All chemical-disease pairs co-occur in the same sentence.
+If one abstract contains multiple sentences where the pair
+co-occur, then each sentence is shown as a separate task.
+-->
+
+Title: Determine whether a sentence says a chemical contributes to a disease
+
+<h3>Overview</h3>
+<p>Doctors need to know whether a chemical (such as Aspirin) causes any side effects before they can give it to people. In this task, you will determine whether a sentence says a chemical contributes to or causes a disease.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    One <span class="chemical">chemical</span> and one <span class="disease">disease</span> have been identified and highlighted in a sentence. A chemical or disease may have multiple names (e.g., <span class="chemical">rapamycin</span> and <span class="chemical">sirolimus</span>). Assume that anything highlighted with the same colour is the same thing. All names will be listed in the answer choice.
+  </li>
+
+  <li>
+    Read the sentence and determine whether it says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the three possible choices:
+
+    <ul>
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice when the sentence says that the chemical (by itself or together with other chemicals) directly contributes to or causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice only when the sentence has a format like: "<span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>".
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          The sentence does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.<br>
+        </div>
+
+        Select this choice when the sentence does not say that the chemical contributes to the disease.
+      </li>
+
+    </ul>
+  </li>
+</ol>
+
+
+<h3>Examples</h3>
+<ol>
+  <li>
+    <div class="example">
+      <span class="chemical">Feverolinus</span>, a chemotherapy drug derived from mushrooms and used for treating breast cancer, has multiple side effects, including diarrhea, constipation, and <span class="disease">hair loss</span>.
+    </div>
+
+    <span class="chemical">Feverolinus</span> is a chemotherapy drug that has multiple side effects, including <span class="disease">hair loss</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">Feverolinus</span> directly contributes to or causes <span class="disease">hair loss</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Some of the patients, especially those over 50 years old, complained of experiencing <span class="disease">chest aches</span> and lower back pain two hours after taking adalamin and <span class="chemical">maximidin</span>.
+    </div>
+
+    <span class="chemical">Maximidin</span> is working together with the chemical adalamin to cause <span class="disease">chest aches</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">maximidin</span> directly contributes to or causes <span class="disease">chest aches</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      <span class="disease">Heart attacks</span> are a well known downstream effect of <span class="chemical">barbatimol</span>-induced artherosclerosis.
+    </div>
+
+    The sentence says that <span class="disease">heart attacks</span> were caused by artherosclerosis (plaque buildup in arteries). Since this sentence follows the "<span class="chemical">[chemical]</span>-induced [other disease] causes <span class="disease">[disease]</span>" structure, the correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">barbatimol</span>-induced [other disease] causes <span class="disease">heart attacks</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      The Food and Drug Administration has concluded its review of Pfizer's <span class="chemical">Lipitor</span> and deemed it safe and efficacious for lowering <span class="disease">high cholesterol</span>.
+    </div>
+    The sentence says that <span class="chemical">Lipitor</span> lowers <span class="disease">high cholesterol</span>, which means it is curing the disease. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">Lipitor</span> contributes to or causes <span class="disease">high cholesterol</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      To evaluate the efficacy and safety of <span class="chemical">levofloxacin</span> (500 mg orally once daily for 10 to 14 days) in treating adult outpatients with acute bacterial <span class="disease">sinusitis</span>.
+    </div>
+
+    <span class="chemical">Levofloxacin</span> is being evaluated as a treatment for <span class="disease">sinusitis</span>. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">levofloxacin</span> contributes to or causes <span class="disease">sinusitis</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      During the infusion of aminophylline, the <span class="disease">ventricular fibrillation</span> threshold was reduced by 30 to 40% of the control when pH and partial pressures of oxygen (<span class="chemical">PO2</span>) and carbon dioxide (CO2) were kept within normal limits.
+    </div>
+
+    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. The correct choice is:
+
+    <div class="ans_choice">
+      The sentence does not say that <span class="chemical">PO2</span> contributes to or causes <span class="disease">ventricular fibrillation</span>.
+    </div>
+  </li>
+</ol>
+
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <code>tongli@scripps.edu</code> if you have any questions or comments.</p>

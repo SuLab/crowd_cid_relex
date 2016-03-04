@@ -1,0 +1,96 @@
+_id,_pct_missed,_judgments,_hidden,_contention,_pct_contested,_gold_pool,_verify_relationship,_worker_confidence,verify_relationship_gold,verify_relationship_gold_reason,worker_confidence_gold,worker_confidence_gold_reason,disease_id,disease_name,drug_id,drug_name,form_sentence,pmid,uniq_id,comment_box_gold_reason
+759146854,0.21,28,false,"",0.0,,"","",no_relation,"From this sentence we can only conclude that some patients with migraines had the chemical ""nitroglycerin"" applied to their foreheads. The sentence does not say that the nitroglycerin caused the migraines; the study might be trying to cure migraines with nitroglycerin, but we cannot tell based on this sentence alone.","very_confident
+confident
+not_too_confident
+not_confident","",D008881,"<span class=""disease"">migraine</span>",D005996,"<span class=""chemical"">nitroglycerin</span>","Twenty common <span class=""disease"">migraine</span> patients received a one sided frontotemporal application of <span class=""chemical"">nitroglycerin</span> (10 patients) or placebo ointment (10 patients) in a double blind study.",2515254,bcv_easy_114,""
+759160406,0.26,19,false,"",0.0,,"","",no_relation,"The sentence seems to suggest that cisplatin is having a beneficial effect on the disease ""NSCLC"", based on its use of ""well tolerated"" and ""high activity"". The sentence doesn't seem to be saying that cisplatin is causing NSCLC.","very_confident
+confident
+not_too_confident
+not_confident","",D002289,"<span class=""disease"">NSCLC</span>",D002945,"<span class=""chemical"">cisplatin</span>","CONCLUSIONS: The combination of paclitaxel, <span class=""chemical"">cisplatin</span>, and gemcitabine is well tolerated and shows high activity in metastatic <span class=""disease"">NSCLC</span>.",11135224,bcv_easy_19,""
+759180864,0.45,33,false,"Antithymocyte globulin directly contributes to or causes aplastic anemia
+well this was unfair, I think that you wrong ",0.0606,,"","",no_relation,"This sentence says antithymocyte globulin is being used as a ""treatment"" for a ""aplastic anemia"", which was caused by another chemical, ""D-penicillamine"".","very_confident
+confident
+not_too_confident
+not_confident","",D000741,"<span class=""disease"">aplastic anemia</span>",D000961,"<span class=""chemical"">Antithymocyte globulin</span>","<span class=""chemical"">Antithymocyte globulin</span> in the treatment of D-penicillamine-induced <span class=""disease"">aplastic anemia</span>.",12041669,bcv_easy_126,""
+759193721,0.11,27,false,"",0.0,,"","",yes_direct,"Another chemical, ""thiopentone"", is being used as a ""pretreatment"" for ""propofol injection pain"". We can conclude that propofol is causing pain.","very_confident
+confident
+not_too_confident
+not_confident","",D010146,"<span class=""disease"">pain</span>",D015742,"<span class=""chemical"">propofol</span>","Thiopentone pretreatment for <span class=""chemical"">propofol</span> injection <span class=""disease"">pain</span> in ambulatory patients.",8595686,bcv_easy_35,""
+759202840,0.31,26,false,"But on its own it would not cause them, and since only FANFT is highlighted I chose &amp;quot;does not contribute or cause&amp;quot;...",0.0385,,"","",yes_direct,"Giving two chemicals together (aspirin and FANFT) to rats decreased bladder carcinomas but caused an increase in ""forestomach tumors"". Therefore FANFT is causing forestomach tumors somehow in combination with aspirin.","very_confident
+confident
+not_too_confident
+not_confident","",D013274,"<span class=""disease"">forestomach tumors</span>",D005200,"<span class=""chemical"">FANFT/N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide</span>","The co-administration of aspirin with <span class=""chemical"">N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide</span> (<span class=""chemical"">FANFT</span>) to rats resulted in a reduced incidence of <span class=""chemical"">FANFT</span>-induced bladder carcinomas but a concomitant induction of <span class=""disease"">forestomach tumors</span>.",6692345,bcv_easy_140,""
+759209912,0.11,19,false,"",0.0,,"","",yes_direct,There was an increase in hearing loss after bupivacaine use.,"very_confident
+confident
+not_too_confident
+not_confident","",D034381,"<span class=""disease"">hearing loss</span>",D002045,"<span class=""chemical"">bupivacaine</span>","The average <span class=""disease"">hearing loss</span> for speech frequencies was about 10 dB after prilocaine and 15 dB after <span class=""chemical"">bupivacaine</span>.",9522143,bcv_easy_70,""
+759227773,0.19,32,false,"",0.0,,"","",no_relation,Lidocaine reduces the pain.,"very_confident
+confident
+not_too_confident
+not_confident","",D010146,"<span class=""disease"">pain</span>",D008012,"<span class=""chemical"">lidocaine</span>","We conclude that <span class=""chemical"">lidocaine</span> reduces the incidence and severity of propofol injection <span class=""disease"">pain</span> in ambulatory patients whereas thiopentone only reduces its severity.",8595686,bcv_easy_40,""
+759237645,0.15,26,false,"",0.0,,"","",no_relation,"The ""bronchodilator effects"" (ability to make lung passages wider) of ""ipratropium bromide"" and ""theophylline"" were compared in 21 patients who already had ""chronic obstructive pulmonary disease"". The sentence actually suggests that ipratropium bromide is being tested as a treatment for chronic obstructive pulmonary disease (narrow and blocked lung passages) because the chemical widens lung passages.","very_confident
+confident
+not_too_confident
+not_confident","",D029424,"<span class=""disease"">chronic obstructive pulmonary disease</span>",D009241,"<span class=""chemical"">ipratropium bromide</span>","The bronchodilator effects of a single dose of <span class=""chemical"">ipratropium bromide</span> aerosol (36 micrograms) and short-acting theophylline tablets (dose titrated to produce serum levels of 10-20 micrograms/mL) were compared in a double-blind, placebo-controlled crossover study in 21 patients with stable, <span class=""disease"">chronic obstructive pulmonary disease</span>.",1835291,bcv_easy_123,""
+759258632,0.19,26,false,You can't infer that the Heparin is causing the pain; injecting anything might cause pain. Your answer is neither logical nor correct.,0.0385,,"","",yes_direct,"How long it takes to inject heparin can influence the amount of bruising and pain felt, but we can conclude from this sentence that heparin is what is causing the pain (e.g., injecting saline would probably not cause pain).","very_confident
+confident
+not_too_confident
+not_confident","",D010146,"<span class=""disease"">pain</span>",D006493,"<span class=""chemical"">heparin</span>","AIM: This study was carried out to determine the effect of injection duration on bruising and <span class=""disease"">pain</span> following the administration of the subcutaneous injection of <span class=""chemical"">heparin</span>.",17931375,bcv_easy_60,""
+759268734,0.05,19,false,"",0.0,,"","",no_relation,Ipratropium works better than theophylline at dilating lung passages in patients who have chronic airflow obstruction. The sentence never says that theophylline was what caused chronic airflow obstruction.,"very_confident
+confident
+not_too_confident
+not_confident","",D029424,"<span class=""disease"">chronic airflow obstruction</span>",D013806,"<span class=""chemical"">theophylline</span>","These results show that ipratropium is a more potent bronchodilator than oral <span class=""chemical"">theophylline</span> in patients with <span class=""disease"">chronic airflow obstruction</span>.",1835291,bcv_easy_121,""
+759284721,0.20,25,false,"",0.0,,"","",yes_direct,"The sentence starts out saying that the link between sirolimus and proteinuria was unknown before, but later says that now they saw patients developing proteinuria after receiving sirolimus.","very_confident
+confident
+not_too_confident
+not_confident","",D011507,"<span class=""disease"">proteinuria</span>",D020123,"<span class=""chemical"">sirolimus</span>","Whether <span class=""disease"">proteinuria</span> was due to <span class=""chemical"">sirolimus</span> or only a consequence of calcineurin inhibitors withdrawal remained unsolved until high range <span class=""disease"">proteinuria</span> has been observed during <span class=""chemical"">sirolimus</span> therapy in islet transplantation and in patients who received <span class=""chemical"">sirolimus</span> de novo.",18631865,bcv_easy_147,""
+759284841,0.21,28,false,"I'm sorry, but this isn't really logical, the renal failure could be coincidental. We aren't told how many people didn't develop the necrosis in the same circumstances. ",0.0357,,"","",yes_direct,"Two people developed acute tubular necrosis when they took two drugs, cephalothin sodium and gentamicin sulfate. Remember that if a drug is working in combination with another drug, then you should mark it as directly contributing to the disease.","very_confident
+confident
+not_too_confident
+not_confident","",D007683,"<span class=""disease"">acute tubular necrosis</span>",D002512,"<span class=""chemical"">cephalothin sodium</span>","Two patients developed <span class=""disease"">acute tubular necrosis</span>, characterized clinically by acute oliguric renal failure, while they were receiving a combination of <span class=""chemical"">cephalothin sodium</span> and gentamicin sulfate therapy.",1130930,bcv_easy_152,""
+759285044,0.55,20,false,"",0.0,,"","",yes_indirect,"Carmofur causes leukoencephalopathy. Leukoencephalopathy can also cause organic personality syndrome. Therefore carmofur is acting indirectly by first causing leukoencephalopathy, and leukoencephalopathy causes organic personality syndrome.","very_confident
+confident
+not_too_confident
+not_confident","",D010554,"<span class=""disease"">organic personality syndrome</span>",C017367,"<span class=""chemical"">carmofur</span>","Consequently, <span class=""chemical"">carmofur</span>-induced leukoencephalopathy may uncommonly result in <span class=""disease"">organic personality syndrome</span> in the residual state.",2096243,bcv_easy_132,""
+759286190,0.44,25,false,"THAT'S NOT FAIR COME ON, how can i know that originally fanft caused carcinoma? it isn't written anywhere, i can't imagine it
+How can i know that originally fanft caused carcinoma? it isn't written anywhere",0.08,,"","",yes_direct,Giving FANFT together with aspirin decreases the bladder carcinomas which were originally caused by FANFT itself. Therefore FANFT is directly causing bladder carcinomas.,"very_confident
+confident
+not_too_confident
+not_confident","",D001749,"<span class=""disease"">bladder carcinomas</span>",D005200,"<span class=""chemical"">FANFT/N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide</span>","The co-administration of aspirin with <span class=""chemical"">N-[4-(5-nitro-2-furyl)-2-thiazolyl]-formamide</span> (<span class=""chemical"">FANFT</span>) to rats resulted in a reduced incidence of <span class=""chemical"">FANFT</span>-induced <span class=""disease"">bladder carcinomas</span> but a concomitant induction of forestomach tumors.",6692345,bcv_easy_141,""
+759293562,0.44,27,false,"Spironolactone-induced renal insufficiency and hyperkalemia, option 2  Spironolactone contributes to another disease, and that other disease causes heart failure is correct
+Spironolactone-induced renal insufficiency and hyperkalemia, option 2 Spironolactone contributes to another disease, and that other disease causes heart failure is correct",0.0741,,"","",no_relation,"The sentence says that the patients already had heart failure, and therefore it doesn't seem like spironolactone was what caused the heart failure.","very_confident
+confident
+not_too_confident
+not_confident","",D006333,"<span class=""disease"">heart failure</span>",D013148,"<span class=""chemical"">Spironolactone</span>","<span class=""chemical"">Spironolactone</span>-induced renal insufficiency and hyperkalemia in patients with <span class=""disease"">heart failure</span>.",15632880,bcv_easy_87,""
+759309877,0.14,22,false,"",0.0,,"","",yes_direct,"The convulsions were ""induced"" (caused) by nicotine, carbachol, and neostigmine.","very_confident
+confident
+not_too_confident
+not_confident","",D012640,"<span class=""disease"">convulsion</span>",D002217,"<span class=""chemical"">carbachol</span>","RESULTS: Sensitivity to several <span class=""disease"">convulsion</span> endpoints induced by nicotine, <span class=""chemical"">carbachol</span>, and neostigmine were significantly greater in WSR versus WSP mice.",12198388,bcv_easy_105,""
+759309930,0.17,29,false,"",0.0,,"","",yes_direct,Induced means caused by.,"very_confident
+confident
+not_too_confident
+not_confident","",D009395,"<span class=""disease"">interstitial nephritis</span>",D017963,"<span class=""chemical"">azithromycin</span>","A 14-year-old girl is reported with recurrent, <span class=""chemical"">azithromycin</span>-induced, acute <span class=""disease"">interstitial nephritis</span>.",15602202,bcv_easy_161,""
+759310481,0.71,24,false,This is inconsistent with how you've marked the others.,0.0417,,"","",no_relation,The sentence only says that patients who developed renal insufficiency had higher amounts of creatinine in their blood. It does not say that this is what caused the renal insufficiency.,"very_confident
+confident
+not_too_confident
+not_confident","",D051437,"<span class=""disease"">renal insufficiency</span>",D003404,"<span class=""chemical"">creatinine</span>","Patients who developed <span class=""disease"">renal insufficiency</span> had lower baseline body weight and higher baseline serum <span class=""chemical"">creatinine</span>, required higher doses of loop diuretics, and were more likely to be treated with thiazide diuretics than controls.",15632880,bcv_easy_81,""
+759310497,0.03,35,false,"",0.0,,"","",yes_direct,Induced means caused by.,"very_confident
+confident
+not_too_confident
+not_confident","",D008881,"<span class=""disease"">migraine</span>",D005996,"<span class=""chemical"">nitroglycerin</span>","Early onset <span class=""disease"">migraine</span> attacks were induced by <span class=""chemical"">nitroglycerin</span> in seven out of 10 patients versus no patient in the placebo group.",2515254,bcv_easy_115,""
+759310593,0.29,24,false,"",0.0,,"","",no_relation,Patients who had hyperkalemia also likely had diabetes and higher amounts of potassium in their blood. The sentence never says that potassium causes diabetes.,"very_confident
+confident
+not_too_confident
+not_confident","",D003920,"<span class=""disease"">diabetes</span>",D011188,"<span class=""chemical"">potassium</span>","Patients who developed hyperkalemia were older and more likely to have <span class=""disease"">diabetes</span>, had higher baseline serum <span class=""chemical"">potassium</span> levels and lower baseline <span class=""chemical"">potassium</span> supplement doses, and were more likely to be treated with beta-blockers than controls (n = 134).",15632880,bcv_easy_84,""
+759310868,0.18,33,false,"",0.0,,"","",no_relation,"""K"" means potassium, and hyperkalemia means ""high blood levels of potassium"". Therefore the ""K"" here in parentheses means the definition of hyperkalemia (when K is more than 5 units per liter). The sentence never says potassium is causing renal insufficiency.","very_confident
+confident
+not_too_confident
+not_confident","",D051437,"<span class=""disease"">renal insufficiency</span>",D011188,"<span class=""chemical"">K</span>","Cases were patients who developed hyperkalemia (<span class=""chemical"">K</span>(+) >5.0 mEq/L) or <span class=""disease"">renal insufficiency</span> (Cr >or=2.5 mg/dL), and they were compared to 2 randomly selected controls per case.",15632880,bcv_easy_85,""
+759311173,0.23,26,false,"",0.0,,"","",yes_direct,"","very_confident
+confident
+not_too_confident
+not_confident","",D000741,"<span class=""disease"">aplastic anemia</span>",D010396,"<span class=""chemical"">D-penicillamine</span>","A patient who received antithymocyte globulin therapy for <span class=""disease"">aplastic anemia</span> due to <span class=""chemical"">D-penicillamine</span> therapy is described.",12041669,bcv_easy_125,""
+759313411,0.25,24,false,"",0.0,,"","",yes_direct,"","very_confident
+confident
+not_too_confident
+not_confident","",D008881,"<span class=""disease"">migraine</span>",D005996,"<span class=""chemical"">nitroglycerin</span>","Thus the <span class=""disease"">migraine</span>-inducing effect of <span class=""chemical"">nitroglycerin</span> seems to depend on direct stimulation of the habitual site of pain, suggesting that the frontotemporal region is of crucial importance in the development of a <span class=""disease"">migraine</span> crisis.",2515254,bcv_easy_117,""

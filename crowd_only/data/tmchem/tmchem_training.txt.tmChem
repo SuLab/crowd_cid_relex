@@ -576,6 +576,7 @@
 10193204	291	294	TET	Chemical	C009438
 10193204	299	302	FAN	Chemical	C060802
 10193204	359	370	epinephrine	Chemical	MESH:D004837
+10193204	372	374	EP	Chemical	D004837
 10193204	503	506	TET	Chemical	C009438
 10193204	511	514	FAN	Chemical	C060802
 10193204	595	615	acetylsalicylic acid	Chemical	MESH:D001241
@@ -793,8 +794,7 @@
 16160878|t|Behavioral effects of urotensin-II centrally administered in mice.
 16160878|a|Urotensin-II (U-II) receptors are widely distributed in the central nervous system. Intracerebroventricular (i.c.v.) injection of U-II causes hypertension and bradycardia and stimulates prolactin and thyrotropin secretion. However, the behavioral effects of centrally administered U-II have received little attention. In the present study, we tested the effects of i.c.v. injections of U-II on behavioral, metabolic, and endocrine responses in mice. Administration of graded doses of U-II (1-10,000 ng/mouse) provoked: (1) a dose-dependent reduction in the number of head dips in the hole-board test; (2) a dose-dependent reduction in the number of entries in the white chamber in the black-and-white compartment test, and in the number of entries in the central platform and open arms in the plus-maze test; and (3) a dose-dependent increase in the duration of immobility in the forced-swimming test and tail suspension test. Intracerebroventricular injection of U-II also caused an increase in: food intake at doses of 100 and 1,000 ng/mouse, water intake at doses of 100-10,000 ng/mouse, and horizontal locomotion activity at a dose of 10,000 ng/mouse. Whatever was the dose, the central administration of U-II had no effect on body temperature, nociception, apomorphine-induced penile erection and climbing behavior, and stress-induced plasma corticosterone level. Taken together, the present study demonstrates that the central injection of U-II at doses of 1-10,000 ng/mouse induces anxiogenic- and depressant-like effects in mouse. These data suggest that U-II may be involved in some aspects of psychiatric disorders.
 16160878	22	34	urotensin-II	Chemical	D014579
-16160878	67	79	Urotensin-II	Chemical	D014579
-16160878	81	85	U-II	Chemical	D014579
+16160878	67	86	Urotensin-II (U-II)	Chemical
 16160878	197	201	U-II	Chemical	D014579
 16160878	348	352	U-II	Chemical	D014579
 16160878	453	457	U-II	Chemical	D014579
@@ -1765,7 +1765,6 @@
 12198388	506	513	alcohol	Chemical	D000431
 12198388	571	578	ethanol	Chemical	MESH:D000431
 12198388	660	667	alcohol	Chemical	D000431
-12198388	668	670	na	Chemical	D012964
 12198388	758	766	nicotine	Chemical	MESH:D009538
 12198388	768	777	carbachol	Chemical	MESH:D002217
 12198388	782	793	neostigmine	Chemical	MESH:D009388
@@ -1811,7 +1810,7 @@
 12615818	483	485	EE	Chemical	D004997
 12615818	522	541	oral contraceptives	Chemical	MESH:D003276
 12615818	884	887	CPA	Chemical	C048599
-12615818	888	891	EE.	Chemical	D004997
+12615818	888	890	EE	Chemical	D004997
 12615818	943	946	CPA	Chemical	C048599
 12615818	947	949	EE	Chemical	D004997
 12615818	1244	1247	CPA	Chemical	C048599
@@ -1852,6 +1851,7 @@
 15036754|a|Such organophosphorus (OP) compounds as diisopropylfluorophosphate (DFP), sarin and soman are potent inhibitors of acetylcholinesterases (AChEs) and butyrylcholinesterases (BChEs). The acute toxicity of OPs is the result of their irreversible binding with AChEs in the central nervous system (CNS), which elevates acetylcholine (ACh) levels. The protective action of subcutaneously (SC) administered antidotes or their combinations in DFP (2.0 mg/kg BW) intoxication was studied in 9-10-weeks-old Han-Wistar male rats. The rats received AChE reactivator pralidoxime-2-chloride (2PAM) (30.0 mg/kg BW), anticonvulsant diazepam (2.0 mg/kg BW), A(1)-adenosine receptor agonist N(6)-cyclopentyl adenosine (CPA) (2.0 mg/kg BW), NMDA-receptor antagonist dizocilpine maleate (+-MK801 hydrogen maleate) (2.0 mg/kg BW) or their combinations with cholinolytic drug atropine sulfate (50.0 mg/kg BW) immediately or 30 min after the single SC injection of DFP. The control rats received atropine sulfate, but also saline and olive oil instead of other antidotes and DFP, respectively. All rats were terminated either 24 h or 3 weeks after the DFP injection. The rats treated with DFP-atropine showed severe typical OP-induced toxicity signs. When CPA, diazepam or 2PAM was given immediately after DFP-atropine, these treatments prevented, delayed or shortened the occurrence of serious signs of poisoning. Atropine-MK801 did not offer any additional protection against DFP toxicity. In conclusion, CPA, diazepam and 2PAM in combination with atropine prevented the occurrence of serious signs of poisoning and thus reduced the toxicity of DFP in rat.
 15036754	0	15	Organophosphate	Chemical	D010755
 15036754	86	102	organophosphorus	Chemical	D010755
+15036754	104	106	OP	Chemical	D010755
 15036754	121	147	diisopropylfluorophosphate	Chemical	MESH:D007531
 15036754	149	152	DFP	Chemical	MESH:D007531
 15036754	155	160	sarin	Chemical	MESH:D012524
@@ -1869,7 +1869,7 @@
 15036754	803	807	NMDA	Chemical	D016202
 15036754	828	847	dizocilpine maleate	Chemical	MESH:D016291
 15036754	851	856	MK801	Chemical	MESH:D016291
-15036754	935	943	atropine	Chemical	MESH:D001285
+15036754	935	951	atropine sulfate	Chemical	MESH:D001285
 15036754	1023	1026	DFP	Chemical	MESH:D007531
 15036754	1054	1070	atropine sulfate	Chemical	MESH:D001285
 15036754	1133	1136	DFP	Chemical	MESH:D007531
@@ -2133,6 +2133,7 @@
 18083142	385	392	cocaine	Chemical	MESH:D003042
 18083142	467	475	dopamine	Chemical	MESH:D004298
 18083142	529	543	norepinephrine	Chemical	MESH:D009638
+18083142	545	547	NE	Chemical	D009638
 18083142	640	647	cocaine	Chemical	MESH:D003042
 18083142	688	695	cocaine	Chemical	MESH:D003042
 18083142	942	949	cocaine	Chemical	MESH:D003042
@@ -2739,8 +2740,7 @@
 9284778	515	523	HCFC 123	Chemical	MESH:C067411
 9284778	529	563	1-chloro-1,2,2,2-tetrafluoroethane	Chemical	C072959
 9284778	565	573	HCFC 124	Chemical	MESH:C072959
-9284778	685	693	1-bromo-	Chemical
-9284778	693	723	1-chloro-2,2,2-trifluoroethane	Chemical	MESH:C016800
+9284778	685	723	1-bromo-1-chloro-2,2,2-trifluoroethane	Chemical	D006221
 9284778	725	734	halothane	Chemical	MESH:D006221
 9284778	753	768	trifluoroacetyl	Chemical	D014269
 9284778	843	852	halothane	Chemical	MESH:D006221
@@ -3055,6 +3055,7 @@
 12684739	522	525	GVG	Chemical	D020888
 12684739	529	536	cocaine	Chemical	MESH:D003042
 12684739	583	591	dopamine	Chemical	MESH:D004298
+12684739	593	595	DA	Chemical	D004298
 12684739	896	899	GVG	Chemical	D020888
 12684739	933	940	cocaine	Chemical	MESH:D003042
 12684739	1054	1057	GVG	Chemical	D020888
@@ -3919,8 +3920,7 @@
 2578334	714	718	CCl4	Chemical	D002251
 2578334	801	806	5-AzC	Chemical	D001374
 2578334	911	916	5-AzC	Chemical	D001374
-2578334	1028	1033	[3H]-	Chemical
-2578334	1033	1051	5-azadeoxycytidine	Chemical	MESH:C014347
+2578334	1028	1051	[3H]-5-azadeoxycytidine	Chemical	C014347
 2578334	1091	1098	1,2-DMH	Chemical	D019813
 2578334	1134	1142	cytosine	Chemical	MESH:D003596
 2578334	1226	1231	5-AzC	Chemical	D001374
@@ -6655,7 +6655,7 @@
 10683478|t|Test conditions influence the response to a drug challenge in rodents.
 10683478|a|These studies were conducted to examine the differential response to a drug challenge under varied experimental test conditions routinely employed to study drug-induced behavioral and neurophysiological responses in rodents. Apomorphine, a nonselective dopamine agonist, was selected due to its biphasic behavioral effects, its ability to induce hypothermia, and to produce distinct changes to dopamine turnover in the rodent brain. From such experiments there is evidence that characterization and detection of apomorphine-induced activity in rodents critically depends upon the test conditions employed. In rats, detection of apomorphine-induced hyperactivity was facilitated by a period of acclimatization to the test conditions. Moreover, test conditions can impact upon other physiological responses to apomorphine such as drug-induced hypothermia. In mice, apomorphine produced qualitatively different responses under novel conditions when compared to those behaviors elicited in the home test cage. Drug-induced gross activity counts were increased in the novel exploratory box only, while measures of stereotypic behavior were similar in both. By contrast, apomorphine-induced locomotion was more prominent in the novel exploratory box. Dopamine turnover ratios (DOPAC:DA and HVA:DA) were found to be lower in those animals exposed to the exploratory box when compared to their home cage counterparts. However, apomorphine-induced reductions in striatal dopamine turnover were detected in both novel and home cage environments. The implications of these findings are discussed with particular emphasis upon conducting psychopharmacological challenge tests in rodents.
 10683478	296	307	Apomorphine	Chemical	MESH:D001058
-10683478	324	332	dopamine	Chemical	MESH:D004298
+10683478	324	340	dopamine agonist	Chemical	MESH:D018491
 10683478	465	473	dopamine	Chemical	MESH:D004298
 10683478	583	594	apomorphine	Chemical	MESH:D001058
 10683478	699	710	apomorphine	Chemical	MESH:D001058
@@ -6664,7 +6664,9 @@
 10683478	1236	1247	apomorphine	Chemical	MESH:D001058
 10683478	1316	1324	Dopamine	Chemical	MESH:D004298
 10683478	1342	1347	DOPAC	Chemical	MESH:D015102
+10683478	1348	1350	DA	Chemical	D004298
 10683478	1355	1358	HVA	Chemical	CHEBI:545959
+10683478	1359	1361	DA	Chemical	D004298
 10683478	1490	1501	apomorphine	Chemical	MESH:D001058
 10683478	1533	1541	dopamine	Chemical	MESH:D004298
 

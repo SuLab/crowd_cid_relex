@@ -1,15 +1,59 @@
+/*
+ * Tong Shu Li
+ * Last updated 2015-12-21
+ *
+ * Stylesheet for CrowdFlower jobs.
+ */
+
 .chemical {
-    color: #233b8b;
-    font-weight: bold;
+  color: #233b8b;
+  font-weight: bold;
 }
 
 .disease {
-    color: #909729;
-    font-weight: bold;
+  color: #909729;
+  font-weight: bold;
 }
 
 .form_title {
-    font-size: large;
-    font-style: italic;
-    padding-bottom: 5px;
+  font-size: large;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.example {
+  border: 1px solid #ad8ead;
+  background-color: #d6e7e8;
+  padding: 4px;
+  margin: 3px;
+}
+
+.ans_choice {
+  border: 1px solid #d6e9c6;
+  background-color: #dff0d8;
+  padding: 4px;
+  margin: 3px;
+}
+
+.full_abstract {
+  padding: 4px;
+  margin: 3px;
+}
+
+.ans_box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sentence {
+  text-decoration: underline;
+}
+
+.abstract_body {
+  line-height: 1.5;
+}
+
+li {
+  line-height: 1.2;
+  margin-bottom: 3px;
 }

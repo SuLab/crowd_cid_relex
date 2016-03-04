@@ -1,10 +1,14 @@
-# last updated 2015-06-12 toby
-import sys
-sys.path.append("/home/toby/Code/util/")
-from convert import query_ncbi
+# Tong Shu Li
+# Last updated: 2015-10-13
 
+import requests
 import xml.etree.cElementTree as ET
-from unicode_to_ascii import convert_unicode_to_ascii
+#from unicode_to_ascii import convert_unicode_to_ascii
+
+def query_ncbi(url):
+    BASE = "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/"
+    response = requests.get(BASE + url)
+    return response.text
 
 def get_pubmed_article_xml_tree(pubmed_id):
     request = "efetch.fcgi?db=pubmed&id={0}&rettype=abstract".format(pubmed_id)
@@ -35,9 +39,6 @@ def split_abstract(abstract_xml_tree):
         section_name = child.get("Label")
         text = child.text
 
-        if isinstance(text, unicode):
-            text = convert_unicode_to_ascii(text)
-
         if section_name is not None and section_name != "UNLABELLED":
             text = "{0}: {1}".format(section_name, text)
 
@@ -48,8 +49,6 @@ def split_abstract(abstract_xml_tree):
 def get_abstract_information(pubmed_id):
     article_xml_tree = get_pubmed_article_xml_tree(pubmed_id)
     title, abstract_xml_tree = parse_article_xml_tree(article_xml_tree)
-    if isinstance(title, unicode):
-        title = convert_unicode_to_ascii(title)
 
     if abstract_xml_tree:
         return (title, split_abstract(abstract_xml_tree))
@@ -63,8 +62,8 @@ def main():
 
     for pmid in tests:
         title, abstract = get_abstract_information(pmid)
-        print title
-        print abstract
+        print(title)
+        print(abstract)
 
 if __name__ == "__main__":
     main()

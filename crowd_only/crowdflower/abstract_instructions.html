@@ -1,0 +1,138 @@
+<!--
+Tong Shu Li
+Created on 2015-07-16
+Last updated 2015-08-18
+
+This task is the abstract-level chemical-induced disease
+relation extraction subtask for BioCreative V 3b.
+
+Instead of performing extraction on multiple pairs,
+we will reduce the task to a single pair. Any concept
+pairs in this task will not co-occur in any sentence.
+-->
+
+Title: Determine whether a chemical contributes to a disease
+
+<h3>Overview</h3>
+<p>Doctors need to know whether a chemical (such as Aspirin) can potentially cause any diseases before they can give it to people. In this task, you will determine whether a passage of text says a chemical contributes to a disease.</p>
+
+
+<h3>The Task</h3>
+<ol>
+  <li>
+    One <span class="chemical">chemical</span> and one <span class="disease">disease</span> have been identified and highlighted in a passage of text. A chemical or disease may have multiple names (e.g., <span class="chemical">rapamycin</span> and <span class="chemical">sirolimus</span>). Assume that anything highlighted with the same colour is the same thing. All names will be listed in the answer choice.
+  </li>
+
+  <li>
+    Read the text and determine whether the text says that the chemical is contributing to or causing the disease (for example, as a side effect). Choose one of the two possible choices:
+
+    <ul>
+      <li>
+        <div class="ans_choice">
+          <span class="chemical">[chemical]</span> directly contributes to or causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice when the text says that the chemical (by itself or with other chemicals) directly contributes to or causes the highlighted disease.
+      </li>
+
+      <li>
+        <div class="ans_choice">
+          The text does not say that <span class="chemical">[chemical]</span> contributes to or causes <span class="disease">[disease]</span>.
+        </div>
+
+        Select this choice when the text does not say that the chemical contributes to the disease.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+
+<h3>Examples</h3>
+<ol>
+  <li>
+    <div class="example">
+      <span class="chemical">Feverolinus</span>, a chemotherapy drug derived from mushrooms and used for treating breast cancer, has multiple side effects, including diarrhea, constipation, and <span class="disease">hair loss</span>.
+    </div>
+
+    <span class="chemical">Feverolinus</span> is a chemotherapy drug that has multiple side effects, including <span class="disease">hair loss</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">Feverolinus</span> directly contributes to or causes <span class="disease">hair loss</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Some of the patients, especially those over 50 years old, complained of experiencing <span class="disease">chest aches</span> and lower back pain two hours after taking adalamin and <span class="chemical">maximidin</span>.
+    </div>
+
+    <span class="chemical">Maximidin</span> is working together with the chemical adalamin to cause <span class="disease">chest aches</span>. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">maximidin</span> directly contributes to or causes <span class="disease">chest aches</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      A cohort of 100 men was given <span class="chemical">tanamycin</span> and monitored for increases in heart rate. The dose of <span class="chemical">convamin</span> was 10 mg/kg. Four hours later, 15% of the men complained of <span class="disease">dizziness</span>.
+    </div>
+
+    The chemical has two equivalent names: <span class="chemical">tanamycin</span> and <span class="chemical">convamin</span>. They both mean the same thing. The correct choice is:
+
+    <div class="ans_choice">
+      <span class="chemical">tanamycin/convamin</span> directly contributes to or causes <span class="disease">dizziness</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      Heart disease is the leading cause of death in the USA. Together with <span class="disease">cancer</span>, these two diseases claim over a million American lives each year. Our clinical results indicate that <span class="chemical">Flibitor</span> can drastically lower the chances of developing heart disease in patients over 50.
+    </div>
+
+    Here <span class="disease">cancer</span> is mentioned as another leading cause of death. It has nothing to do with <span class="chemical">Flibitor</span> and therefore the correct choice is:
+
+    <div class="ans_choice">
+      The text does not say that <span class="chemical">Flibitor</span> contributes to or causes <span class="disease">cancer</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      The Food and Drug Administration has concluded its review of Pfizer's <span class="chemical">Lipitor</span> and deemed it safe and efficacious for lowering <span class="disease">high cholesterol</span>.
+    </div>
+    The text says that <span class="chemical">Lipitor</span> lowers <span class="disease">high cholesterol</span>, which means it is curing the disease. The correct choice is:
+
+    <div class="ans_choice">
+      The text does not say that <span class="chemical">Lipitor</span> contributes to or causes <span class="disease">high cholesterol</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      To evaluate the efficacy and safety of <span class="chemical">levofloxacin</span> (500 mg orally once daily for 10 to 14 days) in treating adult outpatients with acute bacterial <span class="disease">sinusitis</span>.
+    </div>
+
+    <span class="chemical">Levofloxacin</span> is being evaluated as a treatment for <span class="disease">sinusitis</span>. The correct choice is:
+
+    <div class="ans_choice">
+      The text does not say that <span class="chemical">levofloxacin</span> contributes to or causes <span class="disease">sinusitis</span>.
+    </div>
+  </li>
+
+  <li>
+    <div class="example">
+      During the infusion of aminophylline, the <span class="disease">ventricular fibrillation</span> threshold was reduced by 30 to 40% of the control when pH and partial pressures of oxygen (<span class="chemical">PO2</span>) and carbon dioxide (CO2) were kept within normal limits.
+    </div>
+
+    In this sentence, <span class="chemical">PO2</span> means "partial pressure of oxygen", which is not a chemical. The highlighting made a mistake. The correct choice is:
+
+    <div class="ans_choice">
+      The text does not say that <span class="chemical">PO2</span> contributes to or causes <span class="disease">ventricular fibrillation</span>.
+    </div>
+  </li>
+</ol>
+
+
+<h3>Thank you!</h3>
+<p>Thank you for helping us with this task! Your responses are being used to guide cutting-edge biomedical research. Please email <code>tongli@scripps.edu</code> if you have any questions or comments.</p>
