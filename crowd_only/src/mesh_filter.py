@@ -1,7 +1,7 @@
 """
 Tong Shu Li
 Created on: 2015-10-05
-Last updated: 2015-10-15
+Last updated: 2016-01-07
 
 Use the MeSH hierarchy to determine which concepts are more specific.
 """
@@ -9,8 +9,8 @@ from collections import namedtuple
 from itertools import groupby
 import os
 
-from .data_model import Ontology_ID
-from .data_model import Simple_Rel
+from .data_model import OntologyID
+from .data_model import Relation
 from .parse_mesh import load_mesh
 
 concept_name, hierarchy = load_mesh("hierarchy")
